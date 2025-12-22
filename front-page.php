@@ -202,6 +202,94 @@
       </div>
     </div>
   </section>
+  <section class="p-top-topics">
+    <div class="l-inner">
+      <div class="p-top-topics__content">
+        <div class="p-top-topics__top">
+          <div class="p-top-topics__title">
+            <h3 class="c-sub-title">
+              <span class="c-sub-title__en">_Topics</span>
+              <span class="c-sub-title__ja">特集</span>
+            </h3>
+          </div>
+          <div class="p-top-topics__btn-wrapper">
+            <a href="#" class="c-btn">
+              <p class="c-btn__text">View more</p>
+              <div class="c-btn__icon">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="p-top-topics__slider">
+          <!-- Slider main container -->
+          <div class="swiper swiper-topics">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              
+              <div class="swiper-slide">
+                <a href="#" class="p-top-topics__link">
+                  <div class="p-top-topics__link-top">
+                    <p class="p-top-topics__link-title">Kawara</p>
+                    <p class="p-top-topics__link-small">Designs</p>
+                  </div>
+                  <figure class="p-top-topics__img">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/topics_1.webp" alt="Kawara" width="360" height="360">
+                  </figure>
+                  <div class="p-top-topics__link-detail">
+                    <p class="p-top-topics__link-detailTitle">石州瓦と<br>グラントワ、<br>土地の記憶。</p>
+                    <div class="p-top-topics__link-row">
+                      <p class="p-top-topics__link-num">NO.01</p>
+                      <p class="p-top-topics__link-text">島根県芸術文化センター グラントワ</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="p-top-topics__link">
+                  <div class="p-top-topics__link-top">
+                    <p class="p-top-topics__link-title">Kawara</p>
+                    <p class="p-top-topics__link-small">Designs</p>
+                  </div>
+                  <figure class="p-top-topics__img">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/topics_1.webp" alt="Kawara" width="360" height="360">
+                  </figure>
+                  <div class="p-top-topics__link-detail">
+                    <p class="p-top-topics__link-detailTitle">石州瓦と<br>グラントワ、<br>土地の記憶。</p>
+                    <div class="p-top-topics__link-row">
+                      <p class="p-top-topics__link-num">NO.01</p>
+                      <p class="p-top-topics__link-text">島根県芸術文化センター グラントワ</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="p-top-topics__link">
+                  <div class="p-top-topics__link-top">
+                    <p class="p-top-topics__link-title">Kawara</p>
+                    <p class="p-top-topics__link-small">Designs</p>
+                  </div>
+                  <figure class="p-top-topics__img">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/topics_1.webp" alt="Kawara" width="360" height="360">
+                  </figure>
+                  <div class="p-top-topics__link-detail">
+                    <p class="p-top-topics__link-detailTitle">石州瓦と<br>グラントワ、<br>土地の記憶。</p>
+                    <div class="p-top-topics__link-row">
+                      <p class="p-top-topics__link-num">NO.01</p>
+                      <p class="p-top-topics__link-text">島根県芸術文化センター グラントワ</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="p-top-news">
     <div class="l-inner">
       <div class="p-top-news__content">

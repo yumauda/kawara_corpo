@@ -1,0 +1,145 @@
+@use "../global" as *;
+
+.p-top-topics {
+}
+
+.p-top-topics__content {
+}
+
+.p-top-topics__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-top-topics__title {
+}
+
+.p-top-topics__btn-wrapper {
+}
+
+.p-top-topics__slider {
+  margin-right: calc(50% - 50vw);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+  @include mq(lg) {
+    margin-top: rem(60);
+  }
+}
+
+.swiper {
+}
+
+.swiper-topics {
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+}
+
+.p-top-topics__link {
+  border: 5px solid #fff;
+  background: #37af32;
+  border-radius: rem(5);
+  padding-top: rem(15);
+  padding-bottom: rem(30);
+  padding-left: rem(30);
+  display: block;
+}
+
+.p-top-topics__link-top {
+  position: relative;
+  z-index: 1;
+}
+
+.p-top-topics__link-title {
+  font-size: rem(20);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #222;
+  font-style: italic;
+  @include mq(md) {
+    font-size: rem(40);
+  }
+  @include mq(lg) {
+    font-size: rem(84);
+  }
+}
+
+.p-top-topics__link-small {
+  font-size: rem(14);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #222;
+  font-style: italic;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 16px);
+  }
+  @include mq(lg) {
+    font-size: rem(40);
+  }
+}
+
+.p-top-topics__img {
+  width: 85%;
+  margin-left: auto;
+  margin-top: rem(-64);
+}
+.p-top-topics__img img {
+  aspect-ratio: 350 / 350;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-top-topics__link-detail {
+  margin-top: rem(-88);
+
+}
+.p-top-topics__link-detailTitle {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: calc(50 / 46);
+  @include mq(md) {
+    font-size: clamp(20px, 2vw, 24px);
+  }
+  @include mq(lg) {
+    font-size: rem(46);
+  }
+}
+.p-top-topics__link-row {
+  display: flex;
+  margin-top: rem(20);
+  align-items: center;
+  gap: rem(11);
+}
+
+.p-top-topics__link-num {
+  font-family: $second-font-family;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #fff;
+  @include mq(md) {
+    font-size: clamp(12px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(12);
+  }
+}
+
+.p-top-topics__link-text {
+  font-size: rem(12);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #fff;
+  @include mq(md) {
+    font-size: clamp(12px, 2vw, 12px);
+  }
+  @include mq(lg) {
+    font-size: rem(12);
+  }
+}

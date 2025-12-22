@@ -206,7 +206,7 @@
 
 .p-top-choose__banner {
   @include mq(md) {
-    margin-top: rem(64);
+    margin-top: rem(60);
   }
   @include mq(lg) {
     margin-top: rem(120);

@@ -8,6 +8,13 @@ const chooseSlider = new Swiper(".choose-slider", {
   spaceBetween: 50,
 });
 
+const topicsSlider = new Swiper(".swiper-topics", {
+  slidesPerView: 3.8,
+  centeredSlides: false,
+  loop: true,
+  initialSlide: 0,
+  spaceBetween: 30,
+});
 const slider2 = new Swiper(".slider2", {
   slidesPerView: 1.6,
   centeredSlides: true,
