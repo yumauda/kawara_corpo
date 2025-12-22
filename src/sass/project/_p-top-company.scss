@@ -1,0 +1,96 @@
+@use "../global" as *;
+
+.p-top-company {
+  overflow-x: clip;
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(100);
+  }
+  @include mq(lg) {
+    padding-top: rem(200);
+    padding-bottom: rem(200);
+  }
+}
+
+.p-top-company__content {
+  display: flex;
+}
+
+.p-top-company__left {
+  @include mq(md) {
+    padding-right: rem(64);
+  }
+  @include mq(lg) {
+    padding-right: rem(160);
+  }
+}
+
+.p-top-company__top {
+}
+
+.p-top-company__title {
+}
+
+.p-top-company__text-wrapper {
+  @include mq(md) {
+    margin-top: rem(48);
+  }
+  @include mq(lg) {
+    margin-top: rem(100);
+  }
+}
+
+.p-top-company__text {
+  line-height: calc(36 / 20);
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: #222;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 16px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+
+.p-top-company__btn-wrapper {
+  @include mq(md) {
+    margin-top: rem(32);
+  }
+  @include mq(lg) {
+    margin-top: rem(50);
+  }
+}
+.p-top-company__img {
+  width: 100%;
+  position: relative;
+  @include mq(md) {
+    max-width: rem(600);
+  }
+  @include mq(lg) {
+    max-width: rem(760);
+  }
+}
+.p-top-company__img::before {
+  position: absolute;
+  content: "";
+  background: url(../images/top/top_about_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(230);
+  height: auto;
+  top: 10%;
+  right: rem(-88);
+  aspect-ratio: 230 / 700;
+  object-fit: cover;
+  z-index: -1;
+  height: 100%;
+}
+.p-top-company__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}

@@ -1,0 +1,33 @@
+@use "../global" as *;
+
+.c-btn {
+  display: flex;
+  align-items: center;
+  gap: rem(20);
+  width: 100%;
+}
+
+.c-btn__text {
+  font-size: rem(14);
+  font-weight: 700;
+  font-family: $second-font-family;
+  letter-spacing: 0.06em;
+  color: #222;
+  font-style: italic;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 16px);
+  }
+  @include mq(lg) {
+    font-size: rem(24);
+  }
+}
+.c-btn__icon {
+  @include mq(md) {
+    width: rem(40);
+    height: rem(40);
+  }
+  @include mq(lg) {
+    width: rem(60);
+    height: rem(60);
+  }
+}

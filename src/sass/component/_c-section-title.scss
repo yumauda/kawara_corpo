@@ -1,0 +1,59 @@
+@use "../global" as *;
+
+.c-section-title {
+}
+
+.c-section-title__en {
+  padding-left: rem(30);
+  position: relative;
+  color: #37af32;
+  font-family: $second-font-family;
+  font-weight: 700;
+  font-style: italic;
+  @include mq(md) {
+    font-size: rem(24);
+  }
+  @include mq(lg) {
+    font-size: rem(50);
+  }
+}
+.c-section-title__en::before {
+  position: absolute;
+  content: "";
+  background: #37af32;
+  width: rem(10);
+  height: rem(10);
+  border-radius: 9999px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.c-section-title__ja {
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  display: block;
+  font-size: rem(28);
+  @include mq(md) {
+    font-size: rem(48);
+  }
+  @include mq(lg) {
+    font-size: rem(100);
+  }
+}
+
+.c-section-title__small {
+  font-size: rem(14);
+  font-weight: 700;
+  font-family: $second-font-family;
+  letter-spacing: 0.06em;
+  color: #fff;
+  font-style: italic;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
