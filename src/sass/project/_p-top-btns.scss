@@ -1,0 +1,28 @@
+@use "../global" as *;
+
+.p-top-btns {
+  
+}
+
+.p-top-btns__content {
+}
+
+.p-top-btns__lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(25);
+}
+
+.p-top-btns__list {
+}
+
+.p-top-btns__link {
+  display: block;
+}
+.p-top-btns__link img {
+  border-radius: rem(10);
+  aspect-ratio: 490 / 280;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}

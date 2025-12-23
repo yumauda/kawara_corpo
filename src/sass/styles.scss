@@ -10,10 +10,13 @@
 
 // Project
 @use "./project/_p-404";
+@use "./project/_p-footer";
 @use "./project/_p-form";
 @use "./project/_p-home-topics";
 @use "./project/_p-single-topics";
+@use "./project/_p-submit";
 @use "./project/_p-top-about";
+@use "./project/_p-top-btns";
 @use "./project/_p-top-choose";
 @use "./project/_p-top-company";
 @use "./project/_p-top-news";

@@ -1,0 +1,131 @@
+@use "../global" as *;
+
+.p-footer {
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+}
+
+.p-footer__content {
+  display: flex;
+}
+
+.p-footer__logo {
+}
+
+.p-footer__home {
+  display: inline-block;
+  @include mq(md) {
+    width: rem(250);
+  }
+
+  @include mq(lg) {
+    width: rem(366);
+  }
+}
+.p-footer__home img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+.p-footer__nav {
+  display: flex;
+  @include mq(md) {
+    margin-left: auto;
+    gap: rem(40);
+  }
+  @include mq(lg) {
+    gap: rem(50);
+  }
+}
+
+.p-footer__lists {
+}
+
+.p-footer__list + .p-footer__list {
+  margin-top: rem(12);
+  @include mq(md) {
+    margin-top: rem(12);
+  }
+  @include mq(lg) {
+    margin-top: rem(16);
+  }
+}
+
+.p-footer__link {
+  font-size: rem(16);
+  color: #222;
+  font-weight: 700;
+  padding-left: rem(13);
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.p-footer__link:hover {
+  color: #37af32;
+}
+.p-footer__link::before {
+  position: absolute;
+  content: "";
+  background: #222;
+  width: rem(4);
+  height: rem(4);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  border-radius: 9999px;
+  transition: 0.3s ease-in-out;
+}
+.p-footer__link:hover::before {
+  background: #37af32;
+}
+.p-footer__link::after {
+  position: absolute;
+  content: "";
+  background: transparent;
+  width: rem(0);
+  height: rem(0);
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(-3);
+  border-radius: 9999px;
+  border: 1px solid #37af32;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.p-footer__link:hover::after {
+  width: rem(10);
+  height: rem(10);
+  opacity: 1;
+}
+.p-footer__small {
+  margin-top: rem(51);
+  text-align: right;
+}
+.p-footer__small small {
+  font-size: rem(10);
+  font-family: $second-font-family;
+  font-weight: 500;
+  font-style: italic;
+  color: #222222;
+}
+.p-footer__recruit-wrapper {
+}
+
+.p-footer__recruit {
+  display: block;
+  filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.2));
+  @include mq(md) {
+    margin-left: rem(32);
+    width: rem(200);
+  }
+  @include mq(lg) {
+    margin-left: rem(50);
+    width: rem(330);
+  }
+}
+.p-footer__recruit img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}

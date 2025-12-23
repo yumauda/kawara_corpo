@@ -1,0 +1,120 @@
+@use "../global" as *;
+
+.p-submit {
+  padding-left: rem(40);
+  padding-right: rem(40);
+}
+
+.p-submit__inner {
+}
+
+.p-submit__btn {
+  background: url(../images/common/submit_bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  border-radius: rem(10);
+  padding: rem(44) rem(60);
+}
+.p-submit__row {
+  display: flex;
+  justify-content: space-between;
+}
+.p-submit__btn-top {
+  position: relative;
+  width: fit-content;
+}
+
+.p-submit__title {
+  font-family: $second-font-family;
+  font-weight: 700;
+  font-style: italic;
+  color: #37af32;
+  line-height: calc(160 / 140);
+  text-transform: uppercase;
+  @include mq(md) {
+    font-size: rem(80);
+  }
+  @include mq(lg) {
+    font-size: rem(140);
+  }
+}
+
+.p-submit__subtitle {
+  font-weight: 700;
+  color: #37af32;
+  font-weight: 700;
+  line-height: calc(54 / 40);
+  letter-spacing: 0.06em;
+  position: absolute;
+  @include mq(md) {
+    font-size: rem(28);
+    right: rem(-72);
+    bottom: rem(12);
+  }
+  @include mq(lg) {
+    bottom: rem(24);
+    right: rem(-48);
+    font-size: rem(40);
+  }
+}
+
+.p-submit__en-wrapper {
+  width: rem(180);
+  @include mq(md){
+    margin-top: rem(12);
+  }
+  @include mq(lg){
+    margin-top: rem(32);
+    
+  }
+}
+
+.p-submit__en-main {
+  color: #fff;
+  font-family: $second-font-family;
+  font-weight: 700;
+  font-style: italic;
+  font-size: rem(16);
+  letter-spacing: 0.06em;
+}
+
+.p-submit__en-sub {
+  margin-top: rem(18);
+  color: #fff;
+  font-size: rem(8);
+  font-family: $second-font-family;
+  font-weight: 400;
+  line-height: calc(14 / 8);
+  letter-spacing: 0.06em;
+}
+
+.p-submit__btn-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.p-submit__btn-bottom-text {
+  color: #fff;
+  font-weight: 500;
+  line-height: calc(36 / 20);
+  letter-spacing: 0.06em;
+  @include mq(md){
+    font-size: clamp(12px, 2vw, 16px);
+  }
+  @include mq(lg){
+    font-size: rem(20);
+    
+  }
+}
+
+.p-submit__icon {
+  @include mq(md) {
+    width: rem(100);
+  }
+  @include mq(lg) {
+    width: rem(220);
+  }
+}

@@ -361,6 +361,31 @@
       </div>
     </div>
   </section>
+  <div class="p-top-btns">
+    <div class="l-inner">
+      <div class="p-top-btns__content">
+        <ul class="p-top-btns__lists">
+          <li class="p-top-btns__list">
+            <a href="#" class="p-top-btns__link">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_btn1.png" alt="製品資料ダウンロード" width="490" height="280">
+            </a>
+          </li>
+          <li class="p-top-btns__list">
+            <a href="#" class="p-top-btns__link">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_btn2.png" alt="プロの皆様へ" width="490" height="280">
+            </a>
+          </li>
+          <li class="p-top-btns__list">
+            <a href="#" class="p-top-btns__link">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_btn3.png" alt="全国の瓦施工店" width="490" height="280">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <?php get_template_part("includes/submit"); ?>
 
 </main>
+
 <?php get_footer() ?>
