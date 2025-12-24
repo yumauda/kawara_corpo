@@ -1104,6 +1104,223 @@ input::placeholder {
   border: 1px solid #ed1c24;
 }
 
+.p-page-mv {
+  padding-top: 23.125rem;
+  position: relative;
+  overflow-x: clip;
+}
+
+.p-page-mv::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/page_mv_wave.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 62.5rem;
+  height: auto;
+  aspect-ratio: 1000/330;
+  object-fit: cover;
+  top: 6.25rem;
+  left: 0;
+}
+
+.p-page-mv::after {
+  position: absolute;
+  content: "";
+  background: url(../images/common/page_mv_wave_right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 71.875rem;
+  height: auto;
+  aspect-ratio: 1150/380;
+  object-fit: cover;
+  top: 67.5rem;
+  right: 0;
+}
+
+.p-page-mv__detail {
+  position: relative;
+}
+
+.p-page-mv__detail::before {
+  position: absolute;
+  content: attr(data-title) "";
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  color: rgba(55, 175, 50, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .p-page-mv__detail::before {
+    font-size: 20rem;
+    top: -2.5rem;
+    left: -6.25rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-page-mv__detail::before {
+    top: -5rem;
+    left: -12.5rem;
+    font-size: 27.5rem;
+  }
+}
+
+.p-page-mv__title {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #222;
+}
+@media screen and (min-width: 768px) {
+  .p-page-mv__title {
+    font-size: 3.75rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-page-mv__title {
+    font-size: 6.25rem;
+  }
+}
+
+.p-page-mv__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: #222;
+}
+@media screen and (min-width: 768px) {
+  .p-page-mv__text {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-page-mv__text {
+    font-size: 1.25rem;
+  }
+}
+
+.p-page-mv__img {
+  margin-top: 4.5rem;
+  margin-right: calc(50% - 50vw);
+  padding-right: 2.5rem;
+  padding-left: 17.5rem;
+}
+
+.p-page-mv__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page-mv__bottom {
+    margin-top: -3.125rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-page-mv__bottom {
+    margin-top: -8.125rem;
+  }
+}
+
+.p-page-mv__bottom-kind {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #37af32;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-page-mv__bottom-kind {
+    font-size: clamp(14px, 2vw, 14px);
+    padding-left: 1rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-page-mv__bottom-kind {
+    font-size: 1.25rem;
+  }
+}
+
+.p-page-mv__bottom-kind::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 0.625rem;
+  height: 0.625rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.p-page-mv__bottom-title {
+  font-weight: 700;
+  color: #37af32;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  .p-page-mv__bottom-title {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-page-mv__bottom-title {
+    font-size: 10rem;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-page-mv__explain {
+    margin-top: 2.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-page-mv__explain {
+    margin-top: 3.75rem;
+  }
+}
+
+.p-page-mv__explain-title {
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 0.2em;
+}
+@media screen and (min-width: 768px) {
+  .p-page-mv__explain-title {
+    font-size: clamp(16px, 2vw, 18px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-page-mv__explain-title {
+    font-size: 2.5rem;
+  }
+}
+
+.p-page-mv__explain-text {
+  line-height: 1.6;
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+@media screen and (min-width: 768px) {
+  .p-page-mv__explain-text {
+    margin-top: 1.25rem;
+    font-size: clamp(14px, 2vw, 16px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-page-mv__explain-text {
+    font-size: 1.25rem;
+  }
+}
+
 .p-single-topics {
   padding-top: 5rem;
   padding-bottom: 5rem;
