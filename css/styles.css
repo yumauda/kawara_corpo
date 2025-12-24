@@ -1104,6 +1104,163 @@ input::placeholder {
   border: 1px solid #ed1c24;
 }
 
+@media screen and (min-width: 768px) {
+  .p-land {
+    padding-top: 7.5rem;
+    padding-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-land {
+    padding-top: 13.75rem;
+    padding-bottom: 7.5rem;
+  }
+}
+
+.p-land__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-land__content {
+    flex-direction: row;
+    gap: 3.75rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-land__content {
+    gap: 6.9375rem;
+  }
+}
+
+.p-land__detail {
+  flex: 1;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .p-land__detail {
+    max-width: 25rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-land__detail {
+    max-width: 41.8125rem;
+  }
+}
+
+.p-land__kind {
+  color: #37af32;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-land__kind {
+    font-size: clamp(14px, 2vw, 14px);
+    padding-left: 0.9375rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-land__kind {
+    font-size: 1.25rem;
+  }
+}
+
+.p-land__kind::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 0.625rem;
+  height: 0.625rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.p-land__title {
+  color: #37af32;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  .p-land__title {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-land__title {
+    font-size: 10rem;
+    white-space: nowrap;
+  }
+}
+
+.p-land__subtitle {
+  color: #222;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-land__subtitle {
+    font-size: clamp(18px, 2vw, 20px);
+    margin-top: 1.875rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-land__subtitle {
+    font-size: 2.5rem;
+    margin-top: 3.75rem;
+  }
+}
+
+.p-land__text {
+  color: #222;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+  margin-top: 0.9375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-land__text {
+    font-size: clamp(14px, 2vw, 14px);
+    margin-top: 0.75rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-land__text {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+  }
+}
+
+.p-land__img {
+  flex: 1;
+}
+@media screen and (min-width: 1540px) {
+  .p-land__img {
+    padding-right: 2.5rem;
+    margin-right: calc(50% - 50vw);
+  }
+}
+
+.p-land__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
 .p-page-mv {
   padding-top: 23.125rem;
   position: relative;
@@ -1318,6 +1475,190 @@ input::placeholder {
 @media screen and (min-width: 1540px) {
   .p-page-mv__explain-text {
     font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-secret {
+    padding-top: 3.75rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-secret {
+    padding-top: 7.5rem;
+  }
+}
+
+.p-secret__title {
+  color: #37af32;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.3333333333;
+  font-size: 1.125rem;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-secret__title {
+    font-size: clamp(20px, 2vw, 22px);
+    padding-left: 1.625rem;
+    padding-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-secret__title {
+    font-size: 2.25rem;
+  }
+}
+
+.p-secret__title::before {
+  position: absolute;
+  content: "";
+  background: #37af32;
+  width: 0.375rem;
+  height: 3.75rem;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.p-secret__title span {
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-secret__title span {
+    font-size: clamp(16px, 2vw, 18px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-secret__title span {
+    font-size: 1.875rem;
+  }
+}
+
+.p-secret__title::after {
+  position: absolute;
+  content: "";
+  background: #37af32;
+  height: 0.125rem;
+  bottom: 0;
+  left: -1.5rem;
+  right: 0;
+}
+
+.p-secret__text {
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-secret__text {
+    font-size: clamp(14px, 2vw, 16px);
+    margin-top: 1.875rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-secret__text {
+    margin-top: 2.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+.p-secret__text span {
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-secret__text span {
+    font-size: clamp(14px, 2vw, 14px);
+    margin-left: 0.625rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-secret__text span {
+    font-size: 0.875rem;
+    margin-left: 1.3125rem;
+  }
+}
+
+.p-secret__lists {
+  display: flex;
+  gap: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-secret__lists {
+    margin-top: 1.875rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-secret__lists {
+    margin-top: 2.5rem;
+  }
+}
+
+.p-secret__list {
+  flex: 1;
+}
+
+.p-secret__list:last-child {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .p-secret__list:last-child {
+    max-width: 12.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-secret__list:last-child {
+    max-width: 18.75rem;
+  }
+}
+
+.p-secret__list-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-secret__list-text {
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+}
+@media screen and (min-width: 768px) {
+  .p-secret__list-text {
+    font-size: clamp(14px, 2vw, 16px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-secret__list-text {
+    font-size: 1.25rem;
+  }
+}
+
+.p-secret__list-text span {
+  font-weight: 700;
+  color: #37af32;
+}
+
+.p-secret__small {
+  font-weight: 500;
+  color: #222;
+  letter-spacing: 0.06em;
+  line-height: 2;
+}
+@media screen and (min-width: 768px) {
+  .p-secret__small {
+    margin-top: 1.25rem;
+    font-size: clamp(14px, 2vw, 14px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-secret__small {
+    margin-top: 2.5rem;
+    font-size: 1rem;
   }
 }
 

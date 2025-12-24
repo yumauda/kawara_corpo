@@ -1,0 +1,129 @@
+@use "../global" as *;
+
+.p-land {
+  @include mq(md) {
+    padding-top: rem(120);
+    padding-bottom: rem(80);
+  }
+  @include mq(lg) {
+    padding-top: rem(220);
+    padding-bottom: rem(120);
+  }
+}
+
+.p-land__content {
+  display: flex;
+  flex-direction: column;
+  gap: rem(30);
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(60);
+  }
+  @include mq(lg) {
+    gap: rem(111);
+  }
+}
+
+.p-land__detail {
+  flex: 1;
+  width: 100%;
+  @include mq(md) {
+    max-width: rem(400);
+  }
+  @include mq(lg) {
+    max-width: rem(669);
+  }
+}
+
+.p-land__kind {
+  color: #37af32;
+  font-weight: 700;
+  font-size: rem(14);
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  position: relative;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+    padding-left: rem(15);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+.p-land__kind::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(10);
+  height: rem(10);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.p-land__title {
+  color: #37af32;
+  font-weight: 700;
+  font-size: rem(32);
+  letter-spacing: 0.06em;
+  line-height: calc(192 / 160);
+  @include mq(md) {
+    font-size: rem(64);
+  }
+  @include mq(lg) {
+    font-size: rem(160);
+    white-space: nowrap;
+  }
+}
+
+.p-land__subtitle {
+  color: #222;
+  font-weight: 700;
+  font-size: rem(16);
+  letter-spacing: 0.06em;
+  line-height: calc(56 / 40);
+  margin-top: rem(16);
+  @include mq(md) {
+    font-size: clamp(18px, 2vw, 20px);
+    margin-top: rem(30);
+  }
+  @include mq(lg) {
+    font-size: rem(40);
+    margin-top: rem(60);
+  }
+}
+
+.p-land__text {
+  color: #222;
+  font-weight: 500;
+  font-size: rem(14);
+  letter-spacing: 0.06em;
+  line-height: calc(32 / 20);
+  margin-top: rem(15);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+    margin-top: rem(12);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+    margin-top: rem(20);
+  }
+}
+
+.p-land__img {
+  flex: 1;
+  @include mq(lg) {
+    padding-right: rem(40);
+    margin-right: calc(50% - 50vw);
+  }
+}
+
+.p-land__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
