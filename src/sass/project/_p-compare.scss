@@ -1,0 +1,118 @@
+@use "../global" as *;
+
+.p-compare {
+  overflow-x: clip;
+  @include mq(md) {
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+  @include mq(lg) {
+    padding-top: rem(134);
+    padding-bottom: rem(120);
+  }
+}
+
+.p-compare__content {
+}
+
+.p-compare__top {
+  display: flex;
+  position: relative;
+
+  align-items: flex-end;
+  @include mq(md) {
+    gap: rem(40);
+  }
+  @include mq(lg) {
+    gap: rem(60);
+  }
+}
+
+.p-compare__top::before {
+  position: absolute;
+  content: "";
+  background: url(../images/about/compare_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(1720);
+  height: auto;
+  aspect-ratio: 1720 / 414;
+  object-fit: cover;
+  top: rem(-140);
+  left: 0;
+  right: 0;
+}
+
+.p-compare__title-text {
+  color: #37af32;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: rem(14);
+  position: relative;
+  padding-left: rem(16);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+
+.p-compare__title-text::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(10);
+  height: rem(10);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.p-compare__title-main {
+  letter-spacing: 0.06em;
+  color: #222;
+  font-weight: 700;
+  font-size: rem(24);
+  line-height: calc(112 / 80);
+  @include mq(md) {
+    font-size: clamp(24px, 2vw, 32px);
+  }
+  @include mq(lg) {
+    font-size: rem(80);
+  }
+}
+
+.p-compare__text {
+  letter-spacing: 0.06em;
+  color: #222;
+  font-weight: 700;
+  font-size: rem(14);
+  line-height: calc(36 / 20);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    width: rem(400);
+    font-size: rem(20);
+  }
+}
+
+.p-compare__img {
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+  @include mq(lg) {
+    margin-top: rem(60);
+  }
+}
+
+.p-compare__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1520 / 584;
+}

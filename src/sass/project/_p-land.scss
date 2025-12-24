@@ -115,9 +115,11 @@
 
 .p-land__img {
   flex: 1;
-  @include mq(lg) {
+  @include mq(md) {
     padding-right: rem(40);
     margin-right: calc(50% - 50vw);
+  }
+  @include mq(lg) {
   }
 }
 

@@ -1,0 +1,128 @@
+@use "../global" as *;
+
+.p-features {
+  padding-bottom: rem(60);
+  @include mq(md) {
+    padding-bottom: rem(80);
+  }
+  @include mq(lg) {
+    padding-bottom: rem(120);
+  }
+}
+
+.p-features__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(20);
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(20);
+  }
+  @include mq(lg) {
+    gap: rem(40);
+  }
+}
+
+.p-features__card {
+  border: 2px solid #37af32;
+  padding: rem(24);
+  gap: rem(20);
+  background: #fff;
+  border-radius: rem(10);
+  @include mq(md) {
+    padding: rem(30);
+    gap: rem(25);
+  }
+  @include mq(lg) {
+    padding: rem(40);
+  }
+}
+
+.p-features__card-detail {
+  gap: rem(20);
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    gap: rem(40);
+  }
+  @include mq(lg) {
+    gap: rem(60);
+  }
+}
+
+.p-features__card-img {
+  flex: 1;
+  width: 100%;
+  @include mq(md) {
+    max-width: rem(250);
+    margin-left: auto;
+  }
+  @include mq(lg) {
+    max-width: rem(407);
+  }
+}
+
+.p-features__card-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 407 / 196;
+}
+
+.p-features__card-label {
+  color: #222;
+  font-weight: 500;
+  font-size: rem(12);
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  @include mq(md) {
+    font-size: rem(13);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
+  }
+}
+
+.p-features__card-title {
+  color: #222;
+  font-weight: 700;
+  font-size: rem(24);
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  margin-top: rem(8);
+  @include mq(md) {
+    font-size: clamp(18px, 2vw, 24px);
+    margin-top: rem(10);
+  }
+  @include mq(lg) {
+    font-size: rem(40);
+    margin-top: rem(12);
+  }
+}
+
+.p-features__card-text {
+  color: #222;
+  font-weight: 500;
+  font-size: rem(14);
+  letter-spacing: 0.06em;
+  line-height: calc(32 / 20);
+  margin-top: rem(16);
+  border-top: 1px solid #222;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+    margin-top: rem(20);
+    padding-top: rem(20);
+    padding-left: rem(16);
+    padding-right: rem(16);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+    margin-top: rem(30);
+    padding-top: rem(30);
+  }
+}
+
+.p-features__card-text span {
+  color: #37af32;
+  font-weight: 700;
+}
