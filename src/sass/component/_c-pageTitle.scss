@@ -1,0 +1,43 @@
+@use "../global" as *;
+
+.c-pageTitle__title-text {
+  color: #37af32;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: rem(14);
+  position: relative;
+  padding-left: rem(16);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+
+.c-pageTitle__title-text::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(10);
+  height: rem(10);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.c-pageTitle__title-main {
+  letter-spacing: 0.06em;
+  color: #222;
+  font-weight: 700;
+  font-size: rem(24);
+  line-height: calc(112 / 80);
+  @include mq(md) {
+    font-size: clamp(24px, 2vw, 32px);
+  }
+  @include mq(lg) {
+    font-size: rem(80);
+  }
+}

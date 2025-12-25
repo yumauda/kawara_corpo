@@ -103,9 +103,9 @@
     <div class="l-inner">
       <div class="p-compare__content">
         <div class="p-compare__top">
-          <div class="p-compare__title">
-            <p class="p-compare__title-text">屋根材比較</p>
-            <h3 class="p-compare__title-main">他の屋根材と比べて、<br>陶器瓦はどう違う？</h3>
+          <div class="c-pageTitle">
+            <p class="c-pageTitle__title-text">屋根材比較</p>
+            <h3 class="c-pageTitle__title-main">他の屋根材と比べて、<br>陶器瓦はどう違う？</h3>
           </div>
           <p class="p-compare__text">瓦にもさまざまな種類があり、それぞれに特長があります。<br>他の屋根材と陶器瓦を比較しながら、その違いや強みをご紹介します。</p>
         </div>
@@ -115,6 +115,81 @@
       </div>
     </div>
   </section>
+  <section class="p-question">
+    <div class="l-inner">
+      <div class="p-question__content">
+        <div class="c-pageTitle">
+          <p class="c-pageTitle__title-text">よくある質問</p>
+          <h3 class="c-pageTitle__title-main">石州瓦について<br>よくある質問</h3>
+        </div>
+        <div class="p-question__block-wrapper">
+          <div class="p-question__block">
+            <div class="p-question__q">
+              <p class="p-question__q-title">Q</p>
+              <p class="p-question__q-text">瓦屋根は地震に弱いのですか？</p>
+            </div>
+            <div class="p-question__a">
+              <p class="p-question__a-title">A</p>
+              <p class="p-question__a-text"><span>地震に弱いわけではありません。</span>「瓦屋根は地震に弱い」というイメージは、過去の大地震で古い建物や旧工法で施工された瓦屋根の家屋の被害が目立ったことから広まりました。現在の<span>瓦屋根は適切な施工がされていれば、全く問題ありません。</span></p>
+            </div>
+          </div>
+          <div class="p-question__block">
+            <div class="p-question__q">
+              <p class="p-question__q-title">Q</p>
+              <p class="p-question__q-text">屋根にも性能があるって本当ですか？</p>
+            </div>
+            <div class="p-question__a">
+              <p class="p-question__a-title">A</p>
+              <p class="p-question__a-text">本当です。<br>
+                <span>耐水性、耐久性、耐震性、耐風性、断熱性、防音性、防火性</span>などがあげられます。これらの性能は、屋根材の種類（瓦、スレート、ガルバリウム鋼板、アスファルトシングルなど）によって得意、不得意があります。新築やリフォームの際には、これらの性能を考慮し、<span>地域の気候条件や住まいの特性、予算</span>などに合わせて<span>最適な屋根材</span>を選ぶことが重要です。</p>
+            </div>
+          </div>
+          <div class="p-question__block">
+            <div class="p-question__q">
+              <p class="p-question__q-title">Q</p>
+              <p class="p-question__q-text">瓦屋根は、屋根材の中で最も耐用年数が長いと聞きましたが何年位もちますか？</p>
+            </div>
+            <div class="p-question__a">
+              <p class="p-question__a-title">A</p>
+              <p class="p-question__a-text">瓦屋根は、現在の主要な屋根材の中で最も耐用年数が長いとされています。一般的に、粘土を焼成して作られる<span>陶器瓦の耐用年数は、50年〜100年</span>と非常に長いです。中には、100年以上持続している瓦屋根も存在します。</p>
+            </div>
+          </div>
+          <div class="p-question__block">
+            <div class="p-question__q">
+              <p class="p-question__q-title">Q</p>
+              <p class="p-question__q-text">瓦は、他の屋根材に比べてコスト高ですか？</p>
+            </div>
+            <div class="p-question__a">
+              <p class="p-question__a-title">A</p>
+              <p class="p-question__a-text">瓦の屋根は初期費用が高い傾向があります。しかしその後の<span>メンテナンス費用が比較的少なく、</span>長期的に見れば<span>圧倒的にコストパフォーマンスに優れている</span>と言われます。この非常に長い耐用年数があり、メンテナンス費用が圧倒的に少ないため、一概に瓦屋根は高いとは言えません。</p>
+            </div>
+          </div>
+          <div class="p-question__block">
+            <div class="p-question__q">
+              <p class="p-question__q-title">Q</p>
+              <p class="p-question__q-text">飛来物等で瓦が1枚だけ割れた場合、<br>交換は可能ですか？</p>
+            </div>
+            <div class="p-question__a">
+              <p class="p-question__a-title">A</p>
+              <p class="p-question__a-text"><span>瓦は一枚から交換</span>することができます。瓦は部分的に交換することが可能な<span>メンテナンス性の優れた屋根材</span>です。</p>
+            </div>
+          </div>
+          <div class="p-question__block">
+            <div class="p-question__q">
+              <p class="p-question__q-title">Q</p>
+              <p class="p-question__q-text">屋根の勾配(角度)が緩いと瓦が使えない場合があると聞いたのですが？</p>
+            </div>
+            <div class="p-question__a">
+              <p class="p-question__a-title">A</p>
+              <p class="p-question__a-text">従来、4寸(約21.8度)程度以上の勾配が推奨されていましたが、近年は技術の進歩により<span>2寸(約11.3度)勾配でも使用可能な瓦</span>も登場しています。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
   <?php get_template_part("includes/submit"); ?>
 
