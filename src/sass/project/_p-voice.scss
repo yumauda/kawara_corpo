@@ -1,0 +1,66 @@
+@use "../global" as *;
+
+.p-voice-slider {
+  overflow-x: clip;
+}
+
+.voice-slider {
+  overflow: visible !important;
+}
+
+.p-voice-slider__item {
+  background: #b9d79c;
+  border: 2px solid #37af32;
+  border-radius: rem(10);
+  padding: rem(16);
+  @include mq(md) {
+    padding: rem(24);
+  }
+  @include mq(lg) {
+    padding: rem(40);
+  }
+}
+
+.p-voice-slider__item-text {
+  font-size: rem(14);
+  line-height: calc(32 / 20);
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  color: #222;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+
+.p-voice-slider__item-place {
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  color: #222;
+  @include mq(md) {
+    margin-top: rem(10);
+    font-size: clamp(12px, 2vw, 12px);
+  }
+  @include mq(lg) {
+    margin-top: rem(20);
+    font-size: rem(16);
+  }
+}
+
+.p-voice_slider__item-img {
+  position: absolute;
+  width: rem(100);
+  height: rem(100);
+  right: rem(-40);
+  top: rem(-40);
+}
+.p-voice_slider__item-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 100 / 100;
+  object-position: center center;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2));
+}

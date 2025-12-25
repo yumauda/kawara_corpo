@@ -15,6 +15,13 @@ const topicsSlider = new Swiper(".swiper-topics", {
   initialSlide: 0,
   spaceBetween: 30,
 });
+const voiceSlider = new Swiper(".voice-slider", {
+  slidesPerView: 3.5,
+  centeredSlides: false,
+  loop: true,
+  spaceBetween: 60,
+});
+
 const slider2 = new Swiper(".slider2", {
   slidesPerView: 1.6,
   centeredSlides: true,

@@ -53,6 +53,134 @@
       </div>
     </div>
   </section>
+  <div class="p-voice-slider">
+    <!-- Slider main container -->
+    <div class="swiper voice-slider">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="p-voice-slider__item">
+            <p class="p-voice-slider__item-text">
+              高温で焼いているため、塩害等に強く色あせがないので、塗装などのメンテナンスも必要ない。防災機能もしっかりしている。
+            </p>
+            <p class="p-voice-slider__item-place">
+             —  大分県 宇佐市
+            </p>
+            <figure class="p-voice_slider__item-img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/reason/voice_slider_img1.png" alt="石州瓦を選ぶ理由" width="100" height="100">
+            </figure>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="p-voice-slider__item">
+            <p class="p-voice-slider__item-text">
+              高温で焼いているため、塩害等に強く色あせがないので、塗装などのメンテナンスも必要ない。防災機能もしっかりしている。
+            </p>
+            <p class="p-voice-slider__item-place">
+             —  大分県 宇佐市
+            </p>
+            <figure class="p-voice_slider__item-img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/reason/voice_slider_img1.png" alt="石州瓦を選ぶ理由" width="100" height="100">
+            </figure>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="p-voice-slider__item">
+            <p class="p-voice-slider__item-text">
+              高温で焼いているため、塩害等に強く色あせがないので、塗装などのメンテナンスも必要ない。防災機能もしっかりしている。
+            </p>
+            <p class="p-voice-slider__item-place">
+             —  大分県 宇佐市
+            </p>
+            <figure class="p-voice_slider__item-img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/reason/voice_slider_img1.png" alt="石州瓦を選ぶ理由" width="100" height="100">
+            </figure>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="p-voice-slider__item">
+            <p class="p-voice-slider__item-text">
+              高温で焼いているため、塩害等に強く色あせがないので、塗装などのメンテナンスも必要ない。防災機能もしっかりしている。
+            </p>
+            <p class="p-voice-slider__item-place">
+             —  大分県 宇佐市
+            </p>
+            <figure class="p-voice_slider__item-img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/reason/voice_slider_img1.png" alt="石州瓦を選ぶ理由" width="100" height="100">
+            </figure>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="p-voice-slider__item">
+            <p class="p-voice-slider__item-text">
+              高温で焼いているため、塩害等に強く色あせがないので、塗装などのメンテナンスも必要ない。防災機能もしっかりしている。
+            </p>
+            <p class="p-voice-slider__item-place">
+             —  大分県 宇佐市
+            </p>
+            <figure class="p-voice_slider__item-img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/reason/voice_slider_img1.png" alt="石州瓦を選ぶ理由" width="100" height="100">
+            </figure>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+  <section class="p-strong">
+    <div class="l-inner">
+      <div class="p-strong__content">
+        <div class="p-strong__top">
+          <div class="c-pageTitle">
+            <p class="c-pageTitle__title-text">塩害に強い</p>
+            <h3 class="c-pageTitle__title-main">塩害に強い<br>石州瓦。</h3>
+          </div>
+          <p class="p-strong__topText">石州瓦は、過酷な自然環境のひとつである「塩害」に対しても、確かな自信をもってその耐久性を誇ることができます。<br>
+            塩害に強い屋根材として安心と信頼をお届けできる存在です。</p>
+
+        </div>
+        <figure class="p-strong__img">
+          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/reason/strong_img.webp" alt="耐塩害性の高い建材選びが重要。" width="1840" height="458">
+        </figure>
+        <div class="p-strong__box">
+          <div class="p-strong__box-block">
+            <div class="p-strong__box-row">
+              <div class="p-strong__box-detail">
+                <p class="p-strong__box-detail-text">屋久島・瀬戸内<br>日本海沿岸など</p>
+                <p class="p-strong__box-detail-title">信頼と安心の<br>採用実績</p>
+              </div>
+              <figure class="p-strong__box-img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/reason/strong_box_1.webp" alt="信頼と安心の採用実績" width="340" height="200">
+              </figure>
+            </div>
+            <div class="p-strong__box-bottom">
+              <p class="p-strong__box-bottom-text">台風、潮風、雨と湿気にさらされる<span>屋久島</span>でも石州瓦はその耐久性と防災性から多くの住まいに選ばれています。<br>沿岸地域での<span>リピート率の高さ</span>も信頼の証。</p>
+            </div>
+          </div>
+          <div class="p-strong__box-block">
+            <div class="p-strong__box-row2">
+              <div class="p-strong__box-column">
+                <div class="p-strong__box-column-detail">
+                  <p class="p-strong__box-column-title"><span>台風</span>に強い防災機能</p>
+                  <p class="p-strong__box-column-text">瓦同士がかみ合う設計で、強い風でもズレや飛散が起きにくいのが特徴。台風の多い屋久島では大きな利点です。</p>
+                </div>
+                <div class="p-strong__box-column-detail">
+                  <p class="p-strong__box-column-title"><span>紫外線</span>にも強い</p>
+                  <p class="p-strong__box-column-text">強い紫外線の下でも経年劣化や色褪せが少なく、長く美しさを保てます。</p>
+                </div>
+              </div>
+              <figure class="p-strong__box-img2">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/reason/strong_box_2.webp" alt="台風" width="260" height="354">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
 
