@@ -54,7 +54,7 @@
     left: rem(-100);
   }
   @include mq(lg) {
-    top: rem(-80);
+    top: rem(-240);
     left: rem(-200);
     font-size: rem(440);
   }
@@ -95,6 +95,7 @@
   height: auto;
   object-fit: cover;
   object-position: center center;
+  border-radius: rem(10);
 }
 .p-page-mv__bottom {
   @include mq(md) {

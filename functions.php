@@ -279,26 +279,7 @@ function Change_objectlabel()
 add_action('init', 'Change_objectlabel');
 add_action('admin_menu', 'Change_menulabel');
 
-//ログイン画面のロゴ変更
-function login_logo()
-{
-	echo '<style type="text/css">
-	  #login h1 a {
-		background: url(' . get_template_directory_uri() . '/images/common/login_logo.png) no-repeat top center;
-		background-size:100% auto;
-		width: 70px; //ログインの幅
-		height: 70px; //ログインの高さ
-	  }
-	  body{
-		background: url(' . get_template_directory_uri() . '/images/common/mv_bg.jpg) no-repeat top center;
-		background-color:rgba(255,255,255,0.5);
-		background-blend-mode:lighten;
-		background-size: cover;
-		
-	  }
-	</style>';
-}
-add_action('login_head', 'login_logo');
+
 
 function custom_pagination()
 {
