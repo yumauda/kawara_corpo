@@ -1,0 +1,81 @@
+@use "../global" as *;
+
+.p-history {
+  @include mq(md) {
+    padding-top: rem(80);
+  }
+  @include mq(lg) {
+    padding-top: rem(134);
+  }
+}
+
+.p-history__content {
+}
+
+.p-history__lists {
+  @include mq(md) {
+    margin-top: rem(40);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: rem(4);
+    column-gap: rem(60);
+  }
+  @include mq(lg) {
+    margin-top: rem(66);
+    column-gap: rem(80);
+  }
+}
+
+.p-history__list {
+  background: #37af32;
+  border-radius: rem(4);
+  padding: rem(16) rem(20);
+}
+
+.p-history__list:not(:has(.p-history__row)) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.p-history__list:nth-child(even) {
+  background: #fff;
+}
+.p-history__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-history__list:nth-child(even) .p-history__row {
+  flex-direction: row-reverse;
+}
+
+.p-history__text {
+  color: #222;
+  letter-spacing: 0.06em;
+  line-height: calc(32 / 18);
+  font-weight: 500;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(18);
+  }
+}
+
+.p-history__year {
+  font-family: $second-font-family;
+  font-weight: 700;
+  font-size: rem(16);
+  font-style: italic;
+  color: #fff;
+  @include mq(md) {
+    font-size: clamp(18px, 2vw, 18px);
+  }
+  @include mq(lg) {
+    font-size: rem(30);
+  }
+}
+.p-history__list:nth-child(even) .p-history__year {
+  color: #37af32;
+}

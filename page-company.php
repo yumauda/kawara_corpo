@@ -128,6 +128,59 @@
       </div>
     </div>
   </section>
+  <section class="p-history">
+    <div class="l-inner">
+      <div class="p-history__content">
+        <div class="p-history__title">
+          <h3 class="c-pageTitle">
+            <span class="c-pageTitle__title-text">屋根材比較</span>
+            <span class="c-pageTitle__title-main">石州瓦と共に歩んだ<br>未来へ続く道。</span>
+          </h3>
+        </div>
+        <ul class="p-history__lists">
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">4月　佐々木義重が個人にて創業（丸惣）</p>
+              <p class="p-history__year">1942</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+            <!-- <div class="p-history__row">
+              <p class="p-history__text">4月　佐々木義重が個人にて創業（丸惣）</p>
+              <p class="p-history__year">1942</p>
+            </div> -->
+          </li>
+          <li class="p-history__list">
+            <!-- <div class="p-history__row">
+              <p class="p-history__text">4月　佐々木義重が個人にて創業（丸惣）</p>
+              <p class="p-history__year">1942</p>
+            </div> -->
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">島根県大田市で個人創業・登り窯1基（シバオ）</p>
+              <p class="p-history__year">1943</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">7月　有限会社丸惣佐々木窯業所 設立（丸惣）</p>
+              <p class="p-history__year">1944</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+            
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">10月　株式会社丸惣佐々木窯業所に組織変更（丸惣）</p>
+              <p class="p-history__year">1949</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <section class="p-company">
     <div class="l-inner">
