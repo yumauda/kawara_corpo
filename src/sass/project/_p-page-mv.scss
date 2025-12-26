@@ -32,8 +32,11 @@
   object-fit: cover;
   top: rem(1080);
   right: 0;
+  z-index: -1;
 }
-
+.p-page-mv--company::after {
+  top: rem(750);
+}
 .p-page-mv__content {
 }
 
@@ -89,6 +92,14 @@
   margin-right: calc(50% - 50vw);
   padding-right: rem(40);
   padding-left: rem(280);
+}
+.p-page-mv__img--company {
+  padding-left: initial;
+  padding-right: initial;
+  margin-top: initial;
+  margin-left: calc(47% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
 }
 .p-page-mv__img img {
   width: 100%;

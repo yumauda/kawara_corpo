@@ -1,0 +1,110 @@
+@use "../global" as *;
+
+.p-maker {
+  position: relative;
+  @include mq(md) {
+    margin-top: rem(64);
+  }
+  @include mq(lg) {
+    margin-top: rem(84);
+  }
+}
+.p-maker::before {
+  position: absolute;
+  content: "";
+  background: url(../images/company/maker_wave.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(500);
+  height: auto;
+  aspect-ratio: 500 / 165;
+  object-fit: cover;
+  top: rem(300);
+  left: rem(-40);
+}
+.p-maker__inner {
+  padding-left: rem(40);
+  padding-right: rem(40);
+}
+
+.p-maker__content {
+  @include mq(md) {
+    display: flex;
+    gap: rem(64);
+  }
+  @include mq(lg) {
+    gap: rem(130);
+    padding-left: rem(200);
+  }
+}
+
+.p-maker__logo {
+  width: rem(179);
+  @include mq(md) {
+    width: rem(140);
+  }
+  @include mq(lg) {
+    min-width: rem(179);
+    max-width: rem(179);
+    margin-top: rem(88);
+  }
+}
+
+.p-maker__logo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-maker__detail {
+  @include mq(md) {
+    max-width: rem(600);
+    width: 100%;
+  }
+  @include mq(lg) {
+    margin-top: rem(108);
+  }
+}
+
+.p-maker__title {
+  font-size: rem(20);
+  letter-spacing: 0.06em;
+  color: #222;
+  line-height: calc(56 / 40);
+  @include mq(md) {
+    font-size: rem(30);
+  }
+  @include mq(lg) {
+    font-size: rem(40);
+  }
+}
+
+.p-maker__text {
+  font-size: rem(14);
+  letter-spacing: 0.06em;
+  color: #222;
+  line-height: calc(32 / 20);
+  margin-top: rem(10);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+    margin-top: rem(20);
+  }
+  @include mq(lg) {
+    margin-top: rem(30);
+    font-size: rem(20);
+  }
+}
+
+.p-maker__img {
+  max-width: rem(560);
+  width: 100%;
+  margin-left: auto;
+}
+.p-maker__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
