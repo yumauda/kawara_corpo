@@ -34,6 +34,100 @@
       </div>
     </div>
   </section>
+  <section class="p-live">
+    <div class="l-inner">
+      <div class="p-live__content">
+        <figure class="p-live__img">
+          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/company/live_img.webp" alt="" width="770" height="710">
+        </figure>
+        <div class="p-live__detail">
+          <h3 class="p-live__title">瓦でつなぐ<br>暮らしと風景</h3>
+          <div class="p-live__text-wrapper">
+            <p class="p-live__text">私たちは、島根県という潮風かおる海と、<br>
+              緑豊かな森林に囲まれた自然豊かな場所であるとともに、<br>
+              日本海側の厳しい気候条件に置かれたこの地で、<br>
+              『石州瓦』という屋根材（陶器瓦）を創り続けてきました。<br>
+              私たちが創る『石州瓦』は、そういった厳しい気象環境に<br>
+              適応してきた屋根材であり、その品質を認められ、<br>
+              各地の様々な気象条件のもとで適応する屋根材として<br>
+              全国へ広まっていきました。</p>
+            <p class="p-live__text">普段の生活において、屋根を気にすることは<br>
+              少ないと思いますが、『石州瓦』は、大切な建物を守り、<br>
+              長年にわたる安心、快適な生活空間を実現します。<br>
+              私たちは、これからも、この『石州瓦』を通じて、<br>
+              安心・快適な暮らしと日本のさまざまな地域の<br>
+              美しい風景を残していきたいと考えています。</p>
+
+          </div>
+          <div class="p-live__name">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/company/live_name.png" alt="" width="170" height="38">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="p-profile">
+    <div class="l-inner">
+      <div class="p-profile__content">
+        <div class="p-profile__title">
+          <h3 class="c-pageTitle">
+            <span class="c-pageTitle__title-text">会社概要</span>
+            <span class="c-pageTitle__title-main">石州瓦業界最大の生産量と<br>販売規模を誇るメーカー。</span>
+          </h3>
+        </div>
+
+        <table class="p-profile__table">
+          <tbody>
+            <tr class="p-profile__row">
+              <th class="p-profile__label">会社名</th>
+              <td class="p-profile__data">瓦百景株式会社</td>
+            </tr>
+            <tr class="p-profile__row">
+              <th class="p-profile__label">所在地</th>
+              <td class="p-profile__data">〒694-0303 島根県大田市水上町白坏658 番地1</td>
+            </tr>
+            <tr class="p-profile__row">
+              <th class="p-profile__label">代表者</th>
+              <td class="p-profile__data">代表取締役　芝尾 宜秀</td>
+            </tr>
+            <tr class="p-profile__row">
+              <th class="p-profile__label">資本金</th>
+              <td class="p-profile__data">1,000万円</td>
+            </tr>
+            <tr class="p-profile__row">
+              <th class="p-profile__label">創立</th>
+              <td class="p-profile__data">2024年10月</td>
+            </tr>
+            <tr class="p-profile__row">
+              <th class="p-profile__label">TEL</th>
+              <td class="p-profile__data">
+                <p>（　　　　　本社　　　　　）<a href="tel:0854-89-0201">0854-89-0201</a></p>
+                <p>（　　出荷・営業窓口　　）<a href="tel:0855-66-0111">0855-66-0111</a></p>
+                <p>（　熊本サービスセンター　）<a href="tel:0964-27-9535">0964-27-9535</a></p>
+              </td>
+            </tr>
+            <tr class="p-profile__row">
+              <th class="p-profile__label">FAX</th>
+              <td class="p-profile__data">
+                <p>（　　　　　本社　　　　　）0854-89-0276</p>
+                <p>（　　出荷・営業窓口　　）0855-66-0825</p>
+                <p>（　熊本サービスセンター　）0964-27-9536</p>
+              </td>
+            </tr>
+            <tr class="p-profile__row">
+              <th class="p-profile__label">業務内容</th>
+              <td class="p-profile__data">石州瓦の製造・販売 / 屋根資材販売 / 瓦リサイクル事業</td>
+            </tr>
+            <tr class="p-profile__row">
+              <th class="p-profile__label">関連会社</th>
+              <td class="p-profile__data">古百景（株）、彩百景（株）</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </section>
 
   <section class="p-company">
     <div class="l-inner">

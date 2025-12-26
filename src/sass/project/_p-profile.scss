@@ -1,0 +1,110 @@
+@use "../global" as *;
+
+.p-profile {
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  @include mq(md) {
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+  @include mq(lg) {
+    padding-top: rem(134);
+    padding-bottom: rem(120);
+  }
+}
+
+.p-profile__content {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
+  @include mq(md) {
+    gap: rem(50);
+  }
+  @include mq(lg) {
+    gap: rem(60);
+  }
+}
+
+.p-profile__title {
+}
+
+.p-profile__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 4px;
+}
+
+.p-profile__row {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.p-profile__row:last-child {
+  border-bottom: none;
+}
+
+.p-profile__label {
+  background: #37af32;
+  color: #fff;
+  font-weight: 700;
+  font-size: rem(14);
+  letter-spacing: 0.3em;
+  padding: rem(16) rem(20);
+  text-align: center;
+  vertical-align: middle;
+  border-radius: rem(4);
+  width: rem(200);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+    padding: rem(8) rem(30);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+    padding: rem(11) rem(40);
+    width: rem(370);
+  }
+}
+
+.p-profile__data {
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  font-size: rem(14);
+  letter-spacing: 0.06em;
+  border-radius: rem(4);
+  line-height: 1.8;
+  padding: rem(16) rem(20);
+  vertical-align: middle;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+    padding: rem(8) rem(30);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+    padding: rem(11) rem(40);
+  }
+}
+
+.p-profile__row:nth-child(odd) .p-profile__data {
+  background: #ebebeb;
+}
+
+.p-profile__data p {
+  line-height: 1.8;
+}
+
+.p-profile__data p + p {
+  margin-top: rem(8);
+  @include mq(lg) {
+    margin-top: rem(10);
+  }
+}
+
+.p-profile__data a {
+  color: #222;
+  text-decoration: underline;
+  @media (any-hover: hover) {
+    &:hover {
+      color: #37af32;
+    }
+  }
+}

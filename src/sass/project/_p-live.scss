@@ -1,0 +1,128 @@
+@use "../global" as *;
+
+.p-live {
+  position: relative;
+  padding-left: rem(40);
+  padding-right: rem(40);
+  border-radius: rem(10);
+  margin-top: rem(40);
+  @include mq(md) {
+    padding-top: rem(80);
+    padding-bottom: rem(100);
+    margin-top: rem(80);
+  }
+  @include mq(lg) {
+    padding-top: rem(120);
+    margin-top: rem(150);
+    padding-bottom: rem(210);
+  }
+}
+.p-live::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(
+    180deg,
+    #37af32 0%,
+    rgba(#37af32, 0.4) 70%,
+    transparent 100%
+  );
+  top: 0;
+  bottom: 0;
+  left: rem(40);
+  right: rem(40);
+  z-index: -1;
+  border-radius: rem(10);
+}
+.p-live__content {
+  display: flex;
+  @include mq(md) {
+    gap: rem(64);
+  }
+  @include mq(lg) {
+    gap: rem(150);
+  }
+}
+
+.p-live__img {
+  width: 100%;
+  @include mq(md) {
+    max-width: rem(450);
+  }
+  @include mq(lg) {
+    max-width: rem(770);
+  }
+}
+.p-live__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-live__detail {
+}
+
+.p-live__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: rem(20);
+  letter-spacing: 0.06em;
+  line-height: calc(112 / 80);
+  @include mq(md) {
+    font-size: rem(32);
+  }
+  @include mq(lg) {
+    font-size: rem(80);
+  }
+}
+
+.p-live__text-wrapper {
+  @include mq(md) {
+    margin-top: rem(12);
+  }
+  @include mq(lg) {
+    margin-top: rem(20);
+  }
+}
+
+.p-live__text {
+  font-size: rem(14);
+  color: #fff;
+  line-height: calc(32 / 20);
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+.p-live__text + .p-live__text {
+  margin-top: rem(12);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+  @include mq(lg) {
+    margin-top: rem(32);
+  }
+}
+.p-live__name {
+  margin-left: auto;
+  max-width: rem(100);
+  @include mq(md) {
+    margin-top: rem(20);
+    max-width: rem(140);
+  }
+  @include mq(lg) {
+    margin-top: rem(40);
+    max-width: rem(170);
+  }
+}
+
+.p-live__name img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
