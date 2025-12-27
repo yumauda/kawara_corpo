@@ -13,6 +13,7 @@
 }
 
 .p-history__lists {
+  position: relative;
   @include mq(md) {
     margin-top: rem(40);
     display: grid;
@@ -25,16 +26,58 @@
     column-gap: rem(80);
   }
 }
-
+.p-history__lists::before {
+  position: absolute;
+  content: "";
+  background: #37af32;
+  width: 1px;
+  height: 100%;
+  top: rem(32);
+  left: 50%;
+  transform: translateX(-50%);
+}
 .p-history__list {
   background: #37af32;
   border-radius: rem(4);
   padding: rem(16) rem(20);
+  position: relative;
+}
+.p-history__list::before {
+  position: absolute;
+  content: "";
+  background: #222;
+  width: rem(10);
+  height: rem(10);
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(-45);
+  border-radius: 9999px;
+}
+.p-history__list::after {
+  position: absolute;
+  content: "";
+  background: #222;
+  width: rem(50);
+  height: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(-45);
+  z-index: -1;
+}
+.p-history__list:nth-child(even)::before {
+  right: auto;
+  left: rem(-45);
+}
+.p-history__list:nth-child(even)::after {
+  right: auto;
+  left: rem(-45);
 }
 
 .p-history__list:not(:has(.p-history__row)) {
-  opacity: 0;
-  visibility: hidden;
+  @include mq(md) {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .p-history__list:nth-child(even) {
@@ -47,6 +90,8 @@
 }
 .p-history__list:nth-child(even) .p-history__row {
   flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: rem(20);
 }
 
 .p-history__text {
@@ -78,4 +123,77 @@
 }
 .p-history__list:nth-child(even) .p-history__year {
   color: #37af32;
+}
+.p-history__bottom {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+  @include mq(lg) {
+    margin-top: rem(54);
+  }
+}
+
+.p-history__bottom-year {
+  text-align: center;
+  font-weight: 700;
+  color: #37af32;
+  font-size: rem(24);
+  font-family: $second-font-family;
+  font-weight: 700;
+  font-style: italic;
+  @include mq(md) {
+    font-size: clamp(20px, 2vw, 20px);
+  }
+  @include mq(lg) {
+    font-size: rem(48);
+  }
+}
+.p-history__bottom-year span {
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: 500;
+  font-style: normal;
+  color: #37af32;
+  @include mq(md) {
+    font-size: clamp(16px, 2vw, 16px);
+  }
+  @include mq(lg) {
+    font-size: rem(28);
+  }
+}
+
+.p-history__bottom-text {
+  margin-top: rem(20);
+  text-align: center;
+  color: #222;
+  line-height: calc(32 / 18);
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(18);
+  }
+}
+
+.p-history__icon {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: rem(200);
+  margin-top: rem(20);
+  @include mq(md) {
+    max-width: rem(220);
+  }
+  @include mq(lg) {
+    max-width: rem(440);
+  }
+}
+.p-history__icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
 }

@@ -145,16 +145,10 @@
             </div>
           </li>
           <li class="p-history__list">
-            <!-- <div class="p-history__row">
-              <p class="p-history__text">4月　佐々木義重が個人にて創業（丸惣）</p>
-              <p class="p-history__year">1942</p>
-            </div> -->
+
           </li>
           <li class="p-history__list">
-            <!-- <div class="p-history__row">
-              <p class="p-history__text">4月　佐々木義重が個人にて創業（丸惣）</p>
-              <p class="p-history__year">1942</p>
-            </div> -->
+
           </li>
           <li class="p-history__list">
             <div class="p-history__row">
@@ -169,7 +163,7 @@
             </div>
           </li>
           <li class="p-history__list">
-            
+
           </li>
           <li class="p-history__list">
             <div class="p-history__row">
@@ -177,7 +171,203 @@
               <p class="p-history__year">1949</p>
             </div>
           </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">2月　親和建材 譲受（丸惣）</p>
+              <p class="p-history__year">1953</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">8月　有限会社芝尾瓦工場 設立（シバオ）</p>
+              <p class="p-history__year">1953</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">3月　四代社長 就任（丸惣）</p>
+              <p class="p-history__year">1961</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">5月　第1号トンネル窯 新設（シバオ）</p>
+              <p class="p-history__year">1963</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">7月　トンネル窯1号炉 新設（丸惣）</p>
+              <p class="p-history__year">1969</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">7月　第2号トンネル窯 新設（シバオ）</p>
+              <p class="p-history__year">1972</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">2月　六代社長 就任（丸惣）</p>
+              <p class="p-history__year">1978</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">3月　トンネル窯2号炉 新設（丸惣）</p>
+              <p class="p-history__year">1979</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">2月　日本工業規格（JIS）表示許可工場（丸惣）</p>
+              <p class="p-history__year">1982</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">10月　ウルトラ3S瓦 販売開始（シバオ）</p>
+              <p class="p-history__year">1983</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">2月　エネルギー管理優良工場 表彰（丸惣）</p>
+              <p class="p-history__year">1985</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">8月　トンネル窯2号炉 更新（丸惣）</p>
+              <p class="p-history__year">1991</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">6月　石央セラミックス協同組合 設立（丸惣）</p>
+              <p class="p-history__year">1993</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">12月　株式会社シバオ 設立（組織変更）（シバオ）</p>
+              <p class="p-history__year">1998</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">1月　石央瓦販売株式会社 設立（丸惣）</p>
+              <p class="p-history__year">1999</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">9月　ISO9001 取得（シバオ）</p>
+              <p class="p-history__year">2005</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">2月　森崎窯業製造部門 譲受（丸惣）</p>
+              <p class="p-history__year">2009</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">8月　株式会社丸惣として再発足（丸惣）</p>
+              <p class="p-history__year">2010</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">2月　広島サービスセンター 開設（シバオ）</p>
+              <p class="p-history__year">2010</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">5月　メガソーラー発電所 竣工（丸惣）</p>
+              <p class="p-history__year">2013</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">10月　株式会社セラミカクレー 合併（丸惣）</p>
+              <p class="p-history__year">2018</p>
+            </div>
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+
+          </li>
+          <li class="p-history__list">
+            <div class="p-history__row">
+              <p class="p-history__text">3月　熊本サービスセンター 開設（シバオ）</p>
+              <p class="p-history__year">2019</p>
+            </div>
+          </li>
         </ul>
+        <div class="p-history__bottom">
+          <p class="p-history__bottom-year">2024<span>年</span>10<span>月</span></p>
+          <p class="p-history__bottom-text">「丸惣」と「シバオ」が製造・販売事業を統合し<br>新会社「瓦百景」が営業を開始</p>
+          <figure class="p-history__icon">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/company/history_icon.png" alt="瓦百景のロゴ" width="440" height="250">
+          </figure>
+        </div>
       </div>
     </div>
   </section>
@@ -185,29 +375,37 @@
   <section class="p-company">
     <div class="l-inner">
       <div class="p-company__content">
+        <div class="p-company__title">
+          <h3 class="c-pageTitle">
+            <span class="c-pageTitle__title-text">屋根材比較</span>
+            <span class="c-pageTitle__title-main">ここから広がる<br>石州瓦の物語</span>
+          </h3>
+        </div>
 
         <!-- 本社 -->
         <div class="p-company__block">
           <div class="p-company__info">
-            <h3 class="p-company__title">本社</h3>
-            <dl class="p-company__list">
-              <div class="p-company__item">
-                <dt class="p-company__label">住所</dt>
-                <dd class="p-company__data">〒699-2501 島根県大田市温泉津町小浜イ408番地1</dd>
-              </div>
-              <div class="p-company__item">
-                <dt class="p-company__label">電話</dt>
-                <dd class="p-company__data">0855-65-2311</dd>
-              </div>
-              <div class="p-company__item">
-                <dt class="p-company__label">FAX</dt>
-                <dd class="p-company__data">0855-65-2346</dd>
-              </div>
-              <div class="p-company__item">
-                <dt class="p-company__label">事業内容</dt>
-                <dd class="p-company__data">石州瓦の製造・販売</dd>
-              </div>
-            </dl>
+            <h3 class="p-company__sub-title">本社</h3>
+            <table class="p-company__table">
+              <tbody>
+                <tr class="p-company__row">
+                  <th class="p-company__label">会社名</th>
+                  <td class="p-company__data">瓦百景株式会社</td>
+                </tr>
+                <tr class="p-company__row">
+                  <th class="p-company__label">所在地</th>
+                  <td class="p-company__data">〒694-0303 島根県大田市水上町白坏658 番地1</td>
+                </tr>
+                <tr class="p-company__row">
+                  <th class="p-company__label">TEL</th>
+                  <td class="p-company__data"><a href="tel:0854-89-0201">0854-89-0201</a></td>
+                </tr>
+                <tr class="p-company__row">
+                  <th class="p-company__label">FAX</th>
+                  <td class="p-company__data">0854-89-0276</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <figure class="p-company__img">
             <img src="<?php echo get_template_directory_uri() ?>/images/company/company_1.webp" alt="本社" width="560" height="420">
@@ -217,25 +415,27 @@
         <!-- 津田工場 -->
         <div class="p-company__block">
           <div class="p-company__info">
-            <h3 class="p-company__title">津田工場</h3>
-            <dl class="p-company__list">
-              <div class="p-company__item">
-                <dt class="p-company__label">住所</dt>
-                <dd class="p-company__data">〒699-2507 島根県大田市温泉津町西田21-5</dd>
-              </div>
-              <div class="p-company__item">
-                <dt class="p-company__label">電話</dt>
-                <dd class="p-company__data">0855-65-2321</dd>
-              </div>
-              <div class="p-company__item">
-                <dt class="p-company__label">FAX</dt>
-                <dd class="p-company__data">0855-65-2322</dd>
-              </div>
-              <div class="p-company__item">
-                <dt class="p-company__label">事業内容</dt>
-                <dd class="p-company__data">石州瓦・陶管・土木瓦の製造</dd>
-              </div>
-            </dl>
+            <h3 class="p-company__sub-title">温泉津工場</h3>
+            <table class="p-company__table">
+              <tbody>
+                <tr class="p-company__row">
+                  <th class="p-company__label">住所</th>
+                  <td class="p-company__data">〒699-2507 島根県大田市温泉津町井田イ945番地2</td>
+                </tr>
+                <tr class="p-company__row">
+                  <th class="p-company__label">TEL</th>
+                  <td class="p-company__data"><a href="tel:0855-66-0111">0855-66-0111</a></td>
+                </tr>
+                <tr class="p-company__row">
+                  <th class="p-company__label">FAX</th>
+                  <td class="p-company__data">0855-66-0825</td>
+                </tr>
+                <tr class="p-company__row">
+                  <th class="p-company__label">業務内容</th>
+                  <td class="p-company__data">受注・出荷／営業／瓦製造</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <figure class="p-company__img">
             <img src="<?php echo get_template_directory_uri() ?>/images/company/company_2.webp" alt="津田工場" width="560" height="420">
@@ -245,25 +445,27 @@
         <!-- 馬路サービスセンター -->
         <div class="p-company__block">
           <div class="p-company__info">
-            <h3 class="p-company__title">馬路サービスセンター</h3>
-            <dl class="p-company__list">
-              <div class="p-company__item">
-                <dt class="p-company__label">住所</dt>
-                <dd class="p-company__data">〒714-0301 岡山県笠岡市馬飼610番地1 他3筆</dd>
-              </div>
-              <div class="p-company__item">
-                <dt class="p-company__label">電話</dt>
-                <dd class="p-company__data">0865-67-0166</dd>
-              </div>
-              <div class="p-company__item">
-                <dt class="p-company__label">FAX</dt>
-                <dd class="p-company__data">0865-67-0168</dd>
-              </div>
-              <div class="p-company__item">
-                <dt class="p-company__label">事業内容</dt>
-                <dd class="p-company__data">瓦の保管</dd>
-              </div>
-            </dl>
+            <h3 class="p-company__sub-title">熊本サービスセンター</h3>
+            <table class="p-company__table">
+              <tbody>
+                <tr class="p-company__row">
+                  <th class="p-company__label">住所</th>
+                  <td class="p-company__data">〒869-0524　熊本県宇城市松橋町豊福1594-1</td>
+                </tr>
+                <tr class="p-company__row">
+                  <th class="p-company__label">TEL</th>
+                  <td class="p-company__data">0964-27-9535</td>
+                </tr>
+                <tr class="p-company__row">
+                  <th class="p-company__label">FAX</th>
+                  <td class="p-company__data">0964-27-9536</td>
+                </tr>
+                <tr class="p-company__row">
+                  <th class="p-company__label">業務内容</th>
+                  <td class="p-company__data">営業</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <figure class="p-company__img">
             <img src="<?php echo get_template_directory_uri() ?>/images/company/company_3.webp" alt="馬路サービスセンター" width="560" height="420">
@@ -273,25 +475,27 @@
         <!-- 吉永産業株式会社 -->
         <div class="p-company__block">
           <div class="p-company__info">
-            <h3 class="p-company__title">吉永産業株式会社</h3>
-            <dl class="p-company__list">
-              <div class="p-company__item">
-                <dt class="p-company__label">住所</dt>
-                <dd class="p-company__data">〒699-2507 島根県大田市温泉津町西田イ557番地</dd>
-              </div>
-              <div class="p-company__item">
-                <dt class="p-company__label">電話</dt>
-                <dd class="p-company__data">0855-65-3330</dd>
-              </div>
-              <div class="p-company__item">
-                <dt class="p-company__label">FAX</dt>
-                <dd class="p-company__data">0855-65-3331</dd>
-              </div>
-              <div class="p-company__item">
-                <dt class="p-company__label">事業内容</dt>
-                <dd class="p-company__data">瓦の販売</dd>
-              </div>
-            </dl>
+            <h3 class="p-company__sub-title">古百景株式会社</h3>
+            <table class="p-company__table">
+              <tbody>
+                <tr class="p-company__row">
+                  <th class="p-company__label">住所</th>
+                  <td class="p-company__data">〒694-0302 島根県大田市水上町福原864番地</td>
+                </tr>
+                <tr class="p-company__row">
+                  <th class="p-company__label">TEL</th>
+                  <td class="p-company__data"><a href="tel:0854-89-0201">0854-89-0201</a></td>
+                </tr>
+                <tr class="p-company__row">
+                  <th class="p-company__label">FAX</th>
+                  <td class="p-company__data">0854-89-0610</td>
+                </tr>
+                <tr class="p-company__row">
+                  <th class="p-company__label">業務内容</th>
+                  <td class="p-company__data">粘土製造</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <figure class="p-company__img">
             <img src="<?php echo get_template_directory_uri() ?>/images/company/company_4.webp" alt="吉永産業株式会社" width="560" height="420">
