@@ -1,0 +1,143 @@
+@use "../global" as *;
+
+.p-intro {
+  @include mq(md) {
+    padding-top: rem(80);
+  }
+  @include mq(lg) {
+    padding-top: rem(120);
+  }
+}
+
+.p-intro__content {
+  display: flex;
+}
+
+.p-intro__vertical {
+  max-width: rem(50);
+  width: 100%;
+}
+.p-intro__vertical img {
+}
+
+.p-intro__detail {
+  @include mq(md) {
+    margin-left: rem(40);
+    margin-top: rem(20);
+  }
+  @include mq(lg) {
+    margin-left: rem(80);
+    margin-top: rem(32);
+  }
+}
+
+.p-intro__title {
+  line-height: calc(121 / 100);
+  color: #222;
+  font-weight: 400;
+  white-space: nowrap;
+  @include mq(md) {
+    font-size: rem(60);
+  }
+  @include mq(lg) {
+    font-size: rem(100);
+  }
+}
+.p-intro__title span {
+  font-weight: 900;
+}
+
+.p-intro__en {
+  font-family: $second-font-family;
+  font-style: italic;
+  font-weight: 900;
+  color: #222;
+  @include mq(md) {
+    font-size: rem(60);
+    margin-top: rem(-10);
+  }
+  @include mq(lg) {
+    font-size: rem(110);
+    margin-top: rem(-16);
+  }
+}
+
+.p-intro__small {
+  margin-top: rem(10);
+  color: #222;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  font-family: $second-font-family;
+  font-style: italic;
+  @include mq(md) {
+    font-size: clamp(10px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(18);
+  }
+}
+
+.p-intro__row {
+  display: flex;
+  align-items: center;
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+  @include mq(lg) {
+    margin-top: rem(80);
+  }
+}
+
+.p-intro__icon {
+  width: 100%;
+  @include mq(md) {
+    max-width: rem(160);
+  }
+  @include mq(lg) {
+    max-width: rem(220);
+  }
+}
+.p-intro__icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-intro__row-text {
+  margin-left: rem(10);
+  white-space: nowrap;
+  border-left: 1px solid #222;
+  padding-left: rem(10);
+  line-height: calc(26 / 18);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #222;
+  @include mq(md) {
+    margin-left: rem(20);
+    padding-left: rem(10);
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    margin-left: rem(40);
+    padding-left: rem(20);
+    font-size: rem(18);
+  }
+}
+
+.p-intro__img {
+  @include mq(md) {
+    margin-right: calc(50% - 50vw);
+    margin-left: rem(64);
+  }
+  @include mq(lg) {
+    margin-left: rem(150);
+    margin-top: rem(-40);
+  }
+}
+.p-intro__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}

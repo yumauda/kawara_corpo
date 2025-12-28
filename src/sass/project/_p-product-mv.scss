@@ -1,0 +1,153 @@
+@use "../global" as *;
+
+.p-product-mv {
+  padding-top: rem(60);
+  overflow-x: clip;
+  position: relative;
+  @include mq(md) {
+    padding-top: rem(100);
+  }
+  @include mq(lg) {
+    padding-top: rem(180);
+  }
+}
+.p-product-mv::before {
+  position: absolute;
+  content: "KAWARA\A DESIGNS";
+  color: #fff;
+  font-size: rem(260);
+  font-family: $second-font-family;
+  font-style: italic;
+  font-weight: 900;
+  line-height: calc(200 / 260);
+  top: rem(-80);
+  left: rem(1080);
+  width: fit-content;
+}
+
+.p-product-mv__content {
+}
+
+.p-product-mv__top {
+  display: flex;
+  align-items: flex-end;
+  gap: rem(10);
+  @include mq(md) {
+    gap: rem(20);
+  }
+  @include mq(lg) {
+    gap: rem(40);
+  }
+}
+
+.p-product-mv__icon {
+  max-width: rem(274);
+  width: 100%;
+  padding-right: rem(10);
+  border-right: 1px solid #222;
+  @include mq(md) {
+    padding-right: rem(20);
+  }
+  @include mq(lg) {
+    padding-right: rem(40);
+  }
+}
+.p-product-mv__icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-product-mv__title {
+  font-size: rem(18);
+  line-height: calc(56 / 40);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #222;
+
+  @include mq(md) {
+    font-size: clamp(20px, 2vw, 20px);
+  }
+  @include mq(lg) {
+    font-size: rem(40);
+  }
+}
+
+.p-product-mv__img {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  padding-left: rem(40);
+  padding-right: rem(40);
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+  @include mq(lg) {
+    margin-top: rem(116);
+  }
+}
+.p-product-mv__img img {
+  aspect-ratio: 1840 / 540;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-product-mv__detail {
+  margin-top: rem(-30);
+  @include mq(md) {
+    margin-top: rem(-60);
+  }
+  @include mq(lg) {
+    margin-top: rem(-100);
+  }
+}
+
+.p-product-mv__detail-title {
+  font-size: rem(40);
+  line-height: calc(168 / 120);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #ca4844;
+  @include mq(md) {
+    font-size: rem(80);
+  }
+  @include mq(lg) {
+    font-size: rem(120);
+  }
+}
+
+.p-product-mv__detail-text {
+  font-size: rem(20);
+  line-height: calc(56 / 40);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #222;
+  @include mq(md) {
+    margin-top: rem(40);
+    font-size: clamp(20px, 2vw, 20px);
+  }
+  @include mq(lg) {
+    font-size: rem(40);
+    margin-top: rem(60);
+  }
+}
+
+.p-product-mv__detail-small {
+  margin-top: rem(8);
+  font-size: rem(14);
+  letter-spacing: 0.06em;
+  line-height: calc(32 / 20);
+  font-weight: 500;
+  color: #222;
+  @include mq(md) {
+    margin-top: rem(10);
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    margin-top: rem(20);
+    font-size: rem(20);
+  }
+}
