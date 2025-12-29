@@ -24,6 +24,21 @@
   left: rem(1080);
   width: fit-content;
 }
+.p-product-mv::after {
+  position: absolute;
+  content: "";
+  background: url(../images/product/product_mv_wave.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(1150);
+  height: auto;
+  aspect-ratio: 1150 / 380;
+  object-fit: cover;
+  top: rem(850);
+  right: 0;
+  z-index: -1;
+}
 
 .p-product-mv__content {
 }
@@ -50,6 +65,14 @@
   }
   @include mq(lg) {
     padding-right: rem(40);
+  }
+}
+.w300 {
+  @include mq(md) {
+    max-width: rem(250);
+  }
+  @include mq(lg) {
+    max-width: rem(300);
   }
 }
 .p-product-mv__icon img {
@@ -150,4 +173,10 @@
     margin-top: rem(20);
     font-size: rem(20);
   }
+}
+.green {
+  color: #37af32;
+}
+.purple {
+  color: #8f82bc !important;
 }

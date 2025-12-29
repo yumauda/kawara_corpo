@@ -2108,6 +2108,7 @@ input::placeholder {
   .p-intro__en {
     font-size: 3.75rem;
     margin-top: -0.625rem;
+    white-space: nowrap;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -3002,12 +3003,18 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-product-features__card {
-    padding: 2.5rem;
+    padding-top: 1.875rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    padding-bottom: 3.125rem;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-product-features__card {
-    padding: 2.5rem;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 3.75rem;
   }
 }
 
@@ -3062,11 +3069,21 @@ input::placeholder {
 }
 
 .p-product-features__card-text {
-  font-size: 1.25rem;
   font-weight: 500;
   color: #222;
   line-height: 1.6;
   letter-spacing: 0.06em;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-product-features__card-text {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-product-features__card-text {
+    font-size: 1.25rem;
+  }
 }
 
 .p-product-features__card-detail {
@@ -3076,12 +3093,14 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-product-features__card-detail {
-    margin-top: 1.875rem;
+    margin-top: 1.25rem;
+    gap: 1.25rem;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-product-features__card-detail {
-    margin-top: 1.875rem;
+    margin-top: 1.25rem;
+    gap: 2.5rem;
   }
 }
 
@@ -3140,6 +3159,10 @@ input::placeholder {
 
 .p-product-features__card-slope--white {
   color: #fff;
+}
+
+.p-product-features__card-slope--purple {
+  color: rgba(143, 130, 188, 0.7);
 }
 
 @media screen and (min-width: 768px) {
@@ -3245,6 +3268,109 @@ input::placeholder {
   letter-spacing: 0.06em;
 }
 
+@media screen and (min-width: 768px) {
+  .p-product-features__cards {
+    flex: 1;
+    margin-left: auto;
+    margin-top: 2.5rem;
+    max-width: 40rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-product-features__cards {
+    max-width: 53.75rem;
+    margin-top: 3.75rem;
+  }
+}
+
+.p-product-features__card--green {
+  background-color: #37af32;
+}
+
+.p-product-features__card--purple {
+  background-color: #8f82bc;
+}
+
+@media screen and (min-width: 768px) {
+  .p-product-features__card--wide {
+    margin-bottom: 1.25rem;
+    display: flex;
+    gap: 1.875rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-product-features__card--wide {
+    gap: 3.75rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-product-features__grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-product-features__grid-two {
+    gap: 1.25rem;
+  }
+}
+
+.p-product-features__card-number--green {
+  color: #37af32;
+}
+
+.p-product-features__card-title--green {
+  color: #37af32;
+}
+
+.p-product-features__card-line--green {
+  background-color: #37af32;
+}
+
+.p-product-features__card-slope--green {
+  color: #37af32;
+}
+
+.p-product-features__card-number--purple {
+  color: #8f82bc;
+}
+
+.p-product-features__card-title--purple {
+  color: #8f82bc;
+}
+
+.p-product-features__card-img-large--second {
+  margin-top: 1.25rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-product-features__card-img-large--second {
+    max-width: 12.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-product-features__card-img-large--second {
+    max-width: 16.25rem;
+  }
+}
+
+.p-product-features__card-img-large img,
+.p-product-features__card-img-large--second img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.fit-content {
+  height: fit-content;
+}
+
 .p-product-mv {
   padding-top: 3.75rem;
   overflow-x: clip;
@@ -3273,6 +3399,22 @@ input::placeholder {
   top: -5rem;
   left: 67.5rem;
   width: fit-content;
+}
+
+.p-product-mv::after {
+  position: absolute;
+  content: "";
+  background: url(../images/product/product_mv_wave.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 71.875rem;
+  height: auto;
+  aspect-ratio: 1150/380;
+  object-fit: cover;
+  top: 53.125rem;
+  right: 0;
+  z-index: -1;
 }
 
 .p-product-mv__top {
@@ -3305,6 +3447,17 @@ input::placeholder {
 @media screen and (min-width: 1540px) {
   .p-product-mv__icon {
     padding-right: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .w300 {
+    max-width: 15.625rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .w300 {
+    max-width: 18.75rem;
   }
 }
 
@@ -3430,6 +3583,14 @@ input::placeholder {
     margin-top: 1.25rem;
     font-size: 1.25rem;
   }
+}
+
+.green {
+  color: #37af32;
+}
+
+.purple {
+  color: #8f82bc !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -4556,6 +4717,14 @@ input::placeholder {
   border-bottom: 2px solid #37af32;
 }
 
+.green-line {
+  border-bottom: 2px solid #37af32;
+}
+
+.purple-line {
+  border-bottom: 2px solid #8f82bc;
+}
+
 .p-specific__header-bar {
   width: 0.375rem;
   background-color: #ca4844;
@@ -4571,6 +4740,14 @@ input::placeholder {
     height: 3.75rem;
     margin-right: 1.25rem;
   }
+}
+
+.green-bg {
+  background-color: #37af32;
+}
+
+.purple-bg {
+  background-color: #8f82bc;
 }
 
 .p-specific__header-title {
@@ -4590,7 +4767,6 @@ input::placeholder {
   .p-specific__top {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: end;
     margin-top: 1.875rem;
     max-width: 62.5rem;
   }
@@ -4616,11 +4792,13 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-specific__specs {
     margin-left: 2.5rem;
+    margin-top: 3.5rem;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-specific__specs {
     margin-left: 5rem;
+    margin-top: 5.5rem;
   }
 }
 
@@ -4716,10 +4894,12 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-specific__slope {
     margin-left: 1.25rem;
+    margin-top: 3.5rem;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-specific__slope {
+    margin-top: 5.5rem;
     margin-left: 2.5rem;
   }
 }
@@ -4973,6 +5153,38 @@ input::placeholder {
   .p-specific__notes-text {
     font-size: 1rem;
   }
+}
+
+.p-specific__color {
+  margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-specific__color {
+    margin-top: 1.875rem;
+    max-width: 62.5rem;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-specific__color {
+    margin-top: 2.5rem;
+    max-width: 87.5rem;
+  }
+}
+
+.p-specific__color img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.mt40 {
+  margin-top: 2.5rem;
+}
+
+.mix-brend {
+  mix-blend-mode: multiply;
 }
 
 @media screen and (min-width: 768px) {

@@ -21,7 +21,12 @@
   padding-bottom: rem(16);
   border-bottom: 2px solid #37af32;
 }
-
+.green-line {
+  border-bottom: 2px solid #37af32;
+}
+.purple-line {
+  border-bottom: 2px solid #8f82bc;
+}
 .p-specific__header-bar {
   width: rem(6);
   background-color: #ca4844;
@@ -33,6 +38,12 @@
     height: rem(60);
     margin-right: rem(20);
   }
+}
+.green-bg {
+  background-color: #37af32;
+}
+.purple-bg {
+  background-color: #8f82bc;
 }
 
 .p-specific__header-title {
@@ -51,7 +62,6 @@
   @include mq(md) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: end;
     margin-top: rem(30);
     max-width: rem(1000);
   }
@@ -80,9 +90,11 @@
 .p-specific__specs {
   @include mq(md) {
     margin-left: rem(40);
+    margin-top: rem(56);
   }
   @include mq(lg) {
     margin-left: rem(80);
+    margin-top: rem(88);
   }
 }
 
@@ -163,8 +175,10 @@
 .p-specific__slope {
   @include mq(md) {
     margin-left: rem(20);
+    margin-top: rem(56);
   }
   @include mq(lg) {
+    margin-top: rem(88);
     margin-left: rem(40);
   }
 }
@@ -371,4 +385,28 @@
   @include mq(lg) {
     font-size: rem(16);
   }
+}
+.p-specific__color {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(30);
+    max-width: rem(1000);
+    margin-left: auto;
+  }
+  @include mq(lg) {
+    margin-top: rem(40);
+    max-width: rem(1400);
+  }
+}
+.p-specific__color img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+.mt40 {
+  margin-top: rem(40);
+}
+.mix-brend {
+  mix-blend-mode: multiply;
 }

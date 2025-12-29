@@ -55,6 +55,7 @@
   @include mq(md) {
     font-size: rem(60);
     margin-top: rem(-10);
+    white-space: nowrap;
   }
   @include mq(lg) {
     font-size: rem(110);
