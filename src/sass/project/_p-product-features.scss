@@ -18,6 +18,14 @@
     gap: rem(156);
   }
 }
+.p-product-features__content--ftype {
+  @include mq(md) {
+    gap: rem(24);
+  }
+  @include mq(lg) {
+    gap: rem(48);
+  }
+}
 .p-product-features__title-wrapper {
   white-space: nowrap;
 }
@@ -383,7 +391,9 @@
     gap: rem(20);
   }
 }
-
+.p-product-features__grid-two + .p-product-features__grid-two {
+  margin-top: rem(10);
+}
 // 緑色用のバリエーション
 .p-product-features__card-number--green {
   color: #37af32;
@@ -408,6 +418,89 @@
 .p-product-features__card-title--purple {
   color: #8f82bc;
 }
+
+// オレンジ色用のスタイル（FタイプU）
+.p-product-features__card--orange {
+  background-color: #f08300;
+}
+
+.p-product-features__card-number--orange {
+  color: #f08300;
+}
+
+.p-product-features__card-title--orange {
+  color: #f08300;
+}
+
+.p-product-features__card-line--orange {
+  background-color: #f08300;
+}
+
+.p-product-features__card-slope--orange {
+  color: rgba(#f08300, 0.7);
+}
+
+// オプションセクション
+.p-product-features__options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @include mq(md) {
+    gap: rem(10);
+    margin-top: rem(20);
+  }
+  @include mq(lg) {
+    gap: rem(15);
+    margin-top: rem(30);
+  }
+}
+
+.p-product-features__option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-product-features__option-img {
+  width: 100%;
+  max-width: rem(110);
+  @include mq(md) {
+    margin-bottom: rem(8);
+  }
+  @include mq(lg) {
+    margin-bottom: rem(10);
+  }
+}
+
+.p-product-features__option-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.p-product-features__option-caption {
+  font-size: rem(14);
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  line-height: calc(32 / 14);
+  letter-spacing: 0.06em;
+}
+
+// 互換性の画像
+.p-product-features__compatible-img {
+  margin-top: rem(4);
+  max-width: rem(100);
+  width: 100%;
+  margin-left: auto;
+}
+
+.p-product-features__compatible-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
 // 大きな画像
 .p-product-features__card-img-large {
 }

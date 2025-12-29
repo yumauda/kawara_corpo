@@ -45,6 +45,9 @@
 .purple-bg {
   background-color: #8f82bc;
 }
+.orange-bg {
+  background-color: #f08300;
+}
 
 .p-specific__header-title {
   font-size: rem(30);
@@ -409,4 +412,25 @@
 }
 .mix-brend {
   mix-blend-mode: multiply;
+}
+.p-specific__safe {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(20);
+  @include mq(md) {
+    max-width: rem(1100);
+    margin-top: rem(30);
+  }
+  @include mq(lg) {
+    max-width: rem(1400);
+    margin-top: rem(60);
+  }
+}
+
+.p-specific__safe img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
 }

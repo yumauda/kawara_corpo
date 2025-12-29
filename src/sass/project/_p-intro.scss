@@ -81,6 +81,8 @@
 .p-intro__row {
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 2;
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -136,9 +138,25 @@
     margin-top: rem(-40);
   }
 }
+.p-intro__img--ftype {
+  @include mq(md) {
+    margin-left: rem(-48);
+  }
+  @include mq(lg) {
+    margin-left: rem(-90);
+  }
+}
 .p-intro__img img {
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: center center;
+}
+.w362 {
+  @include mq(md) {
+    max-width: rem(250);
+  }
+  @include mq(lg) {
+    min-width: rem(362);
+  }
 }

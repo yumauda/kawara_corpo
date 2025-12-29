@@ -23,6 +23,7 @@
   top: rem(-80);
   left: rem(1080);
   width: fit-content;
+  z-index: -1;
 }
 .p-product-mv::after {
   position: absolute;
@@ -73,6 +74,14 @@
   }
   @include mq(lg) {
     max-width: rem(300);
+  }
+}
+.w453 {
+  @include mq(md) {
+    max-width: rem(300);
+  }
+  @include mq(lg) {
+    max-width: rem(453);
   }
 }
 .p-product-mv__icon img {
@@ -179,4 +188,7 @@
 }
 .purple {
   color: #8f82bc !important;
+}
+.orange {
+  color: #f08300 !important;
 }
