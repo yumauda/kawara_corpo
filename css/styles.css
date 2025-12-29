@@ -4545,6 +4545,10 @@ input::placeholder {
   }
 }
 
+.p-specific--first {
+  padding-bottom: initial;
+}
+
 .p-specific__header {
   display: flex;
   align-items: center;
@@ -4891,22 +4895,24 @@ input::placeholder {
 }
 
 .p-specific__notes-list li {
-  font-size: 1rem;
   font-weight: 500;
   color: #222;
   line-height: 1.4;
   letter-spacing: 0.06em;
   position: relative;
   padding-left: 1.25rem;
+  font-size: 0.875rem;
 }
 @media screen and (min-width: 768px) {
   .p-specific__notes-list li {
     margin-bottom: 1.25rem;
+    font-size: clamp(12px, 2vw, 12px);
   }
 }
 @media screen and (min-width: 1540px) {
   .p-specific__notes-list li {
     margin-bottom: 1.25rem;
+    font-size: 1rem;
   }
 }
 
@@ -4935,6 +4941,38 @@ input::placeholder {
 
 .w150 {
   width: 9.375rem;
+}
+
+.p-specific__notes-li {
+  padding-left: initial !important;
+  display: flex;
+  gap: 0.625rem;
+}
+
+.p-specific__notes-li strong {
+  white-space: nowrap;
+}
+
+.p-specific__notes-li::before {
+  display: none;
+}
+
+.p-specific__notes-text {
+  font-weight: 500;
+  color: #222;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-specific__notes-text {
+    font-size: clamp(12px, 2vw, 12px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-specific__notes-text {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -7038,6 +7076,136 @@ input::placeholder {
   aspect-ratio: 100/100;
   object-position: center center;
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2));
+}
+
+.p-water-test {
+  margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-water-test {
+    margin-top: 1.875rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-water-test {
+    margin-top: 2.5rem;
+    gap: 2.5rem;
+  }
+}
+
+.p-water-test__box {
+  background-color: #ca4844;
+  border-radius: 0.375rem;
+  padding: 0.625rem 1.25rem;
+}
+@media screen and (min-width: 1540px) {
+  .p-water-test__box {
+    padding: 0.625rem 1.875rem;
+  }
+}
+
+.p-water-test__box--black {
+  background-color: #222222;
+}
+
+.p-water-test__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.5909090909;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-water-test__title {
+    font-size: clamp(18px, 2vw, 18px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-water-test__title {
+    font-size: 1.375rem;
+  }
+}
+
+.p-water-test__items {
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-water-test__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-water-test__items {
+    gap: 0.625rem;
+  }
+}
+
+.p-water-test__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-water-test__img {
+  width: 100%;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.p-water-test__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.375rem;
+}
+
+.p-water-test__caption {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 2.9166666667;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-top: 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-water-test__caption {
+    font-size: clamp(10px, 2vw, 10px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-water-test__caption {
+    margin-top: 0.625rem;
+    font-size: 0.75rem;
+  }
+}
+
+.p-water-text__text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #222;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  margin-top: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-water-text__text {
+    margin-top: 1.25rem;
+    font-size: clamp(14px, 2vw, 14px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-water-text__text {
+    font-size: 1.25rem;
+    margin-top: 2.5rem;
+  }
 }
 
 .c-btn {

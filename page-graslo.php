@@ -137,6 +137,66 @@
       </div>
     </div>
   </section>
+  <section class="p-specific p-specific--first">
+    <div class="l-inner">
+      <div class="p-specific__content">
+      <div class="p-specific__header">
+        <div class="p-specific__header-bar"></div>
+        <h2 class="p-specific__header-title">流水実験「グラスロ」対「普通勾配瓦」</h2>
+      </div>
+
+      <!-- グラスロ流水実験 -->
+       <p class="p-water-text__text">超低勾配(1.5寸勾配)で対決</p>
+      <div class="p-water-test">
+        <div class="p-water-test__box">
+          <h3 class="p-water-test__title">グラスロ</h3>
+          <div class="p-water-test__items">
+            <div class="p-water-test__item">
+              <figure class="p-water-test__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/graslo/water_test_1.png" alt="瓦表面の様子" width="220" height="140">
+              </figure>
+              <p class="p-water-test__caption">瓦表面の様子</p>
+            </div>
+            <div class="p-water-test__item">
+              <figure class="p-water-test__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/graslo/water_test_2.png" alt="漏水なし" width="220" height="140">
+              </figure>
+              <p class="p-water-test__caption">漏水なし</p>
+            </div>
+            <div class="p-water-test__item">
+              <figure class="p-water-test__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/graslo/water_test_3.png" alt="気泡" width="220" height="140">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="p-water-test__box p-water-test__box--black">
+          <h3 class="p-water-test__title">普通勾配瓦</h3>
+          <div class="p-water-test__items">
+            <div class="p-water-test__item">
+              <figure class="p-water-test__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/graslo/water_test_4.png" alt="瓦表面の様子" width="220" height="140">
+              </figure>
+              <p class="p-water-test__caption">瓦表面の様子</p>
+            </div>
+            <div class="p-water-test__item">
+              <figure class="p-water-test__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/graslo/water_test_5.png" alt="漏水なし" width="220" height="140">
+              </figure>
+              <p class="p-water-test__caption">漏水なし</p>
+            </div>
+            <div class="p-water-test__item">
+              <figure class="p-water-test__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/graslo/water_test_6.png" alt="気泡" width="220" height="140">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
   <section class="p-specific">
     <div class="l-inner">
       <div class="p-specific__header">
@@ -237,9 +297,15 @@
             <h3 class="p-specific__notes-title">&lt; 粘土瓦の特性について &gt;</h3>
             <p class="p-specific__notes-intro">粘土瓦は天然素材から製造されるため、下記のような現象が発生する場合がありますが、製品欠陥ではなく品質上の問題はまったくありませんので安心してご使用ください。</p>
             <ul class="p-specific__notes-list">
-              <li><strong>【色　ム　ラ】</strong>粘土成分の微妙な違いや、焼成窯内の環境の変化により微妙な色合いが発生することがありますが品質上の問題はありません。</li>
-              <li><strong>【貫　　　入】</strong>釉薬表面に発生する細かい亀裂を貫入といいます。これは、粘土と釉薬の収縮率の違いから生まれ品質上の問題はありません。</li>
-              <li><strong>【ピンホール】</strong>釉薬表面に発生する小さなへこみをピンホールといいます。これは、釉薬の気泡や粘土に含まれている有機物が焼成によって消滅することで生まれますが品質上の問題はありません。</li>
+              <li class="p-specific__notes-li"><strong>【色　ム　ラ】</strong>
+                <p class="p-specific__notes-text">粘土成分の微妙な違いや、焼成窯内の環境の変化により微妙な色合いが発生することがありますが品質上の問題はありません。
+              </li>
+              <li class="p-specific__notes-li"><strong>【貫　　　入】</strong>
+                <p class="p-specific__notes-text">釉薬表面に発生する細かい亀裂を貫入といいます。これは、粘土と釉薬の収縮率の違いから生まれ品質上の問題はありません。
+              </li>
+              <li class="p-specific__notes-li"><strong>【ピンホール】</strong>
+                <p class="p-specific__notes-text">釉薬表面に発生する小さなへこみをピンホールといいます。これは、釉薬の気泡や粘土に含まれている有機物が焼成によって消滅することで生まれますが品質上の問題はありません。
+              </li>
             </ul>
           </div>
         </div>
