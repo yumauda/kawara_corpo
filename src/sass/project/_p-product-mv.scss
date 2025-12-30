@@ -15,15 +15,22 @@
   position: absolute;
   content: "KAWARA\A DESIGNS";
   color: #fff;
-  font-size: rem(260);
   font-family: $second-font-family;
   font-style: italic;
   font-weight: 900;
   line-height: calc(200 / 260);
-  top: rem(-80);
-  left: rem(1080);
   width: fit-content;
   z-index: -1;
+  @include mq(md) {
+    font-size: rem(130);
+    top: rem(-56);
+    left: rem(1000);
+  }
+  @include mq(lg) {
+    top: rem(-80);
+    left: rem(1080);
+    font-size: rem(260);
+  }
 }
 .p-product-mv::after {
   position: absolute;
@@ -74,6 +81,14 @@
   }
   @include mq(lg) {
     max-width: rem(300);
+  }
+}
+.w388 {
+  @include mq(md) {
+    min-width: rem(270);
+  }
+  @include mq(lg) {
+    max-width: rem(388);
   }
 }
 .w453 {
@@ -191,4 +206,10 @@
 }
 .orange {
   color: #f08300 !important;
+}
+.blue {
+  color: #20aee5 !important;
+}
+.black {
+  color: #592022 !important;
 }

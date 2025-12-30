@@ -1,0 +1,153 @@
+@use "../global" as *;
+
+.p-eco-features {
+  margin-top: rem(40);
+  width: 100%;
+  @include mq(md) {
+    display: flex;
+    flex: 1;
+    gap: rem(20);
+    margin-top: rem(60);
+    margin-left: auto;
+  }
+  @include mq(lg) {
+    gap: rem(20);
+    margin-top: rem(80);
+    max-width: rem(860);
+  }
+}
+
+.p-eco-features__card {
+  border-radius: rem(10);
+  border: 2px solid #222;
+  overflow: hidden;
+
+  &:not(:first-child) {
+    margin-top: rem(20);
+    @include mq(md) {
+      margin-top: 0;
+    }
+  }
+
+  @include mq(md) {
+    width: 50%;
+  }
+}
+
+.p-eco-features__card--blue {
+  background-color: #20aee5;
+
+  .p-eco-features__card-number,
+  .p-eco-features__card-title,
+  .p-eco-features__card-text,
+  .p-eco-features__card-label {
+    color: #fff;
+  }
+
+  .p-eco-features__card-border {
+    background-color: #fff;
+  }
+}
+
+.p-eco-features__card--white {
+  background-color: #fff;
+
+  .p-eco-features__card-number,
+  .p-eco-features__card-title,
+  .p-eco-features__card-label {
+    color: #20aee5;
+  }
+
+  .p-eco-features__card-text {
+    color: #222;
+  }
+
+  .p-eco-features__card-border {
+    background-color: #20aee5;
+  }
+}
+
+.p-eco-features__card-content {
+  padding: rem(40);
+  position: relative;
+  @include mq(md) {
+    padding-top: rem(40);
+    padding-left: rem(40);
+    padding-right: rem(40);
+    padding-bottom: rem(56);
+  }
+}
+
+.p-eco-features__card-header {
+  display: flex;
+  align-items: center;
+  gap: rem(20);
+}
+
+.p-eco-features__card-number {
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(20);
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+}
+
+.p-eco-features__card-title {
+  font-size: rem(28);
+  font-weight: 900;
+  line-height: calc(56 / 40);
+  letter-spacing: 0.06em;
+  @include mq(md) {
+    font-size: clamp(28px, 3vw, 36px);
+  }
+  @include mq(lg) {
+    font-size: rem(40);
+  }
+}
+
+.p-eco-features__card-border {
+  width: 100%;
+  height: 2px;
+  margin-top: rem(20);
+}
+
+.p-eco-features__card-text {
+  margin-top: rem(20);
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: calc(32 / 20);
+  letter-spacing: 0.06em;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+
+.p-eco-features__card-img {
+  margin-top: rem(20);
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: rem(4);
+  }
+}
+
+.p-eco-features__card-label {
+  display: block;
+  margin-top: rem(20);
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(12);
+  font-weight: 700;
+  font-style: italic;
+  line-height: calc(32 / 12);
+  letter-spacing: 0.06em;
+  text-align: right;
+  opacity: 0.7;
+  position: absolute;
+  bottom: rem(0);
+  right: rem(20);
+}

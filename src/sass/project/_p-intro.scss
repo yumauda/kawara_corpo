@@ -140,10 +140,26 @@
 }
 .p-intro__img--ftype {
   @include mq(md) {
-    margin-left: rem(-48);
+    margin-left: rem(32);
   }
   @include mq(lg) {
     margin-left: rem(-90);
+  }
+}
+.p-intro__img--eco {
+  @include mq(md) {
+    margin-left: rem(20);
+  }
+  @include mq(lg) {
+    margin-left: rem(27);
+  }
+}
+.p-intro__img--ceramic {
+  @include mq(md) {
+    margin-left: rem(20);
+  }
+  @include mq(lg) {
+    margin-left: rem(-72);
   }
 }
 .p-intro__img img {
@@ -154,9 +170,25 @@
 }
 .w362 {
   @include mq(md) {
-    max-width: rem(250);
+    min-width: rem(200);
   }
   @include mq(lg) {
     min-width: rem(362);
+  }
+}
+.w310 {
+  @include mq(md) {
+    min-width: rem(180);
+  }
+  @include mq(lg) {
+    min-width: rem(310);
+  }
+}
+.w251 {
+  @include mq(md) {
+    min-width: rem(150);
+  }
+  @include mq(lg) {
+    min-width: rem(251);
   }
 }
