@@ -127,8 +127,6 @@
                 </span>
               </a>
             </li>
-          </ul>
-          <ul class="p-performance-related__links-list">
             <li class="p-performance-related__links-item">
               <a href="#" class="p-performance-related__link p-performance-related__link--active">
                 <span class="p-performance-related__link-text">棟瓦</span>
@@ -200,6 +198,7 @@
               </a>
             </li>
           </ul>
+          
         </div>
         <div class="p-performance-related__text-wrapper">
           <p class="p-performance-related__text">瓦屋根標準設計・施工ガイドライン第Ⅱ編第2章標準試験に従った試験を行った結果を掲載しております。<br>
@@ -637,6 +636,254 @@
             </table>
           </div>
 
+        </div>
+        <div class="p-munsell__table-wrapper p-performance-related__table-wrapper">
+          <div class="p-munsell__table-header">
+            <div class="p-munsell__table-flex">
+              <p class="p-munsell__table-header-text">棟瓦</p>
+              <a href="#" class="p-munsell__table-header-link">
+                <p class="p-munsell__table-header-link-text">製品情報を見る</p>
+                <div class="p-munsell__table-header-link-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.177 15.505">
+                    <g id="グループ_23475" data-name="グループ 23475" transform="translate(-537.43 -2454.133)">
+                      <path id="パス_42625" data-name="パス 42625" d="M189.089-2035.115l8,7-8,7" transform="translate(365 4490)" fill="none" stroke="#fff" stroke-width="2" />
+                      <path id="パス_42624" data-name="パス 42624" d="M189.089-2035.115l8,7-8,7" transform="translate(357 4490)" fill="none" stroke="#fff" stroke-width="2" />
+                      <path id="パス_42623" data-name="パス 42623" d="M189.089-2035.115l8,7-8,7" transform="translate(349 4490)" fill="none" stroke="#fff" stroke-width="2" />
+                    </g>
+                  </svg>
+
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="p-munsell__scroll">
+            <table class="p-munsell__table p-munsell__table--pb">
+              <thead class="p-munsell__table-head">
+                <tr>
+                  <th class="p-munsell__table-th w270">種類</th>
+                  <th class="p-munsell__table-th w600">試験条件</th>
+                  <th class="p-munsell__table-th w247">結果</th>
+                  <th class="p-munsell__table-th w320">成績書</th>
+                </tr>
+              </thead>
+              <tbody class="p-munsell__table-body">
+                <tr class="p-munsell__table-row">
+                  <td class="p-munsell__table-td w270">防災のし5段<br>MBK工法</td>
+                  <td class="p-munsell__table-td w600">瓦 : 防災のし(大) 2段 + 防災のし(小) 3段 + 5寸丸<br>
+                    面戸 : のし受け台座(大棟用5谷)<br>
+                    施工方法 : 補強金物による防災のし積乾式工法(MBK工法)</td>
+                  <td class="p-munsell__table-td w247">合格</td>
+                  <td class="p-munsell__table-td w320">
+                    <a href="#" class="p-munsell__table-td-button">
+                      <div class="p-munsell__table-td-buttonIcon">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
+                      </div>
+                      <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
+                    </a>
+                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                  </td>
+                </tr>
+                <tr class="p-munsell__table-row">
+                  <td class="p-munsell__table-td w270">防災のし7段<br>MBK工法</td>
+                  <td class="p-munsell__table-td w600">瓦 : 防災のし(大) 2段 + 防災のし(小) 5段 + 5寸丸<br>
+                    面戸 : のし受け台座(大棟用5谷)<br>
+                    施工方法 : 補強金物による防災のし積乾式工法(MBK工法)</td>
+                  <td class="p-munsell__table-td w247">合格</td>
+                  <td class="p-munsell__table-td w320">
+                    <a href="#" class="p-munsell__table-td-button">
+                      <div class="p-munsell__table-td-buttonIcon">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
+                      </div>
+                      <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
+                    </a>
+                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                  </td>
+                </tr>
+                <tr class="p-munsell__table-row">
+                  <td class="p-munsell__table-td w270">防災のし5段</td>
+                  <td class="p-munsell__table-td w600">瓦 : 防災のし(大) 2段 + 防災のし(小) 3段 + 5寸丸<br>
+                    面戸 : 面戸瓦<br>
+                    施工方法 : 防災のし積工法</td>
+                  <td class="p-munsell__table-td w247">合格</td>
+                  <td class="p-munsell__table-td w320">
+                    <a href="#" class="p-munsell__table-td-button">
+                      <div class="p-munsell__table-td-buttonIcon">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
+                      </div>
+                      <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
+                    </a>
+                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                  </td>
+                </tr>
+
+
+              </tbody>
+            </table>
+            <table class="p-munsell__table">
+              <thead class="p-munsell__table-head">
+                <tr>
+                  <th class="p-munsell__table-th w270">種類</th>
+                  <th class="p-munsell__table-th w600">試験条件</th>
+                  <th class="p-munsell__table-th w247">耐荷重</th>
+                  <th class="p-munsell__table-th w320">成績書</th>
+                </tr>
+              </thead>
+              <tbody class="p-munsell__table-body">
+                <tr class="p-munsell__table-row">
+                  <td class="p-munsell__table-td w270">7寸紐丸雁振瓦</td>
+                  <td class="p-munsell__table-td w600">野地板 : 構造用合版 12mm<br>
+                    棟補強用芯材 : 樹脂垂木 43×43mm<br>
+                    棟補強金物 : TS樹脂棟</td>
+                  <td class="p-munsell__table-td w247">3,367 N/㎡</td>
+                  <td class="p-munsell__table-td w320">
+                    <a href="#" class="p-munsell__table-td-button">
+                      <div class="p-munsell__table-td-buttonIcon">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
+                      </div>
+                      <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
+                    </a>
+                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                  </td>
+                </tr>
+
+
+
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <div class="p-munsell__table-wrapper p-performance-related__table-wrapper">
+          <div class="p-munsell__table-header">
+            <div class="p-munsell__table-flex">
+              <p class="p-munsell__table-header-text">ニューセラF Uタイプ</p>
+              <a href="#" class="p-munsell__table-header-link">
+                <p class="p-munsell__table-header-link-text">製品情報を見る</p>
+                <div class="p-munsell__table-header-link-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.177 15.505">
+                    <g id="グループ_23475" data-name="グループ 23475" transform="translate(-537.43 -2454.133)">
+                      <path id="パス_42625" data-name="パス 42625" d="M189.089-2035.115l8,7-8,7" transform="translate(365 4490)" fill="none" stroke="#fff" stroke-width="2" />
+                      <path id="パス_42624" data-name="パス 42624" d="M189.089-2035.115l8,7-8,7" transform="translate(357 4490)" fill="none" stroke="#fff" stroke-width="2" />
+                      <path id="パス_42623" data-name="パス 42623" d="M189.089-2035.115l8,7-8,7" transform="translate(349 4490)" fill="none" stroke="#fff" stroke-width="2" />
+                    </g>
+                  </svg>
+
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="p-munsell__scroll">
+            <table class="p-munsell__table">
+              <thead class="p-munsell__table-head">
+                <tr>
+                  <th class="p-munsell__table-th w270">種類</th>
+                  <th class="p-munsell__table-th w600">試験条件</th>
+                  <th class="p-munsell__table-th w247">耐荷重</th>
+                  <th class="p-munsell__table-th w320">成績書</th>
+                </tr>
+              </thead>
+              <tbody class="p-munsell__table-body">
+                <tr class="p-munsell__table-row">
+                  <td class="p-munsell__table-td w270">桟瓦</td>
+                  <td class="p-munsell__table-td w600">野地板 : 構造用合版 12mm<br>
+                    桟木 : 杉 15×30mm<br>
+                    瓦緊結 : ステンレスeスクリング釘 #12×65mm</td>
+                  <td class="p-munsell__table-td w247">2,000 N/㎡</td>
+                  <td class="p-munsell__table-td w320">
+                    <a href="#" class="p-munsell__table-td-button">
+                      <div class="p-munsell__table-td-buttonIcon">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
+                      </div>
+                      <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
+                    </a>
+                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                  </td>
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <div class="p-munsell__table-wrapper p-performance-related__table-wrapper">
+          <div class="p-munsell__table-header">
+            <div class="p-munsell__table-flex">
+              <p class="p-munsell__table-header-text">平板瓦共通</p>
+              <a href="#" class="p-munsell__table-header-link">
+                <p class="p-munsell__table-header-link-text">製品情報を見る</p>
+                <div class="p-munsell__table-header-link-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.177 15.505">
+                    <g id="グループ_23475" data-name="グループ 23475" transform="translate(-537.43 -2454.133)">
+                      <path id="パス_42625" data-name="パス 42625" d="M189.089-2035.115l8,7-8,7" transform="translate(365 4490)" fill="none" stroke="#fff" stroke-width="2" />
+                      <path id="パス_42624" data-name="パス 42624" d="M189.089-2035.115l8,7-8,7" transform="translate(357 4490)" fill="none" stroke="#fff" stroke-width="2" />
+                      <path id="パス_42623" data-name="パス 42623" d="M189.089-2035.115l8,7-8,7" transform="translate(349 4490)" fill="none" stroke="#fff" stroke-width="2" />
+                    </g>
+                  </svg>
+
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="p-munsell__scroll">
+            <table class="p-munsell__table">
+              <thead class="p-munsell__table-head">
+                <tr>
+                  <th class="p-munsell__table-th w270">種類</th>
+                  <th class="p-munsell__table-th w600">試験条件</th>
+                  <th class="p-munsell__table-th w247">耐荷重</th>
+                  <th class="p-munsell__table-th w320">成績書</th>
+                </tr>
+              </thead>
+              <tbody class="p-munsell__table-body">
+                <tr class="p-munsell__table-row">
+                  <td class="p-munsell__table-td w270">袖瓦</td>
+                  <td class="p-munsell__table-td w600">野地板 : 構造用合版 12mm<br>
+                    桟木 : 杉 15×30mm<br>
+                    瓦緊結 : ステンレスeスクリング釘 Φ4.0×50mm<br>
+                    瓦補強 : ステンレスeスクリング釘 Φ4.0×50mm</td>
+                  <td class="p-munsell__table-td w247">4,448 N/㎡</td>
+                  <td class="p-munsell__table-td w320">
+                    <a href="#" class="p-munsell__table-td-button">
+                      <div class="p-munsell__table-td-buttonIcon">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
+                      </div>
+                      <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
+                    </a>
+                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                  </td>
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <div class="p-performance-related__submit-wrapper">
+          <a href="#" class="p-performance-related__submit">
+            <figure class="p-performance-related__submit-img">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/performance/submit.png" alt="風圧力計算シート エクセル版" width="140" height="205">
+            </figure>
+            <div class="p-performance-related__submit-text-wrapper">
+              <p class="p-performance-related__submit-text">風圧力計算シート エクセル版</p>
+              <p class="p-performance-related__submit-link">この風圧力計算シートは建築基準法、平成12年建設省告示1458号に基づいた風圧力の計算が簡単に出来るものです。</p>
+
+            </div>
+            <div class="p-performance-related__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130">
+                <g id="グループ_23411" data-name="グループ 23411" transform="translate(0.486)">
+                  <rect id="長方形_1137" data-name="長方形 1137" width="130" height="130" rx="65" transform="translate(-0.486)" fill="#37af32" />
+                  <g id="グループ_23372" data-name="グループ 23372" transform="translate(51.791 57.41)">
+                    <path id="パス_42625" data-name="パス 42625" d="M189.089-2035.115l8.666,7.583-8.666,7.582" transform="translate(-171.757 2035.115)" fill="none" stroke="#fff" stroke-width="3" />
+                    <path id="パス_42624" data-name="パス 42624" d="M189.089-2035.115l8.666,7.583-8.666,7.582" transform="translate(-180.423 2035.115)" fill="none" stroke="#fff" stroke-width="3" />
+                    <path id="パス_42623" data-name="パス 42623" d="M189.089-2035.115l8.666,7.583-8.666,7.582" transform="translate(-189.089 2035.115)" fill="none" stroke="#fff" stroke-width="3" />
+                  </g>
+                </g>
+              </svg>
+
+            </div>
+          </a>
         </div>
 
       </div>
