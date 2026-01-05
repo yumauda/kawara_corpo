@@ -1,0 +1,290 @@
+@use "../global" as *;
+
+.p-leaflet {
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(80);
+    padding-bottom: rem(120);
+  }
+  @include mq(lg) {
+    padding-top: rem(194);
+    padding-bottom: rem(200);
+  }
+}
+.p-leaflet--last-child {
+  padding-top: initial;
+}
+
+.p-leaflet__content {
+  position: relative;
+}
+.p-leaflet__content::before {
+  position: absolute;
+  content: "";
+  background: url(../images/download/leaflet_text.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(1236);
+  height: auto;
+  aspect-ratio: 1236 / 411;
+  object-fit: cover;
+  left: 0;
+  top: rem(-72);
+  z-index: -1;
+}
+.p-leaflet__content--last-child::before {
+  position: absolute;
+  content: "";
+  background: url(../images/download/leaflet_text2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  aspect-ratio: 1419 / 411;
+  object-fit: cover;
+  left: 0;
+  z-index: -1;
+  width: rem(400);
+  @include mq(md) {
+    top: rem(-96);
+    width: rem(1000);
+  }
+  @include mq(lg) {
+    top: rem(-72);
+    width: rem(1419);
+  }
+}
+
+.p-leaflet__title {
+  margin-bottom: rem(40);
+  @include mq(md) {
+    margin-bottom: rem(60);
+  }
+  @include mq(lg) {
+    margin-bottom: rem(80);
+  }
+}
+
+.p-leaflet__cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(20);
+  @include mq(md) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(30);
+  }
+  @include mq(lg) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: rem(60);
+    column-gap: rem(40);
+  }
+}
+
+.p-leaflet__card {
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(10px 10px 20px rgba(#000, 0.2));
+  padding: rem(30);
+  background-color: #fff;
+  border: 5px solid #37af32;
+  border-radius: rem(10);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  height: fit-content;
+  @include mq(md) {
+    padding: rem(20);
+  }
+  @include mq(lg) {
+    padding: rem(40) rem(35);
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(55, 175, 50, 0.25);
+
+    .p-leaflet__card-button {
+      background-color: #2d8f29;
+    }
+  }
+}
+
+.p-leaflet__card-image {
+  width: 100%;
+  margin-bottom: rem(20);
+  @include mq(md) {
+    margin-bottom: rem(25);
+    padding-left: rem(24);
+    padding-right: rem(24);
+  }
+  @include mq(lg) {
+    padding-left: rem(32);
+    padding-right: rem(32);
+    margin-bottom: rem(30);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.p-leaflet__card-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #c7c7cc;
+  margin-bottom: rem(20);
+  @include mq(md) {
+    margin-bottom: rem(25);
+  }
+  @include mq(lg) {
+    margin-bottom: rem(30);
+  }
+}
+
+.p-leaflet__card-content {
+  text-align: center;
+  margin-bottom: rem(20);
+}
+
+.p-leaflet__card-subtitle {
+  font-size: rem(12);
+  font-weight: 500;
+  line-height: calc(20 / 12);
+  letter-spacing: 0.06em;
+  color: #222;
+  margin-bottom: rem(8);
+  @include mq(md) {
+    font-size: clamp(12px, 1.5vw, 14px);
+    margin-bottom: rem(10);
+  }
+  @include mq(lg) {
+    font-size: rem(14);
+  }
+}
+
+.p-leaflet__card-title {
+  font-size: rem(20);
+  font-weight: 700;
+  line-height: calc(32 / 24);
+  letter-spacing: 0.06em;
+  color: #222;
+  @include mq(md) {
+    font-size: clamp(18px, 2.5vw, 22px);
+  }
+  @include mq(lg) {
+    font-size: rem(24);
+  }
+}
+
+.p-leaflet__card-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(10);
+  padding: rem(14) rem(30);
+  background-color: #222;
+  border-radius: rem(50);
+  transition: all 0.3s ease;
+  margin-top: auto;
+  @include mq(md) {
+    padding: rem(16) rem(35);
+    gap: rem(20);
+  }
+  @include mq(lg) {
+    gap: rem(29);
+    padding-top: rem(18);
+    padding-bottom: rem(18);
+    padding-left: rem(40);
+    padding-right: rem(30);
+  }
+}
+
+.p-leaflet__card-button-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(14);
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  color: #37af32;
+  @include mq(md) {
+    font-size: clamp(13px, 2vw, 15px);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
+  }
+}
+
+.p-leaflet__card-button-icon {
+  flex-shrink: 0;
+  width: rem(18);
+  height: rem(18);
+  background: transparent;
+  border-radius: 9999px;
+  border: 1px solid #37af32;
+  position: relative;
+}
+.p-leaflet__card-button-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: rem(8);
+  height: rem(8);
+  background: #37af32;
+  border-radius: 9999px;
+}
+.p-leaflet__block {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+  @include mq(lg) {
+    margin-top: rem(60);
+  }
+}
+.p-leaflet__block + .p-leaflet__block {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+  @include mq(lg) {
+    margin-top: rem(100);
+  }
+}
+.p-leaflet__block-title {
+  font-size: rem(20);
+  color: #37af32;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  border-bottom: 1px solid #37af32;
+  padding-bottom: rem(8);
+  padding-left: rem(26);
+  position: relative;
+  margin-bottom: rem(20);
+  @include mq(md) {
+    font-size: clamp(20px, 2vw, 24px);
+    padding-bottom: rem(10);
+    margin-bottom: rem(30);
+  }
+  @include mq(lg) {
+    font-size: rem(30);
+    padding-bottom: rem(18);
+    margin-bottom: rem(63);
+  }
+}
+
+.p-leaflet__block-title::before {
+  position: absolute;
+  content: "";
+  background: #37af32;
+  width: rem(6);
+  height: rem(54);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
