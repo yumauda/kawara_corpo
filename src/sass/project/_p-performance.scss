@@ -1,0 +1,160 @@
+@use "../global" as *;
+
+.p-performance {
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(80);
+    padding-bottom: rem(40);
+  }
+  @include mq(lg) {
+    padding-top: rem(100);
+    padding-bottom: rem(60);
+  }
+}
+
+.p-performance__content {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+  @include mq(md) {
+    gap: rem(20);
+  }
+  @include mq(lg) {
+    gap: rem(30);
+  }
+}
+
+.p-performance__cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(20);
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(40);
+  }
+}
+
+.p-performance__card {
+  background-color: #fff;
+  border: 2px solid #37af32;
+  border-radius: rem(10);
+  padding: rem(40) rem(20) rem(20);
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+  @include mq(md) {
+    padding: rem(60) rem(40) rem(40);
+    gap: rem(30);
+  }
+}
+.p-performance__card-row {
+  @include mq(md) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: rem(24);
+  }
+  @include mq(lg) {
+    gap: rem(48);
+  }
+}
+
+.p-performance__card-image {
+  width: 100%;
+  height: auto;
+  border-radius: rem(20);
+  overflow: hidden;
+  @include mq(md) {
+    max-width: rem(407);
+  }
+}
+.p-performance__card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-performance__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: rem(12);
+  @include mq(md) {
+    gap: rem(16);
+  }
+}
+
+.p-performance__card-category {
+  font-family: "ZenKakuGothicNew-Bold", sans-serif;
+  font-size: rem(14);
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  color: #49a43f;
+  @include mq(md) {
+    font-size: clamp(16px, 2vw, 16px);
+    line-height: 1.6;
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+
+.p-performance__card-title {
+  font-family: "ZenKakuGothicNew-Bold", sans-serif;
+  font-weight: 700;
+  font-size: rem(20);
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  color: #1a1311;
+  @include mq(md) {
+    line-height: 1.4;
+    font-size: clamp(20px, 2vw, 24px);
+  }
+  @include mq(lg) {
+    font-size: rem(40);
+  }
+}
+
+.p-performance__card-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #222222;
+}
+
+.p-performance__card-text {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  color: #222222;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+    padding-left: rem(16);
+    padding-right: rem(16);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+    padding-left: rem(20);
+    padding-right: rem(20);
+  }
+}
+
+.p-performance__note {
+  font-family: "ZenKakuGothicNew-Bold", sans-serif;
+  font-size: rem(12);
+  font-weight: 500;
+  line-height: 2.857;
+  letter-spacing: 0.06em;
+  color: #222222;
+  text-align: right;
+  @include mq(md) {
+    font-size: rem(14);
+    line-height: 2.857;
+  }
+}
+.p-performance__note a {
+  color: #37af32;
+  text-decoration: underline;
+}

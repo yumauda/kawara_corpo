@@ -148,7 +148,7 @@
     padding: rem(30);
   }
   @include mq(lg) {
-    padding-top: rem(30);
+    padding-top: rem(20);
     padding-bottom: rem(40);
     padding-left: rem(40);
     padding-right: rem(40);
@@ -228,4 +228,119 @@
   @include mq(lg) {
     font-size: rem(16);
   }
+}
+.p-munsell__table-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-munsell__table-header-text {
+}
+
+.p-munsell__table-header-link {
+  display: flex;
+  align-items: center;
+  gap: rem(15);
+}
+
+.p-munsell__table-header-link-text {
+  font-size: rem(16);
+  color: #fff;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  line-height: calc(32 / 18);
+  @include mq(md) {
+    font-size: clamp(16px, 2vw, 16px);
+  }
+  @include mq(lg) {
+    font-size: rem(18);
+  }
+}
+
+.p-munsell__table-header-link-icon {
+  width: rem(24);
+}
+.p-munsell__table-header-link-icon svg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+.w270 {
+  width: rem(270) !important;
+  white-space: nowrap;
+}
+.w600 {
+  width: rem(600) !important;
+  text-align: left;
+  white-space: nowrap;
+}
+.w247 {
+  width: rem(247) !important;
+  white-space: nowrap;
+}
+.w320 {
+  width: rem(320) !important;
+  white-space: nowrap;
+}
+.p-munsell__table-td-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(10);
+  background: #222;
+  border-radius: 9999px;
+  width: rem(280);
+  height: rem(48);
+}
+
+.p-munsell__table-td-buttonIcon {
+  width: rem(20);
+}
+.p-munsell__table-td-buttonIcon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-munsell__table-td-buttonText {
+  color: #fff;
+  font-size: rem(14);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: calc(32 / 18);
+  @include mq(md){
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg){
+    font-size: rem(18);
+  }
+}
+
+.p-munsell__table-td-netlink {
+  margin-top: rem(10);
+  font-size: rem(14);
+  color: #222;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  line-height: calc(32 / 14);
+  text-decoration: underline;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(14);
+  }
+}
+.p-munsell__scroll {
+  overflow-x: auto;
+  width: 100%;
+  @include mq(md){
+    overflow-x: initial;
+  }
+}
+.p-munsell__table-head .w600 {
+  text-align: center;
 }
