@@ -1,0 +1,67 @@
+@use "../global" as *;
+
+.p-asbestos {
+}
+
+.p-asbestos__img {
+  max-width: rem(760);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-asbestos__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-asbestos__btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: rem(30);
+  margin-bottom: rem(30);
+  @include mq(md) {
+    margin-top: rem(40);
+    margin-bottom: rem(60);
+  }
+  @include mq(lg) {
+    margin-top: rem(60);
+    margin-bottom: rem(100);
+  }
+}
+
+.p-asbestos__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(10);
+  width: rem(280);
+  height: rem(48);
+  background: #222;
+  border-radius: 9999px;
+}
+
+.p-asbestos__btn-icon {
+  width: rem(20);
+}
+.p-asbestos__btn-icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-asbestos__btn-text {
+  font-size: rem(14);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #fff;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 16px);
+  }
+  @include mq(lg) {
+    font-size: rem(18);
+  }
+}
