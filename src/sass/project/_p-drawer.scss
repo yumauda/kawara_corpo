@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .p-drawer-icon {
-  background: #fff;
+  background: #222;
   transition: 0.3s;
   border-radius: 9999px;
   width: rem(44);
@@ -10,8 +10,8 @@
   align-items: center;
   justify-content: center;
   @include mq(md) {
-    width: rem(62);
-    height: rem(62);
+    width: rem(60);
+    height: rem(60);
   }
 }
 .p-drawer-icon.is-active {
@@ -29,6 +29,10 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
+  .p-drawer-icon__bar2 {
+    opacity: 0;
+    visibility: hidden;
+  }
   .p-drawer-icon__bar3 {
     background: white;
     position: absolute;
@@ -40,38 +44,39 @@
 .p-drawer-icon__bars {
   position: relative;
   width: rem(28);
-  height: rem(8);
+  height: rem(16);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: rem(6);
+  gap: rem(3);
   @include mq(md) {
-    gap: rem(8);
+    gap: rem(3);
     width: rem(28);
-    height: rem(12);
+    height: rem(16);
   }
 }
 .p-drawer-icon__bar1 {
   height: 2px;
-  background: #333;
+  background: #37af32;
   transition: 0.5s;
   width: rem(20);
   display: flex;
-  @include mq(md) {
-    width: rem(28);
-  }
+}
+.p-drawer-icon__bar2 {
+  height: 2px;
+  background: #37af32;
+  transition: 0.5s;
+  width: rem(20);
+  display: flex;
 }
 
 .p-drawer-icon__bar3 {
   height: 2px;
-  background: #333;
+  background: #37af32;
   transition: 0.5s;
   display: flex;
   width: rem(20);
-  @include mq(md) {
-    width: rem(28);
-  }
 }
 
 .p-drawer-content {
