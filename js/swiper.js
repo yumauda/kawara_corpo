@@ -115,107 +115,16 @@ const slider3 = new Swiper(".slider3", {
   },
 });
 
-// ピックアップタブスライダー
-const sliderPickup = new Swiper(".slider-pickup", {
+const slider4 = new Swiper(".slider-topics", {
   slidesPerView: 1.1,
-  centeredSlides: true,
-  loop: true,
-  initialSlide: 0,
-  breakpoints: {
-    768: {
-      effect: "slide",
-      slidesPerView: 3,
-      centeredSlides: false,
-    },
-  },
-  navigation: {
-    nextEl: '[data-content="all"] .swiper-button-next',
-    prevEl: '[data-content="all"] .swiper-button-prev',
-  },
-});
-
-const sliderStay = new Swiper(".slider-stay", {
-  slidesPerView: 1.1,
-  centeredSlides: true,
-  loop: true,
-  initialSlide: 0,
-  breakpoints: {
-    768: {
-      effect: "slide",
-      slidesPerView: 3,
-      centeredSlides: false,
-    },
-  },
-  navigation: {
-    nextEl: '[data-content="stay"] .swiper-button-next',
-    prevEl: '[data-content="stay"] .swiper-button-prev',
-  },
-});
-
-const sliderFood = new Swiper(".slider-food", {
-  slidesPerView: 1.1,
-  centeredSlides: true,
-  loop: true,
-  initialSlide: 0,
-  breakpoints: {
-    768: {
-      effect: "slide",
-      slidesPerView: 3,
-      centeredSlides: false,
-    },
-  },
-  navigation: {
-    nextEl: '[data-content="food"] .swiper-button-next',
-    prevEl: '[data-content="food"] .swiper-button-prev',
-  },
-});
-
-const sliderRestaurant = new Swiper(".slider-restaurant", {
-  slidesPerView: 1.1,
-  centeredSlides: true,
-  loop: true,
-  initialSlide: 0,
-  breakpoints: {
-    768: {
-      effect: "slide",
-      slidesPerView: 3,
-      centeredSlides: false,
-    },
-  },
-  navigation: {
-    nextEl: '[data-content="restaurant"] .swiper-button-next',
-    prevEl: '[data-content="restaurant"] .swiper-button-prev',
-  },
-});
-
-const sliderNews = new Swiper(".slider-news", {
-  slidesPerView: 1.1,
-  centeredSlides: true,
-  loop: true,
-  initialSlide: 0,
-  breakpoints: {
-    768: {
-      effect: "slide",
-      slidesPerView: 3,
-      centeredSlides: false,
-    },
-  },
-  navigation: {
-    nextEl: '[data-content="news"] .swiper-button-next',
-    prevEl: '[data-content="news"] .swiper-button-prev',
-  },
-});
-
-const slider4 = new Swiper(".slider4", {
-  slidesPerView: 1.1,
-  centeredSlides: true,
+  centeredSlides: false,
   loop: true,
   initialSlide: 0,
   spaceBetween: 10,
   breakpoints: {
     768: {
       effect: "slide",
-      slidesPerView: 2.2,
+      slidesPerView: 2.1,
       spaceBetween: 10,
       autoplay: {
         delay: 3000,
@@ -230,30 +139,5 @@ const slider4 = new Swiper(".slider4", {
 
   scrollbar: {
     el: ".swiper-scrollbar",
-  },
-});
-const slider5 = new Swiper(".slider5", {
-  slidesPerView: 1.1,
-  centeredSlides: true,
-  loop: true,
-  initialSlide: 0,
-  breakpoints: {
-    768: {
-      effect: "slide",
-      slidesPerView: 1.8,
-      spaceBetween: 10,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-    },
-  },
-  navigation: {
-    nextEl: ".slider5 .swiper-button-next",
-    prevEl: ".slider5 .swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
   },
 });

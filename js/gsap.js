@@ -92,3 +92,27 @@ function initScrollAnimations() {
 window.addEventListener("DOMContentLoaded", function () {
   initScrollAnimations();
 });
+
+
+
+let parallaxImgs = document.querySelectorAll('.js-parallax');
+
+parallaxImgs.forEach((parallaxImg) => {
+  gsap.fromTo(
+    parallaxImg.querySelector('img'),
+    {
+      y: -45,
+    },
+    {
+      y: 0,
+      duration: 1,
+      ease: 'power2.inOut',
+      scrollTrigger: {
+        trigger: parallaxImg,
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true,
+      },
+    }
+  );
+});
