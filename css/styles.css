@@ -4765,6 +4765,20 @@ input::placeholder {
   }
 }
 
+.mt160 {
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .mt160 {
+    margin-top: 6.25rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .mt160 {
+    margin-top: 10rem;
+  }
+}
+
 .p-performance-related {
   padding-bottom: 2.5rem;
 }
@@ -4792,6 +4806,20 @@ input::placeholder {
 @media screen and (min-width: 1540px) {
   .p-performance-related__content {
     gap: 3rem;
+  }
+}
+
+.p-performance-related__content--cad {
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-performance-related__content--cad {
+    gap: 3.75rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-performance-related__content--cad {
+    gap: 5.625rem;
   }
 }
 
@@ -5390,6 +5418,278 @@ input::placeholder {
   .p-performance-related__submit-text-wrapper {
     margin-left: 3.125rem;
     max-width: 45.625rem;
+  }
+}
+
+.p-performance-related__construction-method {
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 0.3125rem;
+}
+@media screen and (min-width: 768px) {
+  .p-performance-related__construction-method {
+    padding: 1.875rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-performance-related__construction-method {
+    padding-top: 2.5rem;
+    padding-bottom: 3.125rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+}
+
+.p-performance-related__construction-method + .p-performance-related__construction-method {
+  margin-top: 0.625rem;
+}
+
+.p-performance-related__construction-title {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  color: #37af32;
+  margin-bottom: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-performance-related__construction-title {
+    font-size: clamp(20px, 2vw, 20px);
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-performance-related__construction-title {
+    font-size: 1.875rem;
+    line-height: 1.0666666667;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.p-performance-related__construction-subtitle {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  color: #222222;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-performance-related__construction-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-performance-related__construction-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.p-performance-related__construction-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-performance-related__construction-container {
+    flex-direction: row;
+    gap: 1.25rem;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-performance-related__construction-container {
+    gap: 2.5rem;
+  }
+}
+
+.p-performance-related__construction-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+  flex: 1;
+}
+
+.p-performance-related__construction-item {
+  display: flex;
+  align-items: center;
+  padding: 0.625rem 1rem;
+  border-radius: 0.3125rem;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-performance-related__construction-item {
+    padding: 0.625rem 1.25rem;
+    gap: 1.25rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-performance-related__construction-item {
+    padding: 0.625rem 2.5rem;
+    gap: 8.125rem;
+  }
+}
+.p-performance-related__construction-item--odd {
+  background-color: #f6f6f6;
+}
+.p-performance-related__construction-item--even {
+  background-color: #eeeeee;
+}
+
+.p-performance-related__construction-label {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  color: #222222;
+  white-space: nowrap;
+  min-width: 3.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-performance-related__construction-label {
+    font-size: 1rem;
+    min-width: 4.375rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-performance-related__construction-label {
+    font-size: 1.25rem;
+    line-height: 1.45;
+    min-width: 5.25rem;
+  }
+}
+
+.p-performance-related__construction-value {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  color: #222222;
+}
+@media screen and (min-width: 768px) {
+  .p-performance-related__construction-value {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-performance-related__construction-value {
+    font-size: 1.25rem;
+    line-height: 1.45;
+  }
+}
+
+.p-performance-related__construction-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .p-performance-related__construction-buttons {
+    min-width: 13.75rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-performance-related__construction-buttons {
+    min-width: 17.5rem;
+    gap: 0.75rem;
+  }
+}
+
+.p-performance-related__construction-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #222222;
+  color: #ffffff;
+  padding: 0.625rem 1.25rem;
+  border-radius: 1.4375rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  max-width: 17.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-performance-related__construction-btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-performance-related__construction-btn {
+    font-size: 1.125rem;
+    line-height: 1.7777777778;
+    padding: 0.75rem 1.875rem;
+    height: 3rem;
+  }
+}
+.p-performance-related__construction-btn:hover {
+  opacity: 0.8;
+}
+
+.p-performance-related__construction-btn-icon {
+  width: 1rem;
+  height: 1.375rem;
+  flex-shrink: 0;
+}
+@media screen and (min-width: 1540px) {
+  .p-performance-related__construction-btn-icon {
+    width: 1.25rem;
+    height: 1.75rem;
+  }
+}
+
+.p-performance-related__construction-link {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  color: #222222;
+  text-decoration: underline;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+@media screen and (min-width: 768px) {
+  .p-performance-related__construction-link {
+    font-size: clamp(12px, 2vw, 12px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-performance-related__construction-link {
+    font-size: 0.875rem;
+    line-height: 1.4285714286;
+  }
+}
+.p-performance-related__construction-link:hover {
+  opacity: 0.8;
+}
+
+.p-performance-related__box {
+  background: #c7c7cc;
+  padding: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-performance-related__box {
+    padding: 1.875rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-performance-related__box {
+    padding: 2.5rem;
   }
 }
 
