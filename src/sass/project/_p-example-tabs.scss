@@ -1,0 +1,50 @@
+@use "../global" as *;
+
+.p-example-tabs {
+  display: grid;
+  gap: rem(4);
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: rem(32);
+  @include mq(md) {
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: rem(56);
+  }
+  @include mq(lg) {
+    margin-top: rem(76);
+  }
+}
+.p-example-tabs__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem(40);
+  background-color: transparent;
+  border: 1px solid #222;
+  border-radius: rem(4);
+  @include mq(md) {
+    height: rem(40);
+  }
+  @include mq(lg) {
+    height: rem(57);
+  }
+}
+
+.p-example-tabs__item--active {
+  background-color: #222;
+  .p-example-tabs__text {
+    color: #fff;
+  }
+}
+
+.p-example-tabs__text {
+  font-size: rem(14);
+  color: #222;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}

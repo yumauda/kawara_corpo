@@ -1,0 +1,102 @@
+@use "../global" as *;
+
+.p-pager {
+  display: flex;
+  align-items: center;
+  gap: rem(16);
+  @include mq(md) {
+    gap: rem(32);
+  }
+  @include mq(lg) {
+    gap: rem(60);
+  }
+}
+
+.p-pager__list {
+}
+
+.p-pager__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(40);
+  height: rem(40);
+  @include mq(md) {
+    width: rem(56);
+  }
+  @include mq(lg) {
+    width: rem(80);
+    height: rem(80);
+  }
+}
+.p-pager__number {
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+  @include mq(md) {
+    gap: rem(20);
+  }
+  @include mq(lg) {
+    gap: rem(30);
+  }
+}
+
+.p-pager__list-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-pager__link-num {
+  font-size: rem(14);
+  font-family: $second-font-family;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-style: italic;
+  color: #222;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
+  }
+}
+
+// WordPressのpaginate_links()のデフォルトクラスに対応
+.p-pager__number .page-numbers {
+  font-size: rem(14);
+  font-family: $second-font-family;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-style: italic;
+  color: #222;
+  text-decoration: none;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
+  }
+
+  &.current {
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.p-pager__link[aria-disabled="true"],
+.p-pager__link[aria-disabled],
+.p-pager__link.is-disabled,
+.p-pager__link-num.is-current {
+  pointer-events: none;
+}
+
+.p-pager__link[aria-disabled="true"] svg,
+.p-pager__link[aria-disabled] svg {
+  opacity: 0.35;
+}
+
+.p-pager__link-num.is-current {
+  font-weight: 700;
+}

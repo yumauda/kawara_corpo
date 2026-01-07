@@ -18,6 +18,8 @@
 @use "./project/_p-compare";
 @use "./project/_p-drawer";
 @use "./project/_p-eco-features";
+@use "./project/_p-example-list";
+@use "./project/_p-example-tabs";
 @use "./project/_p-features";
 @use "./project/_p-footer";
 @use "./project/_p-form";
@@ -33,6 +35,7 @@
 @use "./project/_p-noncombustible";
 @use "./project/_p-page-mv";
 @use "./project/_p-page-mvText";
+@use "./project/_p-pager";
 @use "./project/_p-performance-related";
 @use "./project/_p-performance";
 @use "./project/_p-product-features";

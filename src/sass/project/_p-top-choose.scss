@@ -11,6 +11,11 @@
 }
 
 .p-top-choose__top {
+  @include mq(md){
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+  }
 }
 
 .p-top-choose__title {

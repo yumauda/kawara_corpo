@@ -11,7 +11,7 @@
     </li>
     <li class="p-header__breadcrumb">
         <a class="p-header__breadcrumb-link p-header__breadcrumb-link--current" href="<?php echo esc_url(home_url('/')); ?>">
-            石州瓦とは
+            <?php the_title(); ?>
         </a>
     </li>
 </ul>
