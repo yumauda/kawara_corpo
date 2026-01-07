@@ -1,12 +1,18 @@
 @use "../global" as *;
 
 .p-footer {
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
 }
 
 .p-footer__content {
-  display: flex;
+  @include mq(md) {
+    display: flex;
+  }
 }
 
 .p-footer__logo {
@@ -14,8 +20,13 @@
 
 .p-footer__home {
   display: inline-block;
+  width: rem(200);
+  margin-left: auto;
+  margin-right: auto;
   @include mq(md) {
     width: rem(250);
+    margin-left: initial;
+    margin-right: initial;
   }
 
   @include mq(lg) {
@@ -29,8 +40,10 @@
   object-position: center center;
 }
 .p-footer__nav {
-  display: flex;
+  margin-top: rem(32);
   @include mq(md) {
+    margin-top: initial;
+    display: flex;
     margin-left: auto;
     gap: rem(40);
   }
@@ -40,10 +53,22 @@
 }
 
 .p-footer__lists {
+  display: flex;
+  gap: rem(8);
+  align-items: center;
+  flex-wrap: wrap;
+  @include mq(md) {
+    display: initial;
+  }
+}
+.p-footer__lists + .p-footer__lists {
+  margin-top: rem(8);
+  @include mq(md) {
+    margin-top: initial;
+  }
 }
 
 .p-footer__list + .p-footer__list {
-  margin-top: rem(12);
   @include mq(md) {
     margin-top: rem(12);
   }
@@ -53,12 +78,18 @@
 }
 
 .p-footer__link {
-  font-size: rem(16);
   color: #222;
   font-weight: 700;
   padding-left: rem(13);
   position: relative;
   transition: 0.3s ease-in-out;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
+  }
 }
 .p-footer__link:hover {
   color: #37af32;
@@ -98,8 +129,12 @@
   opacity: 1;
 }
 .p-footer__small {
-  margin-top: rem(51);
-  text-align: right;
+  text-align: center;
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(51);
+    text-align: right;
+  }
 }
 .p-footer__small small {
   font-size: rem(10);
@@ -109,6 +144,10 @@
   color: #222222;
 }
 .p-footer__recruit-wrapper {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: initial;
+  }
 }
 
 .p-footer__recruit {

@@ -1,0 +1,474 @@
+@use "../global" as *;
+
+.p-single {
+  padding: rem(60) 0;
+
+  @include mq(md) {
+    padding: rem(100) 0;
+  }
+}
+
+.p-single__content {
+  margin-top: rem(40);
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  border-radius: rem(5);
+  border: 5px solid #37af32;
+  padding: rem(20);
+
+  @include mq(md) {
+    margin-top: rem(60);
+    border-radius: rem(10);
+    padding: rem(40);
+  }
+  @include mq(lg) {
+    padding: rem(100);
+    border: 10px solid #37af32;
+  }
+}
+
+.p-single__main-image {
+  width: 100%;
+  border-radius: rem(10);
+  overflow: hidden;
+}
+
+.p-single__main-image img {
+  aspect-ratio: 1320 / 360;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-single__header {
+  margin-top: rem(20);
+
+  @include mq(md) {
+    margin-top: rem(30);
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+  }
+  @include mq(lg) {
+    margin-top: rem(40);
+    gap: rem(40);
+  }
+}
+
+.p-single__title {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: rem(24);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  color: #37af32;
+
+  @include mq(md) {
+    font-size: rem(32);
+  }
+  @include mq(lg) {
+    font-size: rem(60);
+  }
+}
+
+.p-single__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: rem(10);
+  margin-top: rem(20);
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: calc(56 / 20);
+  letter-spacing: 0.06em;
+  color: #222;
+
+  @include mq(md) {
+    flex-direction: row;
+    align-items: center;
+    gap: rem(20);
+    margin-top: initial;
+    font-size: clamp(14px, 2vw, 16px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+
+.p-single__meta-item {
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+
+  @include mq(md) {
+    gap: rem(20);
+  }
+}
+
+.p-single__meta-item::before,
+.p-single__meta-item::after {
+  content: "";
+  display: none;
+  width: 1px;
+  height: rem(30);
+  background-color: #222;
+
+  @include mq(md) {
+    display: block;
+  }
+}
+.p-single__meta-item:first-child::after {
+  display: none;
+}
+
+.p-single__section {
+  margin-top: rem(24);
+  display: flex;
+  flex-direction: column;
+  gap: rem(30);
+
+  @include mq(md) {
+    flex-direction: row-reverse;
+    margin-top: rem(40);
+    gap: rem(60);
+  }
+  @include mq(lg) {
+    gap: rem(100);
+    margin-top: rem(80);
+  }
+}
+
+.p-single__section--reverse {
+  flex-direction: column;
+
+  @include mq(md) {
+    flex-direction: row;
+  }
+}
+
+.p-single__section-image {
+  flex: 1;
+  border-radius: rem(10);
+  overflow: hidden;
+
+  @include mq(md) {
+    flex: 0 0 calc(580 / 1320 * 100%);
+  }
+}
+
+.p-single__section-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.p-single__section-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p-single__section-heading {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: rem(20);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #222;
+  line-height: calc(67 / 48);
+
+  @include mq(md) {
+    font-size: clamp(20px, 2vw, 24px);
+  }
+  @include mq(lg) {
+    font-size: rem(48);
+  }
+}
+
+.p-single__section-subheading {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: calc(43 / 24);
+  letter-spacing: 0.2em;
+  color: #222;
+  margin-top: rem(20);
+
+  @include mq(md) {
+    margin-top: rem(30);
+    font-size: clamp(16px, 2vw, 18px);
+  }
+  @include mq(lg) {
+    font-size: rem(24);
+    margin-top: rem(40);
+  }
+}
+
+.p-single__section-text {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: calc(32 / 20);
+  letter-spacing: 0.06em;
+  color: #222;
+  margin-top: rem(8);
+
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 16px);
+    margin-top: rem(16);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+    margin-top: rem(20);
+  }
+}
+
+.p-single__feature {
+  margin-top: rem(50);
+  background-color: #ca4844;
+  border-radius: rem(10);
+  padding: rem(30) rem(20);
+  position: relative;
+  overflow: hidden;
+
+  @include mq(md) {
+    margin-top: rem(80);
+    padding: rem(50) rem(50);
+  }
+}
+
+.p-single__feature-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(80);
+  font-weight: 800;
+  font-style: italic;
+  line-height: calc(140 / 200);
+  color: #c7c7cc;
+  opacity: 0.3;
+  white-space: nowrap;
+  pointer-events: none;
+
+  @include mq(md) {
+    font-size: rem(200);
+  }
+}
+
+.p-single__feature-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(20);
+
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(40);
+  }
+}
+
+.p-single__feature-text-area {
+  flex: 1;
+}
+
+.p-single__feature-logo {
+  width: rem(60);
+  margin-bottom: rem(15);
+
+  @include mq(md) {
+    width: rem(80);
+    margin-bottom: rem(20);
+  }
+}
+
+.p-single__feature-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.p-single__feature-heading {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: rem(36);
+  font-weight: 900;
+  line-height: calc(87 / 72);
+  color: #fff;
+
+  @include mq(md) {
+    font-size: rem(72);
+  }
+}
+
+.p-single__feature-subheading {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: rem(36);
+  font-weight: 500;
+  line-height: calc(87 / 72);
+  color: #fff;
+  margin-top: rem(3);
+
+  @include mq(md) {
+    font-size: rem(72);
+    margin-top: rem(5);
+  }
+}
+
+.p-single__feature-brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(40);
+  font-weight: 800;
+  font-style: italic;
+  line-height: calc(96 / 79);
+  color: #fff;
+  margin-top: rem(8);
+
+  @include mq(md) {
+    font-size: rem(79);
+    margin-top: rem(10);
+  }
+}
+
+.p-single__feature-caption {
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(11);
+  font-weight: 600;
+  font-style: italic;
+  line-height: calc(16 / 13);
+  color: #fff;
+  margin-top: rem(8);
+
+  @include mq(md) {
+    font-size: rem(13);
+    margin-top: rem(10);
+  }
+}
+
+.p-single__feature-image {
+  flex: 0 0 auto;
+  max-width: 100%;
+  width: 100%;
+  border-radius: rem(10);
+  overflow: hidden;
+  box-shadow: rem(40) rem(40) rem(20) rgba(0, 0, 0, 0.2);
+
+  @include mq(md) {
+    flex: 0 0 rem(360);
+    max-width: rem(360);
+  }
+}
+
+.p-single__feature-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.p-single__feature-sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: rem(60);
+  height: 100%;
+  background-color: #222;
+  border-radius: 0 rem(10) rem(10) 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.p-single__feature-sidebar-text {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: rem(16);
+  font-weight: 700;
+  color: #fff;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.1em;
+}
+.p-single__feature-img {
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+  @include mq(lg) {
+    margin-top: rem(80);
+  }
+}
+.p-single__feature-img img {
+  aspect-ratio: 1320 / 400;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.p-single__btn-wrapper {
+  margin-top: rem(32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+  @include mq(lg) {
+    margin-top: rem(80);
+  }
+}
+
+.p-single__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: rem(260);
+  height: rem(56);
+  padding-left: rem(40);
+  padding-right: rem(30);
+  border-radius: 9999px;
+  background: #222;
+  @include mq(md) {
+    height: rem(80);
+  }
+}
+
+.p-single__btn-text {
+  font-family: $second-font-family;
+  color: #37af32;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+.p-single__btn-icon {
+  background: transparent;
+  border: 1px solid #37af32;
+  border-radius: 9999px;
+  width: rem(20);
+  height: rem(20);
+  position: relative;
+}
+.p-single__btn-icon::before {
+  position: absolute;
+  content: "";
+  background: #37af32;
+  width: rem(8);
+  height: rem(8);
+  border-radius: 9999px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

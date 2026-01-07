@@ -1,65 +1,72 @@
 <?php get_header(); ?>
 <main>
-  <div class="p-scroll-text wrapper js-scroll-text p-mv__scroll-text">
-    <div class="loop">
-      <img src="<?php echo get_template_directory_uri() ?>/images/common/loop4.svg" alt="" width="3006" height="160">
-    </div>
-    <div class="loop loop2">
-      <img src="<?php echo get_template_directory_uri() ?>/images/common/loop4.svg" alt="" width="3006" height="160">
-    </div>
-  </div>
-  <div class="p-single-topics">
+  <section class="p-page-mv p-page-mv--download">
     <div class="l-inner">
-      <div class="p-single-topics__content">
-        <div class="p-single-topics__title">
-          <h2 class="c-main-title">
-            <span class="c-main-title__ja">トピックス</span>
-            <span class="c-main-title__en">Topics</span>
-          </h2>
+      <div class="p-page-mv__content">
+        <div class="p-page-mv__detail" data-title="Example">
+          <h2 class="p-page-mv__title">施工事例</h2>
+          <p class="p-page-mv__text">Sekishu tiled roof building</p>
         </div>
-        <div class="p-single-topics__main">
-          <div class="p-single-topics__main-inner">
-            <div class="p-single-topics__main-content">
-              <h3 class="p-single-topics__main-title"><?php the_title(); ?></h3>
-            </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="p-single">
+    <div class="l-inner">
+      <div class="p-single__content">
+        <!-- メイン画像 -->
+        <figure class="p-single__main-image">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/single/single1.jpg" alt="<?php the_title(); ?>" width="1320" height="360">
+        </figure>
+
+        <!-- ヘッダー部分 -->
+        <div class="p-single__header">
+          <h1 class="p-single__title">グラスロ 来待</h1>
+          <div class="p-single__meta">
+            <div class="p-single__meta-item">工事名(○○邸)</div>
+            <div class="p-single__meta-item">島根県大田市</div>
           </div>
         </div>
-        <div class="p-single-topics__meta">
-          <div class="p-single-topics__meta-inner">
-            <div class="p-single-topics__meta-content">
-              <p class="p-single-topics__meta-text"><?php the_time('Y.m.d'); ?></p>
-              <?php
-              $categories = get_the_category();
-              if (! empty($categories)) {
-                $cat_names = array_map(function ($cat) {
-                  return esc_html($cat->name);
-                }, $categories);
-                echo '<span class="p-single-topics__meta-category">' . implode(', ', $cat_names) . '</span>';
-              }
-              ?>
-            </div>
+
+        <!-- セクション1 -->
+        <div class="p-single__section">
+          <div class="p-single__section-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/example/example1.jpg" alt="施工事例画像">
+          </div>
+          <div class="p-single__section-content">
+            <h2 class="p-single__section-heading">あらゆる屋根に、<br>新しい瓦の可能性を。</h2>
+            <h3 class="p-single__section-subheading">グラスロは、屋根勾配を選ばないJ形瓦です。</h3>
+            <p class="p-single__section-text">従来の瓦では、施工できなかった緩い勾配の屋根でも使える画期的な製品です。<br>在来工法の和風住宅からモダンな低勾配屋根の住宅まで様々な住宅に対応いたします。</p>
           </div>
         </div>
-        <div class="p-single-topics__main-content">
-          <?php the_content(); ?>
+
+        <!-- セクション2 -->
+        <div class="p-single__section p-single__section--reverse">
+          <div class="p-single__section-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/example/example1.jpg" alt="施工事例画像">
+          </div>
+          <div class="p-single__section-content">
+            <h2 class="p-single__section-heading">あらゆる屋根に、<br>新しい瓦の可能性を。</h2>
+            <h3 class="p-single__section-subheading">グラスロは、屋根勾配を選ばないJ形瓦です。</h3>
+            <p class="p-single__section-text">従来の瓦では、施工できなかった緩い勾配の屋根でも使える画期的な製品です。<br>在来工法の和風住宅からモダンな低勾配屋根の住宅まで様々な住宅に対応いたします。</p>
+          </div>
         </div>
-        <div class="p-single-topics__btn-wrapper">
-          <a href="<?php echo esc_url(home_url('/topics')); ?>" class="p-single-topics__btn">
-            <span class="p-single-topics__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24.5" height="49" viewBox="0 0 24.5 49">
-                <path d="M24.5,48.5a24,24,0,0,1,0-48" transform="translate(0 0)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" />
-              </svg>
-            </span>
-            <p class="p-single-topics__btn-text">トピックス一覧へ</p>
-            <span class="p-single-topics__icon p-single-topics__icon--right">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24.5" height="49" viewBox="0 0 24.5 49">
-                <path d="M.5,48.5A24,24,0,0,0,.5.5" transform="translate(-0.5 0)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" />
-              </svg>
-            </span>
+
+        <!-- 特徴セクション -->
+        <figure class="p-single__feature-img">
+          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/single/graslo.png" alt="<?php the_title(); ?>" width="1320" height="400">
+        </figure>
+        <div class="p-single__btn-wrapper">
+          <a href="<?php echo esc_url(home_url('/example')); ?>" class="p-single__btn">
+            <p class="p-single__btn-text">施工一覧へ戻る</p>
+            <div class="p-single__btn-icon"></div>
           </a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  <?php get_template_part("includes/submit"); ?>
+
 </main>
+
 <?php get_footer() ?>

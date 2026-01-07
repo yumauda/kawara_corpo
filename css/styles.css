@@ -2282,20 +2282,33 @@ select::-ms-expand {
 }
 
 .p-footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
-.p-footer__content {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .p-footer__content {
+    display: flex;
+  }
 }
 
 .p-footer__home {
   display: inline-block;
+  width: 12.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .p-footer__home {
     width: 15.625rem;
+    margin-left: initial;
+    margin-right: initial;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -2312,10 +2325,12 @@ select::-ms-expand {
 }
 
 .p-footer__nav {
-  display: flex;
+  margin-top: 2rem;
 }
 @media screen and (min-width: 768px) {
   .p-footer__nav {
+    margin-top: initial;
+    display: flex;
     margin-left: auto;
     gap: 2.5rem;
   }
@@ -2326,9 +2341,27 @@ select::-ms-expand {
   }
 }
 
-.p-footer__list + .p-footer__list {
-  margin-top: 0.75rem;
+.p-footer__lists {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
+@media screen and (min-width: 768px) {
+  .p-footer__lists {
+    display: initial;
+  }
+}
+
+.p-footer__lists + .p-footer__lists {
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__lists + .p-footer__lists {
+    margin-top: initial;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .p-footer__list + .p-footer__list {
     margin-top: 0.75rem;
@@ -2341,12 +2374,22 @@ select::-ms-expand {
 }
 
 .p-footer__link {
-  font-size: 1rem;
   color: #222;
   font-weight: 700;
   padding-left: 0.8125rem;
   position: relative;
   transition: 0.3s ease-in-out;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__link {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-footer__link {
+    font-size: 1rem;
+  }
 }
 
 .p-footer__link:hover {
@@ -2392,8 +2435,14 @@ select::-ms-expand {
 }
 
 .p-footer__small {
-  margin-top: 3.1875rem;
-  text-align: right;
+  text-align: center;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__small {
+    margin-top: 3.1875rem;
+    text-align: right;
+  }
 }
 
 .p-footer__small small {
@@ -2402,6 +2451,15 @@ select::-ms-expand {
   font-weight: 500;
   font-style: italic;
   color: #222222;
+}
+
+.p-footer__recruit-wrapper {
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__recruit-wrapper {
+    margin-top: initial;
+  }
 }
 
 .p-footer__recruit {
@@ -8843,6 +8901,539 @@ input::placeholder {
 /* グループ（グループ化ブロック） */
 /* カラム系 */
 /* ギャラリー */
+.p-single {
+  padding: 3.75rem 0;
+}
+@media screen and (min-width: 768px) {
+  .p-single {
+    padding: 6.25rem 0;
+  }
+}
+
+.p-single__content {
+  margin-top: 2.5rem;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  border-radius: 0.3125rem;
+  border: 5px solid #37af32;
+  padding: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__content {
+    margin-top: 3.75rem;
+    border-radius: 0.625rem;
+    padding: 2.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-single__content {
+    padding: 6.25rem;
+    border: 10px solid #37af32;
+  }
+}
+
+.p-single__main-image {
+  width: 100%;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.p-single__main-image img {
+  aspect-ratio: 1320/360;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-single__header {
+  margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__header {
+    margin-top: 1.875rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-single__header {
+    margin-top: 2.5rem;
+    gap: 2.5rem;
+  }
+}
+
+.p-single__title {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  color: #37af32;
+}
+@media screen and (min-width: 768px) {
+  .p-single__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-single__title {
+    font-size: 3.75rem;
+  }
+}
+
+.p-single__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+  margin-top: 1.25rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2.8;
+  letter-spacing: 0.06em;
+  color: #222;
+}
+@media screen and (min-width: 768px) {
+  .p-single__meta {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: initial;
+    font-size: clamp(14px, 2vw, 16px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-single__meta {
+    font-size: 1.25rem;
+  }
+}
+
+.p-single__meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__meta-item {
+    gap: 1.25rem;
+  }
+}
+
+.p-single__meta-item::before,
+.p-single__meta-item::after {
+  content: "";
+  display: none;
+  width: 1px;
+  height: 1.875rem;
+  background-color: #222;
+}
+@media screen and (min-width: 768px) {
+  .p-single__meta-item::before,
+  .p-single__meta-item::after {
+    display: block;
+  }
+}
+
+.p-single__meta-item:first-child::after {
+  display: none;
+}
+
+.p-single__section {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__section {
+    flex-direction: row-reverse;
+    margin-top: 2.5rem;
+    gap: 3.75rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-single__section {
+    gap: 6.25rem;
+    margin-top: 5rem;
+  }
+}
+
+.p-single__section--reverse {
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .p-single__section--reverse {
+    flex-direction: row;
+  }
+}
+
+.p-single__section-image {
+  flex: 1;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .p-single__section-image {
+    flex: 0 0 43.9393939394%;
+  }
+}
+
+.p-single__section-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.p-single__section-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p-single__section-heading {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #222;
+  line-height: 1.3958333333;
+}
+@media screen and (min-width: 768px) {
+  .p-single__section-heading {
+    font-size: clamp(20px, 2vw, 24px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-single__section-heading {
+    font-size: 3rem;
+  }
+}
+
+.p-single__section-subheading {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.7916666667;
+  letter-spacing: 0.2em;
+  color: #222;
+  margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__section-subheading {
+    margin-top: 1.875rem;
+    font-size: clamp(16px, 2vw, 18px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-single__section-subheading {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+  }
+}
+
+.p-single__section-text {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  color: #222;
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__section-text {
+    font-size: clamp(14px, 2vw, 16px);
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-single__section-text {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+  }
+}
+
+.p-single__feature {
+  margin-top: 3.125rem;
+  background-color: #ca4844;
+  border-radius: 0.625rem;
+  padding: 1.875rem 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .p-single__feature {
+    margin-top: 5rem;
+    padding: 3.125rem 3.125rem;
+  }
+}
+
+.p-single__feature-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 0.7;
+  color: #c7c7cc;
+  opacity: 0.3;
+  white-space: nowrap;
+  pointer-events: none;
+}
+@media screen and (min-width: 768px) {
+  .p-single__feature-bg {
+    font-size: 12.5rem;
+  }
+}
+
+.p-single__feature-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__feature-content {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+}
+
+.p-single__feature-text-area {
+  flex: 1;
+}
+
+.p-single__feature-logo {
+  width: 3.75rem;
+  margin-bottom: 0.9375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__feature-logo {
+    width: 5rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.p-single__feature-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.p-single__feature-heading {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: 1.2083333333;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .p-single__feature-heading {
+    font-size: 4.5rem;
+  }
+}
+
+.p-single__feature-subheading {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.2083333333;
+  color: #fff;
+  margin-top: 0.1875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__feature-subheading {
+    font-size: 4.5rem;
+    margin-top: 0.3125rem;
+  }
+}
+
+.p-single__feature-brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.2151898734;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__feature-brand {
+    font-size: 4.9375rem;
+    margin-top: 0.625rem;
+  }
+}
+
+.p-single__feature-caption {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.2307692308;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__feature-caption {
+    font-size: 0.8125rem;
+    margin-top: 0.625rem;
+  }
+}
+
+.p-single__feature-image {
+  flex: 0 0 auto;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: 2.5rem 2.5rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .p-single__feature-image {
+    flex: 0 0 22.5rem;
+    max-width: 22.5rem;
+  }
+}
+
+.p-single__feature-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.p-single__feature-sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3.75rem;
+  height: 100%;
+  background-color: #222;
+  border-radius: 0 0.625rem 0.625rem 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .p-single__feature-sidebar {
+    display: flex;
+  }
+}
+
+.p-single__feature-sidebar-text {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.1em;
+}
+
+.p-single__feature-img {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__feature-img {
+    margin-top: 3.75rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-single__feature-img {
+    margin-top: 5rem;
+  }
+}
+
+.p-single__feature-img img {
+  aspect-ratio: 1320/400;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-single__btn-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .p-single__btn-wrapper {
+    margin-top: 3.75rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-single__btn-wrapper {
+    margin-top: 5rem;
+  }
+}
+
+.p-single__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 16.25rem;
+  height: 3.5rem;
+  padding-left: 2.5rem;
+  padding-right: 1.875rem;
+  border-radius: 9999px;
+  background: #222;
+}
+@media screen and (min-width: 768px) {
+  .p-single__btn {
+    height: 5rem;
+  }
+}
+
+.p-single__btn-text {
+  font-family: "Montserrat", sans-serif;
+  color: #37af32;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__btn-text {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-single__btn-text {
+    font-size: 1.25rem;
+  }
+}
+
+.p-single__btn-icon {
+  background: transparent;
+  border: 1px solid #37af32;
+  border-radius: 9999px;
+  width: 1.25rem;
+  height: 1.25rem;
+  position: relative;
+}
+
+.p-single__btn-icon::before {
+  position: absolute;
+  content: "";
+  background: #37af32;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media screen and (min-width: 768px) {
   .p-specific {
     padding-top: 5rem;
