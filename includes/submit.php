@@ -4,15 +4,15 @@
             <div class="p-submit__row">
                 <div class="p-submit__btn-top">
                     <h3 class="p-submit__title">Consultation<br>&emsp;_contact</h3>
-                    <p class="p-submit__subtitle">ご相談・<br>お問い合わせ</p>
+                    <p class="p-submit__subtitle">ご相談・<br class="u-desktop">お問い合わせ</p>
                 </div>
                 <div class="p-submit__en-wrapper">
-                    <p class="p-submit__en-main">_Sekishu Kawara<br>_Sekishu Tiles</p>
+                    <p class="p-submit__en-main">_Sekishu Kawara<br class="u-desktop">_Sekishu Tiles</p>
                     <p class="p-submit__en-sub">Sekishu Kawara are clay roof tiles produced in the Iwami region of Shimane Prefecture. They are one of the three major roof tiles in Japan, along with Sanshu Kawara (Aichi Prefecture) and Awaji Kawara (Hyogo Prefecture).</p>
                 </div>
             </div>
             <div class="p-submit__btn-bottom">
-                <p class="p-submit__btn-bottom-text">瓦のこと、屋根のこと、気になることがございましたら、<br>
+                <p class="p-submit__btn-bottom-text">瓦のこと、屋根のこと、気になることがございましたら、<br class="u-desktop">
                     お問い合わせフォームよりお気軽にご相談ください。</p>
                 <div class="p-submit__icon">
                     <svg id="グループ_23517" data-name="グループ 23517" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">

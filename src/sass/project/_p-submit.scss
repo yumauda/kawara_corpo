@@ -1,8 +1,12 @@
 @use "../global" as *;
 
 .p-submit {
-  padding-left: rem(40);
-  padding-right: rem(40);
+  padding-left: rem(20);
+  padding-right: rem(20);
+  @include mq(md) {
+    padding-left: rem(40);
+    padding-right: rem(40);
+  }
 }
 
 .p-submit__inner {
@@ -15,15 +19,22 @@
   background-size: cover;
   display: block;
   border-radius: rem(10);
-  padding: rem(44) rem(60);
+  padding: rem(20);
+  @include mq(md) {
+    padding: rem(44) rem(60);
+  }
 }
 .p-submit__row {
-  display: flex;
-  justify-content: space-between;
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .p-submit__btn-top {
   position: relative;
-  width: fit-content;
+  @include mq(md) {
+    width: fit-content;
+  }
 }
 
 .p-submit__title {
@@ -33,6 +44,7 @@
   color: #37af32;
   line-height: calc(160 / 140);
   text-transform: uppercase;
+  font-size: rem(28);
   @include mq(md) {
     font-size: rem(80);
   }
@@ -47,8 +59,11 @@
   font-weight: 700;
   line-height: calc(54 / 40);
   letter-spacing: 0.06em;
-  position: absolute;
+  font-size: rem(16);
+  margin-top: rem(16);
   @include mq(md) {
+    margin-top: initial;
+    position: absolute;
     font-size: rem(28);
     right: rem(-72);
     bottom: rem(12);
@@ -61,13 +76,13 @@
 }
 
 .p-submit__en-wrapper {
-  width: rem(180);
-  @include mq(md){
+  margin-top: rem(16);
+  @include mq(md) {
+    width: rem(180);
     margin-top: rem(12);
   }
-  @include mq(lg){
+  @include mq(lg) {
     margin-top: rem(32);
-    
   }
 }
 
@@ -76,24 +91,37 @@
   font-family: $second-font-family;
   font-weight: 700;
   font-style: italic;
-  font-size: rem(16);
   letter-spacing: 0.06em;
+  font-size: rem(12);
+  @include mq(md) {
+    font-size: clamp(12px, 2vw, 12px);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
+  }
 }
 
 .p-submit__en-sub {
-  margin-top: rem(18);
   color: #fff;
   font-size: rem(8);
   font-family: $second-font-family;
   font-weight: 400;
   line-height: calc(14 / 8);
   letter-spacing: 0.06em;
+  margin-top: rem(8);
+  @include mq(md) {
+    margin-top: rem(18);
+  }
 }
 
 .p-submit__btn-bottom {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  gap: rem(16);
+  @include mq(md) {
+    gap: initial;
+  }
 }
 
 .p-submit__btn-bottom-text {
@@ -101,20 +129,31 @@
   font-weight: 500;
   line-height: calc(36 / 20);
   letter-spacing: 0.06em;
-  @include mq(md){
+  font-size: rem(14);
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: initial;
     font-size: clamp(12px, 2vw, 16px);
   }
-  @include mq(lg){
+  @include mq(lg) {
     font-size: rem(20);
-    
   }
 }
 
 .p-submit__icon {
+  min-width: rem(56);
+  max-width: rem(56);
+  margin-left: auto;
+  margin-right: auto;
   @include mq(md) {
-    width: rem(100);
+    min-width: rem(100);
+    max-width: rem(100);
+    margin-top: initial;
+    margin-left: initial;
+    margin-right: initial;
   }
   @include mq(lg) {
-    width: rem(220);
+    min-width: rem(220);
+    max-width: rem(220);
   }
 }

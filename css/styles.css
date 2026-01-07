@@ -11057,8 +11057,14 @@ input::placeholder {
 }
 
 .p-submit {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-submit {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .p-submit__btn {
@@ -11068,17 +11074,28 @@ input::placeholder {
   background-size: cover;
   display: block;
   border-radius: 0.625rem;
-  padding: 2.75rem 3.75rem;
+  padding: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-submit__btn {
+    padding: 2.75rem 3.75rem;
+  }
 }
 
-.p-submit__row {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .p-submit__row {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .p-submit__btn-top {
   position: relative;
-  width: fit-content;
+}
+@media screen and (min-width: 768px) {
+  .p-submit__btn-top {
+    width: fit-content;
+  }
 }
 
 .p-submit__title {
@@ -11088,6 +11105,7 @@ input::placeholder {
   color: #37af32;
   line-height: 1.1428571429;
   text-transform: uppercase;
+  font-size: 1.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-submit__title {
@@ -11106,10 +11124,13 @@ input::placeholder {
   font-weight: 700;
   line-height: 1.35;
   letter-spacing: 0.06em;
-  position: absolute;
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-submit__subtitle {
+    margin-top: initial;
+    position: absolute;
     font-size: 1.75rem;
     right: -4.5rem;
     bottom: 0.75rem;
@@ -11124,10 +11145,11 @@ input::placeholder {
 }
 
 .p-submit__en-wrapper {
-  width: 11.25rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-submit__en-wrapper {
+    width: 11.25rem;
     margin-top: 0.75rem;
   }
 }
@@ -11142,24 +11164,45 @@ input::placeholder {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: italic;
-  font-size: 1rem;
   letter-spacing: 0.06em;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-submit__en-main {
+    font-size: clamp(12px, 2vw, 12px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-submit__en-main {
+    font-size: 1rem;
+  }
 }
 
 .p-submit__en-sub {
-  margin-top: 1.125rem;
   color: #fff;
   font-size: 0.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.75;
   letter-spacing: 0.06em;
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-submit__en-sub {
+    margin-top: 1.125rem;
+  }
 }
 
 .p-submit__btn-bottom {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-submit__btn-bottom {
+    gap: initial;
+  }
 }
 
 .p-submit__btn-bottom-text {
@@ -11167,9 +11210,12 @@ input::placeholder {
   font-weight: 500;
   line-height: 1.8;
   letter-spacing: 0.06em;
+  font-size: 0.875rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-submit__btn-bottom-text {
+    margin-top: initial;
     font-size: clamp(12px, 2vw, 16px);
   }
 }
@@ -11179,14 +11225,25 @@ input::placeholder {
   }
 }
 
+.p-submit__icon {
+  min-width: 3.5rem;
+  max-width: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (min-width: 768px) {
   .p-submit__icon {
-    width: 6.25rem;
+    min-width: 6.25rem;
+    max-width: 6.25rem;
+    margin-top: initial;
+    margin-left: initial;
+    margin-right: initial;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-submit__icon {
-    width: 13.75rem;
+    min-width: 13.75rem;
+    max-width: 13.75rem;
   }
 }
 
