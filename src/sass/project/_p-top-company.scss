@@ -13,7 +13,9 @@
 }
 
 .p-top-company__content {
-  display: flex;
+  @include mq(md) {
+    display: flex;
+  }
 }
 
 .p-top-company__left {
@@ -32,6 +34,7 @@
 }
 
 .p-top-company__text-wrapper {
+  margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(48);
   }
@@ -55,6 +58,7 @@
 }
 
 .p-top-company__btn-wrapper {
+  margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(32);
   }
@@ -65,7 +69,9 @@
 .p-top-company__img {
   width: 100%;
   position: relative;
+  margin-top: rem(24);
   @include mq(md) {
+    margin-top: initial;
     max-width: rem(600);
   }
   @include mq(lg) {

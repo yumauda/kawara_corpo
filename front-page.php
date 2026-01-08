@@ -4,7 +4,7 @@
     <div class="l-inner">
       <div class="p-mv__content">
         <figure class="p-mv__img">
-          <img src="<?php echo get_template_directory_uri() ?>/images/top/mv_icon.webp" alt="瓦屋百景" width="550" height="820">
+          <img src="<?php echo get_template_directory_uri() ?>/images/top/mv_img.webp" alt="瓦屋百景" width="2292" height="1490">
         </figure>
       </div>
     </div>
@@ -78,7 +78,7 @@
             <a href="#" class="c-btn">
               <p class="c-btn__text">View more</p>
               <div class="c-btn__icon">
-                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon_white.svg" alt="" width="60" height="60">
               </div>
             </a>
           </div>
@@ -107,7 +107,7 @@
                     <img src="<?php echo get_template_directory_uri() ?>/images/top/choose_slider1.webp" alt="塩害に強い瓦">
                   </figure>
                   <div class="p-top-choose__icon">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon_white.svg" alt="" width="60" height="60">
                   </div>
                 </a>
               </div>
@@ -115,21 +115,21 @@
                 <a href="#" class="p-top-choose__link">
                   <div class="p-top-choose__left">
                     <div class="p-top-choose__title-wrapper">
-                      <p class="p-top-choose__title-num">01</p>
-                      <p class="p-top-choose__title-text">塩害に強い瓦</p>
+                      <p class="p-top-choose__title-num">02</p>
+                      <p class="p-top-choose__title-text">寒さに強い瓦</p>
                     </div>
-                    <p class="p-top-choose__text">石州瓦は、過酷な自然環境のひとつである「塩害」に対しても、確かな自信をもってその耐久性を誇ることができます。<br>塩害に強い屋根材として、安心と信頼をお届けできる存在です。</p>
+                    <p class="p-top-choose__text">寒暖差が多い地域では、寒さによる凍害被害が住まいの各所に発生します。凍害被害は「住まいへの重大な損害」になりかねません。<br>石州瓦は優れた耐凍害性能で、寒冷地でも信頼されています。</p>
                     <div class="p-top-choose__bottom">
-                      <p class="p-top-choose__bottom-number">_Reason 01 / 05</p>
+                      <p class="p-top-choose__bottom-number">_Reason 02 / 05</p>
                       <p class="p-top-choose__bottom-text">Sekishu roof tiles proudly demonstrate their proven durability even against one of the harshest natural challenges—salt damage. As a roofing material highly resistant to salt corrosion, they provide lasting peace of mind and trust.</p>
                     </div>
 
                   </div>
                   <figure class="p-top-choose__img">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/top/choose_slider1.webp" alt="塩害に強い瓦">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/top/choose_slider2.webp" alt="寒さに強い瓦">
                   </figure>
                   <div class="p-top-choose__icon">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon_white.svg" alt="" width="60" height="60">
                   </div>
                 </a>
               </div>
@@ -137,21 +137,22 @@
                 <a href="#" class="p-top-choose__link">
                   <div class="p-top-choose__left">
                     <div class="p-top-choose__title-wrapper">
-                      <p class="p-top-choose__title-num">01</p>
-                      <p class="p-top-choose__title-text">塩害に強い瓦</p>
+                      <p class="p-top-choose__title-num">03</p>
+                      <p class="p-top-choose__title-text">建物に優しい瓦</p>
                     </div>
-                    <p class="p-top-choose__text">石州瓦は、過酷な自然環境のひとつである「塩害」に対しても、確かな自信をもってその耐久性を誇ることができます。<br>塩害に強い屋根材として、安心と信頼をお届けできる存在です。</p>
+                    <p class="p-top-choose__text">陶器瓦の裏面と野地板の間には、スレートや金属屋根材と比較して大きな空気層をもたせた構造となっています。<br>
+                      この空気層が、瓦裏の通気をもたらし、『結露』を防止！周辺木材の健康な状態を保つ働きをしています。</p>
                     <div class="p-top-choose__bottom">
-                      <p class="p-top-choose__bottom-number">_Reason 01 / 05</p>
+                      <p class="p-top-choose__bottom-number">_Reason 03 / 05</p>
                       <p class="p-top-choose__bottom-text">Sekishu roof tiles proudly demonstrate their proven durability even against one of the harshest natural challenges—salt damage. As a roofing material highly resistant to salt corrosion, they provide lasting peace of mind and trust.</p>
                     </div>
 
                   </div>
                   <figure class="p-top-choose__img">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/top/choose_slider1.webp" alt="塩害に強い瓦">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/top/choose_slider3.webp" alt="塩害に強い瓦">
                   </figure>
                   <div class="p-top-choose__icon">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon_white.svg" alt="" width="60" height="60">
                   </div>
                 </a>
               </div>
@@ -202,6 +203,263 @@
       </div>
     </div>
   </section>
+  <section class="p-connect">
+    <div class="p-connect__top">
+      <p class="p-connect__copyTop">瓦でつなぐ</p>
+    </div>
+    <div class="p-connect__imageMarquee" aria-hidden="true">
+      <div class="p-connect__imageTrack">
+        <div class="p-connect__imageItem">
+          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/top/connect_img.png" alt="" width="3840" height="360">
+        </div>
+        <div class="p-connect__imageItem">
+          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/top/connect_img.png" alt="" width="3840" height="360">
+        </div>
+        <div class="p-connect__imageItem">
+          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/top/connect_img.png" alt="" width="3840" height="360">
+        </div>
+        <!-- 2周目（ループ用） -->
+        <div class="p-connect__imageItem">
+          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/top/connect_img.png" alt="" width="3840" height="360">
+        </div>
+        <div class="p-connect__imageItem">
+          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/top/connect_img.png" alt="" width="3840" height="360">
+        </div>
+        <div class="p-connect__imageItem">
+          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/top/connect_img.png" alt="" width="3840" height="360">
+        </div>
+      </div>
+    </div>
+
+    <div class="p-connect__textMarquee" aria-hidden="true">
+      <div class="p-connect__textTrack">
+        <span class="p-connect__text">Kawara Designs Kawara Designs Kawara Designs</span>
+        <span class="p-connect__text">Kawara Designs Kawara Designs Kawara Designs</span>
+      </div>
+    </div>
+    <div class="p-connect__bottom">
+      <p class="p-connect__copyTop">暮らしと風景</p>
+    </div>
+  </section>
+  <section class="p-top-example">
+    <div class="l-inner">
+      <div class="p-top-example__content">
+        <div class="p-top-example__top">
+          <div class="p-top-choose__title">
+            <h3 class="c-section-title">
+              <span class="c-section-title__en">Example</span>
+              <span class="c-section-title__ja">施工事例</span>
+              <span class="c-section-title__small">Sekishu tiled roof building</span>
+            </h3>
+          </div>
+          <div class="p-top-choose__btn-wrapper">
+            <a href="#" class="c-btn">
+              <p class="c-btn__text">View more</p>
+              <div class="c-btn__icon">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="p-top-example__slider">
+          <div class="swiper swiper-example">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="p-top-example-card p-top-example-card--green">
+                  <div class="p-top-example-card__arrow" aria-hidden="true">
+                    <span class="p-top-example-card__arrowIcon"></span>
+                  </div>
+
+                  <div class="p-top-example-card__inner">
+                    <div class="p-top-example-card__head">
+                      <div class="p-top-example-card__count">
+                        <span class="p-top-example-card__countMain">01</span>
+                        <span class="p-top-example-card__countSubWrap">
+                          <span class="p-top-example-card__countSub">04</span>
+                        </span>
+                      </div>
+                      <p class="p-top-example-card__tag">_Example</p>
+                    </div>
+
+                    <dl class="p-top-example-card__meta">
+                      <div class="p-top-example-card__metaRow">
+                        <dt class="p-top-example-card__metaDt">CLIENT :</dt>
+                        <dd class="p-top-example-card__metaDd">工事名(○○邸)</dd>
+                      </div>
+                      <div class="p-top-example-card__metaRow">
+                        <dt class="p-top-example-card__metaDt">AREA :</dt>
+                        <dd class="p-top-example-card__metaDd">島根県大田市</dd>
+                      </div>
+                    </dl>
+
+                    <figure class="p-top-example-card__img">
+                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/example/example1.webp" alt="施工事例" width="840" height="520">
+                    </figure>
+
+                    <div class="p-top-example-card__divider" aria-hidden="true"></div>
+                    <p class="p-top-example-card__product">ニューセラECO 花梨M</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#" class="p-top-example-card p-top-example-card--white">
+                  <div class="p-top-example-card__arrow" aria-hidden="true">
+                    <span class="p-top-example-card__arrowIcon"></span>
+                  </div>
+
+                  <div class="p-top-example-card__inner">
+                    <div class="p-top-example-card__head">
+                      <div class="p-top-example-card__count">
+                        <span class="p-top-example-card__countMain">02</span>
+                        <span class="p-top-example-card__countSubWrap">
+                          <span class="p-top-example-card__countSub">04</span>
+                        </span>
+                      </div>
+                      <p class="p-top-example-card__tag">_Example</p>
+                    </div>
+
+                    <dl class="p-top-example-card__meta">
+                      <div class="p-top-example-card__metaRow">
+                        <dt class="p-top-example-card__metaDt">CLIENT :</dt>
+                        <dd class="p-top-example-card__metaDd">工事名(○○邸)</dd>
+                      </div>
+                      <div class="p-top-example-card__metaRow">
+                        <dt class="p-top-example-card__metaDt">AREA :</dt>
+                        <dd class="p-top-example-card__metaDd">島根県大田市</dd>
+                      </div>
+                    </dl>
+
+                    <figure class="p-top-example-card__img">
+                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/example/example1.webp" alt="施工事例" width="840" height="520">
+                    </figure>
+
+                    <div class="p-top-example-card__divider" aria-hidden="true"></div>
+                    <p class="p-top-example-card__product">ニューセラECO 花梨M</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#" class="p-top-example-card p-top-example-card--green">
+                  <div class="p-top-example-card__arrow" aria-hidden="true">
+                    <span class="p-top-example-card__arrowIcon"></span>
+                  </div>
+
+                  <div class="p-top-example-card__inner">
+                    <div class="p-top-example-card__head">
+                      <div class="p-top-example-card__count">
+                        <span class="p-top-example-card__countMain">03</span>
+                        <span class="p-top-example-card__countSubWrap">
+                          <span class="p-top-example-card__countSub">04</span>
+                        </span>
+                      </div>
+                      <p class="p-top-example-card__tag">_Example</p>
+                    </div>
+
+                    <dl class="p-top-example-card__meta">
+                      <div class="p-top-example-card__metaRow">
+                        <dt class="p-top-example-card__metaDt">CLIENT :</dt>
+                        <dd class="p-top-example-card__metaDd">工事名(○○邸)</dd>
+                      </div>
+                      <div class="p-top-example-card__metaRow">
+                        <dt class="p-top-example-card__metaDt">AREA :</dt>
+                        <dd class="p-top-example-card__metaDd">島根県大田市</dd>
+                      </div>
+                    </dl>
+
+                    <figure class="p-top-example-card__img">
+                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/example/example1.webp" alt="施工事例" width="840" height="520">
+                    </figure>
+
+                    <div class="p-top-example-card__divider" aria-hidden="true"></div>
+                    <p class="p-top-example-card__product">ニューセラECO 花梨M</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#" class="p-top-example-card p-top-example-card--white">
+                  <div class="p-top-example-card__arrow" aria-hidden="true">
+                    <span class="p-top-example-card__arrowIcon"></span>
+                  </div>
+
+                  <div class="p-top-example-card__inner">
+                    <div class="p-top-example-card__head">
+                      <div class="p-top-example-card__count">
+                        <span class="p-top-example-card__countMain">04</span>
+                        <span class="p-top-example-card__countSubWrap">
+                          <span class="p-top-example-card__countSub">04</span>
+                        </span>
+                      </div>
+                      <p class="p-top-example-card__tag">_Example</p>
+                    </div>
+
+                    <dl class="p-top-example-card__meta">
+                      <div class="p-top-example-card__metaRow">
+                        <dt class="p-top-example-card__metaDt">CLIENT :</dt>
+                        <dd class="p-top-example-card__metaDd">工事名(○○邸)</dd>
+                      </div>
+                      <div class="p-top-example-card__metaRow">
+                        <dt class="p-top-example-card__metaDt">AREA :</dt>
+                        <dd class="p-top-example-card__metaDd">島根県大田市</dd>
+                      </div>
+                    </dl>
+
+                    <figure class="p-top-example-card__img">
+                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/example/example1.webp" alt="施工事例" width="840" height="520">
+                    </figure>
+
+                    <div class="p-top-example-card__divider" aria-hidden="true"></div>
+                    <p class="p-top-example-card__product">ニューセラECO 花梨M</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#" class="p-top-example-card p-top-example-card--green">
+                  <div class="p-top-example-card__arrow" aria-hidden="true">
+                    <span class="p-top-example-card__arrowIcon"></span>
+                  </div>
+
+                  <div class="p-top-example-card__inner">
+                    <div class="p-top-example-card__head">
+                      <div class="p-top-example-card__count">
+                        <span class="p-top-example-card__countMain">05</span>
+                        <span class="p-top-example-card__countSubWrap">
+                          <span class="p-top-example-card__countSub">05</span>
+                        </span>
+                      </div>
+                      <p class="p-top-example-card__tag">_Example</p>
+                    </div>
+
+                    <dl class="p-top-example-card__meta">
+                      <div class="p-top-example-card__metaRow">
+                        <dt class="p-top-example-card__metaDt">CLIENT :</dt>
+                        <dd class="p-top-example-card__metaDd">工事名(○○邸)</dd>
+                      </div>
+                      <div class="p-top-example-card__metaRow">
+                        <dt class="p-top-example-card__metaDt">AREA :</dt>
+                        <dd class="p-top-example-card__metaDd">島根県大田市</dd>
+                      </div>
+                    </dl>
+
+                    <figure class="p-top-example-card__img">
+                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/example/example1.webp" alt="施工事例" width="840" height="520">
+                    </figure>
+
+                    <div class="p-top-example-card__divider" aria-hidden="true"></div>
+                    <p class="p-top-example-card__product">ニューセラECO 花梨M</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="p-top-topics">
     <div class="l-inner">
       <div class="p-top-topics__content">
@@ -227,7 +485,7 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              
+
               <div class="swiper-slide">
                 <a href="#" class="p-top-topics__link">
                   <div class="p-top-topics__link-top">
@@ -282,8 +540,8 @@
                   </div>
                 </a>
               </div>
-              
-              
+
+
             </div>
           </div>
         </div>
@@ -384,6 +642,32 @@
       </div>
     </div>
   </div>
+  <section class="p-top-info">
+    <div class="l-inner">
+      <div class="p-top-info__content">
+        <a href="#" class="p-top-info__link">
+          <div class="p-top-info__detail">
+            <p class="p-top-info__detail-en">Recruit</p>
+            <h3 class="p-top-info__detail-title">採用情報</h3>
+            <p class="p-top-info__detail-text">Heritage in Hands</p>
+          </div>
+          <div class="p-top-info__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223 223">
+              <g id="グループ_23411" data-name="グループ 23411" transform="translate(0.486)">
+                <rect id="長方形_1137" data-name="長方形 1137" width="223" height="223" rx="110" transform="translate(-0.486)" fill="#37af32" />
+                <g id="グループ_23372" data-name="グループ 23372" transform="translate(89.189 98.48)">
+                  <path id="パス_42625" data-name="パス 42625" d="M189.089-2035.115l14.865,13.007L189.089-2009.1" transform="translate(-159.359 2035.115)" fill="none" stroke="#fff" stroke-width="5" />
+                  <path id="パス_42624" data-name="パス 42624" d="M189.089-2035.115l14.865,13.007L189.089-2009.1" transform="translate(-174.224 2035.115)" fill="none" stroke="#fff" stroke-width="5" />
+                  <path id="パス_42623" data-name="パス 42623" d="M189.089-2035.115l14.865,13.007L189.089-2009.1" transform="translate(-189.089 2035.115)" fill="none" stroke="#fff" stroke-width="5" />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <?php get_template_part("includes/submit"); ?>
 
 </main>

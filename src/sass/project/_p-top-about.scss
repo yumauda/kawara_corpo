@@ -2,6 +2,7 @@
 
 .p-top-about {
   overflow-x: clip;
+  padding-bottom: rem(48);
   @include mq(md) {
     padding-top: rem(150);
     padding-bottom: rem(100);
@@ -32,23 +33,31 @@
 }
 
 .p-top-about__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .p-top-about__title {
 }
 
 .p-top-about__btn-wrapper {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: initial;
+  }
 }
 
 .p-top-about__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   margin-top: rem(24);
   position: relative;
+  grid-template-columns: 1fr;
+  gap: rem(24);
   @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
     gap: rem(60);
     margin-top: rem(40);
   }
@@ -58,15 +67,17 @@
   }
 }
 .p-top-about__grid::before {
-  position: absolute;
-  content: "";
-  background: #222;
-  width: 1px;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    background: #222;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
 }
 .p-top-about__grid::after {
   position: absolute;
@@ -78,13 +89,16 @@
   height: auto;
   aspect-ratio: 970 / 779;
   object-fit: cover;
-  width: rem(220);
-  top: 30%;
-  left: 55%;
-  transform: translate(-50%, -50%);
+  width: rem(140);
   z-index: 2;
+  top: rem(-128);
+  right: 0;
   @include mq(md) {
+    transform: translate(-50%, -50%);
     width: rem(550);
+    right: initial;
+    top: 30%;
+    left: 55%;
   }
   @include mq(lg) {
     width: rem(970);

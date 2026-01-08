@@ -1,0 +1,117 @@
+@use "../global" as *;
+
+.p-top-info {
+  margin-top: rem(16);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    margin-top: rem(20);
+    padding-bottom: rem(80);
+  }
+  @include mq(lg) {
+    margin-top: rem(25);
+    padding-bottom: rem(120);
+  }
+}
+.p-top-info__content {
+}
+
+.p-top-info__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background: #222222;
+  border-radius: rem(10);
+  padding: rem(24);
+  @include mq(md) {
+    flex-direction: row;
+    height: rem(250);
+    padding: rem(48);
+  }
+  @include mq(lg) {
+    height: rem(380);
+    padding: rem(80);
+  }
+}
+
+.p-top-info__detail {
+}
+
+.p-top-info__detail-en {
+  font-size: rem(20);
+  font-weight: 700;
+  font-family: $second-font-family;
+  font-style: italic;
+  color: #37af32;
+  position: relative;
+  padding-left: rem(30);
+  @include mq(md) {
+    font-size: clamp(20px, 2vw, 24px);
+  }
+  @include mq(lg) {
+    font-size: rem(40);
+  }
+}
+.p-top-info__detail-en::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: rem(10);
+  height: rem(10);
+  background: #37af32;
+  border-radius: 9999px;
+}
+.p-top-info__detail-title {
+  font-weight: 700;
+  font-size: rem(24);
+  letter-spacing: 0.06em;
+  color: #fff;
+  @include mq(md) {
+    margin-top: rem(10);
+    font-size: clamp(24px, 2vw, 32px);
+  }
+  @include mq(lg) {
+    font-size: rem(80);
+  }
+}
+
+.p-top-info__detail-text {
+  font-family: $second-font-family;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  color: #fff;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+
+.p-top-info__icon {
+  width: rem(120);
+  height: rem(120);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: initial;
+    margin-left: initial;
+    margin-right: initial;
+    width: rem(140);
+    height: rem(140);
+  }
+  @include mq(lg) {
+    width: rem(223);
+    height: rem(223);
+  }
+}
+.p-top-info__icon svg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}

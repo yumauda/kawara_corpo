@@ -16,6 +16,7 @@
 @use "./project/_p-ceramic-usage";
 @use "./project/_p-company";
 @use "./project/_p-compare";
+@use "./project/_p-connect";
 @use "./project/_p-drawer";
 @use "./project/_p-eco-features";
 @use "./project/_p-example-list";
@@ -33,6 +34,7 @@
 @use "./project/_p-maker";
 @use "./project/_p-map";
 @use "./project/_p-munsell";
+@use "./project/_p-mv";
 @use "./project/_p-noncombustible";
 @use "./project/_p-page-mv";
 @use "./project/_p-page-mvText";
@@ -56,6 +58,8 @@
 @use "./project/_p-top-btns";
 @use "./project/_p-top-choose";
 @use "./project/_p-top-company";
+@use "./project/_p-top-example";
+@use "./project/_p-top-info";
 @use "./project/_p-top-news";
 @use "./project/_p-top-topics";
 @use "./project/_p-topics-top";

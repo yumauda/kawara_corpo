@@ -1,14 +1,18 @@
 @use "../global" as *;
 
 .p-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 .p-header__inner {
   padding-left: rem(20);
   padding-right: rem(20);
   padding-top: rem(20);
-  @include mq(md) {
-  }
   @include mq(lg) {
     padding-top: rem(30);
     padding-left: rem(40);

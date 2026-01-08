@@ -1,0 +1,268 @@
+@use "../global" as *;
+
+.p-top-example {
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+  @include mq(lg) {
+    padding-top: rem(200);
+    padding-bottom: rem(200);
+  }
+}
+
+.p-top-example__top {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+  @include mq(md) {
+    gap: initial;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.p-top-example__slider {
+  margin-top: rem(40);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+}
+
+.swiper-example {
+  overflow: visible;
+}
+
+.swiper-example .swiper-slide {
+  width: rem(480);
+  height: auto;
+}
+
+.p-top-example-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-radius: rem(10);
+  box-shadow: rem(20) rem(20) rem(10) rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.p-top-example-card:hover {
+  transform: translateY(rem(-2));
+  box-shadow: rem(22) rem(22) rem(14) rgba(0, 0, 0, 0.22);
+}
+
+.p-top-example-card--green {
+  background: #37af32;
+  border: rem(10) solid #fff;
+  color: #fff;
+}
+
+.p-top-example-card--white {
+  background: #fff;
+  border: rem(10) solid #37af32;
+  color: #222;
+}
+
+.p-top-example-card__inner {
+  padding: rem(40) rem(50) rem(40);
+  min-height: rem(620);
+  display: flex;
+  flex-direction: column;
+}
+
+.p-top-example-card__arrow {
+  position: absolute;
+  top: rem(40);
+  right: rem(40);
+  width: rem(80);
+  height: rem(80);
+  border-radius: 50%;
+  background: #222;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+}
+
+.p-top-example-card__arrowIcon {
+  width: rem(24);
+  height: rem(14);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='14' viewBox='0 0 24 14'%3E%3Cg fill='none' stroke='%2337AF32' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1 1l6 6-6 6'/%3E%3Cpath d='M9 1l6 6-6 6'/%3E%3Cpath d='M17 1l6 6-6 6'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.p-top-example-card__head {
+  display: flex;
+  align-items: flex-end;
+  gap: rem(14);
+  margin-bottom: rem(20);
+}
+
+.p-top-example-card__count {
+  display: flex;
+  align-items: flex-end;
+  gap: rem(8);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  line-height: rem(42);
+  letter-spacing: 0.06em;
+}
+
+.p-top-example-card__countMain {
+  font-size: rem(60);
+}
+
+.p-top-example-card__countSubWrap {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: rem(8);
+  padding-left: rem(12);
+  position: relative;
+}
+
+.p-top-example-card__countSubWrap::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: rem(10);
+  width: rem(2);
+  height: rem(24);
+  background: currentColor;
+}
+
+.p-top-example-card__countColon {
+  font-size: rem(30);
+  line-height: rem(42);
+}
+
+.p-top-example-card__countSub {
+  font-size: rem(30);
+  line-height: rem(42);
+}
+
+.p-top-example-card__tag {
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(18);
+  font-weight: 700;
+  font-style: italic;
+  line-height: rem(42);
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.p-top-example-card__meta {
+  margin: 0 0 rem(26);
+}
+
+.p-top-example-card__metaRow {
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+}
+
+.p-top-example-card__metaRow + .p-top-example-card__metaRow {
+  margin-top: rem(10);
+}
+
+.p-top-example-card__metaDt {
+  width: rem(80);
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(16);
+  font-weight: 500;
+  font-style: italic;
+  line-height: rem(16.8);
+  letter-spacing: 0.06em;
+}
+
+.p-top-example-card__metaDd {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: rem(16.8);
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.p-top-example-card__img {
+  width: rem(380);
+  height: rem(240);
+  border-radius: rem(20);
+  overflow: hidden;
+  margin: rem(14) 0 0;
+  box-shadow: rem(60) rem(60) rem(30) rgba(0, 0, 0, 0.5);
+}
+
+.p-top-example-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.p-top-example-card__divider {
+  width: rem(380);
+  height: 1px;
+  margin-top: rem(40);
+  background: currentColor;
+  opacity: 1;
+}
+
+.p-top-example-card__product {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: rem(20);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin: rem(20) 0 0;
+}
+
+.swiper-example .swiper-wrapper {
+  padding-top: rem(100) !important;
+  padding-bottom: rem(60) !important;
+}
+.swiper-example .swiper-slide {
+  transition: transform .35s ease, opacity .35s ease;
+  will-change: transform;
+  opacity: .6;
+}
+
+/* 中央（強調） */
+.swiper-example .swiper-slide.is-active {
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 4;
+}
+
+/* 1つ隣 */
+.swiper-example .swiper-slide.is-prev,
+.swiper-example .swiper-slide.is-next {
+  transform: translateY(-24px);
+  opacity: .9;
+  z-index: 3;
+}
+
+/* 2つ隣 */
+.swiper-example .swiper-slide.is-prev2,
+.swiper-example .swiper-slide.is-next2 {
+  transform: translateY(-48px);
+  opacity: .75;
+  z-index: 2;
+}
+
+/* その他（任意） */
+.swiper-example .swiper-slide.is-far {
+  transform: translateY(-72px);
+  opacity: .5;
+  z-index: 1;
+}

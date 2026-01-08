@@ -1,20 +1,105 @@
 "use strict";
 
 const chooseSlider = new Swiper(".choose-slider", {
-  slidesPerView: 1.5,
+  slidesPerView: 1.2,
   centeredSlides: true,
   loop: true,
   initialSlide: 0,
-  spaceBetween: 50,
+  spaceBetween: 16,
+  breakpoints: {
+    768: {
+      slidesPerView: 1.5,
+      centeredSlides: true,
+      loop: true,
+      initialSlide: 0,
+      spaceBetween: 50,
+    },
+  },
 });
 
 const topicsSlider = new Swiper(".swiper-topics", {
-  slidesPerView: 3.8,
+  slidesPerView: 1.2,
   centeredSlides: false,
   loop: true,
   initialSlide: 0,
-  spaceBetween: 30,
+  spaceBetween: 12,
+  breakpoints: {
+    768: {
+      slidesPerView: 3.8,
+      centeredSlides: false,
+      loop: true,
+      initialSlide: 0,
+      spaceBetween: 30,
+    },
+  },
 });
+
+const exampleSlider = new Swiper(".swiper-example", {
+  slidesPerView: 1.1,
+  centeredSlides: true,
+  spaceBetween: -10,
+  loop: true,
+  initialSlide: 0,
+
+  breakpoints: {
+    768: {
+      slidesPerView: "auto",
+      centeredSlides: false,
+      loop: true,
+      initialSlide: 0,
+    },
+  },
+
+  on: {
+    init(swiper) {
+      applyStairsClasses(swiper);
+    },
+    slideChangeTransitionStart(swiper) {
+      applyStairsClasses(swiper);
+    },
+    resize(swiper) {
+      applyStairsClasses(swiper);
+    },
+  },
+});
+
+function applyStairsClasses(swiper) {
+  const slides = swiper.slides; // loopの複製スライドも含む
+  const active = swiper.activeIndex;
+
+  slides.forEach((el) => {
+    el.classList.remove(
+      "is-active",
+      "is-prev",
+      "is-next",
+      "is-prev2",
+      "is-next2",
+      "is-far"
+    );
+  });
+
+  const get = (i) => slides[(i + slides.length) % slides.length];
+
+  get(active).classList.add("is-active");
+  get(active - 1).classList.add("is-prev");
+  get(active + 1).classList.add("is-next");
+  get(active - 2).classList.add("is-prev2");
+  get(active + 2).classList.add("is-next2");
+
+  // それ以外も少し落とす（不要ならこのブロック削除OK）
+  slides.forEach((el) => {
+    if (
+      !el.classList.contains("is-active") &&
+      !el.classList.contains("is-prev") &&
+      !el.classList.contains("is-next") &&
+      !el.classList.contains("is-prev2") &&
+      !el.classList.contains("is-next2")
+    ) {
+      el.classList.add("is-far");
+    }
+  });
+}
+
 const voiceSlider = new Swiper(".voice-slider", {
   slidesPerView: 3.5,
   centeredSlides: true,

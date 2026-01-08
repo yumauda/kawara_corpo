@@ -22,6 +22,8 @@
   }
 }
 .c-btn__icon {
+  width: rem(28);
+  height: rem(28);
   @include mq(md) {
     width: rem(40);
     height: rem(40);
