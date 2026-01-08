@@ -3,6 +3,7 @@
 .p-page-mv {
   position: relative;
   overflow-x: clip;
+  padding-top: rem(48);
   @include mq(md) {
     padding-top: rem(200);
   }

@@ -256,3 +256,93 @@ jQuery(".p-digital-modal__close").on("click", function (e) {
   jQuery(".p-digital-modal").removeClass("is-active");
   return false;
 });
+
+// Map modal（全国の瓦施工店）
+jQuery(function ($) {
+  const $modal = $(".js-map-modal");
+  if (!$modal.length) return;
+
+  const $regionPanels = $modal.find(".js-map-modal-panel");
+  let lastFocusedEl = null;
+
+  const activatePrefTab = ($tab) => {
+    const $regionPanel = $tab.closest(".js-map-modal-panel");
+    if (!$regionPanel.length) return;
+
+    const $tabs = $regionPanel.find(".js-map-modal-tab");
+    const $tabPanels = $regionPanel.find(".js-map-modal-tabpanel");
+    const targetId = $tab.attr("aria-controls");
+    if (!targetId) return;
+
+    $tabs.removeClass("is-active").attr("aria-selected", "false");
+    $tab.addClass("is-active").attr("aria-selected", "true");
+
+    $tabPanels.attr("aria-hidden", "true").attr("hidden", true);
+    $regionPanel.find(`#${targetId}`).attr("aria-hidden", "false").removeAttr("hidden");
+  };
+
+  const showRegionPanel = (regionId) => {
+    $regionPanels.attr("aria-hidden", "true").attr("hidden", true);
+    const $target = $regionPanels.filter(`[data-region-id="${regionId}"]`);
+
+    if ($target.length) {
+      $target.attr("aria-hidden", "false").removeAttr("hidden");
+
+      // デフォルトで先頭タブをアクティブにする
+      const $firstTab = $target.find(".js-map-modal-tab").first();
+      if ($firstTab.length) {
+        activatePrefTab($firstTab);
+      }
+    }
+  };
+
+  const openModal = (regionId) => {
+    lastFocusedEl = document.activeElement;
+    showRegionPanel(regionId);
+
+    $modal.addClass("is-active").attr("aria-hidden", "false");
+    $("body").addClass("is-modal-open");
+
+    const $focusTarget = $modal.find(".p-map-modal__close").first();
+    if ($focusTarget.length) $focusTarget.trigger("focus");
+  };
+
+  const closeModal = () => {
+    $modal.removeClass("is-active").attr("aria-hidden", "true");
+    $("body").removeClass("is-modal-open");
+    $regionPanels.attr("aria-hidden", "true").attr("hidden", true);
+
+    if (lastFocusedEl && typeof lastFocusedEl.focus === "function") {
+      lastFocusedEl.focus();
+    }
+  };
+
+  // open
+  $(document).on("click", ".p-map__btn", function (e) {
+    e.preventDefault();
+    openModal(this.id);
+  });
+
+  $(document).on("keydown", ".p-map__btn", function (e) {
+    if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") {
+      e.preventDefault();
+      openModal(this.id);
+    }
+  });
+
+  // tab
+  $(document).on("click", ".js-map-modal-tab", function () {
+    activatePrefTab($(this));
+  });
+
+  // close
+  $(document).on("click", ".js-map-modal-close", function () {
+    closeModal();
+  });
+
+  $(document).on("keydown", function (e) {
+    if (e.key === "Escape" && $modal.hasClass("is-active")) {
+      closeModal();
+    }
+  });
+});
