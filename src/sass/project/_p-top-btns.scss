@@ -1,7 +1,6 @@
 @use "../global" as *;
 
 .p-top-btns {
-  
 }
 
 .p-top-btns__content {
@@ -9,8 +8,11 @@
 
 .p-top-btns__lists {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: rem(25);
+  gap: rem(16);
+  @include mq(md) {
+    gap: rem(25);
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .p-top-btns__list {

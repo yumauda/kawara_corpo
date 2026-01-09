@@ -101,27 +101,58 @@ function applyStairsClasses(swiper) {
 }
 
 const voiceSlider = new Swiper(".voice-slider", {
-  slidesPerView: 3.5,
+  // SP（デフォルト）
+  slidesPerView: 1.5,
   centeredSlides: true,
   loop: true,
-  spaceBetween: 60,
-  watchSlidesProgress: true,
+  spaceBetween: 16,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3.5,
+      centeredSlides: true,
+      loop: true,
+      spaceBetween: 60,
+      watchSlidesProgress: true,
+    },
+  },
 
   on: {
     afterInit(sw) {
-      applyGapCenter(sw);
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        applyGapCenter(sw);
+      } else {
+        resetGapCenter(sw);
+      }
     },
     resize(sw) {
       // リサイズでグリッドが作り直されるので再適用
       sw.update();
-      applyGapCenter(sw);
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        applyGapCenter(sw);
+      } else {
+        resetGapCenter(sw);
+      }
     },
     update(sw) {
       // updateが走ったときも念のため
-      applyGapCenter(sw);
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        applyGapCenter(sw);
+      }
     },
   },
 });
+function resetGapCenter(sw) {
+  if (!sw || !sw.snapGrid || !sw.slidesGrid) return;
+  const prev = sw.__gapShift || 0;
+  if (!prev) return;
+
+  sw.snapGrid = sw.snapGrid.map((v) => v - prev);
+  sw.slidesGrid = sw.slidesGrid.map((v) => v - prev);
+  sw.translate += prev;
+  sw.setTranslate(sw.translate);
+  sw.__gapShift = 0;
+}
 function applyGapCenter(sw) {
   if (!sw.slides || !sw.slides.length) return;
 

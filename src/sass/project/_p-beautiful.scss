@@ -1,6 +1,8 @@
 @use "../global" as *;
 
 .p-beautiful {
+  margin-top: rem(40);
+  padding-bottom: rem(40);
   @include mq(md) {
     margin-top: rem(60);
     padding-bottom: rem(80);
@@ -12,10 +14,10 @@
 }
 
 .p-beautiful__content {
-  display: flex;
   border-top: 1px solid #222;
-
+  padding-top: rem(24);
   @include mq(md) {
+    display: flex;
     gap: rem(64);
     padding-top: rem(60);
   }
@@ -27,9 +29,11 @@
 }
 
 .p-beautiful__left {
-  flex: 1;
-  max-width: rem(600);
   width: 100%;
+  @include mq(md) {
+    flex: 1;
+    max-width: rem(600);
+  }
 }
 
 .p-beautiful__top {
@@ -58,7 +62,9 @@
   letter-spacing: 0.06em;
   color: #222;
   font-weight: 500;
+  margin-top: rem(16);
   @include mq(md) {
+    margin-top: initial;
     font-size: clamp(14px, 2vw, 14px);
   }
   @include mq(lg) {
@@ -67,6 +73,7 @@
 }
 
 .p-beautiful__second {
+  margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -79,12 +86,13 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   color: #37af32;
-  font-size: rem(24);
+  font-size: rem(20);
   padding-bottom: rem(16);
-  padding-left: rem(26);
   position: relative;
   border-bottom: 1px solid #37af32;
+  padding-left: rem(20);
   @include mq(md) {
+    padding-left: rem(26);
     font-size: clamp(20px, 2vw, 24px);
     padding-bottom: rem(20);
   }
@@ -97,11 +105,15 @@
   position: absolute;
   content: "";
   background: #37af32;
-  width: rem(6);
-  height: rem(60);
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  width: rem(4);
+  height: rem(40);
+  @include mq(md) {
+    width: rem(6);
+    height: rem(60);
+  }
 }
 .p-beautiful__row {
   @include mq(md) {
@@ -125,8 +137,10 @@
 }
 .p-beautiful__row-img {
   width: 100%;
+  margin-top: rem(16);
   @include mq(md) {
     max-width: rem(180);
+    margin-top: initial;
   }
   @include mq(lg) {
     max-width: rem(260);
@@ -144,7 +158,9 @@
 }
 
 .p-beautiful__img {
+  margin-top: rem(24);
   @include mq(md) {
+    margin-top: initial;
     max-width: rem(500);
   }
   @include mq(lg) {

@@ -1,6 +1,8 @@
 @use "../global" as *;
 
 .p-compare {
+  padding-top: rem(40);
+  padding-bottom: rem(40);
   overflow-x: clip;
   @include mq(md) {
     padding-top: rem(80);
@@ -16,11 +18,11 @@
 }
 
 .p-compare__top {
-  display: flex;
   position: relative;
 
-  align-items: flex-end;
   @include mq(md) {
+    display: flex;
+    align-items: flex-end;
     gap: rem(40);
   }
   @include mq(lg) {
@@ -35,13 +37,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(1720);
+  width: rem(450);
   height: auto;
   aspect-ratio: 1720 / 414;
   object-fit: cover;
-  top: rem(-140);
+  top: rem(-54);
   left: 0;
   right: 0;
+  @include mq(md) {
+    width: rem(1720);
+    top: rem(-140);
+  }
 }
 
 .p-compare__title-text {
@@ -92,7 +98,9 @@
   font-weight: 700;
   font-size: rem(14);
   line-height: calc(36 / 20);
+  margin-top: rem(16);
   @include mq(md) {
+    margin-top: initial;
     font-size: clamp(14px, 2vw, 14px);
   }
   @include mq(lg) {
@@ -100,9 +108,18 @@
     font-size: rem(20);
   }
 }
+.p-compare__scroll {
+  overflow-x: auto;
+  @include mq(md) {
+    overflow-x: initial;
+  }
+}
 
 .p-compare__img {
+  margin-top: rem(24);
+  width: rem(650);
   @include mq(md) {
+    width: 100%;
     margin-top: rem(40);
   }
   @include mq(lg) {

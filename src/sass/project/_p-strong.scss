@@ -1,6 +1,7 @@
 @use "../global" as *;
 
 .p-strong {
+  padding-top: rem(48);
   @include mq(md) {
     padding-top: rem(120);
   }
@@ -19,7 +20,6 @@
   }
 }
 
-
 .p-strong__content {
   position: relative;
 }
@@ -30,12 +30,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(1425);
   height: auto;
   aspect-ratio: 1425 / 414;
   object-fit: cover;
-  top: rem(-140);
   left: 0;
+  top: rem(-32);
+  width: rem(240);
+  @include mq(md) {
+    width: rem(1425);
+    top: rem(-140);
+  }
 }
 
 .p-strong__top {
@@ -132,12 +136,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(460);
   height: auto;
   aspect-ratio: 460 / 380;
   object-fit: cover;
-  top: rem(-160);
   right: 0;
+  top: rem(-40);
+  width: rem(100);
+  @include mq(md) {
+    width: rem(460);
+    top: rem(-160);
+  }
 }
 .p-strong__topText {
   font-size: rem(14);
@@ -178,8 +186,11 @@
 .p-strong__box {
   background: #fff;
   border: 2px solid #37af32;
-  border-radius: rem(10);
+  padding: rem(16);
+  border-radius: rem(5);
+  margin-top: rem(20);
   @include mq(md) {
+    border-radius: rem(10);
     margin-top: rem(30);
     padding: rem(30);
     display: flex;
@@ -204,8 +215,10 @@
 }
 
 .p-strong__box-row {
-  display: flex;
-  gap: rem(40);
+  @include mq(md) {
+    display: flex;
+    gap: rem(40);
+  }
 }
 
 .p-strong__box-detail {
@@ -248,7 +261,11 @@
 }
 
 .p-strong__box-img {
-  flex: 1;
+  margin-top: rem(16);
+  @include mq(md) {
+    flex: 1;
+    margin-top: initial;
+  }
 }
 .p-strong__box-img img {
   width: 100%;
@@ -260,6 +277,8 @@
 
 .p-strong__box-bottom {
   border-top: 1px solid #222;
+  margin-top: rem(12);
+  padding-top: rem(12);
   @include mq(md) {
     margin-top: rem(20);
     padding-top: rem(20);
@@ -359,7 +378,11 @@
 }
 
 .p-strong__box-img2 {
-  flex: 1;
+  margin-top: rem(16);
+  @include mq(md) {
+    flex: 1;
+    margin-top: initial;
+  }
 }
 .p-strong__box-img2 img {
   width: 100%;
@@ -370,8 +393,9 @@
 }
 .p-strong__box-lists {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  gap: rem(16);
   @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
     gap: rem(20);
     margin-top: rem(30);
   }
@@ -384,8 +408,8 @@
   background: #fff;
   border: 2px solid #37af32;
   border-radius: rem(10);
+  padding: rem(20);
   @include mq(md) {
-    padding: rem(20);
   }
   @include mq(lg) {
     padding: rem(40);
@@ -646,9 +670,9 @@
   background: #fff;
   border: 2px solid #37af32;
   border-radius: rem(10);
+  padding: rem(20);
   @include mq(md) {
     margin-top: rem(30);
-    padding: rem(20);
     display: flex;
     gap: rem(40);
   }
@@ -815,6 +839,8 @@
   color: #222;
   font-weight: 500;
   border-top: 1px solid #222;
+  margin-top: rem(16);
+  padding-top: rem(16);
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
     padding-top: rem(20);
@@ -831,10 +857,15 @@
 }
 
 .p-strong__kind-box-right {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+  margin-top: rem(24);
   @include mq(md) {
+    margin-top: initial;
+    flex-direction: row;
     max-width: rem(700);
     width: 100%;
-    display: flex;
     gap: rem(10);
   }
   @include mq(lg) {

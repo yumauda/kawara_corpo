@@ -3,7 +3,7 @@
 .p-page-mv {
   position: relative;
   overflow-x: clip;
-  padding-top: rem(48);
+  padding-top: rem(88);
   @include mq(md) {
     padding-top: rem(200);
   }
@@ -18,12 +18,20 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(1000);
   height: auto;
   aspect-ratio: 1000 / 330;
   object-fit: cover;
-  top: rem(100);
   left: 0;
+  top: rem(40);
+  width: rem(320);
+  @include mq(md) {
+    top: rem(72);
+    width: rem(650);
+  }
+  @include mq(lg) {
+    width: rem(1000);
+    top: rem(100);
+  }
 }
 .p-page-mv::after {
   position: absolute;
@@ -32,13 +40,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(1150);
   height: auto;
   aspect-ratio: 1150 / 380;
   object-fit: cover;
-  top: rem(1080);
   right: 0;
   z-index: -1;
+  width: rem(300);
+  @include mq(md) {
+    width: rem(650);
+  }
+  @include mq(lg) {
+    width: rem(1150);
+    top: rem(1080);
+  }
 }
 .p-page-mv--download::after {
   display: none;
@@ -60,6 +74,9 @@
   font-family: $second-font-family;
   font-style: italic;
   color: rgba($color: #37af32, $alpha: 0.2);
+  font-size: rem(140);
+  top: rem(-64);
+  left: rem(-40);
   @include mq(md) {
     font-size: rem(240);
     top: rem(-120);
@@ -76,6 +93,7 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   color: #222;
+  font-size: rem(30);
   @include mq(md) {
     font-size: rem(60);
   }
@@ -89,6 +107,7 @@
   font-weight: 700;
   font-style: italic;
   color: #222;
+  font-size: rem(14);
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
@@ -97,10 +116,17 @@
   }
 }
 .p-page-mv__img {
-  margin-top: rem(72);
   margin-right: calc(50% - 50vw);
-  padding-right: rem(40);
-  padding-left: rem(280);
+  padding-right: rem(20);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(72);
+    padding-left: rem(120);
+    padding-right: rem(40);
+  }
+  @include mq(lg) {
+    padding-left: rem(280);
+  }
 }
 .p-page-mv__img--company {
   padding-left: initial;
@@ -118,6 +144,7 @@
   border-radius: rem(10);
 }
 .p-page-mv__bottom {
+  margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(-50);
   }
@@ -158,6 +185,7 @@
   color: #37af32;
   letter-spacing: 0.06em;
   line-height: calc(192 / 160);
+  font-size: rem(32);
   @include mq(md) {
     font-size: rem(80);
   }
@@ -168,6 +196,7 @@
 }
 
 .p-page-mv__explain {
+  margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -180,6 +209,7 @@
   font-weight: 700;
   color: #222;
   letter-spacing: 0.2em;
+  font-size: rem(16);
   @include mq(md) {
     font-size: clamp(16px, 2vw, 18px);
   }
@@ -193,6 +223,8 @@
   color: #222;
   font-weight: 500;
   letter-spacing: 0.06em;
+  font-size: rem(14);
+  margin-top: rem(12);
   @include mq(md) {
     margin-top: rem(20);
     font-size: clamp(14px, 2vw, 16px);

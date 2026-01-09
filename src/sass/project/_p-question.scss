@@ -1,6 +1,9 @@
 @use "../global" as *;
 
 .p-question {
+  padding-top: rem(40);
+  overflow-x: clip;
+  padding-bottom: rem(40);
   @include mq(md) {
     padding-top: rem(80);
     padding-bottom: rem(80);
@@ -21,12 +24,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(682);
+  width: rem(320);
   height: auto;
   aspect-ratio: 682 / 414;
   object-fit: cover;
-  top: rem(-130);
+  top: rem(-40);
   left: 0;
+  @include mq(md) {
+    width: rem(682);
+    top: rem(-130);
+  }
 }
 .p-question__content::after {
   position: absolute;
@@ -35,26 +42,35 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(230);
   height: auto;
   aspect-ratio: 230 / 700;
   object-fit: cover;
-  right: rem(-80);
   top: 0;
+  right: rem(-40);
+  width: rem(100);
+  @include mq(md) {
+    right: rem(-80);
+    width: rem(230);
+  }
 }
 
 .p-question__block-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: rem(65);
+  margin-top: rem(24);
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: rem(65);
+  }
 }
 
 .p-question__block {
   padding-top: rem(20);
+  padding-bottom: rem(20);
+  border-bottom: 1px solid #222;
   @include mq(md) {
     padding-top: rem(40);
     padding-bottom: rem(40);
-    border-top: 1px solid #222;
+    border-bottom: initial;
   }
   @include mq(lg) {
     padding-top: rem(60);
@@ -70,15 +86,23 @@
     padding-left: rem(60);
   }
 }
+.p-question__block:first-child {
+  border-top: 1px solid #222;
+  @include mq(md) {
+    border-top: initial;
+  }
+}
 .p-question__block:nth-child(even)::before {
-  position: absolute;
-  content: "";
-  background: #222;
-  width: 1px;
-  height: 70%;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    background: #222;
+    width: 1px;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
 }
 .p-question__block:nth-child(odd) {
   @include mq(md) {
@@ -90,6 +114,7 @@
 }
 .p-question__q {
   display: flex;
+  gap: rem(12);
   @include mq(md) {
     gap: rem(20);
   }
@@ -131,6 +156,7 @@
 .p-question__a {
   display: flex;
   margin-top: rem(12);
+  gap: rem(12);
   @include mq(md) {
     gap: rem(20);
     margin-top: rem(20);
@@ -148,7 +174,9 @@
   font-family: $second-font-family;
   font-style: italic;
   line-height: 1;
+  margin-top: rem(4);
   @include mq(md) {
+    margin-top: initial;
     font-size: clamp(18px, 2vw, 20px);
   }
   @include mq(lg) {

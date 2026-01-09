@@ -25,7 +25,7 @@
   <section class="p-secret">
     <div class="l-inner">
       <div class="p-secret__content">
-        <h2 class="p-secret__title"><span>石州瓦の強さの秘密</span>:長石溶融による緻密化</h2>
+        <h2 class="p-secret__title"><span>石州瓦の強さの秘密</span>:<br class="u-mobile">長石溶融による緻密化</h2>
         <p class="p-secret__text">陶器瓦素地の拡大写真比較<span>焼成後：長石の様子 ①長石粒 ②ムライト</span></p>
         <ul class="p-secret__lists">
           <li class="p-secret__list">
@@ -57,7 +57,7 @@
       <div class="p-land__content">
         <div class="p-land__detail">
           <p class="p-land__kind">島根県産の原料</p>
-          <h2 class="p-land__title">土が違う<br>だから<br>瓦も違う</h2>
+          <h2 class="p-land__title">土が違う<br class="u-desktop">だから<br>瓦も違う</h2>
           <p class="p-land__subtitle">超高温焼成に耐える<br>島根県産の原料</p>
           <p class="p-land__text">どんなに優れた技術が優れていても、土の質が劣れば、耐久性も、美しさも、長持ちしません。<br>瓦の"土台"をつくるのは、まさにそのもののみのかなめです。</p>
         </div>
@@ -75,7 +75,7 @@
           <div class="p-features__card-detail">
             <div class="p-features__block">
               <p class="p-features__card-label">高温焼成</p>
-              <h3 class="p-features__card-title">高耐火の<br>原料</h3>
+              <h3 class="p-features__card-title">高耐火の<br class="u-desktop">原料</h3>
             </div>
             <figure class="p-features__card-img">
               <img src="<?php echo get_template_directory_uri() ?>/images/about/feature_1.webp" alt="高耐火の原料" width="407" height="196">
@@ -109,9 +109,11 @@
           </div>
           <p class="p-compare__text">瓦にもさまざまな種類があり、それぞれに特長があります。<br>他の屋根材と陶器瓦を比較しながら、その違いや強みをご紹介します。</p>
         </div>
-        <figure class="p-compare__img">
-          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/about/compare_graph.webp" alt="他の屋根材と陶器瓦を比較" width="1520" height="584">
-        </figure>
+        <div class="p-compare__scroll">
+          <figure class="p-compare__img">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/about/compare_graph.webp" alt="他の屋根材と陶器瓦を比較" width="1520" height="584">
+          </figure>
+        </div>
       </div>
     </div>
   </section>

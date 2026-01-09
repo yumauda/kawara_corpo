@@ -148,8 +148,8 @@
           <div class="p-strong__box-block">
             <div class="p-strong__box-row">
               <div class="p-strong__box-detail">
-                <p class="p-strong__box-detail-text">屋久島・瀬戸内<br>日本海沿岸など</p>
-                <p class="p-strong__box-detail-title">信頼と安心の<br>採用実績</p>
+                <p class="p-strong__box-detail-text">屋久島・瀬戸内<br class="u-desktop">日本海沿岸など</p>
+                <p class="p-strong__box-detail-title">信頼と安心の<br class="u-desktop">採用実績</p>
               </div>
               <figure class="p-strong__box-img">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/reason/strong_box_1.webp" alt="信頼と安心の採用実績" width="340" height="200">
