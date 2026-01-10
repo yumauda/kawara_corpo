@@ -13,6 +13,7 @@
   border: 2px solid #37af32;
   border-radius: rem(10);
   padding: rem(16);
+  position: relative;
   @include mq(md) {
     padding: rem(24);
   }
@@ -51,10 +52,23 @@
 
 .p-voice_slider__item-img {
   position: absolute;
-  width: rem(100);
-  height: rem(100);
-  right: rem(-40);
-  top: rem(-40);
+  width: rem(48);
+  height: rem(48);
+  right: rem(-24);
+  top: rem(-24);
+  @include mq(md){
+    width: rem(72);
+    height: rem(72);
+    right: rem(-32);
+    top: rem(-32);
+  }
+  @include mq(md){
+    width: rem(100);
+    height: rem(100);
+    right: rem(-40);
+    top: rem(-40);
+    
+  }
 }
 .p-voice_slider__item-img img {
   width: 100%;

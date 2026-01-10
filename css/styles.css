@@ -10811,12 +10811,18 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 28.75rem;
   height: auto;
   aspect-ratio: 460/380;
   object-fit: cover;
-  top: -10rem;
   right: 0;
+  top: 0;
+  width: 6.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-strong__top::before {
+    width: 28.75rem;
+    top: -10rem;
+  }
 }
 
 .p-strong__top--cold::before {
@@ -10826,12 +10832,18 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 28.75rem;
   height: auto;
   aspect-ratio: 460/380;
   object-fit: cover;
-  top: -10rem;
   right: 0;
+  top: 0;
+  width: 6.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-strong__top--cold::before {
+    width: 28.75rem;
+    top: -10rem;
+  }
 }
 
 .p-strong__top--guide::before {
@@ -10841,12 +10853,18 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 28.75rem;
   height: auto;
   aspect-ratio: 460/380;
   object-fit: cover;
-  top: -10rem;
   right: 0;
+  top: 0;
+  width: 6.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-strong__top--guide::before {
+    width: 28.75rem;
+    top: -10rem;
+  }
 }
 
 .p-strong__top--hot::before {
@@ -10860,8 +10878,15 @@ input::placeholder {
   height: auto;
   aspect-ratio: 460/380;
   object-fit: cover;
-  top: -10rem;
+  top: 0;
+  width: 6.25rem;
   right: 0;
+}
+@media screen and (min-width: 768px) {
+  .p-strong__top--hot::before {
+    width: 28.75rem;
+    top: -10rem;
+  }
 }
 
 .p-strong__top--ear::before {
@@ -10871,12 +10896,18 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 28.75rem;
   height: auto;
   aspect-ratio: 460/380;
   object-fit: cover;
-  top: -10rem;
+  top: 0;
+  width: 6.25rem;
   right: 0;
+}
+@media screen and (min-width: 768px) {
+  .p-strong__top--ear::before {
+    width: 28.75rem;
+    top: -10rem;
+  }
 }
 
 .p-strong__top--economic::before {
@@ -10886,11 +10917,19 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 28.75rem;
   height: auto;
   aspect-ratio: 460/380;
   object-fit: cover;
-  top: -10rem;
+  top: 0;
+  width: 6.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-strong__top--economic::before {
+    width: 28.75rem;
+    top: -10rem;
+  }
+}
+.p-strong__top--economic::before {
   right: 0;
 }
 
@@ -10905,7 +10944,7 @@ input::placeholder {
   aspect-ratio: 460/380;
   object-fit: cover;
   right: 0;
-  top: -2.5rem;
+  top: 0;
   width: 6.25rem;
 }
 @media screen and (min-width: 768px) {
@@ -10921,10 +10960,12 @@ input::placeholder {
   letter-spacing: 0.06em;
   font-weight: 700;
   color: #222;
+  margin-top: 1rem;
   font-weight: 500;
 }
 @media screen and (min-width: 768px) {
   .p-strong__topText {
+    margin-top: 2rem;
     font-size: clamp(14px, 2vw, 14px);
   }
 }
@@ -10939,6 +10980,7 @@ input::placeholder {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   width: 100vw;
+  margin-top: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-strong__img {
@@ -11036,14 +11078,15 @@ input::placeholder {
 }
 
 .p-strong__box-detail-title {
-  margin-top: 0.5rem;
   line-height: 1.4;
   font-weight: 700;
   letter-spacing: 0.1em;
   color: #222;
+  font-size: 1.125rem;
 }
 @media screen and (min-width: 768px) {
   .p-strong__box-detail-title {
+    margin-top: 0.5rem;
     font-size: clamp(16px, 2vw, 20px);
   }
 }
@@ -11229,6 +11272,7 @@ input::placeholder {
 .p-strong__box-lists {
   display: grid;
   gap: 1rem;
+  margin-top: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-strong__box-lists {
@@ -11258,6 +11302,7 @@ input::placeholder {
 
 .p-strong__guide-imgWrapper {
   position: relative;
+  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-strong__guide-imgWrapper {
@@ -11274,8 +11319,12 @@ input::placeholder {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   width: 100vw;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-strong__guide-img {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .p-strong__guide-img img {
@@ -11287,14 +11336,16 @@ input::placeholder {
 }
 
 .p-strong__guide-detail {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
+  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-strong__guide-detail {
+    margin-top: initial;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
     max-width: 21.875rem;
   }
 }
@@ -11308,10 +11359,11 @@ input::placeholder {
   font-weight: 900;
   letter-spacing: 0.2em;
   color: #37af32;
+  font-size: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-strong__guide-detail-title {
-    font-size: 1.75rem;
+    font-size: clamp(20px, 2vw, 28px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -11325,6 +11377,8 @@ input::placeholder {
   color: #222;
   letter-spacing: 0.06em;
   font-weight: 500;
+  font-size: 0.875rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-strong__guide-detail-text {
@@ -11345,6 +11399,8 @@ input::placeholder {
   letter-spacing: 0.06em;
   font-weight: 500;
   margin-top: 0.5rem;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-strong__guide-detail-small {
@@ -11361,11 +11417,12 @@ input::placeholder {
 
 .p-strong__guide-lists {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-strong__guide-lists {
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 1.875rem;
     gap: 1.25rem;
   }
@@ -11381,6 +11438,7 @@ input::placeholder {
   background: #fff;
   border: 2px solid #37af32;
   border-radius: 0.625rem;
+  padding: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-strong__guide-list {
@@ -11393,11 +11451,9 @@ input::placeholder {
   }
 }
 
-.p-strong__guide-row {
-  display: flex;
-}
 @media screen and (min-width: 768px) {
   .p-strong__guide-row {
+    display: flex;
     gap: 2rem;
   }
 }
@@ -11434,9 +11490,11 @@ input::placeholder {
   color: #37af32;
   letter-spacing: 0.06em;
   font-weight: 500;
+  margin-top: 0.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-strong__guide-list-small {
+    margin-top: initial;
     font-size: clamp(10px, 2vw, 10px);
   }
 }
@@ -11449,9 +11507,11 @@ input::placeholder {
 .p-strong__guide-icon {
   flex: 1;
   width: 100%;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-strong__guide-icon {
+    margin-top: initial;
     max-width: 12.5rem;
   }
 }
@@ -11494,6 +11554,8 @@ input::placeholder {
   font-weight: 700;
   letter-spacing: 0.1em;
   color: #222;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-strong__box-detail-textSmall {
@@ -11708,7 +11770,13 @@ input::placeholder {
 }
 
 .p-strong__economic-graph {
-  flex: 1;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-strong__economic-graph {
+    margin-top: initial;
+    flex: 1;
+  }
 }
 
 .p-strong__economic-graph img {
@@ -13857,6 +13925,7 @@ input::placeholder {
   border: 2px solid #37af32;
   border-radius: 0.625rem;
   padding: 1rem;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-voice-slider__item {
@@ -13907,10 +13976,26 @@ input::placeholder {
 
 .p-voice_slider__item-img {
   position: absolute;
-  width: 6.25rem;
-  height: 6.25rem;
-  right: -2.5rem;
-  top: -2.5rem;
+  width: 3rem;
+  height: 3rem;
+  right: -1.5rem;
+  top: -1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-voice_slider__item-img {
+    width: 4.5rem;
+    height: 4.5rem;
+    right: -2rem;
+    top: -2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-voice_slider__item-img {
+    width: 6.25rem;
+    height: 6.25rem;
+    right: -2.5rem;
+    top: -2.5rem;
+  }
 }
 
 .p-voice_slider__item-img img {

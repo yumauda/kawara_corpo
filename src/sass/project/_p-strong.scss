@@ -52,12 +52,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(460);
   height: auto;
   aspect-ratio: 460 / 380;
   object-fit: cover;
-  top: rem(-160);
   right: 0;
+  top: 0;
+  width: rem(100);
+  @include mq(md) {
+    width: rem(460);
+    top: rem(-160);
+  }
 }
 .p-strong__top--cold::before {
   position: absolute;
@@ -66,12 +70,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(460);
   height: auto;
   aspect-ratio: 460 / 380;
   object-fit: cover;
-  top: rem(-160);
   right: 0;
+  top: 0;
+  width: rem(100);
+  @include mq(md) {
+    width: rem(460);
+    top: rem(-160);
+  }
 }
 .p-strong__top--guide::before {
   position: absolute;
@@ -80,12 +88,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(460);
   height: auto;
   aspect-ratio: 460 / 380;
   object-fit: cover;
-  top: rem(-160);
   right: 0;
+  top: 0;
+  width: rem(100);
+  @include mq(md) {
+    width: rem(460);
+    top: rem(-160);
+  }
 }
 .p-strong__top--hot::before {
   position: absolute;
@@ -98,8 +110,13 @@
   height: auto;
   aspect-ratio: 460 / 380;
   object-fit: cover;
-  top: rem(-160);
+  top: 0;
+  width: rem(100);
   right: 0;
+  @include mq(md) {
+    width: rem(460);
+    top: rem(-160);
+  }
 }
 .p-strong__top--ear::before {
   position: absolute;
@@ -108,12 +125,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(460);
   height: auto;
   aspect-ratio: 460 / 380;
   object-fit: cover;
-  top: rem(-160);
+  top: 0;
+  width: rem(100);
   right: 0;
+  @include mq(md) {
+    width: rem(460);
+    top: rem(-160);
+  }
 }
 .p-strong__top--economic::before {
   position: absolute;
@@ -122,11 +143,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(460);
   height: auto;
   aspect-ratio: 460 / 380;
   object-fit: cover;
-  top: rem(-160);
+  top: 0;
+  width: rem(100);
+  @include mq(md) {
+    width: rem(460);
+    top: rem(-160);
+  }
   right: 0;
 }
 .p-strong__top--kind::before {
@@ -140,7 +165,7 @@
   aspect-ratio: 460 / 380;
   object-fit: cover;
   right: 0;
-  top: rem(-40);
+  top: 0;
   width: rem(100);
   @include mq(md) {
     width: rem(460);
@@ -153,8 +178,10 @@
   letter-spacing: 0.06em;
   font-weight: 700;
   color: #222;
+  margin-top: rem(16);
   font-weight: 500;
   @include mq(md) {
+    margin-top: rem(32);
     font-size: clamp(14px, 2vw, 14px);
   }
   @include mq(lg) {
@@ -167,6 +194,7 @@
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   width: 100vw;
+  margin-top: rem(20);
   @include mq(md) {
     padding-left: rem(40);
     padding-right: rem(40);
@@ -246,12 +274,13 @@
 }
 
 .p-strong__box-detail-title {
-  margin-top: rem(8);
   line-height: calc(56 / 40);
   font-weight: 700;
   letter-spacing: 0.1em;
   color: #222;
+  font-size: rem(18);
   @include mq(md) {
+    margin-top: rem(8);
     font-size: clamp(16px, 2vw, 20px);
   }
   @include mq(lg) {
@@ -394,6 +423,7 @@
 .p-strong__box-lists {
   display: grid;
   gap: rem(16);
+  margin-top: rem(20);
   @include mq(md) {
     grid-template-columns: repeat(2, 1fr);
     gap: rem(20);
@@ -417,6 +447,7 @@
 }
 .p-strong__guide-imgWrapper {
   position: relative;
+  margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(30);
   }
@@ -429,8 +460,10 @@
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   width: 100vw;
-  padding-left: rem(40);
-  padding-right: rem(40);
+  @include mq(md) {
+    padding-left: rem(40);
+    padding-right: rem(40);
+  }
 }
 .p-strong__guide-img img {
   width: 100%;
@@ -441,12 +474,14 @@
 }
 
 .p-strong__guide-detail {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
+  margin-top: rem(24);
   @include mq(md) {
+    margin-top: initial;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
     max-width: rem(350);
   }
   @include mq(lg) {
@@ -458,8 +493,9 @@
   font-weight: 900;
   letter-spacing: 0.2em;
   color: #37af32;
+  font-size: rem(20);
   @include mq(md) {
-    font-size: rem(28);
+    font-size: clamp(20px, 2vw, 28px);
   }
   @include mq(lg) {
     font-size: rem(50);
@@ -471,6 +507,8 @@
   color: #222;
   letter-spacing: 0.06em;
   font-weight: 500;
+  font-size: rem(14);
+  margin-top: rem(16);
   @include mq(md) {
     margin-top: rem(20);
     font-size: clamp(14px, 2vw, 14px);
@@ -487,6 +525,8 @@
   letter-spacing: 0.06em;
   font-weight: 500;
   margin-top: rem(8);
+  font-size: rem(12);
+  margin-top: rem(8);
   @include mq(md) {
     font-size: clamp(10px, 2vw, 10px);
     margin-top: rem(10);
@@ -498,9 +538,10 @@
 }
 .p-strong__guide-lists {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: rem(40);
+  gap: rem(20);
+  margin-top: rem(20);
   @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
     margin-top: rem(30);
     gap: rem(20);
   }
@@ -514,6 +555,7 @@
   background: #fff;
   border: 2px solid #37af32;
   border-radius: rem(10);
+  padding: rem(16);
   @include mq(md) {
     padding: rem(20);
   }
@@ -523,8 +565,8 @@
 }
 
 .p-strong__guide-row {
-  display: flex;
   @include mq(md) {
+    display: flex;
     gap: rem(32);
   }
   @include mq(lg) {
@@ -555,7 +597,9 @@
   color: #37af32;
   letter-spacing: 0.06em;
   font-weight: 500;
+  margin-top: rem(12);
   @include mq(md) {
+    margin-top: initial;
     font-size: clamp(10px, 2vw, 10px);
   }
   @include mq(lg) {
@@ -566,7 +610,9 @@
 .p-strong__guide-icon {
   flex: 1;
   width: 100%;
+  margin-top: rem(16);
   @include mq(md) {
+    margin-top: initial;
     max-width: rem(200);
   }
   @include mq(lg) {
@@ -600,6 +646,8 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   color: #222;
+  margin-top: rem(8);
+  font-size: rem(12);
   @include mq(md) {
     font-size: clamp(10px, 2vw, 10px);
     margin-top: rem(20);
@@ -784,7 +832,11 @@
 }
 
 .p-strong__economic-graph {
-  flex: 1;
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: initial;
+    flex: 1;
+  }
 }
 .p-strong__economic-graph img {
   width: 100%;

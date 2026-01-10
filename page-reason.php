@@ -200,7 +200,7 @@
           <li class="p-strong__box-list">
             <div class="p-strong__box-row">
               <div class="p-strong__box-detail">
-                <p class="p-strong__box-detail-title">驚異の<br>吸水率</p>
+                <p class="p-strong__box-detail-title">驚異の<br class="u-desktop">吸水率</p>
                 <p class="p-strong__box-detail-text">吸水率 ４%台</p>
               </div>
               <figure class="p-strong__box-img">
@@ -254,7 +254,7 @@
           <li class="p-strong__guide-list">
             <div class="p-strong__guide-row">
               <div class="p-strong__guide-list-detail">
-                <p class="p-strong__guide-list-title p-strong__guide-list-title--guide">補強金物、<br>のし瓦相互連結<br>冠瓦留付けの併用</p>
+                <p class="p-strong__guide-list-title p-strong__guide-list-title--guide">補強金物、<br class="u-desktop">のし瓦相互連結<br class="u-desktop">冠瓦留付けの併用</p>
                 <p class="p-strong__guide-list-small">※「瓦屋根標準設計・施工ガイドライン」より抜粋</p>
               </div>
               <figure class="p-strong__guide-icon">
@@ -265,7 +265,7 @@
           <li class="p-strong__guide-list">
             <div class="p-strong__guide-row">
               <div class="p-strong__guide-list-detail">
-                <p class="p-strong__guide-list-title p-strong__guide-list-title--guide">補強金物と<br>冠瓦留付けの<br>併用</p>
+                <p class="p-strong__guide-list-title p-strong__guide-list-title--guide">補強金物と<br class="u-desktop">冠瓦留付けの<br class="u-desktop">併用</p>
                 <p class="p-strong__guide-list-small">※「瓦屋根標準設計・施工ガイドライン」より抜粋</p>
               </div>
               <figure class="p-strong__guide-icon">
@@ -294,8 +294,8 @@
           <li class="p-strong__box-list">
             <div class="p-strong__box-row">
               <div class="p-strong__box-detail">
-                <p class="p-strong__box-detail-title">省エネ<br>効果</p>
-                <p class="p-strong__box-detail-textSmall">元島根大学大学院 准教授 中井毅尚氏<br>「屋外における石州瓦と金属板の省エネ性能（2016）」<br>の実験結果より</p>
+                <p class="p-strong__box-detail-title">省エネ<br class="u-desktop">効果</p>
+                <p class="p-strong__box-detail-textSmall">元島根大学大学院 准教授 中井毅尚氏<br>「屋外における石州瓦と金属板の省エネ性能（2016）」<br class="u-desktop">の実験結果より</p>
               </div>
               <figure class="p-strong__box-img">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/reason/strong_hot_graph.png" alt="省エネ効果" width="340" height="200">
@@ -339,7 +339,7 @@
           <li class="p-strong__box-list">
             <div class="p-strong__box-row">
               <div class="p-strong__box-detail">
-                <p class="p-strong__box-detail-title">音を和らげる<br>石州瓦</p>
+                <p class="p-strong__box-detail-title">音を和らげる<br class="u-desktop">石州瓦</p>
               </div>
               <figure class="p-strong__box-img">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/reason/strong_ear_img.png" alt="省エネ効果" width="340" height="200">
