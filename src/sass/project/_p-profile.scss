@@ -16,7 +16,7 @@
 .p-profile__content {
   display: flex;
   flex-direction: column;
-  gap: rem(40);
+  gap: rem(30);
   @include mq(md) {
     gap: rem(50);
   }
@@ -26,6 +26,30 @@
 }
 
 .p-profile__title {
+  position: relative;
+}
+.p-profile__title::before {
+  position: absolute;
+  content: "";
+  background: url(../images/company/profile_text.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  aspect-ratio: 1177 / 411;
+  object-fit: cover;
+  left: 0;
+  z-index: -1;
+  width: rem(270);
+  top: rem(-40);
+  @include mq(md) {
+    width: rem(700);
+    top: rem(-80);
+  }
+  @include mq(lg) {
+    width: rem(1177);
+    top: rem(-140);
+  }
 }
 
 .p-profile__table {
@@ -50,10 +74,12 @@
   letter-spacing: 0.3em;
   padding: rem(16) rem(20);
   text-align: center;
-  vertical-align: middle;
   border-radius: rem(4);
-  width: rem(200);
+  display: block;
+  vertical-align: middle;
   @include mq(md) {
+    display: table-cell;
+    width: rem(200);
     font-size: clamp(14px, 2vw, 14px);
     padding: rem(8) rem(30);
   }
@@ -74,9 +100,11 @@
   line-height: 1.8;
   padding: rem(16) rem(20);
   vertical-align: middle;
+  display: block;
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
     padding: rem(8) rem(30);
+    display: table-cell;
   }
   @include mq(lg) {
     font-size: rem(20);

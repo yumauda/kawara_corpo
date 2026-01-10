@@ -1,6 +1,7 @@
 @use "../global" as *;
 
 .p-product-features {
+  padding-top: rem(40);
   @include mq(md) {
     padding-top: rem(80);
   }
@@ -27,7 +28,9 @@
   }
 }
 .p-product-features__title-wrapper {
-  white-space: nowrap;
+  @include mq(md) {
+    white-space: nowrap;
+  }
 }
 
 .p-product-features__title {
@@ -44,7 +47,7 @@
 }
 
 .p-product-features__detail-text {
-  font-size: rem(20);
+  font-size: rem(18);
   line-height: calc(56 / 40);
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -63,6 +66,7 @@
   font-weight: 500;
   letter-spacing: 0.06em;
   color: #222;
+  margin-top: rem(12);
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
     margin-top: rem(20);
@@ -73,8 +77,11 @@
 }
 
 .p-product-features__triple {
+  margin-top: rem(24);
+  display: grid;
+  gap: rem(16);
   @include mq(md) {
-    display: grid;
+    margin-top: initial;
     grid-template-columns: 420px 1fr;
     gap: rem(20);
   }
@@ -84,8 +91,9 @@
 }
 
 .p-product-features__right {
+  display: grid;
+  gap: rem(16);
   @include mq(md) {
-    display: grid;
     grid-template-rows: auto auto;
     gap: rem(20);
   }
@@ -99,6 +107,10 @@
   border: 2px solid #222;
   border-radius: rem(10);
   position: relative;
+  padding-left: rem(20);
+  padding-right: rem(20);
+  padding-top: rem(20);
+  padding-bottom: rem(40);
 
   @include mq(md) {
     padding-top: rem(30);
@@ -131,20 +143,32 @@
 
 .p-product-features__card-number {
   font-family: $second-font-family;
-  font-size: rem(20);
   font-weight: 700;
   font-style: italic;
   color: #ca4844;
   line-height: calc(32 / 20);
   letter-spacing: 0.06em;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
 }
 
 .p-product-features__card-title {
-  font-size: rem(40);
   font-weight: 900;
   color: #ca4844;
   line-height: calc(56 / 40);
   letter-spacing: 0.06em;
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: clamp(20px, 2vw, 28px);
+  }
+  @include mq(lg) {
+    font-size: rem(40);
+  }
 }
 
 // 赤いライン
@@ -152,6 +176,8 @@
   width: 100%;
   height: rem(2);
   background-color: #ca4844;
+  margin-top: rem(8);
+  margin-bottom: rem(8);
   @include mq(md) {
     margin-top: rem(20);
     margin-bottom: rem(20);
@@ -216,10 +242,7 @@
 // _Slope
 .p-product-features__card-slope {
   position: absolute;
-  bottom: rem(20);
-  right: rem(20);
   font-family: $second-font-family;
-  font-size: rem(12);
   font-weight: 700;
   font-style: italic;
   color: #ca4844;
@@ -227,6 +250,19 @@
   letter-spacing: 0.06em;
   text-align: right;
   opacity: 0.7;
+  font-size: rem(12);
+  bottom: rem(12);
+  right: rem(12);
+  @include mq(md) {
+    bottom: rem(16);
+    right: rem(16);
+    font-size: clamp(10px, 2vw, 12px);
+  }
+  @include mq(lg) {
+    bottom: rem(20);
+    right: rem(20);
+    font-size: rem(12);
+  }
 }
 
 // 白いバージョン（赤背景用）
@@ -257,6 +293,7 @@
 
 // メリットセクション
 .p-product-features__merit {
+  margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -266,11 +303,17 @@
 }
 
 .p-product-features__merit-title {
-  font-size: rem(26);
   font-weight: 700;
   color: #222;
   line-height: calc(32 / 26);
   letter-spacing: 0.06em;
+  font-size: rem(18);
+  @include mq(md) {
+    font-size: clamp(20px, 2vw, 20px);
+  }
+  @include mq(lg) {
+    font-size: rem(26);
+  }
 }
 
 .p-product-features__merit-line {
@@ -278,6 +321,8 @@
   height: 1px;
   background-color: #222;
   border: 1px solid #222;
+  margin-top: rem(4);
+  margin-bottom: rem(8);
   @include mq(md) {
     margin-top: rem(8);
     margin-bottom: rem(30);
@@ -334,21 +379,30 @@
 
 // メリットリスト
 .p-product-features__merit-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  margin-top: rem(16);
+  @include mq(md) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .p-product-features__merit-list li {
-  font-size: rem(20);
   font-weight: 500;
   color: #fff;
   line-height: calc(32 / 20);
   letter-spacing: 0.06em;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
 }
 
 // BSルーフ用の緑色カード
 .p-product-features__cards {
+  margin-top: rem(24);
   @include mq(md) {
     flex: 1;
     margin-left: auto;
@@ -382,8 +436,9 @@
 }
 
 .p-product-features__grid-two {
+  display: grid;
+  gap: rem(16);
   @include mq(md) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: rem(20);
   }
@@ -478,12 +533,18 @@
 }
 
 .p-product-features__option-caption {
-  font-size: rem(14);
   font-weight: 500;
   color: #fff;
   text-align: center;
   line-height: calc(32 / 14);
   letter-spacing: 0.06em;
+  font-size: rem(12);
+  @include mq(md) {
+    font-size: clamp(12px, 2vw, 12px);
+  }
+  @include mq(lg) {
+    font-size: rem(14);
+  }
 }
 
 // 互換性の画像
@@ -503,6 +564,10 @@
 
 // 大きな画像
 .p-product-features__card-img-large {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: initial;
+  }
 }
 .p-product-features__card-img-large--second {
   margin-top: rem(20);

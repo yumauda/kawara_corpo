@@ -41,21 +41,21 @@
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/company/live_img.webp" alt="" width="770" height="710">
         </figure>
         <div class="p-live__detail">
-          <h3 class="p-live__title">瓦でつなぐ<br>暮らしと風景</h3>
+          <h3 class="p-live__title">瓦でつなぐ<br class="u-desktop">暮らしと風景</h3>
           <div class="p-live__text-wrapper">
-            <p class="p-live__text">私たちは、島根県という潮風かおる海と、<br>
-              緑豊かな森林に囲まれた自然豊かな場所であるとともに、<br>
-              日本海側の厳しい気候条件に置かれたこの地で、<br>
+            <p class="p-live__text">私たちは、島根県という潮風かおる海と、<br class="u-desktop">
+              緑豊かな森林に囲まれた自然豊かな場所であるとともに、<br class="u-desktop">
+              日本海側の厳しい気候条件に置かれたこの地で、<br class="u-desktop">
               『石州瓦』という屋根材（陶器瓦）を創り続けてきました。<br>
-              私たちが創る『石州瓦』は、そういった厳しい気象環境に<br>
-              適応してきた屋根材であり、その品質を認められ、<br>
-              各地の様々な気象条件のもとで適応する屋根材として<br>
+              私たちが創る『石州瓦』は、そういった厳しい気象環境に<br class="u-desktop">
+              適応してきた屋根材であり、その品質を認められ、<br class="u-desktop">
+              各地の様々な気象条件のもとで適応する屋根材として<br class="u-desktop">
               全国へ広まっていきました。</p>
-            <p class="p-live__text">普段の生活において、屋根を気にすることは<br>
-              少ないと思いますが、『石州瓦』は、大切な建物を守り、<br>
+            <p class="p-live__text">普段の生活において、屋根を気にすることは<br class="u-desktop">
+              少ないと思いますが、『石州瓦』は、大切な建物を守り、<br class="u-desktop">
               長年にわたる安心、快適な生活空間を実現します。<br>
-              私たちは、これからも、この『石州瓦』を通じて、<br>
-              安心・快適な暮らしと日本のさまざまな地域の<br>
+              私たちは、これからも、この『石州瓦』を通じて、<br class="u-desktop">
+              安心・快適な暮らしと日本のさまざまな地域の<br class="u-desktop">
               美しい風景を残していきたいと考えています。</p>
 
           </div>

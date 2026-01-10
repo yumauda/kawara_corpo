@@ -102,3 +102,6 @@ body {
 body.drawer-open {
   overflow: hidden;
 }
+main {
+  overflow-x: clip;
+}

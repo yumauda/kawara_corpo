@@ -6,6 +6,8 @@
   padding-right: rem(40);
   border-radius: rem(10);
   margin-top: rem(40);
+  padding-top: rem(20);
+  padding-bottom: rem(20);
   @include mq(md) {
     padding-top: rem(80);
     padding-bottom: rem(100);
@@ -34,8 +36,8 @@
   border-radius: rem(10);
 }
 .p-live__content {
-  display: flex;
   @include mq(md) {
+    display: flex;
     gap: rem(64);
   }
   @include mq(lg) {
@@ -60,6 +62,10 @@
 }
 
 .p-live__detail {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: initial;
+  }
 }
 
 .p-live__title {
@@ -69,7 +75,7 @@
   letter-spacing: 0.06em;
   line-height: calc(112 / 80);
   @include mq(md) {
-    font-size: rem(32);
+    font-size: clamp(20px, 2vw, 32px);
   }
   @include mq(lg) {
     font-size: rem(80);
@@ -77,6 +83,7 @@
 }
 
 .p-live__text-wrapper {
+  margin-top: rem(8);
   @include mq(md) {
     margin-top: rem(12);
   }

@@ -3,6 +3,7 @@
 .p-company {
   padding-top: rem(60);
   padding-bottom: rem(60);
+  overflow-x: clip;
   @include mq(md) {
     padding-top: rem(80);
     padding-bottom: rem(80);
@@ -12,7 +13,35 @@
     padding-bottom: rem(200);
   }
 }
+.p-company__title {
+  position: relative;
+}
+
+.p-company__title::before {
+  position: absolute;
+  content: "";
+  background: url(../images/company/location_text.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  aspect-ratio: 1553 / 411;
+  object-fit: cover;
+  left: 0;
+  z-index: -1;
+  width: rem(380);
+  top: rem(-40);
+  @include mq(md) {
+    width: rem(1000);
+    top: rem(-80);
+  }
+  @include mq(lg) {
+    width: rem(1553);
+    top: rem(-140);
+  }
+}
 .p-company__block {
+  margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(48);
     display: flex;
@@ -24,6 +53,7 @@
   }
 }
 .p-company__block + .p-company__block {
+  margin-top: rem(40);
   @include mq(md) {
     margin-top: rem(48);
   }
@@ -72,6 +102,7 @@
   position: relative;
   padding-bottom: rem(8);
   border-bottom: rem(2) solid #37af32;
+  padding-left: rem(20);
   @include mq(md) {
     padding-left: rem(26);
     padding-bottom: rem(12);
@@ -86,10 +117,15 @@
   position: absolute;
   content: "";
   background: #37af32;
-  width: rem(6);
-  height: rem(60);
   left: 0;
-  top: rem(-12);
+  width: rem(4);
+  height: rem(40);
+  top: rem(-8);
+  @include mq(md) {
+    top: rem(-12);
+    width: rem(6);
+    height: rem(60);
+  }
 }
 .p-company__table {
   border-collapse: separate;
@@ -111,9 +147,10 @@
   letter-spacing: 0.3em;
   border-radius: rem(4);
   line-height: 1.6;
-  width: rem(120);
   padding: rem(10);
+  display: block;
   @include mq(md) {
+    display: table-cell;
     font-size: clamp(14px, 2vw, 14px);
     width: rem(120);
     padding: rem(11);
@@ -131,7 +168,10 @@
   letter-spacing: 0.06em;
   background: #ebebeb;
   line-height: 1.8;
+  display: block;
+  padding: rem(10);
   @include mq(md) {
+    display: table-cell;
     font-size: clamp(14px, 2vw, 14px);
     padding: rem(11);
   }
@@ -153,8 +193,10 @@
 }
 .p-company__img {
   flex: 1;
+  margin-top: rem(16);
   @include mq(md) {
     max-width: rem(450);
+    margin-top: initial;
   }
   @include mq(lg) {
     max-width: rem(560);

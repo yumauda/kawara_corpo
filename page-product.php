@@ -40,7 +40,7 @@
               <h4 class="p-product__subTitle">グラスロは、屋根勾配を<br>
                 選ばないJ形瓦です。</h4>
               <div class="p-product__btn">
-                <a href="#" class="c-btn">
+                <a href="<?php echo esc_url(home_url('/product/graslo/')); ?>" class="c-btn">
                   <p class="c-btn__text">View more</p>
                   <div class="c-btn__icon">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
@@ -71,7 +71,7 @@
               </ul>
               <h4 class="p-product__subTitle p-product__subTitle--bs">建築の未来を支える<br>グローバルスタンダード瓦。</h4>
               <div class="p-product__btn">
-                <a href="#" class="c-btn">
+                <a href="<?php echo esc_url(home_url('/product/bs/')); ?>" class="c-btn">
                   <p class="c-btn__text">View more</p>
                   <div class="c-btn__icon">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
@@ -104,7 +104,7 @@
               <h4 class="p-product__subTitle p-product__subTitle--flex">建築様式を選ばない<br>
                 フレキシブルな石州瓦</h4>
               <div class="p-product__btn">
-                <a href="#" class="c-btn">
+                <a href="<?php echo esc_url(home_url('/product/ts/')); ?>" class="c-btn">
                   <p class="c-btn__text">View more</p>
                   <div class="c-btn__icon">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
@@ -139,7 +139,7 @@
               <h4 class="p-product__subTitle p-product__subTitle--flat">和からモダンまで<br>
                 幅広く対応するフラット瓦</h4>
               <div class="p-product__btn">
-                <a href="#" class="c-btn">
+                <a href="<?php echo esc_url(home_url('/product/ftype/')); ?>" class="c-btn">
                   <p class="c-btn__text">View more</p>
                   <div class="c-btn__icon">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
@@ -169,7 +169,7 @@
               <h4 class="p-product__subTitle p-product__subTitle--s">石州瓦の技と感性が生んだ<br>
                 S形瓦</h4>
               <div class="p-product__btn">
-                <a href="#" class="c-btn">
+                <a href="<?php echo esc_url(home_url('/product/eco/')); ?>" class="c-btn">
                   <p class="c-btn__text">View more</p>
                   <div class="c-btn__icon">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
@@ -218,7 +218,7 @@
               <h4 class="p-product__subTitle">自然な色合いの瓦素地が<br>
                 様々な景観にマッチ</h4>
               <div class="p-product__btn">
-                <a href="#" class="c-btn">
+                <a href="<?php echo esc_url(home_url('/product/ceramic/')); ?>" class="c-btn">
                   <p class="c-btn__text">View more</p>
                   <div class="c-btn__icon">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">

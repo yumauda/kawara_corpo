@@ -2,9 +2,10 @@
 
 .p-water-test {
   margin-top: rem(20);
+  display: grid;
+  gap: rem(16);
   @include mq(md) {
     margin-top: rem(30);
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: rem(20);
   }

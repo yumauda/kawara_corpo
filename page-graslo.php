@@ -28,20 +28,22 @@
         <div class="p-intro__vertical">
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/graslo/intro_vertical.png" alt="強さは美しさ" width="50" height="460">
         </div>
-        <div class="p-intro__detail">
-          <h3 class="p-intro__title"><span>超低勾配</span><br>を実現。</h3>
-          <p class="p-intro__en">GraSlo</p>
-          <p class="p-intro__small">For any Grandient and any Slope.</p>
-          <div class="p-intro__row">
-            <div class="p-intro__icon">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/product/product_icon1.png" alt="グラスロ" width="220" height="80">
+        <div class="p-intro__detail-row">
+          <div class="p-intro__detail">
+            <h3 class="p-intro__title"><span>超低勾配</span><br class="u-desktop">を実現。</h3>
+            <p class="p-intro__en">GraSlo</p>
+            <p class="p-intro__small">For any Grandient and any Slope.</p>
+            <div class="p-intro__row">
+              <div class="p-intro__icon">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/product/product_icon1.png" alt="グラスロ" width="220" height="80">
+              </div>
+              <p class="p-intro__row-text">グラスロ<br>石州防災J形瓦 53B</p>
             </div>
-            <p class="p-intro__row-text">グラスロ<br>石州防災J形瓦 53B</p>
           </div>
+          <figure class="p-intro__img">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/graslo/intro_img.webp" alt="グラスロ" width="1040" height="677">
+          </figure>
         </div>
-        <figure class="p-intro__img">
-          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/graslo/intro_img.webp" alt="グラスロ" width="1040" height="677">
-        </figure>
       </div>
     </div>
   </section>
@@ -52,11 +54,11 @@
           <div class="p-product-features__title">
             <h3 class="c-pageTitle">
               <span class="c-pageTitle__title-text">屋根材比較</span>
-              <span class="c-pageTitle__title-main">特殊な形状を<br>採用した瓦。</span>
+              <span class="c-pageTitle__title-main">特殊な形状を<br class="u-desktop">採用した瓦。</span>
             </h3>
           </div>
           <div class="p-product-features__detail">
-            <p class="p-product-features__detail-text">超低勾配でも<br>雨漏りを許さない<br>瓦の力。</p>
+            <p class="p-product-features__detail-text">超低勾配でも<br class="u-desktop">雨漏りを許さない<br class="u-desktop">瓦の力。</p>
             <p class="p-product-features__detail-small">特殊な形状を採用することにより<br>超低勾配の屋根でも雨漏りを防止し<br>瓦の施工が可能となります。</p>
           </div>
         </div>

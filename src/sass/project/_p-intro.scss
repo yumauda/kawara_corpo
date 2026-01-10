@@ -1,6 +1,7 @@
 @use "../global" as *;
 
 .p-intro {
+  padding-top: rem(40);
   @include mq(md) {
     padding-top: rem(80);
   }
@@ -11,11 +12,30 @@
 
 .p-intro__content {
   display: flex;
+  gap: rem(20);
+  @include mq(md) {
+    gap: initial;
+  }
 }
 
 .p-intro__vertical {
-  max-width: rem(50);
   width: 100%;
+  max-width: rem(32);
+  @include mq(md) {
+    max-width: rem(50);
+  }
+}
+.p-intro__vertical img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+.p-intro__detail-row {
+  display: block;
+  @include mq(md) {
+    display: flex;
+  }
 }
 .p-intro__vertical img {
 }
@@ -36,6 +56,7 @@
   color: #222;
   font-weight: 400;
   white-space: nowrap;
+  font-size: rem(24);
   @include mq(md) {
     font-size: rem(60);
   }
@@ -52,6 +73,7 @@
   font-style: italic;
   font-weight: 900;
   color: #222;
+  font-size: rem(24);
   @include mq(md) {
     font-size: rem(60);
     margin-top: rem(-10);
@@ -64,13 +86,14 @@
 }
 
 .p-intro__small {
-  margin-top: rem(10);
   color: #222;
   letter-spacing: 0.06em;
   font-weight: 600;
   font-family: $second-font-family;
   font-style: italic;
+  font-size: rem(12);
   @include mq(md) {
+    margin-top: rem(10);
     font-size: clamp(10px, 2vw, 14px);
   }
   @include mq(lg) {
@@ -83,6 +106,7 @@
   align-items: center;
   position: relative;
   z-index: 2;
+  margin-top: rem(20);
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -116,6 +140,7 @@
   font-weight: 500;
   letter-spacing: 0.06em;
   color: #222;
+  font-size: rem(12);
   @include mq(md) {
     margin-left: rem(20);
     padding-left: rem(10);
@@ -129,8 +154,9 @@
 }
 
 .p-intro__img {
+  margin-right: calc(50% - 50vw);
   @include mq(md) {
-    margin-right: calc(50% - 50vw);
+    margin-top: initial;
     margin-left: rem(64);
   }
   @include mq(lg) {

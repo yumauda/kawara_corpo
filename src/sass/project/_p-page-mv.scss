@@ -135,6 +135,10 @@
   margin-left: calc(47% - 50vw);
   margin-right: calc(50% - 50vw);
   width: 100vw;
+  margin-top: rem(40);
+  @include mq(md){
+    margin-top: initial;
+  }
 }
 .p-page-mv__img img {
   width: 100%;

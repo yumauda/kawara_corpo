@@ -29,20 +29,22 @@
         <div class="p-intro__vertical">
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/graslo/intro_vertical.png" alt="強さは美しさ" width="50" height="460">
         </div>
-        <div class="p-intro__detail">
-          <h3 class="p-intro__title"><span>高耐久性</span><br>で安心。</h3>
-          <p class="p-intro__en">BSルーフ</p>
-          <p class="p-intro__small">Disaster-resistant Sekishu roof tiles.</p>
-          <div class="p-intro__row">
-            <div class="p-intro__icon">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/product/product_icon2.png" alt="BSルーフ" width="220" height="80">
+        <div class="p-intro__detail-row">
+          <div class="p-intro__detail">
+            <h3 class="p-intro__title"><span>高耐久性</span><br class="u-desktop">で安心。</h3>
+            <p class="p-intro__en">BSルーフ</p>
+            <p class="p-intro__small">Disaster-resistant Sekishu roof tiles.</p>
+            <div class="p-intro__row">
+              <div class="p-intro__icon">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/product/product_icon2.png" alt="BSルーフ" width="220" height="80">
+              </div>
+              <p class="p-intro__row-text">BSルーフ<br>石州防災J形瓦 53A</p>
             </div>
-            <p class="p-intro__row-text">BSルーフ<br>石州防災J形瓦 53A</p>
           </div>
+          <figure class="p-intro__img">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/bs/intro_img.webp" alt="BSルーフ" width="1040" height="677">
+          </figure>
         </div>
-        <figure class="p-intro__img">
-          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/bs/intro_img.webp" alt="BSルーフ" width="1040" height="677">
-        </figure>
       </div>
     </div>
   </section>
@@ -53,7 +55,7 @@
           <div class="p-product-features__title">
             <h3 class="c-pageTitle">
               <span class="c-pageTitle__title-text green">屋根材比較</span>
-              <span class="c-pageTitle__title-main">和の趣に<br>信頼の<br>防災性能。</span>
+              <span class="c-pageTitle__title-main">和の趣に<br class="u-desktop">信頼の<br class="u-desktop">防災性能。</span>
             </h3>
           </div>
           <div class="p-product-features__detail">
@@ -117,7 +119,7 @@
       </div>
     </div>
   </section>
-  
+
   <section class="p-specific p-specific--first">
     <div class="l-inner">
       <div class="p-specific__header green-line">

@@ -11,12 +11,42 @@
 
 .p-history__content {
 }
+.p-history__title {
+  position: relative;
+}
+.p-history__title::before {
+  position: absolute;
+  content: "";
+  background: url(../images/company/history_text.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  aspect-ratio: 1298 / 414;
+  object-fit: cover;
+  left: 0;
+  z-index: -1;
+  width: rem(350);
+  top: rem(-40);
+  @include mq(md) {
+    width: rem(780);
+    top: rem(-80);
+  }
+  @include mq(lg) {
+    width: rem(1298);
+    top: rem(-140);
+  }
+}
 
 .p-history__lists {
   position: relative;
+  margin-top: rem(24);
+  padding-left: rem(20);
+  display: grid;
+  gap: rem(4);
   @include mq(md) {
+    padding-left: initial;
     margin-top: rem(40);
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: rem(4);
     column-gap: rem(60);
@@ -32,15 +62,25 @@
   background: #37af32;
   width: 1px;
   height: 100%;
-  top: rem(32);
-  left: 50%;
-  transform: translateX(-50%);
+  top: rem(12);
+  left: rem(5);
+  @include mq(md) {
+    top: rem(32);
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .p-history__list {
   background: #37af32;
   border-radius: rem(4);
-  padding: rem(16) rem(20);
   position: relative;
+  padding: rem(12) rem(10);
+  @include mq(md) {
+    padding: rem(12);
+  }
+  @include mq(lg) {
+    padding: rem(16) rem(20);
+  }
 }
 .p-history__list::before {
   position: absolute;
@@ -50,8 +90,12 @@
   height: rem(10);
   top: 50%;
   transform: translateY(-50%);
-  right: rem(-45);
   border-radius: 9999px;
+  left: rem(-20);
+  @include mq(md) {
+    right: rem(-45);
+    left: initial;
+  }
 }
 .p-history__list::after {
   position: absolute;
@@ -61,37 +105,60 @@
   height: 1px;
   top: 50%;
   transform: translateY(-50%);
-  right: rem(-45);
   z-index: -1;
+  left: rem(-20);
+  @include mq(md) {
+    right: rem(-45);
+    left: initial;
+  }
 }
 .p-history__list:nth-child(even)::before {
-  right: auto;
-  left: rem(-45);
+  left: rem(-20);
+  @include mq(md) {
+    right: auto;
+    left: rem(-45);
+  }
 }
 .p-history__list:nth-child(even)::after {
-  right: auto;
-  left: rem(-45);
+  left: rem(-20);
+  @include mq(md) {
+    right: auto;
+    left: rem(-45);
+  }
 }
 
 .p-history__list:not(:has(.p-history__row)) {
+  display: none;
   @include mq(md) {
+    display: block;
     opacity: 0;
     visibility: hidden;
   }
 }
+
 
 .p-history__list:nth-child(even) {
   background: #fff;
 }
 .p-history__row {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row-reverse;
   align-items: center;
+  justify-content: flex-end;
+  gap: rem(12);
+  @include mq(md) {
+    gap: initial;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 .p-history__list:nth-child(even) .p-history__row {
   flex-direction: row-reverse;
-  justify-content: flex-end;
-  gap: rem(20);
+  justify-content: flex-start;
+  @include mq(md) {
+    justify-content: flex-end;
+    gap: rem(20);
+  }
 }
 
 .p-history__text {
@@ -111,7 +178,7 @@
 .p-history__year {
   font-family: $second-font-family;
   font-weight: 700;
-  font-size: rem(16);
+  font-size: rem(18);
   font-style: italic;
   color: #fff;
   @include mq(md) {
@@ -138,7 +205,7 @@
   text-align: center;
   font-weight: 700;
   color: #37af32;
-  font-size: rem(24);
+  font-size: rem(20);
   font-family: $second-font-family;
   font-weight: 700;
   font-style: italic;
@@ -170,6 +237,7 @@
   line-height: calc(32 / 18);
   letter-spacing: 0.06em;
   font-weight: 400;
+  font-size: rem(14);
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }

@@ -16,16 +16,25 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(500);
   height: auto;
   aspect-ratio: 500 / 165;
   object-fit: cover;
-  top: rem(300);
-  left: rem(-40);
+  width: rem(120);
+  top: rem(350);
+  left: 0;
+  @include mq(md) {
+    width: rem(500);
+    top: rem(300);
+    left: rem(-40);
+  }
 }
 .p-maker__inner {
-  padding-left: rem(40);
-  padding-right: rem(40);
+  padding-left: rem(20);
+  padding-right: rem(20);
+  @include mq(md) {
+    padding-left: rem(40);
+    padding-right: rem(40);
+  }
 }
 
 .p-maker__content {
@@ -40,9 +49,15 @@
 }
 
 .p-maker__logo {
-  width: rem(179);
+  width: rem(120);
+  transform: rotate(-90deg);
+  margin-left: auto;
+  margin-right: auto;
   @include mq(md) {
+    margin-left: initial;
+    margin-right: initial;
     width: rem(140);
+    transform: initial;
   }
   @include mq(lg) {
     min-width: rem(179);
