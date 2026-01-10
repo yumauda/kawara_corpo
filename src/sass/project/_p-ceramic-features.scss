@@ -19,6 +19,11 @@
   border: 2px solid #222;
   overflow: hidden;
   position: relative;
+  padding-left: rem(20);
+  padding-right: rem(20);
+  padding-top: rem(20);
+  padding-bottom: rem(40);
+  
 
   &:not(:first-child) {
     margin-top: rem(20);
@@ -99,7 +104,7 @@
 }
 
 .p-ceramic-features__card-title {
-  font-size: rem(28);
+  font-size: rem(20);
   font-weight: 900;
   line-height: calc(56 / 40);
   letter-spacing: 0.06em;
@@ -114,8 +119,9 @@
 .p-ceramic-features__card-border {
   width: 100%;
   height: 2px;
-  margin-top: rem(20);
+  margin-top: rem(12);
   @include mq(md) {
+    margin-top: rem(20);
     max-width: rem(395);
   }
   @include mq(lg) {
@@ -124,12 +130,13 @@
 }
 
 .p-ceramic-features__card-text {
-  margin-top: rem(20);
   font-size: rem(14);
   font-weight: 500;
   line-height: calc(32 / 20);
   letter-spacing: 0.06em;
+  margin-top: rem(12);
   @include mq(md) {
+    margin-top: rem(20);
     font-size: clamp(14px, 2vw, 14px);
     max-width: rem(395);
   }
@@ -140,6 +147,7 @@
 }
 
 .p-ceramic-features__card-img {
+  margin-top: rem(16);
   @include mq(md) {
     margin-top: 0;
     flex-shrink: 0;

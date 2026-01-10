@@ -30,20 +30,22 @@
         <div class="p-intro__vertical">
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/graslo/intro_vertical.png" alt="強さは美しさ" width="50" height="460">
         </div>
-        <div class="p-intro__detail">
-          <h3 class="p-intro__title"><span>デザイン</span><br>が彩る。</h3>
-          <p class="p-intro__en">ECOII</p>
-          <p class="p-intro__small">The tiles embellish the design.</p>
-          <div class="p-intro__row">
-            <div class="p-intro__icon w310">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/product/product_icon5.png" alt="ニューセラFタイプU 石州防災F形瓦" width="220" height="80">
+        <div class="p-intro__detail-row">
+          <div class="p-intro__detail">
+            <h3 class="p-intro__title"><span>デザイン</span><br class="u-desktop">が彩る。</h3>
+            <p class="p-intro__en">ECOII</p>
+            <p class="p-intro__small">The tiles embellish the design.</p>
+            <div class="p-intro__row">
+              <div class="p-intro__icon w310">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/product/product_icon5.png" alt="ニューセラFタイプU 石州防災F形瓦" width="220" height="80">
+              </div>
+              <p class="p-intro__row-text">ニューセラECO<br>石州防災S形瓦</p>
             </div>
-            <p class="p-intro__row-text">ニューセラECO<br>石州防災S形瓦</p>
           </div>
+          <figure class="p-intro__img p-intro__img--eco">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/eco/intro_img.webp" alt="ニューセラECO 石州防災S形瓦" width="1030" height="626">
+          </figure>
         </div>
-        <figure class="p-intro__img p-intro__img--eco">
-          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/eco/intro_img.webp" alt="ニューセラECO 石州防災S形瓦" width="1030" height="626">
-        </figure>
       </div>
     </div>
   </section>
@@ -54,11 +56,11 @@
           <div class="p-product-features__title">
             <h3 class="c-pageTitle">
               <span class="c-pageTitle__title-text blue">屋根材比較</span>
-              <span class="c-pageTitle__title-main">洋にも和にも<br>フィットする<br>やさしい瓦</span>
+              <span class="c-pageTitle__title-main">洋にも和にも<br class="u-desktop">フィットする<br>やさしい瓦</span>
             </h3>
           </div>
           <div class="p-product-features__detail">
-            <p class="p-product-features__detail-text">現代建築を<br>引き立てる瓦</p>
+            <p class="p-product-features__detail-text">現代建築を<br class="u-desktop">引き立てる瓦</p>
             <p class="p-product-features__detail-small">石州瓦の特性と知恵を生かしながら、<br>洋風建築にもフィットするやさしい<br>曲線美で気品あるデザインを実現。</p>
           </div>
         </div>

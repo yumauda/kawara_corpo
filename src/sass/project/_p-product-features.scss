@@ -438,7 +438,9 @@
 .p-product-features__grid-two {
   display: grid;
   gap: rem(16);
+  margin-top: rem(16);
   @include mq(md) {
+    margin-top: initial;
     grid-template-columns: 1fr 1fr;
     gap: rem(20);
   }
@@ -498,8 +500,10 @@
 // オプションセクション
 .p-product-features__options {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  gap: rem(8);
+  margin-top: rem(12);
   @include mq(md) {
+    grid-template-columns: repeat(3, 1fr);
     gap: rem(10);
     margin-top: rem(20);
   }
@@ -517,8 +521,8 @@
 
 .p-product-features__option-img {
   width: 100%;
-  max-width: rem(110);
   @include mq(md) {
+    max-width: rem(110);
     margin-bottom: rem(8);
   }
   @include mq(lg) {
@@ -549,10 +553,13 @@
 
 // 互換性の画像
 .p-product-features__compatible-img {
-  margin-top: rem(4);
-  max-width: rem(100);
   width: 100%;
-  margin-left: auto;
+  margin-top: rem(12);
+  @include mq(md) {
+    margin-top: rem(4);
+    max-width: rem(100);
+    margin-left: auto;
+  }
 }
 
 .p-product-features__compatible-img img {

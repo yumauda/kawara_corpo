@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .p-product-mv {
-  padding-top: rem(80);
+  padding-top: rem(120);
   overflow-x: clip;
   position: relative;
   @include mq(md) {
@@ -114,7 +114,7 @@
 }
 
 .p-product-mv__title {
-  font-size: rem(18);
+  font-size: rem(16);
   line-height: calc(56 / 40);
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -160,7 +160,7 @@
 }
 
 .p-product-mv__detail-title {
-  font-size: rem(28);
+  font-size: rem(24);
   line-height: calc(168 / 120);
   font-weight: 700;
   letter-spacing: 0.06em;

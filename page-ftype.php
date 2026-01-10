@@ -30,20 +30,22 @@
         <div class="p-intro__vertical">
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/graslo/intro_vertical.png" alt="強さは美しさ" width="50" height="460">
         </div>
-        <div class="p-intro__detail">
-          <h3 class="p-intro__title"><span>耐久性の</span><br>平板瓦。</h3>
-          <p class="p-intro__en">FtypeU</p>
-          <p class="p-intro__small">Long-lasting flat roof tiles.</p>
-          <div class="p-intro__row">
-            <div class="p-intro__icon w362">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/product/product_icon3.png" alt="ニューセラFタイプU 石州防災F形瓦" width="220" height="80">
+        <div class="p-intro__detail-row">
+          <div class="p-intro__detail">
+            <h3 class="p-intro__title"><span>耐久性の</span><br class="u-desktop">平板瓦。</h3>
+            <p class="p-intro__en">FtypeU</p>
+            <p class="p-intro__small">Long-lasting flat roof tiles.</p>
+            <div class="p-intro__row">
+              <div class="p-intro__icon w362">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/product/product_icon3.png" alt="ニューセラFタイプU 石州防災F形瓦" width="220" height="80">
+              </div>
+              <p class="p-intro__row-text">ニューセラFタイプU<br>石州防災F形瓦</p>
             </div>
-            <p class="p-intro__row-text">ニューセラFタイプU<br>石州防災F形瓦</p>
           </div>
+          <figure class="p-intro__img p-intro__img--ftype">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/ftype/intro_img.webp" alt="ニューセラFタイプU 石州防災F形瓦" width="1040" height="677">
+          </figure>
         </div>
-        <figure class="p-intro__img p-intro__img--ftype">
-          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/ftype/intro_img.webp" alt="ニューセラFタイプU 石州防災F形瓦" width="1040" height="677">
-        </figure>
       </div>
     </div>
   </section>
@@ -54,11 +56,11 @@
           <div class="p-product-features__title">
             <h3 class="c-pageTitle">
               <span class="c-pageTitle__title-text orange">屋根材比較</span>
-              <span class="c-pageTitle__title-main">美しさと<br>調和を叶える<br>ニューセラFU。</span>
+              <span class="c-pageTitle__title-main">美しさと<br class="u-desktop">調和を叶える<br>ニューセラFU。</span>
             </h3>
           </div>
           <div class="p-product-features__detail">
-            <p class="p-product-features__detail-text">伝統に寄り添う、<br>災害に強い<br>日本の瓦。</p>
+            <p class="p-product-features__detail-text">伝統に寄り添う、<br>災害に強い<br class="u-desktop">日本の瓦。</p>
             <p class="p-product-features__detail-small">日本建築をさらに格調高く仕上げる<br>滑らかなフォルム。<br>優れた防災性能を備えた和瓦です。</p>
           </div>
         </div>
@@ -224,7 +226,7 @@
                 <td class="border-left-none">3.0</td>
                 <td class="border-right-none">6</td>
               </tr>
-             
+
               <tr>
                 <td class="border-left-none">4.0</td>
                 <td class="border-right-none">8</td>
@@ -237,7 +239,7 @@
                 <td class="border-left-none">5.0</td>
                 <td class="border-right-none">12</td>
               </tr>
-              
+
               <tr>
                 <td class="border-left-none">6.0</td>
                 <td class="border-right-none">18</td>

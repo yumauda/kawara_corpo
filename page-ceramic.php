@@ -29,14 +29,16 @@
         <div class="p-intro__vertical">
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/graslo/intro_vertical.png" alt="強さは美しさ" width="50" height="460">
         </div>
-        <div class="p-intro__detail">
-          <h3 class="p-intro__title">再生が<br>つくる、<br><span>新しい景色。</span></h3>
-          <p class="p-intro__small">Recycling creates new landscapes.</p>
+        <div class="p-intro__detail-row">
+          <div class="p-intro__detail">
+            <h3 class="p-intro__title">再生が<br class="u-desktop">つくる、<br><span>新しい景色。</span></h3>
+            <p class="p-intro__small">Recycling creates new landscapes.</p>
 
+          </div>
+          <figure class="p-intro__img p-intro__img--ceramic">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/ceramic/intro_img.webp" alt="セラミックサンド" width="1030" height="626">
+          </figure>
         </div>
-        <figure class="p-intro__img p-intro__img--ceramic">
-          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/ceramic/intro_img.webp" alt="セラミックサンド" width="1030" height="626">
-        </figure>
       </div>
     </div>
   </section>
@@ -47,7 +49,7 @@
           <div class="p-product-features__title">
             <h3 class="c-pageTitle">
               <span class="c-pageTitle__title-text black">屋根材比較</span>
-              <span class="c-pageTitle__title-main">自然な色合いの<br>瓦素地が<br>景観にマッチ。</span>
+              <span class="c-pageTitle__title-main">自然な色合いの<br class="u-desktop">瓦素地が<br>景観にマッチ。</span>
             </h3>
           </div>
           <div class="p-product-features__detail">

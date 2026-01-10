@@ -29,20 +29,22 @@
         <div class="p-intro__vertical">
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/graslo/intro_vertical.png" alt="強さは美しさ" width="50" height="460">
         </div>
-        <div class="p-intro__detail">
-          <h3 class="p-intro__title"><span>機能と美</span><br>の両立。</h3>
-          <p class="p-intro__en">TSルーフ</p>
-          <p class="p-intro__small">Triple Safety Tile: Sekishu Roof Tile.</p>
-          <div class="p-intro__row">
-            <div class="p-intro__icon">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/product/product_icon4.png" alt="TSルーフ" width="220" height="80">
+        <div class="p-intro__detail-row">
+          <div class="p-intro__detail">
+            <h3 class="p-intro__title"><span>機能と美</span><br>の両立。</h3>
+            <p class="p-intro__en">TSルーフ</p>
+            <p class="p-intro__small">Triple Safety Tile: Sekishu Roof Tile.</p>
+            <div class="p-intro__row">
+              <div class="p-intro__icon">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/product/product_icon4.png" alt="TSルーフ" width="220" height="80">
+              </div>
+              <p class="p-intro__row-text">TSルーフ<br>石州防災J形瓦 53B</p>
             </div>
-            <p class="p-intro__row-text">TSルーフ<br>石州防災J形瓦 53B</p>
           </div>
+          <figure class="p-intro__img">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/ts/intro_img.webp" alt="TSルーフ" width="1040" height="677">
+          </figure>
         </div>
-        <figure class="p-intro__img">
-          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/ts/intro_img.webp" alt="TSルーフ" width="1040" height="677">
-        </figure>
       </div>
     </div>
   </section>
@@ -53,11 +55,11 @@
           <div class="p-product-features__title">
             <h3 class="c-pageTitle">
               <span class="c-pageTitle__title-text purple">屋根材比較</span>
-              <span class="c-pageTitle__title-main">防災性能と<br>和の美を<br>両立した瓦。</span>
+              <span class="c-pageTitle__title-main">防災性能と<br class="u-desktop">和の美を<br class="u-desktop">両立した瓦。</span>
             </h3>
           </div>
           <div class="p-product-features__detail">
-            <p class="p-product-features__detail-text">日本の空に<br>波打つ機能美</p>
+            <p class="p-product-features__detail-text">日本の空に<br class="u-desktop">波打つ機能美</p>
             <p class="p-product-features__detail-small">日本建築をさらに格調高く仕上げる<br>滑らかなフォルム。<br>優れた防災性能を備えた和瓦です。</p>
           </div>
         </div>
