@@ -37,13 +37,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(1236);
   height: auto;
   aspect-ratio: 1236 / 411;
   object-fit: cover;
   left: 0;
-  top: rem(-72);
   z-index: -1;
+  top: rem(-20);
+  width: rem(350);
+  @include mq(md) {
+    top: rem(-72);
+    width: rem(1236);
+  }
 }
 .p-leaflet__content--last-child::before {
   position: absolute;
@@ -125,6 +129,8 @@
 
 .p-leaflet__card-image {
   width: 100%;
+  padding-left: rem(20);
+  padding-right: rem(20);
   margin-bottom: rem(20);
   @include mq(md) {
     margin-bottom: rem(25);
@@ -298,10 +304,11 @@
   font-weight: 700;
   border-bottom: 1px solid #37af32;
   padding-bottom: rem(8);
-  padding-left: rem(26);
   position: relative;
   margin-bottom: rem(20);
+  padding-left: rem(16);
   @include mq(md) {
+    padding-left: rem(26);
     font-size: clamp(20px, 2vw, 24px);
     padding-bottom: rem(10);
     margin-bottom: rem(30);
@@ -317,11 +324,15 @@
   position: absolute;
   content: "";
   background: #37af32;
-  width: rem(6);
-  height: rem(54);
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  width: rem(4);
+  height: rem(36);
+  @include mq(md) {
+    width: rem(6);
+    height: rem(54);
+  }
 }
 
 .p-leaflet__note {

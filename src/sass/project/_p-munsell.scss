@@ -230,9 +230,11 @@
   }
 }
 .p-munsell__table-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .p-munsell__table-header-text {
@@ -242,6 +244,10 @@
   display: flex;
   align-items: center;
   gap: rem(15);
+  margin-top: rem(8);
+  @include mq(md) {
+    margin-top: initial;
+  }
 }
 
 .p-munsell__table-header-link-text {
@@ -311,10 +317,10 @@
   font-weight: 500;
   letter-spacing: 0.06em;
   line-height: calc(32 / 18);
-  @include mq(md){
+  @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
-  @include mq(lg){
+  @include mq(lg) {
     font-size: rem(18);
   }
 }
@@ -337,7 +343,7 @@
 .p-munsell__scroll {
   overflow-x: auto;
   width: 100%;
-  @include mq(md){
+  @include mq(md) {
     overflow-x: initial;
   }
 }

@@ -196,7 +196,9 @@
   }
 }
 .p-topics__row-img {
+  margin-top: rem(20);
   @include mq(md) {
+    margin-top: initial;
     flex: 1;
     max-width: rem(450);
   }

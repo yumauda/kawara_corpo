@@ -149,7 +149,7 @@
 .p-ceramic-features__card-img {
   margin-top: rem(16);
   @include mq(md) {
-    margin-top: 0;
+  margin-top: 0;
     flex-shrink: 0;
   }
 }
