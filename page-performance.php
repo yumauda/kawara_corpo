@@ -21,7 +21,7 @@
               </figure>
               <div class="p-performance__card-content">
                 <p class="p-performance__card-category">桟瓦/袖瓦/軒瓦 等</p>
-                <h3 class="p-performance__card-title">耐風圧力<br>試験</h3>
+                <h3 class="p-performance__card-title">耐風圧力<br class="u-desktop">試験</h3>
               </div>
             </div>
             <div class="p-performance__card-divider"></div>

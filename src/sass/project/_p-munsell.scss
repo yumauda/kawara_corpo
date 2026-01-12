@@ -164,6 +164,7 @@
   letter-spacing: 0.06em;
   color: #fff;
   text-align: center;
+  white-space: nowrap;
   @include mq(md) {
     padding: rem(8) rem(12);
     font-size: clamp(14px, 2vw, 14px);

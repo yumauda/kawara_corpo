@@ -19,8 +19,8 @@
   letter-spacing: 0.06em;
   color: #222;
   font-size: rem(14);
-  text-align: center;
   @include mq(md) {
+    text-align: center;
     font-size: clamp(14px, 2vw, 14px);
   }
   @include mq(lg) {
@@ -30,14 +30,14 @@
 
 .p-page-mvText__small {
   font-size: rem(10);
-  text-align: center;
-
+  
   font-weight: 500;
   line-height: calc(32 / 20);
   letter-spacing: 0.06em;
   color: #222;
   margin-top: rem(8);
   @include mq(md) {
+    text-align: center;
     font-size: clamp(10px, 2vw, 10px);
     margin-top: rem(16);
   }

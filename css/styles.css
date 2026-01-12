@@ -5645,6 +5645,7 @@ input::placeholder {
   letter-spacing: 0.06em;
   color: #fff;
   text-align: center;
+  white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
   .p-munsell__table-th {
@@ -6337,10 +6338,10 @@ input::placeholder {
   letter-spacing: 0.06em;
   color: #222;
   font-size: 0.875rem;
-  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-page-mvText__main {
+    text-align: center;
     font-size: clamp(14px, 2vw, 14px);
   }
 }
@@ -6352,7 +6353,6 @@ input::placeholder {
 
 .p-page-mvText__small {
   font-size: 0.625rem;
-  text-align: center;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.06em;
@@ -6361,6 +6361,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-page-mvText__small {
+    text-align: center;
     font-size: clamp(10px, 2vw, 10px);
     margin-top: 1rem;
   }
@@ -7514,9 +7515,11 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  margin-top: 0.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-performance__card-content {
+    margin-top: initial;
     gap: 1rem;
   }
 }
@@ -7597,10 +7600,10 @@ input::placeholder {
   line-height: 2.857;
   letter-spacing: 0.06em;
   color: #222222;
-  text-align: right;
 }
 @media screen and (min-width: 768px) {
   .p-performance__note {
+    text-align: right;
     font-size: 0.875rem;
     line-height: 2.857;
   }
@@ -9460,7 +9463,7 @@ input::placeholder {
 
 .p-related-links__header {
   background-color: #222;
-  padding: 2.5rem 1.25rem;
+  padding: 1.25rem 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9479,7 +9482,7 @@ input::placeholder {
 }
 
 .p-related-links__title {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.06em;
