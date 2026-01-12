@@ -1,9 +1,8 @@
 @use "../global" as *;
 
 .p-404 {
-  height: 100vh;
   padding-top: rem(89);
-  padding-bottom: rem(110);
+  padding-bottom: rem(64);
   background: url(../images/common/mv_404_sp.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -44,7 +43,7 @@
 .p-404__title {
   color: $black;
   font-weight: 600;
-  font-family: $urbanist;
+  font-family: $second-font-family;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   line-height: 1;

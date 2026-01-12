@@ -216,9 +216,8 @@ select::-ms-expand {
 }
 
 .p-404 {
-  height: 100vh;
   padding-top: 5.5625rem;
-  padding-bottom: 6.875rem;
+  padding-bottom: 4rem;
   background: url(../images/common/mv_404_sp.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -265,7 +264,7 @@ select::-ms-expand {
 .p-404__title {
   color: #363636;
   font-weight: 600;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   line-height: 1;
