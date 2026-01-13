@@ -54,6 +54,41 @@
                                 <span class="p-drawer-icon__bar3"></span>
                             </span>
                         </button>
+                        <ul class="p-header__nav-lists">
+                            <li class="p-header__nav-list">
+                                <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-header__nav-link">・石州瓦とは</a>
+                            </li>
+                            <li class="p-header__nav-list">
+                                <a href="<?php echo esc_url(home_url('/reason')); ?>" class="p-header__nav-link">・選ばれる理由</a>
+                            </li>
+                            <li class="p-header__nav-list">
+                                <a href="<?php echo esc_url(home_url('/product')); ?>" class="p-header__nav-link">・商品紹介</a>
+                            </li>
+                            <li class="p-header__nav-list">
+                                <a href="<?php echo esc_url(home_url('/example')); ?>" class="p-header__nav-link">・施工事例</a>
+                            </li>
+                            <li class="p-header__nav-list">
+                                <a href="<?php echo esc_url(home_url('/company')); ?>" class="p-header__nav-link">・会社概要</a>
+                            </li>
+                            <li class="p-header__nav-list">
+                                <a href="<?php echo esc_url(home_url('/topics')); ?>" class="p-header__nav-link">・特集</a>
+                            </li>
+                            <li class="p-header__nav-list">
+                                <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-header__nav-link">・お知らせ</a>
+                            </li>
+                            <li class="p-header__nav-list">
+                                <a href="<?php echo esc_url(home_url('/download')); ?>" class="p-header__nav-link">・製品資料</a>
+                            </li>
+                            <li class="p-header__nav-list">
+                                <a href="<?php echo esc_url(home_url('/professional')); ?>" class="p-header__nav-link">・プロの皆様へ</a>
+                            </li>
+                            <li class="p-header__nav-list">
+                                <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-header__nav-link">・採用情報</a>
+                            </li>
+                            <li class="p-header__nav-list">
+                                <a href="<?php echo esc_url(home_url('/recruit/contact')); ?>" class="p-header__nav-link">・お問い合わせ</a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="p-header__drawer-content p-drawer-content">
                         <div class="p-drawer-content__items">
@@ -116,7 +151,7 @@
                             <img src="<?php echo get_template_directory_uri() ?>/images/common/header_logo.png" alt="瓦百景" width="160" height="90">
                         </a>
                     </h1>
-                    <div class="p-header__navigation">
+                    <div class="p-header__navigation p-header__navigation--page">
                         <?php get_template_part('includes/breadcrumbs'); ?>
                         <button class="p-header__drawer p-drawer-icon">
                             <span class="p-drawer-icon__bars">

@@ -3213,22 +3213,34 @@ input::placeholder {
 
 .p-header__content {
   display: flex;
-  align-items: center;
 }
 
 .p-header__navigation {
   display: flex;
-  align-items: center;
   gap: 1.25rem;
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .p-header__navigation {
-    gap: 2.5rem;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-header__navigation {
+    gap: 2.875rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__navigation--page {
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-header__navigation--page {
     gap: 6.25rem;
   }
 }
@@ -3318,6 +3330,46 @@ input::placeholder {
 @media screen and (min-width: 1540px) {
   .p-header__breadcrumb-icon {
     font-size: 0.875rem;
+  }
+}
+
+.p-header__drawer {
+  margin-left: auto;
+}
+
+.p-header__nav-lists {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .p-header__nav-lists {
+    display: block;
+    mix-blend-mode: difference;
+    padding-left: 1.25rem;
+    border-left: 1px solid #222;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__nav-list + .p-header__nav-list {
+    margin-top: 0.75rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-header__nav-list + .p-header__nav-list {
+    margin-top: 20;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__nav-link {
+    font-size: clamp(14px, 2vw, 14px);
+    font-weight: 700;
+    color: #222;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-header__nav-link {
+    font-size: 1.25rem;
   }
 }
 
@@ -4174,7 +4226,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-land__detail {
-    max-width: 25rem;
+    width: 50vw;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -4226,7 +4278,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-land__title {
-    font-size: 4rem;
+    font-size: 5.5rem;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -4275,18 +4327,50 @@ input::placeholder {
   .p-land__text {
     font-size: 1.25rem;
     margin-top: 1.25rem;
+    max-width: 37.5rem;
   }
 }
 
 .p-land__img {
   flex: 1;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-land__img {
     padding-right: 2.5rem;
     margin-right: calc(50% - 50vw);
+    width: 50vw;
   }
 }
+
+.p-land__img::before {
+  position: absolute;
+  content: "";
+  background: url(../images/about/wave.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  top: 2.5rem;
+  right: 0;
+  aspect-ratio: 1150/380;
+  object-fit: cover;
+  width: 20rem;
+  z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .p-land__img::before {
+    width: 50rem;
+    top: 12.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-land__img::before {
+    top: 27.5rem;
+    width: 71.875rem;
+  }
+}
+
 .p-land__img img {
   width: 100%;
   height: auto;
