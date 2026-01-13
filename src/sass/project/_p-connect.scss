@@ -161,3 +161,12 @@
     margin-top: rem(43);
   }
 }
+.mb200 {
+  margin-bottom: rem(60);
+  @include mq(md) {
+    margin-bottom: rem(100);
+  }
+  @include mq(lg) {
+    margin-bottom: rem(200);
+  }
+}

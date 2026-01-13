@@ -186,13 +186,22 @@
               <p class="p-question__a-text">従来、4寸(約21.8度)程度以上の勾配が推奨されていましたが、近年は技術の進歩により<span>2寸(約11.3度)勾配でも使用可能な瓦</span>も登場しています。</p>
             </div>
           </div>
+          <div class="p-question__block p-question__block--last">
+            <div class="p-question__q">
+              <p class="p-question__q-title">Q</p>
+              <p class="p-question__q-text">瓦の形にも種類があるのですか？</p>
+            </div>
+            <div class="p-question__a">
+              <p class="p-question__a-title">A</p>
+              <p class="p-question__a-text">瓦の形状によって日本の伝統的な<span>「和瓦(J形)」</span>、フラットですっきりしたデザインの<span>「平板瓦(F形)」</span>、優美な曲線で南欧風の<span>「洋瓦(S形)」</span>などがあります。</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-
-
+  <?php get_template_part('includes/connect'); ?>
+  <div class="mb200"></div>
   <?php get_template_part("includes/submit"); ?>
 
 </main>

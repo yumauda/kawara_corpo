@@ -70,7 +70,6 @@
   @include mq(md) {
     padding-top: rem(40);
     padding-bottom: rem(40);
-    border-bottom: initial;
   }
   @include mq(lg) {
     padding-top: rem(60);
@@ -86,11 +85,9 @@
     padding-left: rem(60);
   }
 }
-.p-question__block:first-child {
+.p-question__block:first-child,
+.p-question__block:nth-child(2) {
   border-top: 1px solid #222;
-  @include mq(md) {
-    border-top: initial;
-  }
 }
 .p-question__block:nth-child(even)::before {
   @include mq(md) {
