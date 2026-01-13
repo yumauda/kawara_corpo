@@ -36,7 +36,11 @@
   left: 0;
   top: rem(-32);
   width: rem(240);
-  @include mq(md) {
+  @include mq(md){
+   width: rem(1000); 
+   top: rem(-80);
+  }
+  @include mq(lg) {
     width: rem(1425);
     top: rem(-140);
   }
@@ -59,6 +63,10 @@
   top: 0;
   width: rem(100);
   @include mq(md) {
+    width: rem(320);
+    top: rem(-80);
+  }
+  @include mq(lg) {
     width: rem(460);
     top: rem(-160);
   }
@@ -77,6 +85,10 @@
   top: 0;
   width: rem(100);
   @include mq(md) {
+    width: rem(320);
+    top: rem(-80);
+  }
+  @include mq(lg) {
     width: rem(460);
     top: rem(-160);
   }
@@ -95,6 +107,10 @@
   top: 0;
   width: rem(100);
   @include mq(md) {
+    width: rem(320);
+    top: rem(-80);
+  }
+  @include mq(lg) {
     width: rem(460);
     top: rem(-160);
   }
@@ -114,6 +130,14 @@
   width: rem(100);
   right: 0;
   @include mq(md) {
+    width: rem(320);
+    top: rem(-80);
+  }
+  @include mq(lg) {
+    width: rem(460);
+    top: rem(-160);
+  }
+  @include mq(md) {
     width: rem(460);
     top: rem(-160);
   }
@@ -132,6 +156,10 @@
   width: rem(100);
   right: 0;
   @include mq(md) {
+    width: rem(320);
+    top: rem(-80);
+  }
+  @include mq(lg) {
     width: rem(460);
     top: rem(-160);
   }
@@ -149,6 +177,10 @@
   top: 0;
   width: rem(100);
   @include mq(md) {
+    width: rem(320);
+    top: rem(-80);
+  }
+  @include mq(lg) {
     width: rem(460);
     top: rem(-160);
   }
@@ -168,6 +200,10 @@
   top: 0;
   width: rem(100);
   @include mq(md) {
+    width: rem(320);
+    top: rem(-80);
+  }
+  @include mq(lg) {
     width: rem(460);
     top: rem(-160);
   }
@@ -568,6 +604,7 @@
   @include mq(md) {
     display: flex;
     gap: rem(32);
+    height: 100%;
   }
   @include mq(lg) {
     gap: rem(59);
@@ -577,6 +614,7 @@
 .p-strong__guide-list-detail {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .p-strong__guide-list-title {
@@ -599,7 +637,7 @@
   font-weight: 500;
   margin-top: rem(12);
   @include mq(md) {
-    margin-top: initial;
+    margin-top: auto;
     font-size: clamp(10px, 2vw, 10px);
   }
   @include mq(lg) {
@@ -812,6 +850,13 @@
 .p-strong__compare-list-color {
   color: #37af32;
   font-weight: 700;
+  font-size: rem(14) !important;
+  @include mq(md){
+    font-size: clamp(14px, 2vw, 14px) !important;
+  }
+  @include mq(lg){
+   font-size: rem(20) !important; 
+  }
 }
 
 .p-strong__attention {
