@@ -11,7 +11,7 @@
   font-style: italic;
   font-size: rem(24);
   @include mq(md) {
-    font-size: clamp(20px, 2vw, 24px);
+    font-size: clamp(24px, 2vw, 32px);
   }
   @include mq(lg) {
     font-size: rem(60);

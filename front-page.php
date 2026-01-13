@@ -21,7 +21,7 @@
             </h3>
           </div>
           <div class="p-top-about__btn-wrapper">
-            <a href="#" class="c-btn">
+            <a href="<?php echo esc_url(home_url('/about')); ?>" class="c-btn">
               <p class="c-btn__text">View more</p>
               <div class="c-btn__icon">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
@@ -75,7 +75,7 @@
             </h3>
           </div>
           <div class="p-top-choose__btn-wrapper">
-            <a href="#" class="c-btn">
+            <a href="<?php echo esc_url(home_url('/reason')); ?>" class="c-btn">
               <p class="c-btn__text">View more</p>
               <div class="c-btn__icon">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon_white.svg" alt="" width="60" height="60">
@@ -162,7 +162,7 @@
           </div>
         </div>
         <div class="p-top-choose__banner">
-          <a href="#" class="p-top-choose__banner-link">
+          <a href="<?php echo esc_url(home_url('/product')); ?>" class="p-top-choose__banner-link">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/product_banner.webp" alt="商品紹介" width="1520" height="380">
           </a>
         </div>
@@ -188,7 +188,7 @@
             <p class="p-top-company__text">これからも石州瓦を通じて、安心な暮らしと美しい風景を守り続けていきます。</p>
           </div>
           <div class="p-top-company__btn-wrapper">
-            <a href="#" class="c-btn">
+            <a href="<?php echo esc_url(home_url('/company')); ?>" class="c-btn">
               <p class="c-btn__text">View more</p>
               <div class="c-btn__icon">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
@@ -253,7 +253,7 @@
             </h3>
           </div>
           <div class="p-top-choose__btn-wrapper">
-            <a href="#" class="c-btn">
+            <a href="<?php echo esc_url(home_url('/example')); ?>" class="c-btn">
               <p class="c-btn__text">View more</p>
               <div class="c-btn__icon">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
@@ -471,7 +471,7 @@
             </h3>
           </div>
           <div class="p-top-topics__btn-wrapper">
-            <a href="#" class="c-btn">
+            <a href="<?php echo esc_url(home_url('/topics')); ?>" class="c-btn">
               <p class="c-btn__text">View more</p>
               <div class="c-btn__icon">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
@@ -559,7 +559,7 @@
             </h3>
           </div>
           <div class="p-top-news__btn">
-            <a href="#" class="c-btn">
+            <a href="<?php echo esc_url(home_url('/news')); ?>" class="c-btn">
               <p class="c-btn__text">View more</p>
               <div class="c-btn__icon">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
@@ -624,17 +624,17 @@
       <div class="p-top-btns__content">
         <ul class="p-top-btns__lists">
           <li class="p-top-btns__list">
-            <a href="#" class="p-top-btns__link">
+            <a href="<?php echo esc_url(home_url('/download')); ?>" class="p-top-btns__link">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_btn1.png" alt="製品資料ダウンロード" width="490" height="280">
             </a>
           </li>
           <li class="p-top-btns__list">
-            <a href="#" class="p-top-btns__link">
+            <a href="<?php echo esc_url(home_url('/professional')); ?>" class="p-top-btns__link">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_btn2.png" alt="プロの皆様へ" width="490" height="280">
             </a>
           </li>
           <li class="p-top-btns__list">
-            <a href="#" class="p-top-btns__link">
+            <a href="<?php echo esc_url(home_url('/shop')); ?>" class="p-top-btns__link">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_btn3.png" alt="全国の瓦施工店" width="490" height="280">
             </a>
           </li>
@@ -645,7 +645,7 @@
   <section class="p-top-info">
     <div class="l-inner">
       <div class="p-top-info__content">
-        <a href="#" class="p-top-info__link">
+        <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-top-info__link">
           <div class="p-top-info__detail">
             <p class="p-top-info__detail-en">Recruit</p>
             <h3 class="p-top-info__detail-title">採用情報</h3>

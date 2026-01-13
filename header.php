@@ -59,19 +59,46 @@
                         <div class="p-drawer-content__items">
                             <ul class="p-drawer-content__lists">
                                 <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">トップ</a>
+                                    <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">TOP</span>
+                                        <span class="p-drawer-content__link-ja">トップ</span>
+                                    </a>
                                 </li>
                                 <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-drawer-content__link">TRUXiAについて</a>
+                                    <a href="<?php echo esc_url(home_url('/about/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">ABOUT</span>
+                                        <span class="p-drawer-content__link-ja">石州瓦とは</span>
+                                    </a>
                                 </li>
                                 <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/business')); ?>" class="p-drawer-content__link">事業紹介</a>
+                                    <a href="<?php echo esc_url(home_url('/product/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">PRODUCT</span>
+                                        <span class="p-drawer-content__link-ja">商品紹介</span>
+                                    </a>
                                 </li>
                                 <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/talent')); ?>" class="p-drawer-content__link">タレント紹介</a>
+                                    <a href="<?php echo esc_url(home_url('/professional/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">TECHNICAL</span>
+                                        <span class="p-drawer-content__link-ja">プロ向け情報</span>
+                                    </a>
                                 </li>
                                 <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
+                                    <a href="<?php echo esc_url(home_url('/download/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">DOWNLOAD</span>
+                                        <span class="p-drawer-content__link-ja">資料請求</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(get_post_type_archive_link('news')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">NEWS</span>
+                                        <span class="p-drawer-content__link-ja">お知らせ</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/company/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">COMPANY</span>
+                                        <span class="p-drawer-content__link-ja">会社概要</span>
+                                    </a>
                                 </li>
                             </ul>
 
@@ -103,19 +130,46 @@
                         <div class="p-drawer-content__items">
                             <ul class="p-drawer-content__lists">
                                 <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">トップ</a>
+                                    <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">TOP</span>
+                                        <span class="p-drawer-content__link-ja">トップ</span>
+                                    </a>
                                 </li>
                                 <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-drawer-content__link">TRUXiAについて</a>
+                                    <a href="<?php echo esc_url(home_url('/about/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">ABOUT</span>
+                                        <span class="p-drawer-content__link-ja">石州瓦とは</span>
+                                    </a>
                                 </li>
                                 <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/business')); ?>" class="p-drawer-content__link">事業紹介</a>
+                                    <a href="<?php echo esc_url(home_url('/product/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">PRODUCT</span>
+                                        <span class="p-drawer-content__link-ja">商品紹介</span>
+                                    </a>
                                 </li>
                                 <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/talent')); ?>" class="p-drawer-content__link">タレント紹介</a>
+                                    <a href="<?php echo esc_url(home_url('/professional/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">TECHNICAL</span>
+                                        <span class="p-drawer-content__link-ja">プロ向け情報</span>
+                                    </a>
                                 </li>
                                 <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
+                                    <a href="<?php echo esc_url(home_url('/download/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">DOWNLOAD</span>
+                                        <span class="p-drawer-content__link-ja">資料請求</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(get_post_type_archive_link('news')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">NEWS</span>
+                                        <span class="p-drawer-content__link-ja">お知らせ</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/company/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">COMPANY</span>
+                                        <span class="p-drawer-content__link-ja">会社概要</span>
+                                    </a>
                                 </li>
                             </ul>
 

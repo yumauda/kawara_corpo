@@ -330,12 +330,12 @@ function custom_hiragana_validation_filter($result, $tag)
 }
 
 //投稿タイプの作成(カスタム投稿)
-/* register_post_type(
-	'allcolumn',
+register_post_type(
+	'news',
 	array(
 		'labels' => array(
-			'name' => __('コラム'),
-			'singular_name' => __('コラム')
+			'name' => __('お知らせ'),
+			'singular_name' => __('お知らせ')
 		),
 		'supports' => array(
 			'title',
@@ -352,19 +352,19 @@ function custom_hiragana_validation_filter($result, $tag)
 		'show_in_rest' => true,
 	)
 );
-register_taxonomy('allcolumn_category', array('allcolumn'), array(
+register_taxonomy('news_category', array('news'), array(
 	'hierarchical' => true,
 	'label' => 'カテゴリー',
 	'show_ui' => true,
 	'public' => true
 ));
-register_taxonomy('allcolumn_tag', 'allcolumn', array(
+register_taxonomy('news_tag', 'news', array(
 	'hierarchical' => false,
 	'label' => 'タグ',
 	'show_ui' => true,
 	'public' => true,
 	'show_in_rest' => true,
-)); */
+));
 
 add_filter('body_class', function ($classes) {
 	if (is_front_page()) {

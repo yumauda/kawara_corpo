@@ -1,0 +1,369 @@
+@use "../global" as *;
+
+.p-single-news {
+}
+
+.p-single-news__header {
+}
+
+.p-single-news__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: rem(8);
+
+  @include mq(md) {
+    gap: rem(12);
+  }
+  @include mq(lg) {
+    gap: rem(20);
+  }
+}
+
+.p-single-news__time {
+  font-size: rem(14);
+  font-weight: 700;
+  font-family: $second-font-family;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  color: #222;
+
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
+  }
+}
+
+.p-single-news__categories {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: rem(8);
+
+  @include mq(md) {
+    gap: rem(12);
+  }
+}
+
+.p-single-news__category {
+  background: #fff;
+  letter-spacing: 0.1em;
+  color: #37af32;
+  font-weight: 700;
+  padding-top: rem(2);
+  padding-bottom: rem(2);
+  padding-left: rem(10);
+  padding-right: rem(10);
+  border-radius: 9999px;
+  border: 1px solid #37af32;
+  font-size: rem(12);
+
+  @include mq(md) {
+    font-size: clamp(12px, 2vw, 14px);
+    padding-left: rem(13);
+    padding-right: rem(13);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
+    padding-left: rem(20);
+    padding-right: rem(20);
+  }
+}
+
+.p-single-news__title {
+  margin-top: rem(16);
+  font-size: rem(22);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  color: #222;
+
+  @include mq(md) {
+    margin-top: rem(20);
+    font-size: rem(28);
+  }
+  @include mq(lg) {
+    margin-top: rem(24);
+    font-size: rem(36);
+  }
+}
+
+.p-single-news__body {
+  margin-top: rem(20);
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: calc(32 / 20);
+  letter-spacing: 0.06em;
+  color: #222;
+  overflow-wrap: anywhere;
+
+  @include mq(md) {
+    margin-top: rem(30);
+    font-size: rem(16);
+  }
+  @include mq(lg) {
+    margin-top: rem(40);
+    font-size: rem(18);
+  }
+}
+
+/* 余白の基本（WP本文を満遍なく整える） */
+.p-single-news__body > * + * {
+  margin-top: rem(12);
+
+  @include mq(md) {
+    margin-top: rem(16);
+  }
+}
+
+/* 見出し */
+.p-single-news__body h1 {
+  font-size: rem(24);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.p-single-news__body h2 {
+  margin-top: rem(28);
+  font-size: rem(22);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  position: relative;
+  padding-bottom: rem(6);
+
+  @include mq(md) {
+    margin-top: rem(36);
+    font-size: rem(28);
+  }
+}
+.p-single-news__body h2::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #222;
+}
+
+.p-single-news__body h3 {
+  margin-top: rem(24);
+  font-size: rem(18);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  position: relative;
+  padding-left: rem(14);
+
+  @include mq(md) {
+    margin-top: rem(30);
+    font-size: rem(22);
+    padding-left: rem(16);
+  }
+}
+.p-single-news__body h3::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: rem(4);
+  background: #37af32;
+  border-radius: 9999px;
+}
+
+.p-single-news__body h4 {
+  margin-top: rem(20);
+  font-size: rem(16);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+
+  @include mq(md) {
+    margin-top: rem(24);
+    font-size: rem(18);
+  }
+}
+
+.p-single-news__body h5,
+.p-single-news__body h6 {
+  margin-top: rem(16);
+  font-size: rem(14);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+/* 段落 */
+.p-single-news__body p {
+  line-height: calc(32 / 20);
+}
+
+/* リンク */
+.p-single-news__body a {
+  color: #37af32;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.p-single-news__body a:hover {
+  opacity: 0.8;
+}
+
+/* リスト */
+.p-single-news__body ul,
+.p-single-news__body ol {
+  padding-left: rem(20);
+}
+
+.p-single-news__body ul li {
+  list-style: disc;
+}
+.p-single-news__body ol li {
+  list-style: decimal;
+}
+
+.p-single-news__body li + li {
+  margin-top: rem(8);
+}
+
+/* 画像・figure */
+.p-single-news__body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: rem(10);
+}
+
+.p-single-news__body figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.p-single-news__body figcaption {
+  font-size: rem(12);
+  letter-spacing: 0.05em;
+  color: #666;
+  margin-top: rem(8);
+}
+
+/* 引用 */
+.p-single-news__body blockquote {
+  background: #f3fff2;
+  border-left: rem(4) solid #37af32;
+  padding: rem(14) rem(14);
+  border-radius: rem(6);
+}
+
+.p-single-news__body blockquote p {
+  margin-top: 0;
+}
+
+/* 区切り線 */
+.p-single-news__body hr {
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* テーブル */
+.p-single-news__body .wp-block-table {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.p-single-news__body table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: rem(560);
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.p-single-news__body th,
+.p-single-news__body td {
+  border: 1px solid #ddd;
+  padding: rem(12);
+  font-size: rem(14);
+  line-height: 1.6;
+  vertical-align: top;
+}
+
+.p-single-news__body th {
+  background: #f6f6f6;
+  font-weight: 700;
+}
+
+/* コード */
+.p-single-news__body pre {
+  background: #f6f6f6;
+  padding: rem(12);
+  border-radius: rem(8);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  font-size: rem(13);
+  line-height: 1.6;
+}
+
+.p-single-news__body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 0.95em;
+}
+
+/* ボタンブロック */
+.p-single-news__body .wp-block-button__link {
+  background: #222;
+  color: #37af32;
+  border-radius: 9999px;
+  font-weight: 700;
+  padding: rem(14) rem(22);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ページ分割（<!--nextpage-->） */
+.p-single-news__pages {
+  margin-top: rem(24);
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(10);
+}
+
+/* フッター（一覧へ戻る） */
+.p-single-news__footer {
+  margin-top: rem(32);
+  display: flex;
+  justify-content: center;
+
+  @include mq(md) {
+    margin-top: rem(48);
+  }
+}
+
+.p-single-news__back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  border-radius: 9999px;
+  padding: rem(16) rem(24);
+  min-width: rem(240);
+}
+
+.p-single-news__back-text {
+  font-family: $second-font-family;
+  color: #37af32;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  font-size: rem(14);
+
+  @include mq(lg) {
+    font-size: rem(16);
+  }
+}
+
