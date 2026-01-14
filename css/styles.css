@@ -3336,10 +3336,13 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-header__nav-lists {
+    position: fixed;
+    top: 8.75rem;
+    right: 2.5rem;
     display: block;
-    mix-blend-mode: difference;
     padding-left: 1.25rem;
     border-left: 1px solid #222;
+    z-index: 999;
   }
 }
 
@@ -3480,8 +3483,13 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-history__list::before {
-    right: -2.8125rem;
     left: initial;
+    right: -2.125rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-history__list::before {
+    right: -2.8125rem;
   }
 }
 
@@ -3498,8 +3506,13 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-history__list::after {
-    right: -2.8125rem;
+    right: -1.75rem;
     left: initial;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-history__list::after {
+    right: -2.8125rem;
   }
 }
 
@@ -3509,6 +3522,11 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-history__list:nth-child(even)::before {
     right: auto;
+    left: -2.1875rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-history__list:nth-child(even)::before {
     left: -2.8125rem;
   }
 }
@@ -3519,6 +3537,11 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-history__list:nth-child(even)::after {
     right: auto;
+    left: -2rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-history__list:nth-child(even)::after {
     left: -2.8125rem;
   }
 }

@@ -130,10 +130,13 @@
 .p-header__nav-lists {
   display: none;
   @include mq(md) {
+    position: fixed;
+    top: rem(140);
+    right: rem(40);
     display: block;
-    mix-blend-mode: difference;
     padding-left: rem(20);
     border-left: 1px solid #222;
+    z-index: 999;
   }
 }
 

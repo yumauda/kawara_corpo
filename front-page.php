@@ -532,51 +532,43 @@
         </div>
         <div class="p-top-news__right">
           <ul class="p-top-news__lists">
-            <li class="p-top-news__list">
-              <a href="#" class="p-top-news__link">
-                <div class="p-top-news__link-cat">
-                  <time datetime="2025-12-22" class="p-top-news__time">2025.12.22</time>
-                  <p class="p-top-news__category">ニュース</p>
-                </div>
-                <p class="p-top-news__link-title">ホームページ公開のお知らせ</p>
-              </a>
-            </li>
-            <li class="p-top-news__list">
-              <a href="#" class="p-top-news__link">
-                <div class="p-top-news__link-cat">
-                  <time datetime="2025-12-22" class="p-top-news__time">2025.12.22</time>
-                  <p class="p-top-news__category">ニュース</p>
-                </div>
-                <p class="p-top-news__link-title">ホームページ公開のお知らせ</p>
-              </a>
-            </li>
-            <li class="p-top-news__list">
-              <a href="#" class="p-top-news__link">
-                <div class="p-top-news__link-cat">
-                  <time datetime="2025-12-22" class="p-top-news__time">2025.12.22</time>
-                  <p class="p-top-news__category">ニュース</p>
-                </div>
-                <p class="p-top-news__link-title">ホームページ公開のお知らせ</p>
-              </a>
-            </li>
-            <li class="p-top-news__list">
-              <a href="#" class="p-top-news__link">
-                <div class="p-top-news__link-cat">
-                  <time datetime="2025-12-22" class="p-top-news__time">2025.12.22</time>
-                  <p class="p-top-news__category">ニュース</p>
-                </div>
-                <p class="p-top-news__link-title">ホームページ公開のお知らせ</p>
-              </a>
-            </li>
-            <li class="p-top-news__list">
-              <a href="#" class="p-top-news__link">
-                <div class="p-top-news__link-cat">
-                  <time datetime="2025-12-22" class="p-top-news__time">2025.12.22</time>
-                  <p class="p-top-news__category">ニュース</p>
-                </div>
-                <p class="p-top-news__link-title">ホームページ公開のお知らせ</p>
-              </a>
-            </li>
+            
+            <?php
+            // パラメータの設定
+            $args = array(
+              'posts_per_page' => 5,
+              'post_status' => 'publish',
+              'post_type' => 'news',
+              'orderby' => 'date',
+            );
+
+            // WP_Queryインスタンスの生成
+            $my_query = new WP_Query($args);
+            if ($my_query->have_posts()) :
+              while ($my_query->have_posts()) : $my_query->the_post();
+            ?>
+
+                <li class="p-top-news__list">
+                  <a href="<?php the_permalink(); ?>" class="p-top-news__link">
+                    <div class="p-top-news__link-cat">
+                      <time datetime="<?php echo esc_attr(get_the_date('Y-m-d')); ?>" class="p-top-news__time"><?php echo esc_html(get_the_date('Y.m.d')); ?></time>
+                      <?php
+                      $terms = get_the_terms(get_the_ID(), 'news_category');
+                      if (!empty($terms) && !is_wp_error($terms)) :
+                      ?>
+                        <p class="p-top-news__category"><?php echo esc_html($terms[0]->name); ?></p>
+                      <?php endif; ?>
+                    </div>
+                    <p class="p-top-news__link-title"><?php the_title(); ?></p>
+                  </a>
+                </li>
+
+            <?php
+              endwhile;
+            endif;
+            wp_reset_postdata();
+            ?>
+
           </ul>
         </div>
       </div>

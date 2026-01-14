@@ -93,8 +93,12 @@
   border-radius: 9999px;
   left: rem(-20);
   @include mq(md) {
-    right: rem(-45);
     left: initial;
+    right: rem(-34);
+  }
+  @include mq(lg){
+    right: rem(-45);
+    
   }
 }
 .p-history__list::after {
@@ -108,14 +112,20 @@
   z-index: -1;
   left: rem(-20);
   @include mq(md) {
-    right: rem(-45);
+    right: rem(-28);
     left: initial;
+  }
+  @include mq(lg){
+    right: rem(-45);
   }
 }
 .p-history__list:nth-child(even)::before {
   left: rem(-20);
   @include mq(md) {
     right: auto;
+    left: rem(-35);
+  }
+  @include mq(lg){
     left: rem(-45);
   }
 }
@@ -123,6 +133,9 @@
   left: rem(-20);
   @include mq(md) {
     right: auto;
+    left: rem(-32);
+  }
+  @include mq(lg){
     left: rem(-45);
   }
 }

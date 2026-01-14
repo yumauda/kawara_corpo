@@ -9,44 +9,44 @@
             <div class="p-footer__nav">
                 <ul class="p-footer__lists">
                     <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">石州瓦とは</a>
+                        <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-footer__link">石州瓦とは</a>
                     </li>
                     <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">選ばれる理由</a>
+                        <a href="<?php echo esc_url(home_url('/reason')); ?>" class="p-footer__link">選ばれる理由</a>
                     </li>
                     <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">商品紹介</a>
+                        <a href="<?php echo esc_url(home_url('/product')); ?>" class="p-footer__link">商品紹介</a>
                     </li>
                     <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">施工事例</a>
-                    </li>
-                </ul>
-                <ul class="p-footer__lists">
-                    <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">会社概要</a>
-                    </li>
-                    <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">特集</a>
-                    </li>
-                    <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">お知らせ</a>
-                    </li>
-                    <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">製品資料</a>
+                        <a href="<?php echo esc_url(home_url('/example')); ?>" class="p-footer__link">施工事例</a>
                     </li>
                 </ul>
                 <ul class="p-footer__lists">
                     <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">採用情報</a>
+                        <a href="<?php echo esc_url(home_url('/company')); ?>" class="p-footer__link">会社概要</a>
                     </li>
                     <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">お問い合わせ</a>
+                        <a href="<?php echo esc_url(home_url('/topics')); ?>" class="p-footer__link">特集</a>
                     </li>
                     <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">プロの皆様へ</a>
+                        <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-footer__link">お知らせ</a>
                     </li>
                     <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">プライバシーポリシー</a>
+                        <a href="<?php echo esc_url(home_url('/download')); ?>" class="p-footer__link">製品資料</a>
+                    </li>
+                </ul>
+                <ul class="p-footer__lists">
+                    <li class="p-footer__list">
+                        <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-footer__link">採用情報</a>
+                    </li>
+                    <li class="p-footer__list">
+                        <a href="<?php echo esc_url(home_url('/recruit/contact')); ?>" class="p-footer__link">お問い合わせ</a>
+                    </li>
+                    <li class="p-footer__list">
+                        <a href="<?php echo esc_url(home_url('/professional')); ?>" class="p-footer__link">プロの皆様へ</a>
+                    </li>
+                    <li class="p-footer__list">
+                        <a href="<?php echo esc_url(home_url('/privacy')); ?>" class="p-footer__link">プライバシーポリシー</a>
                     </li>
                 </ul>
             </div>
