@@ -35,6 +35,16 @@
 }
 
 .swiper-wrapper {
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  @include mq(md) {
+    padding-top: rem(30);
+    padding-bottom: rem(30);
+  }
+  @include mq(lg) {
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+  }
 }
 
 .swiper-slide {
@@ -46,8 +56,15 @@
   border-radius: rem(5);
   padding-top: rem(15);
   padding-bottom: rem(30);
-  padding-left: rem(30);
+  padding-left: rem(12);
   display: block;
+  filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.2));
+  @include mq(md) {
+    padding-left: rem(16);
+  }
+  @include mq(lg) {
+    padding-left: rem(30);
+  }
 }
 
 .p-top-topics__link-top {
@@ -57,9 +74,10 @@
 
 .p-top-topics__link-title {
   font-size: rem(20);
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: -0.02em;
   color: #222;
+  font-family: $second-font-family;
   font-style: italic;
   @include mq(md) {
     font-size: rem(40);
@@ -71,14 +89,18 @@
 
 .p-top-topics__link-small {
   font-size: rem(14);
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: -0.02em;
   color: #222;
   font-style: italic;
+  font-family: $second-font-family;
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 16px);
+    margin-top: rem(-8);
   }
   @include mq(lg) {
+    margin-top: rem(-16);
     font-size: rem(40);
   }
 }
@@ -97,7 +119,6 @@
 
 .p-top-topics__link-detail {
   margin-top: rem(-88);
-
 }
 .p-top-topics__link-detailTitle {
   color: #fff;

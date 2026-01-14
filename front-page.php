@@ -474,13 +474,13 @@
                     <p class="p-top-topics__link-small">Designs</p>
                   </div>
                   <figure class="p-top-topics__img">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/topics_1.webp" alt="Kawara" width="360" height="360">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/topics_2.webp" alt="Kawara" width="360" height="360">
                   </figure>
                   <div class="p-top-topics__link-detail">
-                    <p class="p-top-topics__link-detailTitle">石州瓦と<br>グラントワ、<br>土地の記憶。</p>
+                    <p class="p-top-topics__link-detailTitle">土と火が<br>つくる、<br>暮らしの輪郭。</p>
                     <div class="p-top-topics__link-row">
-                      <p class="p-top-topics__link-num">NO.01</p>
-                      <p class="p-top-topics__link-text">島根県芸術文化センター グラントワ</p>
+                      <p class="p-top-topics__link-num">NO.02</p>
+                      <p class="p-top-topics__link-text">道の駅 ごいせ仁摩</p>
                     </div>
                   </div>
                 </a>
@@ -492,13 +492,13 @@
                     <p class="p-top-topics__link-small">Designs</p>
                   </div>
                   <figure class="p-top-topics__img">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/topics_1.webp" alt="Kawara" width="360" height="360">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/topics_3.webp" alt="Kawara" width="360" height="360">
                   </figure>
                   <div class="p-top-topics__link-detail">
-                    <p class="p-top-topics__link-detailTitle">石州瓦と<br>グラントワ、<br>土地の記憶。</p>
+                    <p class="p-top-topics__link-detailTitle">建築に<br>風土をまとう、<br>赤の風景。</p>
                     <div class="p-top-topics__link-row">
-                      <p class="p-top-topics__link-num">NO.01</p>
-                      <p class="p-top-topics__link-text">島根県芸術文化センター グラントワ</p>
+                      <p class="p-top-topics__link-num">NO.03</p>
+                      <p class="p-top-topics__link-text">江津ひと・まちプラザ パレットごうつ</p>
                     </div>
                   </div>
                 </a>

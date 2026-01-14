@@ -25,6 +25,13 @@ const topicsSlider = new Swiper(".swiper-topics", {
   spaceBetween: 12,
   breakpoints: {
     768: {
+      slidesPerView: 2.8,
+      centeredSlides: false,
+      loop: true,
+      initialSlide: 0,
+      spaceBetween: 20,
+    },
+    992: {
       slidesPerView: 3.8,
       centeredSlides: false,
       loop: true,

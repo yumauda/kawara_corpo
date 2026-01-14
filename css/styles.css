@@ -14544,14 +14544,42 @@ input::placeholder {
   }
 }
 
+.swiper-wrapper {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .swiper-wrapper {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .swiper-wrapper {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
 .p-top-topics__link {
   border: 5px solid #fff;
   background: #37af32;
   border-radius: 0.3125rem;
   padding-top: 0.9375rem;
   padding-bottom: 1.875rem;
-  padding-left: 1.875rem;
+  padding-left: 0.75rem;
   display: block;
+  filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.2));
+}
+@media screen and (min-width: 768px) {
+  .p-top-topics__link {
+    padding-left: 1rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-top-topics__link {
+    padding-left: 1.875rem;
+  }
 }
 
 .p-top-topics__link-top {
@@ -14561,9 +14589,10 @@ input::placeholder {
 
 .p-top-topics__link-title {
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: -0.02em;
   color: #222;
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
 }
 @media screen and (min-width: 768px) {
@@ -14579,18 +14608,21 @@ input::placeholder {
 
 .p-top-topics__link-small {
   font-size: 0.875rem;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: -0.02em;
   color: #222;
   font-style: italic;
+  font-family: "Montserrat", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .p-top-topics__link-small {
     font-size: clamp(14px, 2vw, 16px);
+    margin-top: -0.5rem;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-top-topics__link-small {
+    margin-top: -1rem;
     font-size: 2.5rem;
   }
 }
