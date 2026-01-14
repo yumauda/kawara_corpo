@@ -10,6 +10,7 @@
       </div>
     </div>
   </section>
+
   <div class="l-inner">
     <div class="p-example-tabs">
       <?php
@@ -52,6 +53,7 @@
       <?php endforeach; ?>
     </div>
   </div>
+
   <section class="p-example-list">
     <div class="l-inner">
       <div class="p-example-list__content">
@@ -104,19 +106,15 @@
         </ul>
 
         <?php
-        // home.php のループ後などで呼び出す想定
         global $wp_query;
 
         $paged = max(1, get_query_var('paged'));
         $max   = (int) $wp_query->max_num_pages;
 
-        // 1ページしか無いなら出さない
         if ($max > 1) :
           $base = str_replace(999999999, '%#%', esc_url(get_pagenum_link(999999999)));
         ?>
           <ul class="p-example-list__pager p-pager">
-
-            <!-- Prev -->
             <li class="p-pager__list">
               <?php if ($paged > 1) : ?>
                 <a href="<?php echo esc_url(get_pagenum_link($paged - 1)); ?>" class="p-pager__link" aria-label="前のページへ">
@@ -132,7 +130,6 @@
                   </svg>
                 </a>
               <?php else : ?>
-                <!-- 1ページ目はリンク無しにしたい場合（必要ならCSSで薄くする） -->
                 <span class="p-pager__link" aria-disabled="true">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
                     <g transform="translate(1054 4557)">
@@ -148,10 +145,8 @@
               <?php endif; ?>
             </li>
 
-            <!-- Numbers -->
             <ul class="p-pager__number">
               <?php
-              // 数字部分だけWPに任せる（クラス名は差し替える）
               $links = paginate_links([
                 'base'      => $base,
                 'format'    => '',
@@ -167,22 +162,18 @@
                 foreach ($links as $link_html) :
                   $is_current = (strpos($link_html, 'current') !== false);
 
-                  // a/spanをクラス付きに差し替え
                   if ($is_current) {
-                    // 現在ページ（span）
                     $page_num = strip_tags($link_html);
                     echo '<li class="p-pager__list-num"><span class="p-pager__link-num is-current" aria-current="page">'
-                      . esc_html(sprintf('%02d', (int)$page_num))
+                      . esc_html(sprintf('%02d', (int) $page_num))
                       . '</span></li>';
                   } else {
-                    // 通常ページ（a）
-                    // href を抽出
                     preg_match('/href=[\'"]([^\'"]+)[\'"]/', $link_html, $m);
                     $href = $m[1] ?? '#';
                     $page_num = strip_tags($link_html);
 
                     echo '<li class="p-pager__list-num"><a href="' . esc_url($href) . '" class="p-pager__link-num">'
-                      . esc_html(sprintf('%02d', (int)$page_num))
+                      . esc_html(sprintf('%02d', (int) $page_num))
                       . '</a></li>';
                   }
                 endforeach;
@@ -190,7 +181,6 @@
               ?>
             </ul>
 
-            <!-- Next -->
             <li class="p-pager__list">
               <?php if ($paged < $max) : ?>
                 <a href="<?php echo esc_url(get_pagenum_link($paged + 1)); ?>" class="p-pager__link" aria-label="次のページへ">
@@ -220,16 +210,13 @@
                 </span>
               <?php endif; ?>
             </li>
-
           </ul>
         <?php endif; ?>
-
-
       </div>
     </div>
   </section>
-  <?php get_template_part("includes/submit"); ?>
 
+  <?php get_template_part('includes/submit'); ?>
 </main>
+<?php get_footer(); ?>
 
-<?php get_footer() ?>

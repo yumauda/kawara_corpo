@@ -46,6 +46,10 @@
   width: rem(350);
   @include mq(md) {
     top: rem(-72);
+    width: rem(850);
+  }
+  @include mq(lg) {
+    top: rem(-140);
     width: rem(1236);
   }
 }

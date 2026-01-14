@@ -4455,6 +4455,12 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-leaflet__content::before {
     top: -4.5rem;
+    width: 53.125rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-leaflet__content::before {
+    top: -8.75rem;
     width: 77.25rem;
   }
 }

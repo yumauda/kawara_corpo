@@ -10,52 +10,71 @@
       </div>
     </div>
   </section>
-  
+
   <section class="p-single">
     <div class="l-inner">
       <div class="p-single__content">
         <!-- メイン画像 -->
-        <figure class="p-single__main-image">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/single/single1.jpg" alt="<?php the_title(); ?>" width="1320" height="360">
-        </figure>
-
+        <?php if (has_post_thumbnail()) : ?>
+          <figure class="p-single__main-image">
+            <img src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>">
+          </figure>
+        <?php else : ?>
+          <figure class="p-single__main-image">
+            <img src="<?php echo get_template_directory_uri() ?>/images/example/noimage-large.jpg" alt="<?php the_title(); ?>">
+          </figure>
+        <?php endif; ?>
         <!-- ヘッダー部分 -->
         <div class="p-single__header">
-          <h1 class="p-single__title">グラスロ 来待</h1>
+          <h1 class="p-single__title"><?php the_title(); ?></h1>
           <div class="p-single__meta">
-            <div class="p-single__meta-item">工事名(○○邸)</div>
-            <div class="p-single__meta-item">島根県大田市</div>
+            <div class="p-single__meta-item"><?php the_field('example_name'); ?></div>
+            <div class="p-single__meta-item"><?php the_field('example_place'); ?></div>
           </div>
         </div>
 
         <!-- セクション1 -->
         <div class="p-single__section">
           <div class="p-single__section-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/example/example1.jpg" alt="施工事例画像">
+            <?php if (get_field('example_img')): ?>
+              <img src="<?php the_field('example_img'); ?>" alt="<?php the_title(); ?>" width="1320" height="360">
+            <?php else: ?>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/example/noimage.jpg" alt="<?php the_title(); ?>" width="1320" height="360">
+            <?php endif; ?>
           </div>
           <div class="p-single__section-content">
-            <h2 class="p-single__section-heading">あらゆる屋根に、<br>新しい瓦の可能性を。</h2>
-            <h3 class="p-single__section-subheading">グラスロは、屋根勾配を選ばないJ形瓦です。</h3>
-            <p class="p-single__section-text">従来の瓦では、施工できなかった緩い勾配の屋根でも使える画期的な製品です。<br>在来工法の和風住宅からモダンな低勾配屋根の住宅まで様々な住宅に対応いたします。</p>
+            <h2 class="p-single__section-heading"><?php the_field('example_title'); ?></h2>
+            <h3 class="p-single__section-subheading"><?php the_field('example_sub_title'); ?></h3>
+            <p class="p-single__section-text"><?php the_field('example_sub_text'); ?></p>
           </div>
         </div>
 
         <!-- セクション2 -->
         <div class="p-single__section p-single__section--reverse">
           <div class="p-single__section-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/example/example1.jpg" alt="施工事例画像">
+            <?php if (get_field('example_img_2')): ?>
+              <img src="<?php the_field('example_img_2'); ?>" alt="<?php the_title(); ?>" width="1320" height="360">
+            <?php else: ?>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/example/noimage.jpg" alt="<?php the_title(); ?>" width="1320" height="360">
+            <?php endif; ?>
           </div>
           <div class="p-single__section-content">
-            <h2 class="p-single__section-heading">あらゆる屋根に、<br>新しい瓦の可能性を。</h2>
-            <h3 class="p-single__section-subheading">グラスロは、屋根勾配を選ばないJ形瓦です。</h3>
-            <p class="p-single__section-text">従来の瓦では、施工できなかった緩い勾配の屋根でも使える画期的な製品です。<br>在来工法の和風住宅からモダンな低勾配屋根の住宅まで様々な住宅に対応いたします。</p>
+            <h2 class="p-single__section-heading"><?php the_field('example_title_2'); ?></h2>
+            <h3 class="p-single__section-subheading"><?php the_field('example_sub_title_2'); ?></h3>
+            <p class="p-single__section-text"><?php the_field('example_sub_text_2'); ?></p>
           </div>
         </div>
 
         <!-- 特徴セクション -->
-        <figure class="p-single__feature-img">
-          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/single/graslo.png" alt="<?php the_title(); ?>" width="1320" height="400">
-        </figure>
+        <?php if (get_field('example_feature_img')): ?>
+          <figure class="p-single__feature-img">
+            <img decoding="async" loading="lazy" src="<?php the_field('example_feature_img'); ?>" alt="<?php the_title(); ?>" width="1320" height="400">
+          </figure>
+        <?php else: ?>
+          <figure class="p-single__feature-img">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/example/noimage-large.jpg" alt="<?php the_title(); ?>" width="1320" height="400">
+          </figure>
+        <?php endif; ?>
         <div class="p-single__btn-wrapper">
           <a href="<?php echo esc_url(home_url('/example')); ?>" class="p-single__btn">
             <p class="p-single__btn-text">施工一覧へ戻る</p>
