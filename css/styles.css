@@ -13550,25 +13550,17 @@ input::placeholder {
   border-radius: 0.625rem;
   background: #fff;
   filter: drop-shadow(30px 30px 15px rgba(0, 0, 0, 0.3));
-  padding-top: 1.25rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
   display: block;
 }
 @media screen and (min-width: 768px) {
   .p-top-choose__link {
     display: flex;
-    align-items: flex-end;
-    padding-top: 1.875rem;
-    padding-left: 3.125rem;
     padding-right: initial;
-    height: 100%;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-top-choose__link {
-    padding-top: 3.125rem;
-    padding-left: 6.25rem;
+    height: 31.625rem;
   }
 }
 
@@ -13581,17 +13573,21 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-choose__left {
-    max-width: 18.75rem;
-    padding-right: 3rem;
-    padding-bottom: 1.875rem;
+    max-width: 27.5rem;
+    padding-right: 2rem;
+    padding-top: 2.25rem;
+    padding-left: 2rem;
+    padding-bottom: 2.25rem;
     border-right: 1px solid #222;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-top-choose__left {
-    max-width: 26.875rem;
+    max-width: 32.875rem;
     padding-right: 5rem;
-    padding-bottom: 3.75rem;
+    padding-top: 3.125rem;
+    padding-left: 6.25rem;
+    padding-bottom: 3.125rem;
   }
 }
 
@@ -13648,12 +13644,13 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-choose__text {
-    margin-top: 1.25rem;
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(14px, 2vw, 14px);
+    margin-top: 1rem;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-top-choose__text {
+    margin-top: 1.25rem;
     font-size: 1.25rem;
   }
 }
@@ -13712,8 +13709,20 @@ input::placeholder {
 }
 
 .p-top-choose__img {
-  max-width: 43.125rem;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .p-top-choose__img {
+    max-width: 33.75rem;
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-top-choose__img {
+    max-width: 43.125rem;
+  }
 }
 
 .p-top-choose__img img {
