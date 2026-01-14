@@ -689,12 +689,6 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-beautiful__img {
     margin-top: initial;
-    max-width: 31.25rem;
-  }
-}
-@media screen and (min-width: 1540px) {
-  .p-beautiful__img {
-    max-width: 49.375rem;
   }
 }
 
@@ -4959,7 +4953,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-live__img {
-    max-width: 28.125rem;
+    max-width: 40rem;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -4993,12 +4987,12 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-live__title {
-    font-size: clamp(20px, 2vw, 32px);
+    font-size: min(4rem, 4.4444444444vw);
   }
 }
 @media screen and (min-width: 1540px) {
   .p-live__title {
-    font-size: 5rem;
+    font-size: min(5rem, 4.1666666667vw);
   }
 }
 
@@ -5122,7 +5116,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-maker__content {
     display: flex;
-    gap: 4rem;
+    gap: 6rem;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -5175,18 +5169,19 @@ input::placeholder {
 
 .p-maker__title {
   font-size: 1.25rem;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.2em;
+  font-weight: 700;
   color: #222;
   line-height: 1.4;
 }
 @media screen and (min-width: 768px) {
   .p-maker__title {
-    font-size: 1.875rem;
+    font-size: clamp(20px, 2vw, 25px);
   }
 }
 @media screen and (min-width: 1540px) {
   .p-maker__title {
-    font-size: 2.5rem;
+    font-size: clamp(20px, 1.8vw, 40px);
   }
 }
 
@@ -5211,9 +5206,18 @@ input::placeholder {
 }
 
 .p-maker__img {
-  max-width: 35rem;
   width: 100%;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-maker__img {
+    max-width: 25rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-maker__img {
+    max-width: 35rem;
+  }
 }
 
 .p-maker__img img {
@@ -6216,6 +6220,10 @@ input::placeholder {
   top: 46.875rem;
 }
 
+.p-page-mv__content {
+  position: relative;
+}
+
 .p-page-mv__detail {
   position: relative;
 }
@@ -6435,6 +6443,51 @@ input::placeholder {
 }
 @media screen and (min-width: 1540px) {
   .p-page-mv__explain-text {
+    font-size: 1.25rem;
+  }
+}
+
+.p-page-mv__nav-lists {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .p-page-mv__nav-lists {
+    display: block;
+    padding-left: 1.25rem;
+    border-left: 1px solid #222;
+    position: absolute;
+    z-index: 100;
+    left: 1.25rem;
+    top: 30rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-page-mv__nav-lists {
+    left: 2.5rem;
+    top: 38.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-page-mv__nav-list + .p-page-mv__nav-list {
+    margin-top: 0.75rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-page-mv__nav-list + .p-page-mv__nav-list {
+    margin-top: 20;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-page-mv__nav-link {
+    font-size: clamp(14px, 2vw, 14px);
+    font-weight: 700;
+    color: #222;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-page-mv__nav-link {
     font-size: 1.25rem;
   }
 }
@@ -12050,7 +12103,6 @@ input::placeholder {
   font-weight: 700;
   color: #222;
   margin-top: 1rem;
-  font-weight: 500;
 }
 @media screen and (min-width: 768px) {
   .p-strong__topText {
@@ -12751,8 +12803,17 @@ input::placeholder {
 }
 
 .p-strong__economic-left {
-  max-width: 41.25rem;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .p-strong__economic-left {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-strong__economic-left {
+    max-width: 41.25rem;
+  }
 }
 
 .p-strong__box-img img {
@@ -15031,16 +15092,26 @@ input::placeholder {
   border: 2px solid #37af32;
   border-radius: 0.625rem;
   padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 2.5rem;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-voice-slider__item {
-    padding: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 3.75rem;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-voice-slider__item {
-    padding: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 6.25rem;
   }
 }
 
@@ -15048,7 +15119,7 @@ input::placeholder {
   font-size: 0.875rem;
   line-height: 1.6;
   letter-spacing: 0.06em;
-  font-weight: 500;
+  font-weight: 700;
   color: #222;
 }
 @media screen and (min-width: 768px) {
@@ -15100,7 +15171,7 @@ input::placeholder {
     width: 6.25rem;
     height: 6.25rem;
     right: -2.5rem;
-    top: -2.5rem;
+    top: -1.5rem;
   }
 }
 

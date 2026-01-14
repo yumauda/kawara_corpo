@@ -161,10 +161,6 @@
   margin-top: rem(24);
   @include mq(md) {
     margin-top: initial;
-    max-width: rem(500);
-  }
-  @include mq(lg) {
-    max-width: rem(790);
   }
 }
 .p-beautiful__img img {

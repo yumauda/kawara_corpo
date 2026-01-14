@@ -12,6 +12,20 @@
         </figure>
       </div>
     </div>
+    <ul class="p-page-mv__nav-lists">
+      <li class="p-page-mv__nav-list">
+        <a href="#anc01" class="p-page-mv__nav-link">・会社概要</a>
+      </li>
+      <li class="p-page-mv__nav-list">
+        <a href="#anc02" class="p-page-mv__nav-link">・沿革</a>
+      </li>
+      <!-- <li class="p-page-mv__nav-list">
+        <a href="#anc03" class="p-page-mv__nav-link">・主要取引先</a>
+      </li> -->
+      <li class="p-page-mv__nav-list">
+        <a href="#anc04" class="p-page-mv__nav-link">・所在地</a>
+      </li>
+    </ul>
   </section>
   <section class="p-maker">
     <div class="p-maker__inner">
@@ -66,7 +80,7 @@
       </div>
     </div>
   </section>
-  <section class="p-profile">
+  <section class="p-profile" id="anc01">
     <div class="l-inner">
       <div class="p-profile__content">
         <div class="p-profile__title">
@@ -128,7 +142,7 @@
       </div>
     </div>
   </section>
-  <section class="p-history">
+  <section class="p-history" id="anc02">
     <div class="l-inner">
       <div class="p-history__content">
         <div class="p-history__title">
@@ -372,7 +386,7 @@
     </div>
   </section>
 
-  <section class="p-company">
+  <section class="p-company" id="anc04">
     <div class="l-inner">
       <div class="p-company__content">
         <div class="p-company__title">

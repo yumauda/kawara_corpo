@@ -20,10 +20,39 @@
             金属だけでなく、屋根材も長年かけて劣化し、雨漏りやひび割れなどの原因となります。</p>
         </div>
 
+
       </div>
     </div>
+    <ul class="p-page-mv__nav-lists">
+      <li class="p-page-mv__nav-list">
+        <a href="#anc01" class="p-page-mv__nav-link">・超高温焼成</a>
+      </li>
+      <li class="p-page-mv__nav-list">
+        <a href="#anc02" class="p-page-mv__nav-link">・塩害に強い</a>
+      </li>
+      <li class="p-page-mv__nav-list">
+        <a href="#anc03" class="p-page-mv__nav-link">・凍害に強い</a>
+      </li>
+      <li class="p-page-mv__nav-list">
+        <a href="#anc04" class="p-page-mv__nav-link">・強風・地震に強い</a>
+      </li>
+      <li class="p-page-mv__nav-list">
+        <a href="#anc05" class="p-page-mv__nav-link">・猛暑に強い</a>
+      </li>
+      <li class="p-page-mv__nav-list">
+        <a href="#anc06" class="p-page-mv__nav-link">・耳に優しい</a>
+      </li>
+      <li class="p-page-mv__nav-list">
+        <a href="#anc07" class="p-page-mv__nav-link">・経済的な</a>
+      </li>
+      <li class="p-page-mv__nav-list">
+        <a href="#anc08" class="p-page-mv__nav-link">・結露を防ぐ</a>
+      </li>
+
+    </ul>
   </section>
-  <section class="p-beautiful">
+
+  <section class="p-beautiful" id="anc01">
     <div class="l-inner">
       <div class="p-beautiful__content">
         <div class="p-beautiful__left">
@@ -75,61 +104,49 @@
         <div class="swiper-slide">
           <div class="p-voice-slider__item">
             <p class="p-voice-slider__item-text">
-              高温で焼いているため、塩害等に強く色あせがないので、塗装などのメンテナンスも必要ない。防災機能もしっかりしている。
+              他産地の瓦と比較して相対的なすべての面で優れていると思うから、自信を持ってお客様にお勧めすることができる。
             </p>
             <p class="p-voice-slider__item-place">
-              — 大分県 宇佐市
+              — 山口県 下関市
             </p>
             <figure class="p-voice_slider__item-img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/reason/voice_slider_img1.png" alt="石州瓦を選ぶ理由" width="100" height="100">
+              <img src="<?php echo get_template_directory_uri() ?>/images/reason/voice_slider_img2.png" alt="石州瓦を選ぶ理由" width="100" height="100">
             </figure>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="p-voice-slider__item">
             <p class="p-voice-slider__item-text">
-              高温で焼いているため、塩害等に強く色あせがないので、塗装などのメンテナンスも必要ない。防災機能もしっかりしている。
+              耐寒性と他の産地瓦より丈夫という認識がお客さんにあります。岡山県県北エリアということから年配の方には信頼感があります。
             </p>
             <p class="p-voice-slider__item-place">
-              — 大分県 宇佐市
+              — 岡山県 津山市
             </p>
             <figure class="p-voice_slider__item-img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/reason/voice_slider_img1.png" alt="石州瓦を選ぶ理由" width="100" height="100">
+              <img src="<?php echo get_template_directory_uri() ?>/images/reason/voice_slider_img3.png" alt="石州瓦を選ぶ理由" width="100" height="100">
             </figure>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="p-voice-slider__item">
             <p class="p-voice-slider__item-text">
-              高温で焼いているため、塩害等に強く色あせがないので、塗装などのメンテナンスも必要ない。防災機能もしっかりしている。
+              唐津湾に面している地域は、特に塩害に強いのでお勧めしています。陶器瓦（他産地瓦）と比べると、色あせしにくい点もお勧めしています。
             </p>
             <p class="p-voice-slider__item-place">
-              — 大分県 宇佐市
+              — 佐賀県 唐津市
             </p>
             <figure class="p-voice_slider__item-img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/reason/voice_slider_img1.png" alt="石州瓦を選ぶ理由" width="100" height="100">
+              <img src="<?php echo get_template_directory_uri() ?>/images/reason/voice_slider_img4.png" alt="石州瓦を選ぶ理由" width="100" height="100">
             </figure>
           </div>
         </div>
-        <div class="swiper-slide">
-          <div class="p-voice-slider__item">
-            <p class="p-voice-slider__item-text">
-              高温で焼いているため、塩害等に強く色あせがないので、塗装などのメンテナンスも必要ない。防災機能もしっかりしている。
-            </p>
-            <p class="p-voice-slider__item-place">
-              — 大分県 宇佐市
-            </p>
-            <figure class="p-voice_slider__item-img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/reason/voice_slider_img1.png" alt="石州瓦を選ぶ理由" width="100" height="100">
-            </figure>
-          </div>
-        </div>
+
 
       </div>
 
     </div>
   </div>
-  <section class="p-strong">
+  <section class="p-strong" id="anc02">
     <div class="l-inner">
       <div class="p-strong__content">
         <div class="p-strong__top">
@@ -181,7 +198,7 @@
       </div>
     </div>
   </section>
-  <section class="p-strong">
+  <section class="p-strong" id="anc03">
     <div class="l-inner">
       <div class="p-strong__content">
         <div class="p-strong__top p-strong__top--cold">
@@ -229,7 +246,7 @@
       </div>
     </div>
   </section>
-  <section class="p-strong">
+  <section class="p-strong" id="anc04">
     <div class="l-inner">
       <div class="p-strong__content">
         <div class="p-strong__top p-strong__top--guide">
@@ -278,7 +295,7 @@
       </div>
     </div>
   </section>
-  <section class="p-strong">
+  <section class="p-strong" id="anc05">
     <div class="l-inner">
       <div class="p-strong__content">
         <div class="p-strong__top p-strong__top--hot">
@@ -323,7 +340,7 @@
       </div>
     </div>
   </section>
-  <section class="p-strong">
+  <section class="p-strong" id="anc06">
     <div class="l-inner">
       <div class="p-strong__content">
         <div class="p-strong__top p-strong__top--ear">
@@ -364,7 +381,7 @@
       </div>
     </div>
   </section>
-  <section class="p-strong">
+  <section class="p-strong" id="anc07">
     <div class="l-inner">
       <div class="p-strong__content">
         <div class="p-strong__top p-strong__top--economic">
@@ -409,7 +426,7 @@
       </div>
     </div>
   </section>
-  <section class="p-strong p-strong--last">
+  <section class="p-strong p-strong--last" id="anc08">
     <div class="l-inner">
       <div class="p-strong__content">
         <div class="p-strong__top p-strong__top--kind">
@@ -441,11 +458,9 @@
       </div>
     </div>
   </section>
-
-
-
+  <?php get_template_part("includes/connect"); ?>
+  <div class="mb200"></div>
   <?php get_template_part("includes/submit"); ?>
-
 </main>
 
 <?php get_footer() ?>

@@ -40,7 +40,7 @@
 .p-maker__content {
   @include mq(md) {
     display: flex;
-    gap: rem(64);
+    gap: rem(96);
   }
   @include mq(lg) {
     gap: rem(130);
@@ -85,14 +85,15 @@
 
 .p-maker__title {
   font-size: rem(20);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.2em;
+  font-weight: 700;
   color: #222;
   line-height: calc(56 / 40);
   @include mq(md) {
-    font-size: rem(30);
+    font-size: clamp(20px, 2vw, 25px);
   }
   @include mq(lg) {
-    font-size: rem(40);
+    font-size: clamp(20px, 1.8vw, 40px);
   }
 }
 
@@ -113,9 +114,14 @@
 }
 
 .p-maker__img {
-  max-width: rem(560);
   width: 100%;
   margin-left: auto;
+  @include mq(md) {
+    max-width: rem(400);
+  }
+  @include mq(lg) {
+    max-width: rem(560);
+  }
 }
 .p-maker__img img {
   width: 100%;

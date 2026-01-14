@@ -61,6 +61,7 @@
   top: rem(750);
 }
 .p-page-mv__content {
+  position: relative;
 }
 
 .p-page-mv__detail {
@@ -136,7 +137,7 @@
   margin-right: calc(50% - 50vw);
   width: 100vw;
   margin-top: rem(40);
-  @include mq(md){
+  @include mq(md) {
     margin-top: initial;
   }
 }
@@ -232,6 +233,42 @@
   @include mq(md) {
     margin-top: rem(20);
     font-size: clamp(14px, 2vw, 16px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+.p-page-mv__nav-lists {
+  display: none;
+  @include mq(md) {
+    display: block;
+    padding-left: rem(20);
+    border-left: 1px solid #222;
+    position: absolute;
+    z-index: 100;
+    left: rem(20);
+    top: rem(480);
+  }
+  @include mq(lg) {
+    left: rem(40);
+    top: rem(620);
+  }
+}
+
+.p-page-mv__nav-list + .p-page-mv__nav-list {
+  @include mq(md) {
+    margin-top: rem(12);
+  }
+  @include mq(lg) {
+    margin-top: 20;
+  }
+}
+
+.p-page-mv__nav-link {
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+    font-weight: 700;
+    color: #222;
   }
   @include mq(lg) {
     font-size: rem(20);

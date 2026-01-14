@@ -48,7 +48,7 @@
 .p-live__img {
   width: 100%;
   @include mq(md) {
-    max-width: rem(450);
+    max-width: rem(640);
   }
   @include mq(lg) {
     max-width: rem(770);
@@ -75,10 +75,10 @@
   letter-spacing: 0.06em;
   line-height: calc(112 / 80);
   @include mq(md) {
-    font-size: clamp(20px, 2vw, 32px);
+    font-size: min(rem(64), calc(64 / 1440) * 100vw);
   }
   @include mq(lg) {
-    font-size: rem(80);
+    font-size: min(rem(80), calc(80 / 1920) * 100vw);
   }
 }
 

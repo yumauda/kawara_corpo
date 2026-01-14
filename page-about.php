@@ -21,8 +21,22 @@
 
       </div>
     </div>
+    <ul class="p-page-mv__nav-lists">
+      <li class="p-page-mv__nav-list">
+        <a href="#anc01" class="p-page-mv__nav-link">・超高温焼成</a>
+      </li>
+      <li class="p-page-mv__nav-list">
+        <a href="#anc02" class="p-page-mv__nav-link">・島根県産の原料</a>
+      </li>
+      <li class="p-page-mv__nav-list">
+        <a href="#anc03" class="p-page-mv__nav-link">・屋根材比較</a>
+      </li>
+      <li class="p-page-mv__nav-list">
+        <a href="#anc04" class="p-page-mv__nav-link">・よくある質問</a>
+      </li>
+    </ul>
   </section>
-  <section class="p-secret">
+  <section class="p-secret" id="anc01">
     <div class="l-inner">
       <div class="p-secret__content">
         <h2 class="p-secret__title"><span>石州瓦の強さの秘密</span>:<br class="u-mobile">長石溶融による緻密化</h2>
@@ -52,7 +66,7 @@
       </div>
     </div>
   </section>
-  <section class="p-land">
+  <section class="p-land" id="anc02">
     <div class="l-inner">
       <div class="p-land__content">
         <div class="p-land__detail">
@@ -99,7 +113,7 @@
     </div>
     </div>
   </section>
-  <section class="p-compare">
+  <section class="p-compare" id="anc03">
     <div class="l-inner">
       <div class="p-compare__content">
         <div class="p-compare__top">
@@ -117,7 +131,7 @@
       </div>
     </div>
   </section>
-  <section class="p-question">
+  <section class="p-question" id="anc04">
     <div class="l-inner">
       <div class="p-question__content">
         <div class="c-pageTitle">
@@ -143,7 +157,8 @@
             <div class="p-question__a">
               <p class="p-question__a-title">A</p>
               <p class="p-question__a-text">本当です。<br>
-                <span>耐水性、耐久性、耐震性、耐風性、断熱性、防音性、防火性</span>などがあげられます。これらの性能は、屋根材の種類（瓦、スレート、ガルバリウム鋼板、アスファルトシングルなど）によって得意、不得意があります。新築やリフォームの際には、これらの性能を考慮し、<span>地域の気候条件や住まいの特性、予算</span>などに合わせて<span>最適な屋根材</span>を選ぶことが重要です。</p>
+                <span>耐水性、耐久性、耐震性、耐風性、断熱性、防音性、防火性</span>などがあげられます。これらの性能は、屋根材の種類（瓦、スレート、ガルバリウム鋼板、アスファルトシングルなど）によって得意、不得意があります。新築やリフォームの際には、これらの性能を考慮し、<span>地域の気候条件や住まいの特性、予算</span>などに合わせて<span>最適な屋根材</span>を選ぶことが重要です。
+              </p>
             </div>
           </div>
           <div class="p-question__block">
