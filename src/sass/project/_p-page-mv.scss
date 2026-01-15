@@ -54,7 +54,8 @@
     top: rem(1080);
   }
 }
-.p-page-mv--download::after {
+.p-page-mv--download::after,
+.p-page-mv--professional::after {
   display: none;
 }
 .p-page-mv--company::after {

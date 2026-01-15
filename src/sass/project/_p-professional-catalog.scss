@@ -37,7 +37,7 @@
     padding: rem(30);
   }
   @include mq(lg) {
-    padding: rem(40);
+    padding: rem(36);
   }
   &:hover {
     transform: translateY(-2px);
@@ -75,11 +75,9 @@
   line-height: calc(40 / 26);
   letter-spacing: 0.06em;
   color: #222;
-  margin-bottom: rem(10);
   margin-left: rem(8);
   @include mq(md) {
     font-size: rem(24);
-    margin-bottom: rem(15);
     margin-left: rem(12);
   }
   @include mq(lg) {

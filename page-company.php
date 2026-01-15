@@ -5,7 +5,7 @@
       <div class="p-page-mv__content">
         <div class="p-page-mv__detail" data-title="Company">
           <h2 class="p-page-mv__title">会社概要</h2>
-          <p class="p-page-mv__text">Company Profile</p>
+          <p class="p-page-mv__text">What is Kawara Hyakkei?</p>
         </div>
         <figure class="p-page-mv__img p-page-mv__img--company">
           <img src="<?php echo get_template_directory_uri() ?>/images/company/mv_company.webp" alt="会社概要" width="2040" height="614">
@@ -19,9 +19,7 @@
       <li class="p-page-mv__nav-list">
         <a href="#anc02" class="p-page-mv__nav-link">・沿革</a>
       </li>
-      <!-- <li class="p-page-mv__nav-list">
-        <a href="#anc03" class="p-page-mv__nav-link">・主要取引先</a>
-      </li> -->
+      
       <li class="p-page-mv__nav-list">
         <a href="#anc04" class="p-page-mv__nav-link">・所在地</a>
       </li>

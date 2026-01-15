@@ -356,7 +356,8 @@ register_taxonomy('news_category', array('news'), array(
 	'hierarchical' => true,
 	'label' => 'カテゴリー',
 	'show_ui' => true,
-	'public' => true
+	'public' => true,
+	'show_in_rest' => true,
 ));
 register_taxonomy('news_tag', 'news', array(
 	'hierarchical' => false,

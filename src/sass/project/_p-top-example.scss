@@ -37,11 +37,19 @@
 
 .swiper-example {
   overflow: visible;
+  padding-left: rem(40) !important;
+  padding-right: rem(40) !important;
 }
 
 .swiper-example .swiper-slide {
-  width: rem(480);
   height: auto;
+  width: rem(300);
+  @include mq(md) {
+    width: rem(400);
+  }
+  @include mq(lg) {
+    width: rem(480);
+  }
 }
 
 .p-top-example-card {
@@ -86,39 +94,38 @@
 
 .p-top-example-card__arrow {
   position: absolute;
-  border-radius: 9999px;
-  background: #222;
   display: grid;
   place-items: center;
   z-index: 2;
   top: rem(10);
   right: rem(10);
-  width: rem(20);
-  height: rem(20);
+  min-width: rem(20);
+  min-height: rem(20);
+  max-width: rem(20);
+  max-height: rem(20);
   @include mq(md) {
     top: rem(20);
     right: rem(20);
-    width: rem(40);
-    height: rem(40);
+    min-width: rem(40);
+    min-height: rem(40);
+    max-width: rem(40);
+    max-height: rem(40);
   }
   @include mq(lg) {
     top: rem(40);
     right: rem(40);
-    width: rem(80);
-    height: rem(80);
+    min-width: rem(80);
+    min-height: rem(80);
+    max-width: rem(80);
+    max-height: rem(80);
   }
 }
-
-.p-top-example-card__arrowIcon {
-  width: rem(24);
-  height: rem(14);
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='14' viewBox='0 0 24 14'%3E%3Cg fill='none' stroke='%2337AF32' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1 1l6 6-6 6'/%3E%3Cpath d='M9 1l6 6-6 6'/%3E%3Cpath d='M17 1l6 6-6 6'/%3E%3C/g%3E%3C/svg%3E");
+.p-top-example-card__arrowIcon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
 }
-
 .p-top-example-card__head {
   display: flex;
   align-items: flex-end;
@@ -138,7 +145,13 @@
 }
 
 .p-top-example-card__countMain {
-  font-size: rem(60);
+  font-size: rem(32);
+  @include mq(md) {
+    font-size: rem(48);
+  }
+  @include mq(lg) {
+    font-size: rem(60);
+  }
 }
 
 .p-top-example-card__countSubWrap {
@@ -160,13 +173,25 @@
 }
 
 .p-top-example-card__countColon {
-  font-size: rem(30);
+  font-size: rem(18);
   line-height: rem(42);
+  @include mq(md) {
+    font-size: rem(20);
+  }
+  @include mq(lg) {
+    font-size: rem(30);
+  }
 }
 
 .p-top-example-card__countSub {
-  font-size: rem(30);
+  font-size: rem(18);
   line-height: rem(42);
+  @include mq(md) {
+    font-size: rem(20);
+  }
+  @include mq(lg) {
+    font-size: rem(30);
+  }
 }
 
 .p-top-example-card__tag {
@@ -194,22 +219,34 @@
 }
 
 .p-top-example-card__metaDt {
-  width: rem(80);
   font-family: "Montserrat", sans-serif;
-  font-size: rem(16);
+  font-size: rem(14);
   font-weight: 500;
   font-style: italic;
   line-height: rem(16.8);
   letter-spacing: 0.06em;
+  @include mq(md) {
+    font-size: clamp(12px, 2vw, 12px);
+  }
+  @include mq(lg) {
+    width: rem(80);
+    font-size: rem(16);
+  }
 }
 
 .p-top-example-card__metaDd {
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: rem(16);
+  font-size: rem(14);
   font-weight: 400;
   line-height: rem(16.8);
   letter-spacing: 0.06em;
   margin: 0;
+  @include mq(md) {
+    font-size: clamp(12px, 2vw, 12px);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
+  }
 }
 
 .p-top-example-card__img {
@@ -235,27 +272,47 @@
 .p-top-example-card__divider {
   width: 100%;
   height: 1px;
-  margin-top: rem(40);
   background: currentColor;
   opacity: 1;
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(20);
+  }
+  @include mq(lg) {
+    margin-top: rem(40);
+  }
 }
 
 .p-top-example-card__product {
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: rem(20);
   font-weight: 700;
   letter-spacing: 0.06em;
-  margin: rem(20) 0 0;
+  margin-top: rem(12);
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+    margin-top: rem(16);
+  }
+  @include mq(lg) {
+    margin-top: rem(20);
+    font-size: rem(20);
+  }
 }
 
 .swiper-example .swiper-wrapper {
-  padding-top: rem(100) !important;
-  padding-bottom: rem(60) !important;
+  @include mq(md) {
+    padding-top: rem(160) !important;
+    padding-bottom: rem(60) !important;
+  }
+  @include mq(lg) {
+    padding-top: rem(100) !important;
+    padding-bottom: rem(60) !important;
+  }
 }
 .swiper-example .swiper-slide {
   transition: transform 0.35s ease, opacity 0.35s ease;
   will-change: transform;
-  opacity: 0.6;
+  /* opacity: 0.6; */
 }
 
 /* 中央（強調） */
@@ -269,7 +326,6 @@
 .swiper-example .swiper-slide.is-prev,
 .swiper-example .swiper-slide.is-next {
   transform: translateY(-24px);
-  opacity: 0.9;
   z-index: 3;
 }
 
@@ -277,13 +333,16 @@
 .swiper-example .swiper-slide.is-prev2,
 .swiper-example .swiper-slide.is-next2 {
   transform: translateY(-48px);
-  opacity: 0.75;
   z-index: 2;
 }
 
 /* その他（任意） */
 .swiper-example .swiper-slide.is-far {
   transform: translateY(-72px);
-  opacity: 0.5;
+  // opacity: 0.5;
   z-index: 1;
+}
+.swiper-example .swiper-slide.is-prev {
+  transform: translateY(24px);
+  z-index: 0;
 }

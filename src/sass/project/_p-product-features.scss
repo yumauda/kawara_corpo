@@ -82,10 +82,11 @@
   gap: rem(16);
   @include mq(md) {
     margin-top: initial;
-    grid-template-columns: 420px 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: rem(20);
   }
   @include mq(lg) {
+    grid-template-columns: 420px 1fr;
     gap: rem(20);
   }
 }

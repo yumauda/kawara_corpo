@@ -40,7 +40,7 @@
   font-size: rem(24);
   line-height: calc(112 / 80);
   @include mq(md) {
-    font-size: clamp(24px, 2vw, 32px);
+    font-size: clamp(40px, 2vw, 48px);
   }
   @include mq(lg) {
     font-size: rem(80);

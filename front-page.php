@@ -90,7 +90,7 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <a href="#" class="p-top-choose__link">
+                <a href="<?php echo esc_url(home_url('/reason#anc02')); ?>" class="p-top-choose__link">
                   <div class="p-top-choose__left">
                     <div class="p-top-choose__title-wrapper">
                       <p class="p-top-choose__title-num">01</p>
@@ -112,7 +112,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="#" class="p-top-choose__link">
+                <a href="<?php echo esc_url(home_url('/reason#anc03')); ?>" class="p-top-choose__link">
                   <div class="p-top-choose__left">
                     <div class="p-top-choose__title-wrapper">
                       <p class="p-top-choose__title-num">02</p>
@@ -134,7 +134,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="#" class="p-top-choose__link">
+                <a href="<?php echo esc_url(home_url('/reason#anc08')); ?>" class="p-top-choose__link">
                   <div class="p-top-choose__left">
                     <div class="p-top-choose__title-wrapper">
                       <p class="p-top-choose__title-num">03</p>
@@ -228,195 +228,72 @@
         <div class="p-top-example__slider">
           <div class="swiper swiper-example">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="#" class="p-top-example-card p-top-example-card--green">
-                  <div class="p-top-example-card__arrow" aria-hidden="true">
-                    <span class="p-top-example-card__arrowIcon"></span>
-                  </div>
+              <?php
+              // パラメータの設定
+              $args = array(
+                'posts_per_page' => 4,
+                'post_status' => 'publish',
+                'post_type' => 'post',
+                'orderby' => 'date',
+              );
 
-                  <div class="p-top-example-card__inner">
-                    <div class="p-top-example-card__head">
-                      <div class="p-top-example-card__count">
-                        <span class="p-top-example-card__countMain">01</span>
-                        <span class="p-top-example-card__countSubWrap">
-                          <span class="p-top-example-card__countSub">04</span>
+              // WP_Queryインスタンスの生成
+              $my_query = new WP_Query($args);
+              if ($my_query->have_posts()) :
+                while ($my_query->have_posts()) : $my_query->the_post();
+              ?>
+
+                  <div class="swiper-slide">
+                    <?php $card_modifier = (($my_query->current_post % 2) === 0) ? 'p-top-example-card--white' : 'p-top-example-card--green'; ?>
+                    <a href="<?php the_permalink(); ?>" class="p-top-example-card <?php echo esc_attr($card_modifier); ?>">
+                      <div class="p-top-example-card__arrow" aria-hidden="true">
+                        <span class="p-top-example-card__arrowIcon">
+                          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
                         </span>
                       </div>
-                      <p class="p-top-example-card__tag">_Example</p>
-                    </div>
 
-                    <dl class="p-top-example-card__meta">
-                      <div class="p-top-example-card__metaRow">
-                        <dt class="p-top-example-card__metaDt">CLIENT :</dt>
-                        <dd class="p-top-example-card__metaDd">工事名(○○邸)</dd>
+                      <div class="p-top-example-card__inner">
+                        <div class="p-top-example-card__head">
+                          <div class="p-top-example-card__count">
+                            <span class="p-top-example-card__countMain"><?php echo sprintf('%02d', $my_query->current_post + 1); ?></span>
+                            <span class="p-top-example-card__countSubWrap">
+                              <span class="p-top-example-card__countSub">04</span>
+                            </span>
+                          </div>
+                          <p class="p-top-example-card__tag">_Example</p>
+                        </div>
+
+                        <dl class="p-top-example-card__meta">
+                          <div class="p-top-example-card__metaRow">
+                            <dt class="p-top-example-card__metaDt">CLIENT :</dt>
+                            <dd class="p-top-example-card__metaDd"><?php the_field('example_name'); ?></dd>
+                          </div>
+                          <div class="p-top-example-card__metaRow">
+                            <dt class="p-top-example-card__metaDt">AREA :</dt>
+                            <dd class="p-top-example-card__metaDd"><?php the_field('example_place'); ?></dd>
+                          </div>
+                        </dl>
+                        <?php if (has_post_thumbnail()) : ?>
+                          <figure class="p-top-example-card__img">
+                            <img decoding="async" loading="lazy" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" width="840" height="520">
+                          </figure>
+                        <?php else : ?>
+                          <figure class="p-top-example-card__img">
+                            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/example/noimage.jpg" alt="<?php the_title(); ?>" width="840" height="520">
+                          </figure>
+                        <?php endif; ?>
+
+                        <div class="p-top-example-card__divider" aria-hidden="true"></div>
+                        <p class="p-top-example-card__product"><?php the_title(); ?></p>
                       </div>
-                      <div class="p-top-example-card__metaRow">
-                        <dt class="p-top-example-card__metaDt">AREA :</dt>
-                        <dd class="p-top-example-card__metaDd">島根県大田市</dd>
-                      </div>
-                    </dl>
-
-                    <figure class="p-top-example-card__img">
-                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/example/example1.webp" alt="施工事例" width="840" height="520">
-                    </figure>
-
-                    <div class="p-top-example-card__divider" aria-hidden="true"></div>
-                    <p class="p-top-example-card__product">ニューセラECO 花梨M</p>
-                  </div>
-                </a>
-              </div>
-
-              <div class="swiper-slide">
-                <a href="#" class="p-top-example-card p-top-example-card--white">
-                  <div class="p-top-example-card__arrow" aria-hidden="true">
-                    <span class="p-top-example-card__arrowIcon"></span>
-                  </div>
-
-                  <div class="p-top-example-card__inner">
-                    <div class="p-top-example-card__head">
-                      <div class="p-top-example-card__count">
-                        <span class="p-top-example-card__countMain">02</span>
-                        <span class="p-top-example-card__countSubWrap">
-                          <span class="p-top-example-card__countSub">04</span>
-                        </span>
-                      </div>
-                      <p class="p-top-example-card__tag">_Example</p>
-                    </div>
-
-                    <dl class="p-top-example-card__meta">
-                      <div class="p-top-example-card__metaRow">
-                        <dt class="p-top-example-card__metaDt">CLIENT :</dt>
-                        <dd class="p-top-example-card__metaDd">工事名(○○邸)</dd>
-                      </div>
-                      <div class="p-top-example-card__metaRow">
-                        <dt class="p-top-example-card__metaDt">AREA :</dt>
-                        <dd class="p-top-example-card__metaDd">島根県大田市</dd>
-                      </div>
-                    </dl>
-
-                    <figure class="p-top-example-card__img">
-                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/example/example1.webp" alt="施工事例" width="840" height="520">
-                    </figure>
-
-                    <div class="p-top-example-card__divider" aria-hidden="true"></div>
-                    <p class="p-top-example-card__product">ニューセラECO 花梨M</p>
-                  </div>
-                </a>
-              </div>
-
-              <div class="swiper-slide">
-                <a href="#" class="p-top-example-card p-top-example-card--green">
-                  <div class="p-top-example-card__arrow" aria-hidden="true">
-                    <span class="p-top-example-card__arrowIcon"></span>
+                    </a>
                   </div>
 
-                  <div class="p-top-example-card__inner">
-                    <div class="p-top-example-card__head">
-                      <div class="p-top-example-card__count">
-                        <span class="p-top-example-card__countMain">03</span>
-                        <span class="p-top-example-card__countSubWrap">
-                          <span class="p-top-example-card__countSub">04</span>
-                        </span>
-                      </div>
-                      <p class="p-top-example-card__tag">_Example</p>
-                    </div>
-
-                    <dl class="p-top-example-card__meta">
-                      <div class="p-top-example-card__metaRow">
-                        <dt class="p-top-example-card__metaDt">CLIENT :</dt>
-                        <dd class="p-top-example-card__metaDd">工事名(○○邸)</dd>
-                      </div>
-                      <div class="p-top-example-card__metaRow">
-                        <dt class="p-top-example-card__metaDt">AREA :</dt>
-                        <dd class="p-top-example-card__metaDd">島根県大田市</dd>
-                      </div>
-                    </dl>
-
-                    <figure class="p-top-example-card__img">
-                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/example/example1.webp" alt="施工事例" width="840" height="520">
-                    </figure>
-
-                    <div class="p-top-example-card__divider" aria-hidden="true"></div>
-                    <p class="p-top-example-card__product">ニューセラECO 花梨M</p>
-                  </div>
-                </a>
-              </div>
-
-              <div class="swiper-slide">
-                <a href="#" class="p-top-example-card p-top-example-card--white">
-                  <div class="p-top-example-card__arrow" aria-hidden="true">
-                    <span class="p-top-example-card__arrowIcon"></span>
-                  </div>
-
-                  <div class="p-top-example-card__inner">
-                    <div class="p-top-example-card__head">
-                      <div class="p-top-example-card__count">
-                        <span class="p-top-example-card__countMain">04</span>
-                        <span class="p-top-example-card__countSubWrap">
-                          <span class="p-top-example-card__countSub">04</span>
-                        </span>
-                      </div>
-                      <p class="p-top-example-card__tag">_Example</p>
-                    </div>
-
-                    <dl class="p-top-example-card__meta">
-                      <div class="p-top-example-card__metaRow">
-                        <dt class="p-top-example-card__metaDt">CLIENT :</dt>
-                        <dd class="p-top-example-card__metaDd">工事名(○○邸)</dd>
-                      </div>
-                      <div class="p-top-example-card__metaRow">
-                        <dt class="p-top-example-card__metaDt">AREA :</dt>
-                        <dd class="p-top-example-card__metaDd">島根県大田市</dd>
-                      </div>
-                    </dl>
-
-                    <figure class="p-top-example-card__img">
-                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/example/example1.webp" alt="施工事例" width="840" height="520">
-                    </figure>
-
-                    <div class="p-top-example-card__divider" aria-hidden="true"></div>
-                    <p class="p-top-example-card__product">ニューセラECO 花梨M</p>
-                  </div>
-                </a>
-              </div>
-
-              <div class="swiper-slide">
-                <a href="#" class="p-top-example-card p-top-example-card--green">
-                  <div class="p-top-example-card__arrow" aria-hidden="true">
-                    <span class="p-top-example-card__arrowIcon"></span>
-                  </div>
-
-                  <div class="p-top-example-card__inner">
-                    <div class="p-top-example-card__head">
-                      <div class="p-top-example-card__count">
-                        <span class="p-top-example-card__countMain">05</span>
-                        <span class="p-top-example-card__countSubWrap">
-                          <span class="p-top-example-card__countSub">05</span>
-                        </span>
-                      </div>
-                      <p class="p-top-example-card__tag">_Example</p>
-                    </div>
-
-                    <dl class="p-top-example-card__meta">
-                      <div class="p-top-example-card__metaRow">
-                        <dt class="p-top-example-card__metaDt">CLIENT :</dt>
-                        <dd class="p-top-example-card__metaDd">工事名(○○邸)</dd>
-                      </div>
-                      <div class="p-top-example-card__metaRow">
-                        <dt class="p-top-example-card__metaDt">AREA :</dt>
-                        <dd class="p-top-example-card__metaDd">島根県大田市</dd>
-                      </div>
-                    </dl>
-
-                    <figure class="p-top-example-card__img">
-                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/example/example1.webp" alt="施工事例" width="840" height="520">
-                    </figure>
-
-                    <div class="p-top-example-card__divider" aria-hidden="true"></div>
-                    <p class="p-top-example-card__product">ニューセラECO 花梨M</p>
-                  </div>
-                </a>
-              </div>
+              <?php
+                endwhile;
+              endif;
+              wp_reset_postdata();
+              ?>
             </div>
           </div>
         </div>
@@ -532,7 +409,7 @@
         </div>
         <div class="p-top-news__right">
           <ul class="p-top-news__lists">
-            
+
             <?php
             // パラメータの設定
             $args = array(

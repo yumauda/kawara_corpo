@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="p-page-mv">
+  <section class="p-page-mv p-page-mv--professional">
     <div class="l-inner">
       <div class="p-page-mv__content">
         <div class="p-page-mv__detail" data-title="Technical">
@@ -15,7 +15,7 @@
     <div class="l-inner">
       <div class="p-professional-catalog__content">
 
-        <a href="#" class="p-professional-catalog__card">
+        <a href="<?php echo esc_url(home_url('/download')); ?>" class="p-professional-catalog__card">
           <div class="p-professional-catalog__row">
             <div class="p-professional-catalog__icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.047 51">
@@ -38,7 +38,7 @@
             <p class="p-professional-catalog__text">弊社製品のカタログをダウンロード出来ます。</p>
           </div>
         </a>
-        <a href="#" class="p-professional-catalog__card">
+        <a href="<?php echo esc_url(home_url('/professional/performance')); ?>" class="p-professional-catalog__card">
           <div class="p-professional-catalog__row">
             <div class="p-professional-catalog__icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 50">
@@ -62,7 +62,7 @@
             <p class="p-professional-catalog__text">耐風圧性能試験成績書・棟回転試験成績書のPDF形式がダウンロード出来ます。</p>
           </div>
         </a>
-        <a href="#" class="p-professional-catalog__card">
+        <a href="<?php echo esc_url(home_url('/professional/cad')); ?>" class="p-professional-catalog__card">
           <div class="p-professional-catalog__row">
             <div class="p-professional-catalog__icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 49.997">
@@ -110,7 +110,7 @@
             <p class="p-professional-catalog__text">建築基準法、平成12年建設省告示1458号に基づいた風圧力をページ上で計算することができます。また、エクセル版もダウンロード可能です。</p>
           </div>
         </a>
-        <a href="#" class="p-professional-catalog__card">
+        <a href="<?php echo esc_url(home_url('/professional/noncombustible')); ?>" class="p-professional-catalog__card">
           <div class="p-professional-catalog__row">
             <div class="p-professional-catalog__icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.511 50.597">
@@ -135,7 +135,7 @@
             <p class="p-professional-catalog__text">不燃材認定についてご覧いただけます。</p>
           </div>
         </a>
-        <a href="#" class="p-professional-catalog__card">
+        <a href="<?php echo esc_url(home_url('/professional/manual')); ?>" class="p-professional-catalog__card">
           <div class="p-professional-catalog__row">
             <div class="p-professional-catalog__icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.004 51">
@@ -159,7 +159,7 @@
             <p class="p-professional-catalog__text">瓦屋根標準設計・施工ガイドラインに沿った工法の、設計に一般的な必要に製品規格・施工用材・工法を記載しています。</p>
           </div>
         </a>
-        <a href="#" class="p-professional-catalog__card">
+        <a href="<?php echo esc_url(home_url('/professional/munsell')); ?>" class="p-professional-catalog__card">
           <div class="p-professional-catalog__row">
             <div class="p-professional-catalog__icon">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
@@ -197,7 +197,7 @@
             <p class="p-professional-catalog__text">弊社製品の代表的な製品のマンセル値を記載しております。</p>
           </div>
         </a>
-        <a href="#" class="p-professional-catalog__card">
+        <a href="<?php echo esc_url(home_url('/professional/nonasbestos')); ?>" class="p-professional-catalog__card">
           <div class="p-professional-catalog__row">
             <div class="p-professional-catalog__icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.853 51">

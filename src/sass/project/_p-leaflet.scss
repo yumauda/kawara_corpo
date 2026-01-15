@@ -113,7 +113,7 @@
   border-radius: rem(10);
   text-decoration: none;
   transition: all 0.3s ease;
-  height: fit-content;
+  height: 100%;
   @include mq(md) {
     padding: rem(20);
   }
