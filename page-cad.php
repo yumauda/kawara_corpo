@@ -80,7 +80,7 @@
               </a>
             </li>
             <li class="p-performance-related__links-item">
-              <a href="#anc05" class="p-performance-related__link p-performance-related__link--active">
+              <a href="#anc01" class="p-performance-related__link p-performance-related__link--active">
                 <span class="p-performance-related__link-text">グラスロ</span>
                 <span class="p-performance-related__link-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.536 14.202">
@@ -103,14 +103,14 @@
             本CADデータの図面要素から抽出される値について、実際の値と一致することを保証するものではありません。<br>
             当社の予見の有無を問わず、お客様が本CADデータをご使用することによりお客様または第三者に生じた如何なる損害についても一切責任を負いかねます。</p>
         </div>
-        <div class="p-performance-related__box-wrapper">
+        <div class="p-performance-related__box-wrapper" id="anc01">
 
           <div class="p-munsell__table-header">
             <div class="p-munsell__table-flex">
               <p class="p-munsell__table-header-text">
                 <和形53B>TSルーフ、グラスロ
               </p>
-              <a href="#" class="p-munsell__table-header-link">
+              <a href="<?php echo esc_url(home_url('/product/graslo')); ?>" class="p-munsell__table-header-link">
                 <p class="p-munsell__table-header-link-text">製品情報を見る</p>
                 <div class="p-munsell__table-header-link-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.177 15.505">
@@ -300,14 +300,14 @@
             </div>
           </div>
         </div>
-        <div class="p-performance-related__box-wrapper">
+        <div class="p-performance-related__box-wrapper" id="anc02">
 
           <div class="p-munsell__table-header">
             <div class="p-munsell__table-flex">
               <p class="p-munsell__table-header-text">
                 < BSルーフ53A>
               </p>
-              <a href="#" class="p-munsell__table-header-link">
+              <a href="<?php echo esc_url(home_url('/product/bs')); ?>" class="p-munsell__table-header-link">
                 <p class="p-munsell__table-header-link-text">製品情報を見る</p>
                 <div class="p-munsell__table-header-link-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.177 15.505">
@@ -455,14 +455,14 @@
 
           </div>
         </div>
-        <div class="p-performance-related__box-wrapper">
+        <div class="p-performance-related__box-wrapper" id="anc03">
 
           <div class="p-munsell__table-header">
             <div class="p-munsell__table-flex">
               <p class="p-munsell__table-header-text">
                 < ニューセラECOⅡ>
               </p>
-              <a href="#" class="p-munsell__table-header-link">
+              <a href="<?php echo esc_url(home_url('/product/eco')); ?>" class="p-munsell__table-header-link">
                 <p class="p-munsell__table-header-link-text">製品情報を見る</p>
                 <div class="p-munsell__table-header-link-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.177 15.505">
@@ -739,14 +739,14 @@
 
           </div>
         </div>
-        <div class="p-performance-related__box-wrapper">
+        <div class="p-performance-related__box-wrapper" id="anc04">
 
           <div class="p-munsell__table-header">
             <div class="p-munsell__table-flex">
               <p class="p-munsell__table-header-text">
                 < ニューセラFUタイプ>
               </p>
-              <a href="#" class="p-munsell__table-header-link">
+              <a href="<?php echo esc_url(home_url('/product/ftype')); ?>" class="p-munsell__table-header-link">
                 <p class="p-munsell__table-header-link-text">製品情報を見る</p>
                 <div class="p-munsell__table-header-link-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.177 15.505">
