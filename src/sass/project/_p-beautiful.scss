@@ -129,7 +129,7 @@
 .p-beautiful__row .p-beautiful__text {
   width: 100%;
   @include mq(md) {
-    max-width: rem(200);
+    
   }
   @include mq(lg) {
     max-width: rem(300);

@@ -375,10 +375,10 @@
 .p-strong__box-row2 {
   @include mq(md) {
     display: flex;
-    align-items: center;
     gap: rem(20);
   }
   @include mq(lg) {
+    align-items: center;
     gap: rem(40);
   }
 }
@@ -666,6 +666,7 @@
   width: 100%;
   @include mq(md) {
     max-width: rem(170);
+    min-width: 128px;
   }
   @include mq(lg) {
     max-width: rem(267);
@@ -782,6 +783,12 @@
 }
 
 .p-strong__box-detail {
+  @include mq(md){
+    white-space: nowrap;
+  }
+  @include mq(lg){
+    white-space: initial;
+  }
 }
 
 .p-strong__box-detail-title {

@@ -112,6 +112,7 @@
   @include mq(md) {
     line-height: 1.4;
     font-size: clamp(20px, 2vw, 24px);
+    white-space: nowrap;
   }
   @include mq(lg) {
     font-size: rem(40);
@@ -152,8 +153,11 @@
   color: #222222;
   @include mq(md) {
     text-align: right;
-    font-size: rem(14);
+    font-size: clamp(12px, 2vw, 12px);
     line-height: 2.857;
+  }
+  @include mq(lg) {
+    font-size: rem(14);
   }
 }
 .p-performance__note a {

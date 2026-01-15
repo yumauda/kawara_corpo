@@ -152,7 +152,7 @@
   @include mq(md) {
     display: table-cell;
     font-size: clamp(14px, 2vw, 14px);
-    width: rem(120);
+    width: rem(180);
     padding: rem(11);
   }
   @include mq(lg) {

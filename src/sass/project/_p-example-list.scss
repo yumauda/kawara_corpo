@@ -111,6 +111,13 @@
 
 .p-example-list__row {
   display: flex;
+  flex-wrap: wrap;
+  @include mq(md) {
+    flex-direction: column;
+  }
+  @include mq(lg) {
+    flex-direction: row;
+  }
 }
 .p-example-list__row + .p-example-list__row {
   margin-top: rem(10);

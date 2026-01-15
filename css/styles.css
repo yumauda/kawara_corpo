@@ -454,10 +454,22 @@ select::-ms-expand {
   align-items: center;
   justify-content: center;
   gap: 0.625rem;
-  width: 17.5rem;
-  height: 3rem;
   background: #222;
   border-radius: 9999px;
+  height: 3rem;
+  width: 17.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-asbestos__btn {
+    width: 25rem;
+    height: 3.75rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-asbestos__btn {
+    height: 3rem;
+    width: 17.5rem;
+  }
 }
 
 .p-asbestos__btn-icon {
@@ -644,11 +656,6 @@ select::-ms-expand {
 
 .p-beautiful__row .p-beautiful__text {
   width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .p-beautiful__row .p-beautiful__text {
-    max-width: 12.5rem;
-  }
 }
 @media screen and (min-width: 1540px) {
   .p-beautiful__row .p-beautiful__text {
@@ -1345,7 +1352,7 @@ select::-ms-expand {
   .p-company__label {
     display: table-cell;
     font-size: clamp(14px, 2vw, 14px);
-    width: 7.5rem;
+    width: 11.25rem;
     padding: 0.6875rem;
   }
 }
@@ -1471,6 +1478,10 @@ select::-ms-expand {
     width: 107.5rem;
     top: -8.75rem;
   }
+}
+
+.p-compare .c-pageTitle {
+  white-space: nowrap;
 }
 
 .p-compare__title-text {
@@ -2328,6 +2339,17 @@ select::-ms-expand {
 
 .p-example-list__row {
   display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .p-example-list__row {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-example-list__row {
+    flex-direction: row;
+  }
 }
 
 .p-example-list__row + .p-example-list__row {
@@ -4550,7 +4572,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-leaflet__cards {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.875rem;
   }
 }
@@ -7295,13 +7317,15 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-performance-related__submit-img {
-    width: 6.25rem;
+    min-width: 6.25rem;
+    width: 12.5rem;
     margin-top: -2.25rem;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-performance-related__submit-img {
     width: 8.75rem;
+    min-width: initial;
     margin-top: -3.5rem;
   }
 }
@@ -7386,7 +7410,7 @@ input::placeholder {
   .p-performance-related__submit-text-wrapper {
     margin-top: initial;
     margin-left: 1.875rem;
-    max-width: 25rem;
+    max-width: 37.5rem;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -7453,7 +7477,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-performance-related__construction-subtitle {
-    font-size: 1rem;
+    font-size: clamp(14px, 2vw, 14px);
     margin-bottom: 1rem;
   }
 }
@@ -7531,7 +7555,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-performance-related__construction-label {
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: clamp(14px, 2vw, 14px);
     min-width: 4.375rem;
   }
 }
@@ -7589,7 +7613,7 @@ input::placeholder {
   background-color: #222222;
   color: #ffffff;
   padding: 0.625rem 1.25rem;
-  border-radius: 1.4375rem;
+  border-radius: 9999px;
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
@@ -7601,7 +7625,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-performance-related__construction-btn {
-    font-size: 1rem;
+    font-size: clamp(12px, 2vw, 12px);
     padding: 0.75rem 1.5rem;
   }
 }
@@ -7808,6 +7832,7 @@ input::placeholder {
   .p-performance__card-title {
     line-height: 1.4;
     font-size: clamp(20px, 2vw, 24px);
+    white-space: nowrap;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -7856,8 +7881,13 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-performance__note {
     text-align: right;
-    font-size: 0.875rem;
+    font-size: clamp(12px, 2vw, 12px);
     line-height: 2.857;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-performance__note {
+    font-size: 0.875rem;
   }
 }
 
@@ -8894,12 +8924,14 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-product__block {
     display: flex;
+    gap: 10rem;
     padding-bottom: 3.75rem;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-product__block {
     padding-bottom: 6.25rem;
+    gap: initial;
   }
 }
 
@@ -8939,6 +8971,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-product__left {
     min-width: 25rem;
+    white-space: nowrap;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -9233,7 +9266,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-professional-catalog__title {
-    font-size: 1.5rem;
+    font-size: clamp(16px, 2vw, 16px);
     margin-left: 0.75rem;
   }
 }
@@ -9766,6 +9799,7 @@ input::placeholder {
     padding: 1.25rem 1.875rem;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 0.625rem;
   }
 }
@@ -10118,7 +10152,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-single-news__title {
     margin-top: 1.25rem;
-    font-size: 1.75rem;
+    font-size: clamp(20px, 2vw, 22px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -10246,6 +10280,17 @@ input::placeholder {
 /* 段落 */
 .p-single-news__body p {
   line-height: 1.6;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single-news__body p {
+    font-size: clamp(14px, 2vw, 16px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-single-news__body p {
+    font-size: 1.125rem;
+  }
 }
 
 /* リンク */
@@ -10410,6 +10455,11 @@ input::placeholder {
   font-style: italic;
   letter-spacing: 0.06em;
   font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single-news__back-text {
+    font-size: clamp(14px, 2vw, 16px);
+  }
 }
 @media screen and (min-width: 1540px) {
   .p-single-news__back-text {
@@ -11218,6 +11268,13 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-single__btn {
+    width: 20rem;
+    height: 4.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-single__btn {
+    width: 16.25rem;
     height: 5rem;
   }
 }
@@ -11666,29 +11723,33 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-specific__notes-title {
     margin-bottom: 1.25rem;
+    font-size: clamp(14px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
   .p-specific__notes-title {
     margin-bottom: 1.25rem;
+    font-size: 1.25rem;
   }
 }
 
 .p-specific__notes-intro {
-  font-size: 1rem;
   font-weight: 500;
   color: #222;
   line-height: 1.4;
   letter-spacing: 0.06em;
+  font-size: 0.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-specific__notes-intro {
     margin-bottom: 1.25rem;
+    font-size: clamp(12px, 2vw, 12px);
   }
 }
 @media screen and (min-width: 1540px) {
   .p-specific__notes-intro {
     margin-bottom: 1.25rem;
+    font-size: 1rem;
   }
 }
 
@@ -11715,6 +11776,7 @@ input::placeholder {
   .p-specific__notes-list li {
     margin-bottom: 1.25rem;
     font-size: clamp(12px, 2vw, 12px);
+    padding-left: 1.75rem;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -12371,12 +12433,12 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-strong__box-row2 {
     display: flex;
-    align-items: center;
     gap: 1.25rem;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-strong__box-row2 {
+    align-items: center;
     gap: 2.5rem;
   }
 }
@@ -12746,6 +12808,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-strong__box-economic {
     max-width: 10.625rem;
+    min-width: 128px;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -12882,6 +12945,17 @@ input::placeholder {
 @media screen and (min-width: 1540px) {
   .p-strong__economic-left {
     max-width: 41.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-strong__box-detail {
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-strong__box-detail {
+    white-space: initial;
   }
 }
 
@@ -15140,7 +15214,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-topics__section-title {
-    font-size: 1.5rem;
+    font-size: clamp(20px, 2vw, 24px);
     line-height: 1.5;
   }
 }
@@ -15287,7 +15361,6 @@ input::placeholder {
   .p-topics__row-img {
     margin-top: initial;
     flex: 1;
-    max-width: 28.125rem;
   }
 }
 @media screen and (min-width: 1540px) {

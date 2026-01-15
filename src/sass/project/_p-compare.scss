@@ -49,7 +49,9 @@
     top: rem(-140);
   }
 }
-
+.p-compare .c-pageTitle {
+  white-space: nowrap;
+}
 .p-compare__title-text {
   color: #37af32;
   font-weight: 700;

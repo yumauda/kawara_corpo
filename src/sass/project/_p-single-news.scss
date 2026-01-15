@@ -82,7 +82,7 @@
 
   @include mq(md) {
     margin-top: rem(20);
-    font-size: rem(28);
+    font-size: clamp(20px, 2vw, 22px);
   }
   @include mq(lg) {
     margin-top: rem(24);
@@ -199,6 +199,13 @@
 /* 段落 */
 .p-single-news__body p {
   line-height: calc(32 / 20);
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 16px);
+  }
+  @include mq(lg) {
+    font-size: rem(18);
+  }
 }
 
 /* リンク */
@@ -362,6 +369,9 @@
   letter-spacing: 0.06em;
   font-size: rem(14);
 
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 16px);
+  }
   @include mq(lg) {
     font-size: rem(16);
   }

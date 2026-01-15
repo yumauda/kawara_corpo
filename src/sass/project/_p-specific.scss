@@ -328,23 +328,27 @@
   letter-spacing: 0.06em;
   @include mq(md) {
     margin-bottom: rem(20);
+    font-size: clamp(14px, 2vw, 16px);
   }
   @include mq(lg) {
     margin-bottom: rem(20);
+    font-size: rem(20);
   }
 }
 
 .p-specific__notes-intro {
-  font-size: rem(16);
   font-weight: 500;
   color: #222;
   line-height: calc(22.4 / 16);
   letter-spacing: 0.06em;
+  font-size: rem(12);
   @include mq(md) {
     margin-bottom: rem(20);
+    font-size: clamp(12px, 2vw, 12px);
   }
   @include mq(lg) {
     margin-bottom: rem(20);
+    font-size: rem(16);
   }
 }
 
@@ -368,6 +372,7 @@
   @include mq(md) {
     margin-bottom: rem(20);
     font-size: clamp(12px, 2vw, 12px);
+    padding-left: rem(28);
   }
   @include mq(lg) {
     margin-bottom: rem(20);

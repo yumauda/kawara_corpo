@@ -116,6 +116,13 @@ const voiceSlider = new Swiper(".voice-slider", {
 
   breakpoints: {
     768: {
+      slidesPerView: 2.5,
+      centeredSlides: true,
+      loop: true,
+      spaceBetween: 24,
+      watchSlidesProgress: true,
+    },
+    992: {
       slidesPerView: 3.5,
       centeredSlides: true,
       loop: true,

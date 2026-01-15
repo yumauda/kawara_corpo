@@ -40,10 +40,12 @@
   padding-bottom: rem(24);
   @include mq(md) {
     display: flex;
+    gap: rem(160);
     padding-bottom: rem(60);
   }
   @include mq(lg) {
     padding-bottom: rem(100);
+    gap: initial;
   }
 }
 .p-product__block::before {
@@ -75,6 +77,7 @@
 .p-product__left {
   @include mq(md) {
     min-width: rem(400);
+    white-space: nowrap;
   }
   @include mq(lg) {
     min-width: rem(580);

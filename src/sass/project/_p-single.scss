@@ -435,6 +435,11 @@
   border-radius: 9999px;
   background: #222;
   @include mq(md) {
+    width: rem(320);
+    height: rem(72);
+  }
+  @include mq(lg) {
+    width: rem(260);
     height: rem(80);
   }
 }
