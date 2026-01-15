@@ -1877,6 +1877,7 @@ select::-ms-expand {
   padding-top: 7.8125rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  overflow-y: auto;
 }
 @media screen and (min-width: 768px) {
   .p-drawer-content {

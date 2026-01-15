@@ -96,6 +96,7 @@
   padding-top: rem(125);
   padding-left: rem(32);
   padding-right: rem(32);
+  overflow-y: auto;
   @include mq(md) {
     padding-top: rem(8);
     padding-left: initial;
