@@ -15,12 +15,12 @@
         <div class="p-top-about__top">
           <div class="p-top-about__title">
             <h3 class="c-section-title">
-              <span class="c-section-title__en">About</span>
-              <span class="c-section-title__ja">石州瓦とは</span>
-              <span class="c-section-title__small">What Defines Sekishu Tiles</span>
+              <span class="c-section-title__en js-text">About</span>
+              <span class="c-section-title__ja js-text">石州瓦とは</span>
+              <span class="c-section-title__small js-text">What Defines Sekishu Tiles</span>
             </h3>
           </div>
-          <div class="p-top-about__btn-wrapper">
+          <div class="p-top-about__btn-wrapper js-text">
             <a href="<?php echo esc_url(home_url('/about')); ?>" class="c-btn">
               <p class="c-btn__text">View more</p>
               <div class="c-btn__icon">
@@ -30,7 +30,7 @@
             </a>
           </div>
         </div>
-        <div class="p-top-about__grid">
+        <div class="p-top-about__grid js-blur-content">
           <div class="p-top-about__block">
             <figure class="p-top-about__img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_about_img1.webp" alt="1200℃超の超高温焼成" width="700" height="300">
@@ -69,12 +69,12 @@
         <div class="p-top-choose__top">
           <div class="p-top-choose__title">
             <h3 class="c-section-title">
-              <span class="c-section-title__en">Strong</span>
-              <span class="c-section-title__ja">選ばれる理由</span>
-              <span class="c-section-title__small">The reason why KAWARA is chosen</span>
+              <span class="c-section-title__en js-text">Strong</span>
+              <span class="c-section-title__ja js-text">選ばれる理由</span>
+              <span class="c-section-title__small js-text">The reason why KAWARA is chosen</span>
             </h3>
           </div>
-          <div class="p-top-choose__btn-wrapper">
+          <div class="p-top-choose__btn-wrapper js-text">
             <a href="<?php echo esc_url(home_url('/reason')); ?>" class="c-btn">
               <p class="c-btn__text">View more</p>
               <div class="c-btn__icon">
@@ -83,7 +83,7 @@
             </a>
           </div>
         </div>
-        <div class="p-top-choose__slider">
+        <div class="p-top-choose__slider js-blur-content">
           <!-- Slider main container -->
           <div class="swiper choose-slider">
             <!-- Additional required wrapper -->
@@ -161,7 +161,7 @@
 
           </div>
         </div>
-        <div class="p-top-choose__banner">
+        <div class="p-top-choose__banner js-blur-content">
           <a href="<?php echo esc_url(home_url('/product')); ?>" class="p-top-choose__banner-link">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/product_banner.webp" alt="商品紹介" width="1520" height="380">
           </a>
@@ -176,18 +176,18 @@
           <div class="p-top-company__top">
             <div class="p-top-company__title">
               <h3 class="c-section-title">
-                <span class="c-section-title__en">Company</span>
-                <span class="c-section-title__ja">会社概要</span>
-                <span class="c-section-title__small">What is Kawara Hyakkei?</span>
+                <span class="c-section-title__en js-text">Company</span>
+                <span class="c-section-title__ja js-text">会社概要</span>
+                <span class="c-section-title__small js-text">What is Kawara Hyakkei?</span>
               </h3>
             </div>
           </div>
-          <div class="p-top-company__text-wrapper">
+          <div class="p-top-company__text-wrapper js-text">
             <p class="p-top-company__text">私たちは、島根県の豊かな自然と厳しい気候に育まれた地で、『石州瓦』を創り続けてきました。</p>
             <p class="p-top-company__text">石州瓦は厳しい環境に適応し、その品質が認められて全国へ広まりました。普段は意識しにくい屋根ですが、大切な建物を守り、安心で快適な暮らしを支えています。</p>
             <p class="p-top-company__text">これからも石州瓦を通じて、安心な暮らしと美しい風景を守り続けていきます。</p>
           </div>
-          <div class="p-top-company__btn-wrapper">
+          <div class="p-top-company__btn-wrapper js-text">
             <a href="<?php echo esc_url(home_url('/company')); ?>" class="c-btn">
               <p class="c-btn__text">View more</p>
               <div class="c-btn__icon">
@@ -197,7 +197,7 @@
           </div>
 
         </div>
-        <figure class="p-top-company__img">
+        <figure class="p-top-company__img js-blur-content">
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_company_img.png" alt="会社概要" width="760" height="700">
         </figure>
       </div>
@@ -210,12 +210,12 @@
         <div class="p-top-example__top">
           <div class="p-top-choose__title">
             <h3 class="c-section-title">
-              <span class="c-section-title__en">Example</span>
-              <span class="c-section-title__ja">施工事例</span>
-              <span class="c-section-title__small">Sekishu tiled roof building</span>
+              <span class="c-section-title__en js-text">Example</span>
+              <span class="c-section-title__ja js-text">施工事例</span>
+              <span class="c-section-title__small js-text">Sekishu tiled roof building</span>
             </h3>
           </div>
-          <div class="p-top-choose__btn-wrapper">
+          <div class="p-top-choose__btn-wrapper js-text">
             <a href="<?php echo esc_url(home_url('/example')); ?>" class="c-btn">
               <p class="c-btn__text">View more</p>
               <div class="c-btn__icon">
@@ -225,7 +225,7 @@
           </div>
         </div>
 
-        <div class="p-top-example__slider">
+        <div class="p-top-example__slider js-blur-content">
           <div class="swiper swiper-example">
             <div class="swiper-wrapper">
               <?php
@@ -306,11 +306,11 @@
         <div class="p-top-topics__top">
           <div class="p-top-topics__title">
             <h3 class="c-sub-title">
-              <span class="c-sub-title__en">_Topics</span>
-              <span class="c-sub-title__ja">特集</span>
+              <span class="c-sub-title__en js-text">_Topics</span>
+              <span class="c-sub-title__ja js-text">特集</span>
             </h3>
           </div>
-          <div class="p-top-topics__btn-wrapper">
+          <div class="p-top-topics__btn-wrapper js-text">
             <a href="<?php echo esc_url(home_url('/topics')); ?>" class="c-btn">
               <p class="c-btn__text">View more</p>
               <div class="c-btn__icon">
@@ -319,7 +319,7 @@
             </a>
           </div>
         </div>
-        <div class="p-top-topics__slider">
+        <div class="p-top-topics__slider js-blur-content">
           <!-- Slider main container -->
           <div class="swiper swiper-topics">
             <!-- Additional required wrapper -->
@@ -394,11 +394,11 @@
         <div class="p-top-news__left">
           <div class="p-top-news__title">
             <h3 class="c-sub-title">
-              <span class="c-sub-title__en">_News</span>
-              <span class="c-sub-title__ja">お知らせ</span>
+              <span class="c-sub-title__en js-text">_News</span>
+              <span class="c-sub-title__ja js-text">お知らせ</span>
             </h3>
           </div>
-          <div class="p-top-news__btn">
+          <div class="p-top-news__btn js-text">
             <a href="<?php echo esc_url(home_url('/news')); ?>" class="c-btn">
               <p class="c-btn__text">View more</p>
               <div class="c-btn__icon">
@@ -407,7 +407,7 @@
             </a>
           </div>
         </div>
-        <div class="p-top-news__right">
+        <div class="p-top-news__right js-blur-content">
           <ul class="p-top-news__lists">
 
             <?php
@@ -455,17 +455,17 @@
     <div class="l-inner">
       <div class="p-top-btns__content">
         <ul class="p-top-btns__lists">
-          <li class="p-top-btns__list">
+          <li class="p-top-btns__list js-blur-content">
             <a href="<?php echo esc_url(home_url('/download')); ?>" class="p-top-btns__link">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_btn1.png" alt="製品資料ダウンロード" width="490" height="280">
             </a>
           </li>
-          <li class="p-top-btns__list">
+          <li class="p-top-btns__list js-blur-content">
             <a href="<?php echo esc_url(home_url('/professional')); ?>" class="p-top-btns__link">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_btn2.png" alt="プロの皆様へ" width="490" height="280">
             </a>
           </li>
-          <li class="p-top-btns__list">
+          <li class="p-top-btns__list js-blur-content">
             <a href="<?php echo esc_url(home_url('/shop')); ?>" class="p-top-btns__link">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_btn3.png" alt="全国の瓦施工店" width="490" height="280">
             </a>
@@ -474,7 +474,7 @@
       </div>
     </div>
   </div>
-  <section class="p-top-info">
+  <section class="p-top-info js-blur-content">
     <div class="l-inner">
       <div class="p-top-info__content">
         <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-top-info__link">

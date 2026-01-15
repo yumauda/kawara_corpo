@@ -46,8 +46,15 @@
     top: 50%;
     transform: translateY(-50%);
     width: rem(6);
-    height: rem(60);
     background-color: #37af32;
+    height: rem(40);
+    @include mq(md){
+     height: rem(40); 
+    }
+    @include mq(lg){
+      height: rem(60);
+      
+    }
   }
 }
 

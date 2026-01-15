@@ -93,25 +93,71 @@ window.addEventListener("DOMContentLoaded", function () {
   initScrollAnimations();
 });
 
+// let parallaxImgs = document.querySelectorAll('.js-parallax');
 
+// parallaxImgs.forEach((parallaxImg) => {
+//   gsap.fromTo(
+//     parallaxImg.querySelector('img'),
+//     {
+//       y: -45,
+//     },
+//     {
+//       y: 0,
+//       duration: 1,
+//       ease: 'power2.inOut',
+//       scrollTrigger: {
+//         trigger: parallaxImg,
+//         start: 'top bottom',
+//         end: 'bottom top',
+//         scrub: true,
+//       },
+//     }
+//   );
+// });
 
-let parallaxImgs = document.querySelectorAll('.js-parallax');
+gsap.registerPlugin(ScrollTrigger);
 
-parallaxImgs.forEach((parallaxImg) => {
+let fadeIns = document.querySelectorAll(".js-text");
+
+fadeIns.forEach((fadeIn) => {
   gsap.fromTo(
-    parallaxImg.querySelector('img'),
+    fadeIn,
     {
-      y: -45,
+      opacity: 0,
     },
     {
-      y: 0,
-      duration: 1,
-      ease: 'power2.inOut',
+      opacity: 1,
+      duration: 1.5,
+      ease: "power3.out",
+      stagger: 0.08,
       scrollTrigger: {
-        trigger: parallaxImg,
-        start: 'top bottom',
-        end: 'bottom top',
-        scrub: true,
+        trigger: fadeIn,
+        start: "top 85%",
+      },
+    }
+  );
+});
+
+let blurContents = document.querySelectorAll(".js-blur-content");
+
+blurContents.forEach((blurContent) => {
+  gsap.fromTo(
+    blurContent,
+    {
+      opacity: 0,
+      filter: "blur(10px)",
+      y: 30,
+    },
+    {
+      opacity: 1,
+      y: 0,
+      filter: "blur(0px)",
+      duration: 1.5,
+      ease: "power3.out",
+      stagger: 0.08,
+      scrollTrigger: {
+        trigger: blurContent,
+        start: "top 85%",
       },
     }
   );
