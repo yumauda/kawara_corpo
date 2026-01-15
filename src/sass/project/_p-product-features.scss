@@ -408,7 +408,6 @@
     flex: 1;
     margin-left: auto;
     margin-top: rem(40);
-    max-width: rem(640);
   }
   @include mq(lg) {
     max-width: rem(860);

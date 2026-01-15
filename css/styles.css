@@ -8301,7 +8301,6 @@ input::placeholder {
     flex: 1;
     margin-left: auto;
     margin-top: 2.5rem;
-    max-width: 40rem;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -11752,8 +11751,8 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-specific__color {
     margin-top: 1.875rem;
-    max-width: 62.5rem;
     margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1540px) {

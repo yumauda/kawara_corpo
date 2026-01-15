@@ -430,8 +430,8 @@
   margin-top: rem(20);
   @include mq(md) {
     margin-top: rem(30);
-    max-width: rem(1000);
     margin-left: auto;
+    margin-right: auto;
   }
   @include mq(lg) {
     margin-top: rem(40);
