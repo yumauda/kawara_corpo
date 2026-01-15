@@ -153,7 +153,9 @@
                         </a>
                     </h1>
                     <div class="p-header__navigation p-header__navigation--page">
-                        <?php get_template_part('includes/breadcrumbs'); ?>
+                        <div class="p-header__breadcrumbs--pc">
+                            <?php get_template_part('includes/breadcrumbs'); ?>
+                        </div>
                         <button class="p-header__drawer p-drawer-icon">
                             <span class="p-drawer-icon__bars">
                                 <span class="p-drawer-icon__bar1"></span>
@@ -161,6 +163,9 @@
                                 <span class="p-drawer-icon__bar3"></span>
                             </span>
                         </button>
+                    </div>
+                    <div class="p-header__breadcrumbs--sp">
+                        <?php get_template_part('includes/breadcrumbs'); ?>
                     </div>
                     <div class="p-header__drawer-content p-drawer-content">
                         <div class="p-drawer-content__items">

@@ -125,6 +125,7 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: calc(50 / 46);
+  font-size: rem(24);
   @include mq(md) {
     font-size: clamp(20px, 2vw, 24px);
   }
@@ -134,15 +135,14 @@
 }
 .p-top-topics__link-row {
   margin-top: rem(20);
-  align-items: center;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: rem(4);
   @include mq(md) {
     gap: rem(6);
-    flex-direction: column;
-    align-items: flex-start;
   }
   @include mq(lg) {
-    display: flex;
     align-items: center;
     gap: rem(11);
     flex-direction: row;
