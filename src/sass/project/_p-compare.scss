@@ -44,6 +44,7 @@
   top: rem(-54);
   left: 0;
   right: 0;
+  z-index: -1;
   @include mq(md) {
     top: rem(-40);
     width: rem(1300);

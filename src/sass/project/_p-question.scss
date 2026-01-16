@@ -30,6 +30,7 @@
   object-fit: cover;
   top: rem(-40);
   left: 0;
+  z-index: -1;
   @include mq(md) {
     width: rem(500);
     top: rem(-80);
