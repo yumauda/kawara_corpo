@@ -33,9 +33,19 @@
 }
 .p-intro__detail-row {
   display: block;
+  position: relative;
   @include mq(md) {
     display: flex;
   }
+}
+.p-intro__detail-row::before {
+  position: absolute;
+  content: "";
+  background: #707070;
+  height: 1px;
+  top: 0;
+  left: 0;
+  right: calc(50% - 50vw);
 }
 .p-intro__vertical img {
 }

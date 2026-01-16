@@ -124,6 +124,9 @@
   @include mq(md) {
     top: rem(-12);
     width: rem(6);
+    height: rem(48);
+  }
+  @include mq(lg) {
     height: rem(60);
   }
 }

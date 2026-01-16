@@ -4,15 +4,38 @@
   overflow-x: clip;
 }
 
+.p-top-choose__content {
+  position: relative;
+}
+
+.p-top-choose__content::before {
+  position: absolute;
+  content: "";
+  background: url(../images/top/top_about_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 230 / 700;
+  object-fit: cover;
+  width: rem(64);
+  height: auto;
+  top: rem(-20);
+  z-index: -1;
+  @include mq(md) {
+    width: rem(140);
+    left: rem(-40);
+  }
+  @include mq(lg) {
+    width: rem(230);
+    left: rem(-80);
+  }
+}
 .p-top-choose__top {
   @include mq(md) {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-}
-
-.p-top-choose__title {
 }
 
 .p-top-choose__btn-wrapper {

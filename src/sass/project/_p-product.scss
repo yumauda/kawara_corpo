@@ -12,6 +12,56 @@
     padding-bottom: rem(200);
   }
 }
+.p-product__title--kawara,
+.p-product__title--ceramic {
+  position: relative;
+}
+.p-product__title--kawara::before {
+  position: absolute;
+  content: "";
+  background: url(../images/product/product_title1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 0;
+  top: rem(-20);
+  height: auto;
+  width: rem(270);
+  aspect-ratio: 1394 / 411;
+  object-fit: cover;
+  z-index: -1;
+  @include mq(md) {
+    width: rem(1000);
+    top: rem(-32);
+  }
+  @include mq(lg) {
+    width: rem(1394);
+    top: rem(-120);
+  }
+}
+.p-product__title--ceramic::before {
+  position: absolute;
+  content: "";
+  background: url(../images/product/ceramic_title1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 0;
+  top: rem(-20);
+  height: auto;
+  width: rem(330);
+  aspect-ratio: 1665 / 411;
+  object-fit: cover;
+  z-index: -1;
+  @include mq(md) {
+    width: rem(1300);
+    top: rem(-32);
+  }
+  @include mq(lg) {
+    width: rem(1665);
+    top: rem(-120);
+  }
+}
 .p-product + .p-product {
   margin-top: rem(40);
   @include mq(md) {

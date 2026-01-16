@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="p-page-mv p-page-mv--company">
+  <section class="p-page-mv p-page-mv--product">
     <div class="l-inner">
       <div class="p-page-mv__content">
         <div class="p-page-mv__detail" data-title="Product">
@@ -14,7 +14,7 @@
   <section class="p-product">
     <div class="l-inner">
       <div class="p-product__content">
-        <div class="p-product__title">
+        <div class="p-product__title p-product__title--kawara">
           <h3 class="c-pageTitle">
             <span class="c-pageTitle__title-text">瓦製品</span>
             <span class="c-pageTitle__title-main">大切な建物を守る、<br>風土が生み出した石州瓦。</span>
@@ -191,7 +191,7 @@
   <section class="p-product">
     <div class="l-inner">
       <div class="p-product__content">
-        <div class="p-product__title">
+        <div class="p-product__title p-product__title--ceramic">
           <h3 class="c-pageTitle">
             <span class="c-pageTitle__title-text">副資材・その他</span>
             <span class="c-pageTitle__title-main">規格外の瓦に付加価値のある<br>

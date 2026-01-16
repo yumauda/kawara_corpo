@@ -4,6 +4,29 @@
 }
 
 .p-top-topics__content {
+  position: relative;
+}
+.p-top-topics__content::before {
+  position: absolute;
+  content: "";
+  background: url(../images/top/top_topics_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 165 / 500;
+  object-fit: cover;
+  width: rem(40);
+  height: auto;
+  top: rem(48);
+  z-index: -1;
+  @include mq(md) {
+    width: rem(90);
+    left: rem(-40);
+  }
+  @include mq(lg) {
+    width: rem(164);
+    left: rem(-80);
+  }
 }
 
 .p-top-topics__top {

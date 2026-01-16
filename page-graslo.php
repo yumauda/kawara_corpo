@@ -49,11 +49,11 @@
   </section>
   <section class="p-product-features">
     <div class="l-inner">
-      <div class="p-product-features__content">
+      <div class="p-product-features__content p-product-features__content--graslo">
         <div class="p-product-features__title-wrapper">
           <div class="p-product-features__title">
             <h3 class="c-pageTitle">
-              <span class="c-pageTitle__title-text">屋根材比較</span>
+              <span class="c-pageTitle__title-text c-pageTitle__title-text--red">屋根材比較</span>
               <span class="c-pageTitle__title-main">特殊な形状を<br class="u-desktop">採用した瓦。</span>
             </h3>
           </div>

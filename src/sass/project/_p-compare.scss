@@ -45,8 +45,13 @@
   left: 0;
   right: 0;
   @include mq(md) {
-    width: rem(1720);
+    top: rem(-40);
+    width: rem(1300);
+  }
+  @include mq(lg){
     top: rem(-140);
+    width: rem(1720);
+    
   }
 }
 .p-compare .c-pageTitle {

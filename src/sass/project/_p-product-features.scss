@@ -11,12 +11,36 @@
 }
 
 .p-product-features__content {
+  position: relative;
   @include mq(md) {
     display: flex;
     gap: rem(64);
   }
   @include mq(lg) {
     gap: rem(156);
+  }
+}
+.p-product-features__content--graslo::before {
+  position: absolute;
+  content: "";
+  background: url(../images/graslo/features.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  top: rem(-40);
+  left: 0;
+  aspect-ratio: 1580 / 414;
+  object-fit: cover;
+  width: rem(330);
+  z-index: -1;
+  @include mq(md) {
+    width: rem(1200);
+    top: rem(-80);
+  }
+  @include mq(lg) {
+    width: rem(1580);
+    top: rem(-140);
   }
 }
 .p-product-features__content--ftype {

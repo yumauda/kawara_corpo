@@ -31,6 +31,10 @@
   top: rem(-40);
   left: 0;
   @include mq(md) {
+    width: rem(500);
+    top: rem(-80);
+  }
+  @include mq(lg) {
     width: rem(682);
     top: rem(-130);
   }
@@ -128,6 +132,7 @@
   font-size: rem(16);
   font-family: $second-font-family;
   font-style: italic;
+  position: relative;
   @include mq(md) {
     font-size: clamp(18px, 2vw, 20px);
   }
@@ -135,7 +140,22 @@
     font-size: rem(44);
   }
 }
-
+.p-question__q-title::before {
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    background: #1a1311;
+    width: 1px;
+    right: rem(-10);
+    height: rem(20);
+    top: rem(2);
+  }
+  @include mq(lg) {
+    top: rem(8);
+    right: rem(-18);
+    height: rem(30);
+  }
+}
 .p-question__q-text {
   color: #222;
   font-weight: 700;
@@ -157,6 +177,7 @@
   @include mq(md) {
     gap: rem(20);
     margin-top: rem(20);
+    position: relative;
   }
   @include mq(lg) {
     gap: rem(40);
@@ -174,10 +195,27 @@
   margin-top: rem(4);
   @include mq(md) {
     margin-top: initial;
+    position: relative;
     font-size: clamp(18px, 2vw, 20px);
   }
   @include mq(lg) {
     font-size: rem(44);
+  }
+}
+.p-question__a-title::before {
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    background: #1a1311;
+    width: 1px;
+    right: rem(-10);
+    height: rem(20);
+    top: rem(2);
+  }
+  @include mq(lg) {
+    top: rem(8);
+    right: rem(-18);
+    height: rem(30);
   }
 }
 
