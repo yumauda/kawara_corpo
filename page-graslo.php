@@ -142,7 +142,7 @@
   <section class="p-specific p-specific--first">
     <div class="l-inner">
       <div class="p-specific__content">
-      <div class="p-specific__header">
+      <div class="p-specific__header red-line">
         <div class="p-specific__header-bar"></div>
         <h2 class="p-specific__header-title">流水実験「グラスロ」対「普通勾配瓦」</h2>
       </div>
@@ -201,7 +201,7 @@
   </section>
   <section class="p-specific">
     <div class="l-inner">
-      <div class="p-specific__header">
+      <div class="p-specific__header red-line">
         <div class="p-specific__header-bar"></div>
         <h2 class="p-specific__header-title">製品仕様</h2>
       </div>

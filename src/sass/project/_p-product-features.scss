@@ -43,12 +43,130 @@
     top: rem(-140);
   }
 }
-.p-product-features__content--ftype {
+.p-product-features__content--bs::before {
+  position: absolute;
+  content: "";
+  background: url(../images/bs/features.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  top: rem(-40);
+  left: 0;
+  aspect-ratio: 1580 / 414;
+  object-fit: cover;
+  width: rem(330);
+  z-index: -1;
+  @include mq(md) {
+    width: rem(1200);
+    top: rem(-80);
+  }
+  @include mq(lg) {
+    width: rem(1580);
+    top: rem(-140);
+  }
+}
+.p-product-features__content--ts::before {
+  position: absolute;
+  content: "";
+  background: url(../images/ts/features.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  top: rem(-40);
+  left: 0;
+  aspect-ratio: 1580 / 414;
+  object-fit: cover;
+  width: rem(330);
+  z-index: -1;
+  @include mq(md) {
+    width: rem(1200);
+    top: rem(-80);
+  }
+  @include mq(lg) {
+    width: rem(1580);
+    top: rem(-140);
+  }
+}
+.p-product-features__content--ftype,
+.p-product-features__content--eco,
+.p-product-features__content--ceramic {
+  position: relative;
   @include mq(md) {
     gap: rem(24);
   }
   @include mq(lg) {
     gap: rem(48);
+  }
+}
+.p-product-features__content--ftype::before {
+  position: absolute;
+  content: "";
+  background: url(../images/ftype/features.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  top: rem(-40);
+  left: 0;
+  aspect-ratio: 1580 / 414;
+  object-fit: cover;
+  width: rem(330);
+  z-index: -1;
+  @include mq(md) {
+    width: rem(1200);
+    top: rem(-80);
+  }
+  @include mq(lg) {
+    width: rem(1580);
+    top: rem(-140);
+  }
+}
+.p-product-features__content--eco::before {
+  position: absolute;
+  content: "";
+  background: url(../images/eco/features.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  top: rem(-40);
+  left: 0;
+  aspect-ratio: 1580 / 414;
+  object-fit: cover;
+  width: rem(330);
+  z-index: -1;
+  @include mq(md) {
+    width: rem(1200);
+    top: rem(-80);
+  }
+  @include mq(lg) {
+    width: rem(1580);
+    top: rem(-140);
+  }
+}
+.p-product-features__content--ceramic::before {
+  position: absolute;
+  content: "";
+  background: url(../images/ceramic/features.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  top: rem(-40);
+  left: 0;
+  aspect-ratio: 1580 / 414;
+  object-fit: cover;
+  width: rem(330);
+  z-index: -1;
+  @include mq(md) {
+    width: rem(1200);
+    top: rem(-80);
+  }
+  @include mq(lg) {
+    width: rem(1580);
+    top: rem(-140);
   }
 }
 .p-product-features__title-wrapper {

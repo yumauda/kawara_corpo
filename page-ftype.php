@@ -55,7 +55,7 @@
         <div class="p-product-features__title-wrapper">
           <div class="p-product-features__title">
             <h3 class="c-pageTitle">
-              <span class="c-pageTitle__title-text orange">屋根材比較</span>
+              <span class="c-pageTitle__title-text c-pageTitle__title-text--orange">屋根材比較</span>
               <span class="c-pageTitle__title-main">美しさと<br class="u-desktop">調和を叶える<br>ニューセラFU。</span>
             </h3>
           </div>
@@ -145,7 +145,7 @@
 
   <section class="p-specific p-specific--first">
     <div class="l-inner">
-      <div class="p-specific__header">
+      <div class="p-specific__header orange-line">
         <div class="p-specific__header-bar orange-bg"></div>
         <h2 class="p-specific__header-title orange">防災機能で守られた住まいの安心感</h2>
       </div>
@@ -158,7 +158,7 @@
   </section>
   <section class="p-specific p-specific--first">
     <div class="l-inner">
-      <div class="p-specific__header">
+      <div class="p-specific__header orange-line">
         <div class="p-specific__header-bar orange-bg"></div>
         <h2 class="p-specific__header-title orange">色展開</h2>
       </div>
@@ -171,7 +171,7 @@
   </section>
   <section class="p-specific">
     <div class="l-inner">
-      <div class="p-specific__header">
+      <div class="p-specific__header orange-line">
         <div class="p-specific__header-bar orange-bg"></div>
         <h2 class="p-specific__header-title orange">製品仕様</h2>
       </div>

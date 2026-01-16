@@ -44,11 +44,11 @@
   </section>
   <section class="p-product-features">
     <div class="l-inner">
-      <div class="p-product-features__content p-product-features__content--ftype">
+      <div class="p-product-features__content p-product-features__content--ceramic">
         <div class="p-product-features__title-wrapper">
           <div class="p-product-features__title">
             <h3 class="c-pageTitle">
-              <span class="c-pageTitle__title-text black">屋根材比較</span>
+              <span class="c-pageTitle__title-text c-pageTitle__title-text--black">屋根材比較</span>
               <span class="c-pageTitle__title-main">自然な色合いの<br class="u-desktop">瓦素地が<br>景観にマッチ。</span>
             </h3>
           </div>
@@ -101,7 +101,7 @@
 
   <section class="p-specific">
     <div class="l-inner">
-      <div class="p-specific__header">
+      <div class="p-specific__header black-line">
         <div class="p-specific__header-bar black-bg"></div>
         <h2 class="p-specific__header-title black">駐車場・庭の敷砂・園芸用土壌の被覆用など</h2>
       </div>

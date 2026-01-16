@@ -26,7 +26,7 @@
         <div class="p-leaflet__block">
           <h3 class="p-leaflet__block-title">標準設計・施工ガイドライン</h3>
           <div class="p-leaflet__cards">
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual1.png" alt="ダイジェスト版 補足付き" width="141" height="200">
               </figure>
@@ -47,7 +47,7 @@
         <div class="p-leaflet__block">
           <h3 class="p-leaflet__block-title">標準マニュアル</h3>
           <div class="p-leaflet__cards">
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual2.png" alt="標準施工要領書 抜粋 J53" width="141" height="200">
               </figure>
@@ -62,7 +62,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual3.png" alt="標準施工要領書 J53B" width="141" height="200">
               </figure>
@@ -77,7 +77,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual4.png" alt="標準施工要領書 J53A" width="141" height="200">
               </figure>
@@ -114,7 +114,7 @@
         <div class="p-leaflet__block">
           <h3 class="p-leaflet__block-title">和瓦</h3>
           <div class="p-leaflet__cards">
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual5.png" alt="TSルーフ53B" width="141" height="200">
               </figure>
@@ -129,7 +129,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual6.png" alt="TSルーフ53B利休" width="141" height="200">
               </figure>
@@ -144,7 +144,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual7.png" alt="グラスロ" width="141" height="200">
               </figure>
@@ -159,7 +159,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual8.png" alt="BSルーフ53A" width="141" height="200">
               </figure>
@@ -174,7 +174,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual9.png" alt="MBK工法" width="141" height="200">
               </figure>
@@ -189,7 +189,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual10.png" alt="MBK壁際工法" width="141" height="200">
               </figure>
@@ -204,7 +204,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual11.png" alt="セフティ防災棟工法" width="141" height="200">
               </figure>
@@ -227,7 +227,7 @@
         <div class="p-leaflet__block">
           <h3 class="p-leaflet__block-title">洋瓦</h3>
           <div class="p-leaflet__cards">
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual12.png" alt="ニューセラECOⅡ" width="141" height="200">
               </figure>
@@ -248,7 +248,7 @@
         <div class="p-leaflet__block">
           <h3 class="p-leaflet__block-title">板瓦</h3>
           <div class="p-leaflet__cards">
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual13.png" alt="FtypeU" width="141" height="200">
               </figure>
@@ -269,7 +269,7 @@
         <div class="p-leaflet__block">
           <h3 class="p-leaflet__block-title">生産終了品</h3>
           <div class="p-leaflet__cards">
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual14.png" alt="ニューセラECO" width="141" height="200">
               </figure>
@@ -284,7 +284,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual15.png" alt="ニューセラFFタイプ" width="141" height="200">
               </figure>
@@ -299,7 +299,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual16.png" alt="ニューセラFFタイプ システム工法" width="141" height="200">
               </figure>
@@ -315,7 +315,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual17.png" alt="46判" width="141" height="200">
               </figure>
@@ -330,7 +330,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual18.png" alt="レインシャット" width="141" height="200">
               </figure>
@@ -345,7 +345,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual19.png" alt="セラミカ セフティルーフ" width="141" height="200">
               </figure>
@@ -361,7 +361,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image p-leaflet__card-image--manual">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/manual/manual20.png" alt="ニューセラＳ" width="141" height="200">
               </figure>

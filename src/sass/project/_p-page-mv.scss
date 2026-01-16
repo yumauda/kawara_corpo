@@ -78,6 +78,7 @@
   font-style: italic;
   color: rgba($color: #37af32, $alpha: 0.2);
   font-size: rem(140);
+  letter-spacing: -0.04em;
   top: rem(-64);
   left: rem(-40);
   @include mq(md) {
@@ -87,7 +88,7 @@
   }
   @include mq(lg) {
     top: rem(-240);
-    left: rem(-200);
+    left: rem(-280);
     font-size: rem(440);
   }
 }

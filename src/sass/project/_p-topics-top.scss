@@ -3,6 +3,7 @@
 .p-topics-top {
   margin-top: rem(40);
   padding-bottom: rem(40);
+  position: relative;
   @include mq(md) {
     margin-top: rem(80);
     padding-bottom: rem(80);
@@ -12,7 +13,28 @@
     padding-bottom: rem(120);
   }
 }
-
+.p-topics-top::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/page_mv_wave.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  aspect-ratio: 1150 / 380;
+  object-fit: cover;
+  right: 0;
+  z-index: -1;
+  top: rem(100);
+  @include mq(md) {
+    width: rem(800);
+    top: rem(240);
+  }
+  @include mq(lg) {
+    width: rem(1150);
+    top: rem(450);
+  }
+}
 .p-topics-top__content {
   @include mq(md) {
     display: flex;

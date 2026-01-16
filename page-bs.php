@@ -50,7 +50,7 @@
   </section>
   <section class="p-product-features">
     <div class="l-inner">
-      <div class="p-product-features__content">
+      <div class="p-product-features__content p-product-features__content--bs">
         <div class="p-product-features__title-wrapper">
           <div class="p-product-features__title">
             <h3 class="c-pageTitle">

@@ -51,11 +51,11 @@
   </section>
   <section class="p-product-features">
     <div class="l-inner">
-      <div class="p-product-features__content p-product-features__content--ftype">
+      <div class="p-product-features__content p-product-features__content--eco">
         <div class="p-product-features__title-wrapper">
           <div class="p-product-features__title">
             <h3 class="c-pageTitle">
-              <span class="c-pageTitle__title-text blue">屋根材比較</span>
+              <span class="c-pageTitle__title-text c-pageTitle__title-text--blue">屋根材比較</span>
               <span class="c-pageTitle__title-main">洋にも和にも<br class="u-desktop">フィットする<br>やさしい瓦</span>
             </h3>
           </div>
@@ -104,7 +104,7 @@
 
   <section class="p-specific p-specific--first">
     <div class="l-inner">
-      <div class="p-specific__header">
+      <div class="p-specific__header blue-line">
         <div class="p-specific__header-bar blue-bg"></div>
         <h2 class="p-specific__header-title blue">スタイリッシュデザイン</h2>
       </div>
@@ -121,7 +121,7 @@
   </section>
   <section class="p-specific p-specific--first">
     <div class="l-inner">
-      <div class="p-specific__header">
+      <div class="p-specific__header blue-line">
         <div class="p-specific__header-bar blue-bg"></div>
         <h2 class="p-specific__header-title blue">色展開</h2>
       </div>
@@ -135,7 +135,7 @@
 
   <section class="p-specific">
     <div class="l-inner">
-      <div class="p-specific__header">
+      <div class="p-specific__header blue-line">
         <div class="p-specific__header-bar blue-bg"></div>
         <h2 class="p-specific__header-title blue">製品仕様</h2>
       </div>

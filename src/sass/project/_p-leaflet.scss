@@ -200,7 +200,7 @@
 .p-leaflet__card-title {
   font-size: rem(20);
   font-weight: 700;
-  line-height: calc(32 / 24);
+  line-height: calc(44 / 24);
   letter-spacing: 0.06em;
   color: #222;
   @include mq(md) {
@@ -306,7 +306,7 @@
   color: #37af32;
   letter-spacing: 0.06em;
   font-weight: 700;
-  border-bottom: 1px solid #37af32;
+  border-bottom: 2px solid #37af32;
   padding-bottom: rem(8);
   position: relative;
   margin-bottom: rem(20);
