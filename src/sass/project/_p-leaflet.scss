@@ -33,7 +33,7 @@
 .p-leaflet__content::before {
   position: absolute;
   content: "";
-  background: url(../images/download/leaflet_text.svg);
+  background: url(../images/download/leaflet_text.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -56,7 +56,7 @@
 .p-leaflet__content--last-child::before {
   position: absolute;
   content: "";
-  background: url(../images/download/leaflet_text2.svg);
+  background: url(../images/download/leaflet_text2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

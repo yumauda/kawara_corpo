@@ -4523,7 +4523,7 @@ input::placeholder {
 .p-leaflet__content::before {
   position: absolute;
   content: "";
-  background: url(../images/download/leaflet_text.svg);
+  background: url(../images/download/leaflet_text.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -4551,7 +4551,7 @@ input::placeholder {
 .p-leaflet__content--last-child::before {
   position: absolute;
   content: "";
-  background: url(../images/download/leaflet_text2.svg);
+  background: url(../images/download/leaflet_text2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -6478,11 +6478,11 @@ input::placeholder {
   font-weight: 700;
   color: #37af32;
   position: relative;
+  padding-left: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-page-mv__bottom-kind {
     font-size: clamp(14px, 2vw, 14px);
-    padding-left: 1rem;
   }
 }
 @media screen and (min-width: 1540px) {
