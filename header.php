@@ -72,27 +72,15 @@
                                     </a>
                                 </li>
                                 <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/reason/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">REASON</span>
+                                        <span class="p-drawer-content__link-ja">選ばれる理由</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
                                     <a href="<?php echo esc_url(home_url('/product/')); ?>" class="p-drawer-content__link">
                                         <span class="p-drawer-content__link-en">PRODUCT</span>
                                         <span class="p-drawer-content__link-ja">商品紹介</span>
-                                    </a>
-                                </li>
-                                <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/professional/')); ?>" class="p-drawer-content__link">
-                                        <span class="p-drawer-content__link-en">TECHNICAL</span>
-                                        <span class="p-drawer-content__link-ja">プロ向け情報</span>
-                                    </a>
-                                </li>
-                                <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/download/')); ?>" class="p-drawer-content__link">
-                                        <span class="p-drawer-content__link-en">DOWNLOAD</span>
-                                        <span class="p-drawer-content__link-ja">資料請求</span>
-                                    </a>
-                                </li>
-                                <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(get_post_type_archive_link('news')); ?>" class="p-drawer-content__link">
-                                        <span class="p-drawer-content__link-en">NEWS</span>
-                                        <span class="p-drawer-content__link-ja">お知らせ</span>
                                     </a>
                                 </li>
                                 <li class="p-drawer-content__list">
@@ -101,6 +89,43 @@
                                         <span class="p-drawer-content__link-ja">会社概要</span>
                                     </a>
                                 </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/topics/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">TOPICS</span>
+                                        <span class="p-drawer-content__link-ja">特集</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/news/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">NEWS</span>
+                                        <span class="p-drawer-content__link-ja">お知らせ</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/download/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">DOWNLOAD</span>
+                                        <span class="p-drawer-content__link-ja">製品資料</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/professional/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">PROFESSIONAL</span>
+                                        <span class="p-drawer-content__link-ja">プロ向け情報</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">RECRUIT</span>
+                                        <span class="p-drawer-content__link-ja">採用情報</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/recruit/contact')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">CONTACT</span>
+                                        <span class="p-drawer-content__link-ja">お問い合わせ</span>
+                                    </a>
+                                </li>
+
                             </ul>
 
                         </div>
@@ -183,27 +208,15 @@
                                     </a>
                                 </li>
                                 <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/reason/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">REASON</span>
+                                        <span class="p-drawer-content__link-ja">選ばれる理由</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
                                     <a href="<?php echo esc_url(home_url('/product/')); ?>" class="p-drawer-content__link">
                                         <span class="p-drawer-content__link-en">PRODUCT</span>
                                         <span class="p-drawer-content__link-ja">商品紹介</span>
-                                    </a>
-                                </li>
-                                <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/professional/')); ?>" class="p-drawer-content__link">
-                                        <span class="p-drawer-content__link-en">TECHNICAL</span>
-                                        <span class="p-drawer-content__link-ja">プロ向け情報</span>
-                                    </a>
-                                </li>
-                                <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/download/')); ?>" class="p-drawer-content__link">
-                                        <span class="p-drawer-content__link-en">DOWNLOAD</span>
-                                        <span class="p-drawer-content__link-ja">資料請求</span>
-                                    </a>
-                                </li>
-                                <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(get_post_type_archive_link('news')); ?>" class="p-drawer-content__link">
-                                        <span class="p-drawer-content__link-en">NEWS</span>
-                                        <span class="p-drawer-content__link-ja">お知らせ</span>
                                     </a>
                                 </li>
                                 <li class="p-drawer-content__list">
@@ -212,6 +225,43 @@
                                         <span class="p-drawer-content__link-ja">会社概要</span>
                                     </a>
                                 </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/topics/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">TOPICS</span>
+                                        <span class="p-drawer-content__link-ja">特集</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/news/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">NEWS</span>
+                                        <span class="p-drawer-content__link-ja">お知らせ</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/download/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">DOWNLOAD</span>
+                                        <span class="p-drawer-content__link-ja">製品資料</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/professional/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">PROFESSIONAL</span>
+                                        <span class="p-drawer-content__link-ja">プロ向け情報</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">RECRUIT</span>
+                                        <span class="p-drawer-content__link-ja">採用情報</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/recruit/contact')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">CONTACT</span>
+                                        <span class="p-drawer-content__link-ja">お問い合わせ</span>
+                                    </a>
+                                </li>
+
                             </ul>
 
                         </div>

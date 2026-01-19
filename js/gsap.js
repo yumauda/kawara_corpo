@@ -162,3 +162,52 @@ blurContents.forEach((blurContent) => {
     }
   );
 });
+
+var webStorage = function () {
+  var mvImg = document.querySelector('.p-mv__img');
+  if (!mvImg) return;
+
+  if (sessionStorage.getItem('access')) {
+    gsap.set(mvImg, { 
+      clipPath: "circle(500% at 50% 50%)"
+     }
+    );
+  } else {
+    // 初回だけアニメーション
+    gsap.fromTo(
+      mvImg,
+      {
+        clipPath: "circle(0% at 50% 50%)",
+      },
+      {
+        clipPath: "circle(500% at 50% 50%)",
+        duration: 2,
+        ease: "power3.inOut",
+      }
+    );
+    sessionStorage.setItem('access', '1');
+  }
+};
+webStorage();
+
+// const opening = gsap.timeline();
+
+// opening.fromTo(
+//   '.p-opening__img',
+//   {
+//     opacity: 0,
+//   },
+//   {
+//     opacity: 1,
+//     duration: 1.5,
+//     ease: "power3.out",
+//   }
+// );
+// opening.to(
+//   '.p-opening__img',
+//   {
+//     maskSize: "500%",
+//     duration: 3,
+//     ease: "power3.inOut",
+//   }
+// );

@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 <main>
+  <!-- <div class="p-opening">
+    <div class="p-opening__img">
+    </div>
+  </div> -->
   <div class="p-mv">
     <div class="l-inner">
       <div class="p-mv__content">

@@ -20,9 +20,13 @@
   display: block;
   border-radius: rem(10);
   padding: rem(20);
+  transition: 0.3s ease-in-out;
   @include mq(md) {
     padding: rem(44) rem(60);
   }
+}
+.p-submit__btn:hover {
+  filter: brightness(0.5);
 }
 .p-submit__row {
   @include mq(md) {

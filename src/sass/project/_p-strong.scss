@@ -137,10 +137,7 @@
     width: rem(460);
     top: rem(-160);
   }
-  @include mq(md) {
-    width: rem(460);
-    top: rem(-160);
-  }
+  
 }
 .p-strong__top--ear::before {
   position: absolute;

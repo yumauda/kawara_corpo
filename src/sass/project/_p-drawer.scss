@@ -110,6 +110,7 @@
 .p-drawer-content__items {
   transition: 0.3s;
   height: 100dvh;
+  padding-bottom: rem(64);
   @include mq(md) {
     max-width: rem(992);
     width: 100%;
@@ -118,10 +119,21 @@
     margin-right: auto;
     padding-left: rem(25);
     padding-right: rem(25);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+  }
+}
+.p-drawer-content__lists {
+  padding-bottom: rem(64);
+  @include mq(md){
+    padding-bottom: initial;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   gap: rem(40); 
   }
 }
 .p-drawer-content__list {
@@ -129,6 +141,9 @@
 }
 .p-drawer-content__list + .p-drawer-content__list {
   margin-top: rem(30);
+  @include mq(md){
+    margin-top: initial;
+  }
 }
 .p-drawer-content__link {
   display: block;
