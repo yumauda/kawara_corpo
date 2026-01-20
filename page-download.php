@@ -31,7 +31,7 @@
         </div>
 
         <div class="p-leaflet__cards">
-          <a href="#" class="p-leaflet__card">
+          <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
             <figure class="p-leaflet__card-image">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note.png" alt="やねノート" width="212" height="300">
             </figure>
@@ -47,7 +47,7 @@
               </span>
             </div>
           </a>
-          <a href="#" class="p-leaflet__card">
+          <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
             <figure class="p-leaflet__card-image">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note2.png" alt="石州瓦はメンテナンスフリー" width="212" height="300">
             </figure>
@@ -63,7 +63,7 @@
               </span>
             </div>
           </a>
-          <a href="#" class="p-leaflet__card">
+          <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
             <figure class="p-leaflet__card-image">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note3.png" alt="石州瓦はエコノミー&エコロジー" width="212" height="300">
             </figure>
@@ -80,7 +80,7 @@
               </span>
             </div>
           </a>
-          <a href="#" class="p-leaflet__card">
+          <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
             <figure class="p-leaflet__card-image">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note4.png" alt="家の耐震化をお考えの方、必見！" width="212" height="300">
             </figure>
@@ -112,7 +112,7 @@
               </span>
             </div>
           </a>
-          <a href="#" class="p-leaflet__card">
+          <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
             <figure class="p-leaflet__card-image">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note6.png" alt="永く、強く、美しく" width="212" height="300">
             </figure>
@@ -132,7 +132,7 @@
         <div class="p-leaflet__block">
           <p class="p-leaflet__block-title">和瓦</p>
           <div class="p-leaflet__cards">
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note7.png" alt="機能と美の両立。" width="212" height="300">
               </figure>
@@ -148,7 +148,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note8.png" alt="超抵勾配を実現。" width="212" height="300">
               </figure>
@@ -164,7 +164,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note9.png" alt="高耐久性で安心。" width="212" height="300">
               </figure>
@@ -180,7 +180,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note10.png" alt="“和”のさらなる深み" width="212" height="300">
               </figure>
@@ -202,7 +202,7 @@
         <div class="p-leaflet__block">
           <p class="p-leaflet__block-title">洋瓦</p>
           <div class="p-leaflet__cards">
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note11.png" alt="デザインが彩る。" width="212" height="300">
               </figure>
@@ -225,7 +225,7 @@
         <div class="p-leaflet__block">
           <p class="p-leaflet__block-title">平板瓦</p>
           <div class="p-leaflet__cards">
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note12.png" alt="耐久性の平板瓦。" width="212" height="300">
               </figure>
@@ -248,7 +248,7 @@
         <div class="p-leaflet__block">
           <p class="p-leaflet__block-title">その他</p>
           <div class="p-leaflet__cards">
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note13.png" alt="防災乾式工法" width="212" height="300">
               </figure>
@@ -264,7 +264,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note14.png" alt="耐震・耐風・安全" width="212" height="300">
               </figure>
@@ -280,7 +280,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note15.png" alt="太陽光パネル取付用のJ型瓦" width="212" height="300">
               </figure>
@@ -296,7 +296,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note16.png" alt="新・美観" width="212" height="300">
               </figure>
@@ -312,7 +312,7 @@
                 </span>
               </div>
             </a>
-            <a href="#" class="p-leaflet__card">
+            <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
               <figure class="p-leaflet__card-image">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note17.png" alt="新・美観" width="212" height="300">
               </figure>
@@ -347,7 +347,7 @@
         </div>
 
         <div class="p-leaflet__cards">
-          <a href="#" class="p-leaflet__card">
+          <a href="#" class="p-leaflet__card" download target="_blank" rel="noopener noreferrer">
             <figure class="p-leaflet__card-image">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/download/leaflet-yane-note18.png" alt="石州瓦製品に関するお願い" width="212" height="300">
             </figure>
