@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="p-page-mv">
+  <section class="p-page-mv js-blur-content">
     <div class="l-inner">
       <div class="p-page-mv__content">
         <div class="p-page-mv__detail" data-title="About">
@@ -36,7 +36,7 @@
       </li>
     </ul>
   </section>
-  <section class="p-secret" id="anc01">
+  <section class="p-secret js-blur-content" id="anc01">
     <div class="l-inner">
       <div class="p-secret__content">
         <h2 class="p-secret__title"><span>石州瓦の強さの秘密</span>:<br class="u-mobile">長石溶融による緻密化</h2>
@@ -66,7 +66,7 @@
       </div>
     </div>
   </section>
-  <section class="p-land" id="anc02">
+  <section class="p-land js-blur-content" id="anc02">
     <div class="l-inner">
       <div class="p-land__content">
         <div class="p-land__detail">
@@ -82,7 +82,7 @@
     </div>
   </section>
 
-  <section class="p-features">
+  <section class="p-features js-blur-content">
     <div class="l-inner">
       <div class="p-features__content">
         <div class="p-features__card">
@@ -113,7 +113,7 @@
     </div>
     </div>
   </section>
-  <section class="p-compare" id="anc03">
+  <section class="p-compare js-blur-content" id="anc03">
     <div class="l-inner">
       <div class="p-compare__content">
         <div class="p-compare__top">
@@ -131,7 +131,7 @@
       </div>
     </div>
   </section>
-  <section class="p-question" id="anc04">
+  <section class="p-question js-blur-content" id="anc04">
     <div class="l-inner">
       <div class="p-question__content">
         <div class="c-pageTitle">

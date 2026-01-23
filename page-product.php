@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="p-page-mv p-page-mv--product">
+  <section class="p-page-mv p-page-mv--product js-blur-content">
     <div class="l-inner">
       <div class="p-page-mv__content">
         <div class="p-page-mv__detail" data-title="Product">
@@ -11,7 +11,7 @@
       </div>
     </div>
   </section>
-  <section class="p-product">
+  <section class="p-product js-blur-content">
     <div class="l-inner">
       <div class="p-product__content">
         <div class="p-product__title p-product__title--kawara">
@@ -188,7 +188,7 @@
       </div>
     </div>
   </section>
-  <section class="p-product">
+  <section class="p-product js-blur-content">
     <div class="l-inner">
       <div class="p-product__content">
         <div class="p-product__title p-product__title--ceramic">

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="p-page-mv p-page-mv--download">
+  <section class="p-page-mv p-page-mv--download js-blur-content">
     <div class="l-inner">
       <div class="p-page-mv__content">
         <div class="p-page-mv__detail" data-title="Example">
@@ -54,7 +54,7 @@
     </div>
   </div>
 
-  <section class="p-example-list">
+  <section class="p-example-list js-blur-content">
     <div class="l-inner">
       <div class="p-example-list__content">
         <ul class="p-example-list__cards">

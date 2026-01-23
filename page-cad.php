@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="p-page-mv p-page-mv--download">
+  <section class="p-page-mv p-page-mv--download js-blur-content">
     <div class="l-inner">
       <div class="p-page-mv__content">
         <div class="p-page-mv__detail" data-title="Technical">
@@ -11,7 +11,7 @@
     </div>
   </section>
 
-  <section class="p-performance-related mt160">
+  <section class="p-performance-related mt160 js-blur-content">
     <div class="l-inner">
       <div class="p-performance-related__content p-performance-related__content--cad">
         <div class="p-performance-related__header">

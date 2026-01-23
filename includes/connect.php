@@ -1,4 +1,4 @@
-<section class="p-connect">
+<section class="p-connect js-blur-content">
     <div class="p-connect__top">
         <p class="p-connect__copyTop">瓦でつなぐ</p>
     </div>

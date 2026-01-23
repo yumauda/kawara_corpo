@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="l-404 p-404">
+  <section class="l-404 p-404 js-blur-content">
     <div class="l-inner p-404__inner">
       <div class="p-404__content">
         <div class="p-404__block">

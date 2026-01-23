@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="p-page-mv p-page-mv--download">
+  <section class="p-page-mv p-page-mv--download js-blur-content">
     <div class="l-inner">
       <div class="p-page-mv__content">
         <div class="p-page-mv__detail" data-title="Download">
@@ -20,7 +20,7 @@
     </div>
   </div>
 
-  <section class="p-leaflet">
+  <section class="p-leaflet js-blur-content">
     <div class="l-inner">
       <div class="p-leaflet__content">
         <div class="p-leaflet__title">
@@ -336,7 +336,7 @@
       </div>
     </div>
   </section>
-  <section class="p-leaflet p-leaflet--last-child">
+  <section class="p-leaflet p-leaflet--last-child js-blur-content">
     <div class="l-inner">
       <div class="p-leaflet__content p-leaflet__content--last-child">
         <div class="p-leaflet__title">

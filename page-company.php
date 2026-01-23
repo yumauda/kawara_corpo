@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="p-page-mv p-page-mv--company">
+  <section class="p-page-mv p-page-mv--company js-blur-content">
     <div class="l-inner">
       <div class="p-page-mv__content">
         <div class="p-page-mv__detail" data-title="Company">
@@ -25,7 +25,7 @@
       </li>
     </ul>
   </section>
-  <section class="p-maker">
+  <section class="p-maker js-blur-content">
     <div class="p-maker__inner">
       <div class="p-maker__content">
         <figure class="p-maker__logo">
@@ -46,7 +46,7 @@
       </div>
     </div>
   </section>
-  <section class="p-live">
+  <section class="p-live js-blur-content">
     <div class="l-inner">
       <div class="p-live__content">
         <figure class="p-live__img">
@@ -78,7 +78,7 @@
       </div>
     </div>
   </section>
-  <section class="p-profile" id="anc01">
+  <section class="p-profile js-blur-content" id="anc01">
     <div class="l-inner">
       <div class="p-profile__content">
         <div class="p-profile__title">
@@ -140,7 +140,7 @@
       </div>
     </div>
   </section>
-  <section class="p-history" id="anc02">
+  <section class="p-history js-blur-content" id="anc02">
     <div class="l-inner">
       <div class="p-history__content">
         <div class="p-history__title">
@@ -384,7 +384,7 @@
     </div>
   </section>
 
-  <section class="p-company" id="anc04">
+  <section class="p-company js-blur-content" id="anc04">
     <div class="l-inner">
       <div class="p-company__content">
         <div class="p-company__title">

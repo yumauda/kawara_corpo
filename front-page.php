@@ -13,7 +13,7 @@
       </div>
     </div>
   </div>
-  <section class="p-top-about">
+  <section class="p-top-about js-blur-content">
     <div class="l-inner">
       <div class="p-top-about__content">
         <div class="p-top-about__top">
@@ -67,7 +67,7 @@
       </div>
     </div>
   </section>
-  <section class="p-top-choose">
+  <section class="p-top-choose js-blur-content">
     <div class="l-inner">
       <div class="p-top-choose__content">
         <div class="p-top-choose__top">
@@ -173,7 +173,7 @@
       </div>
     </div>
   </section>
-  <section class="p-top-company">
+  <section class="p-top-company js-blur-content">
     <div class="l-inner">
       <div class="p-top-company__content">
         <div class="p-top-company__left">
@@ -208,7 +208,7 @@
     </div>
   </section>
   <?php get_template_part('includes/connect'); ?>
-  <section class="p-top-example">
+  <section class="p-top-example js-blur-content">
     <div class="l-inner">
       <div class="p-top-example__content">
         <div class="p-top-example__top">
@@ -304,7 +304,7 @@
       </div>
     </div>
   </section>
-  <section class="p-top-topics">
+  <section class="p-top-topics js-blur-content">
     <div class="l-inner">
       <div class="p-top-topics__content">
         <div class="p-top-topics__top">
@@ -392,7 +392,7 @@
       </div>
     </div>
   </section>
-  <section class="p-top-news">
+  <section class="p-top-news js-blur-content">
     <div class="l-inner">
       <div class="p-top-news__content">
         <div class="p-top-news__left">
@@ -503,7 +503,7 @@
       </div>
     </div>
   </section>
-  <section class="p-top-calender">
+  <section class="p-top-calender js-blur-content">
     <div class="l-inner">
       <div class="p-top-calender__content">
         <div class="p-top-calender__title">

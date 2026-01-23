@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="p-page-mv">
+  <section class="p-page-mv js-blur-content">
     <div class="l-inner">
       <div class="p-page-mv__content">
         <div class="p-page-mv__detail" data-title="Strong">
@@ -52,7 +52,7 @@
     </ul>
   </section>
 
-  <section class="p-beautiful" id="anc01">
+  <section class="p-beautiful js-blur-content" id="anc01">
     <div class="l-inner">
       <div class="p-beautiful__content">
         <div class="p-beautiful__left">
@@ -146,7 +146,7 @@
 
     </div>
   </div>
-  <section class="p-strong" id="anc02">
+  <section class="p-strong js-blur-content" id="anc02">
     <div class="l-inner">
       <div class="p-strong__content">
         <div class="p-strong__top">
@@ -198,7 +198,7 @@
       </div>
     </div>
   </section>
-  <section class="p-strong" id="anc03">
+  <section class="p-strong js-blur-content" id="anc03">
     <div class="l-inner">
       <div class="p-strong__content">
         <div class="p-strong__top p-strong__top--cold">
@@ -246,7 +246,7 @@
       </div>
     </div>
   </section>
-  <section class="p-strong" id="anc04">
+  <section class="p-strong js-blur-content" id="anc04">
     <div class="l-inner">
       <div class="p-strong__content">
         <div class="p-strong__top p-strong__top--guide">
@@ -295,7 +295,7 @@
       </div>
     </div>
   </section>
-  <section class="p-strong" id="anc05">
+  <section class="p-strong js-blur-content" id="anc05">
     <div class="l-inner">
       <div class="p-strong__content">
         <div class="p-strong__top p-strong__top--hot">
@@ -340,7 +340,7 @@
       </div>
     </div>
   </section>
-  <section class="p-strong" id="anc06">
+  <section class="p-strong js-blur-content" id="anc06">
     <div class="l-inner">
       <div class="p-strong__content">
         <div class="p-strong__top p-strong__top--ear">
@@ -381,7 +381,7 @@
       </div>
     </div>
   </section>
-  <section class="p-strong" id="anc07">
+  <section class="p-strong js-blur-content" id="anc07">
     <div class="l-inner">
       <div class="p-strong__content">
         <div class="p-strong__top p-strong__top--economic">
@@ -426,7 +426,7 @@
       </div>
     </div>
   </section>
-  <section class="p-strong p-strong--last" id="anc08">
+  <section class="p-strong p-strong--last js-blur-content" id="anc08">
     <div class="l-inner">
       <div class="p-strong__content">
         <div class="p-strong__top p-strong__top--kind">

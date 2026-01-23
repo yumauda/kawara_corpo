@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="p-page-mv p-page-mv--professional">
+  <section class="p-page-mv p-page-mv--professional js-blur-content">
     <div class="l-inner">
       <div class="p-page-mv__content">
         <div class="p-page-mv__detail" data-title="Technical">
@@ -11,7 +11,7 @@
     </div>
   </section>
 
-  <section class="p-professional-catalog">
+  <section class="p-professional-catalog js-blur-content">
     <div class="l-inner">
       <div class="p-professional-catalog__content">
 

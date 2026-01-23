@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="p-page-mv p-page-mv--download">
+  <section class="p-page-mv p-page-mv--download js-blur-content">
     <div class="l-inner">
       <div class="p-page-mv__content">
         <div class="p-page-mv__detail" data-title="Topics">
@@ -10,7 +10,7 @@
       </div>
     </div>
   </section>
-  <section class="p-topics-top">
+  <section class="p-topics-top js-blur-content">
     <div class="l-inner">
       <div class="p-topics-top__content">
         <div class="p-topics-top__left">
@@ -39,7 +39,7 @@
   <figure class="p-topics-top__img-bg">
     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/topics/topics_img1.webp" alt="" width="1840" height="600">
   </figure>
-  <section class="p-topics">
+  <section class="p-topics js-blur-content">
     <div class="l-inner">
       <div class="p-topics__content">
         <div class="p-topics__section">
