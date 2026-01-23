@@ -4,13 +4,16 @@
   padding-top: rem(120);
   overflow-x: clip;
   position: relative;
+
   @include mq(md) {
     padding-top: rem(100);
   }
+
   @include mq(lg) {
     padding-top: rem(180);
   }
 }
+
 .p-product-mv::before {
   position: absolute;
   content: "KAWARA\A DESIGNS";
@@ -24,17 +27,20 @@
   font-size: rem(64);
   top: rem(-24);
   left: rem(130);
+
   @include mq(md) {
     font-size: rem(130);
     top: rem(-56);
     left: rem(1000);
   }
+
   @include mq(lg) {
     top: rem(-80);
     left: rem(1080);
     font-size: rem(260);
   }
 }
+
 .p-product-mv::after {
   position: absolute;
   content: "";
@@ -49,22 +55,24 @@
   z-index: -1;
   width: rem(300);
   top: rem(300);
+
   @include mq(md) {
     width: rem(1150);
     top: rem(850);
   }
 }
 
-.p-product-mv__content {
-}
+.p-product-mv__content {}
 
 .p-product-mv__top {
   display: flex;
   align-items: flex-end;
   gap: rem(10);
+
   @include mq(md) {
     gap: rem(20);
   }
+
   @include mq(lg) {
     gap: rem(40);
   }
@@ -75,42 +83,64 @@
   width: 100%;
   padding-right: rem(10);
   border-right: 1px solid #222;
+
   @include mq(md) {
     padding-right: rem(20);
   }
+
   @include mq(lg) {
     padding-right: rem(40);
   }
 }
+
 .w300 {
   @include mq(md) {
     max-width: rem(250);
   }
+
   @include mq(lg) {
     max-width: rem(300);
   }
 }
+
 .w388 {
   @include mq(md) {
     min-width: rem(270);
   }
+
   @include mq(lg) {
     max-width: rem(388);
   }
 }
+
 .w453 {
   @include mq(md) {
     max-width: rem(300);
   }
+
   @include mq(lg) {
-    max-width: rem(453);
+    max-width: rem(605);
   }
 }
+
 .p-product-mv__icon img {
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: center center;
+}
+
+.pr152 {
+  padding-right: rem(32);
+
+  @include mq(md) {
+    padding-right: rem(80);
+  }
+
+  @include mq(lg) {
+
+    padding-right: rem(152);
+  }
 }
 
 .p-product-mv__title {
@@ -123,6 +153,7 @@
   @include mq(md) {
     font-size: clamp(20px, 2vw, 20px);
   }
+
   @include mq(lg) {
     font-size: rem(40);
   }
@@ -130,6 +161,7 @@
 
 .p-product-mv__img {
   margin-top: rem(32);
+
   @include mq(md) {
     width: 100vw;
     margin-left: calc(50% - 50vw);
@@ -138,10 +170,12 @@
     padding-right: rem(40);
     margin-top: rem(60);
   }
+
   @include mq(lg) {
     margin-top: rem(116);
   }
 }
+
 .p-product-mv__img img {
   aspect-ratio: 1840 / 540;
   object-fit: cover;
@@ -151,9 +185,11 @@
 
 .p-product-mv__detail {
   margin-top: rem(16);
+
   @include mq(md) {
     margin-top: rem(-60);
   }
+
   @include mq(lg) {
     margin-top: rem(-100);
   }
@@ -165,9 +201,11 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   color: #ca4844;
+
   @include mq(md) {
     font-size: rem(80);
   }
+
   @include mq(lg) {
     font-size: rem(120);
   }
@@ -180,10 +218,12 @@
   letter-spacing: 0.2em;
   color: #222;
   margin-top: rem(12);
+
   @include mq(md) {
     margin-top: rem(40);
     font-size: clamp(20px, 2vw, 20px);
   }
+
   @include mq(lg) {
     font-size: rem(40);
     margin-top: rem(60);
@@ -197,27 +237,34 @@
   line-height: calc(32 / 20);
   font-weight: 500;
   color: #222;
+
   @include mq(md) {
     margin-top: rem(10);
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     margin-top: rem(20);
     font-size: rem(20);
   }
 }
+
 .green {
   color: #37af32;
 }
+
 .purple {
   color: #8f82bc !important;
 }
+
 .orange {
   color: #f08300 !important;
 }
+
 .blue {
   color: #20aee5 !important;
 }
+
 .black {
   color: #592022 !important;
 }

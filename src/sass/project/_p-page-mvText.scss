@@ -9,6 +9,11 @@
     margin-top: rem(135);
   }
 }
+.mt156 {
+  @include mq(lg) {
+    margin-top: rem(156);
+  }
+}
 .p-page-mvText__content {
   text-align: center;
 }

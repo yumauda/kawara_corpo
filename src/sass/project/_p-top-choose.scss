@@ -21,15 +21,18 @@
   height: auto;
   top: rem(-20);
   z-index: -1;
+
   @include mq(md) {
     width: rem(140);
     left: rem(-40);
   }
+
   @include mq(lg) {
     width: rem(230);
     left: rem(-80);
   }
 }
+
 .p-top-choose__top {
   @include mq(md) {
     display: flex;
@@ -40,6 +43,7 @@
 
 .p-top-choose__btn-wrapper {
   margin-top: rem(24);
+
   @include mq(md) {
     margin-top: initial;
   }
@@ -54,6 +58,7 @@
 
 .choose-slider {
   padding-bottom: rem(32) !important;
+
   @include mq(md) {
     padding-bottom: rem(60) !important;
   }
@@ -68,6 +73,7 @@
   padding-left: rem(20);
   padding-right: rem(20);
   display: block;
+
   @include mq(md) {
     display: flex;
     padding-top: initial;
@@ -78,6 +84,7 @@
     // padding-left: rem(50);
     // height: rem(440);
   }
+
   @include mq(lg) {
     // padding-top: rem(50);
     // padding-left: rem(100);
@@ -91,20 +98,35 @@
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
+
   @include mq(md) {
     max-width: rem(440);
     padding-right: rem(32);
     padding-top: rem(36);
     padding-left: rem(32);
     padding-bottom: rem(36);
-    border-right: 1px solid #222;
+    position: relative;
   }
+
   @include mq(lg) {
     max-width: rem(526);
     padding-right: rem(80);
     padding-top: rem(50);
     padding-left: rem(100);
     padding-bottom: rem(50);
+  }
+}
+
+.p-top-choose__left::before {
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    background: #222;
+    width: 1px;
+    top: rem(50);
+    bottom: rem(50);
+    right: 0;
+
   }
 }
 
@@ -122,9 +144,11 @@
   font-style: italic;
   font-size: rem(14);
   color: #222;
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     font-size: rem(14);
   }
@@ -135,9 +159,11 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   color: #222;
+
   @include mq(md) {
     font-size: clamp(20px, 2vw, 24px);
   }
+
   @include mq(lg) {
     font-size: rem(40);
   }
@@ -150,10 +176,12 @@
   letter-spacing: 0.06em;
   font-size: rem(14);
   margin-top: rem(12);
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
     margin-top: rem(16);
   }
+
   @include mq(lg) {
     margin-top: rem(20);
     font-size: rem(20);
@@ -162,9 +190,11 @@
 
 .p-top-choose__bottom {
   margin-top: rem(12);
+
   @include mq(md) {
     margin-top: rem(20);
   }
+
   @include mq(lg) {
     margin-top: rem(32);
   }
@@ -177,9 +207,11 @@
   letter-spacing: 0.06em;
   font-weight: 700;
   font-style: italic;
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     font-size: rem(14);
   }
@@ -192,9 +224,11 @@
   font-style: italic;
   font-weight: 400;
   color: #37af32;
+
   @include mq(md) {
     font-size: clamp(10px, 2vw, 10px);
   }
+
   @include mq(lg) {
     margin-top: rem(10);
     font-size: rem(10);
@@ -203,6 +237,7 @@
 
 .p-top-choose__img {
   width: 100%;
+
   @include mq(md) {
     max-width: rem(540);
     margin-left: auto;
@@ -210,10 +245,12 @@
     // align-items: center;
     align-items: flex-end;
   }
+
   @include mq(lg) {
     max-width: rem(690);
   }
 }
+
 .p-top-choose__img img {
   width: 100%;
   height: auto;
@@ -227,15 +264,18 @@
   right: rem(20);
   width: rem(32);
   height: rem(32);
+
   @include mq(md) {
     width: rem(48);
     height: rem(48);
   }
+
   @include mq(lg) {
     width: rem(80);
     height: rem(80);
   }
 }
+
 .p-top-choose__icon img {
   width: 100%;
   height: auto;
@@ -247,6 +287,7 @@
   @include mq(md) {
     margin-top: rem(60);
   }
+
   @include mq(lg) {
     margin-top: rem(120);
   }
@@ -259,6 +300,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .p-top-choose__banner-link img {
   width: 100%;
   height: auto;

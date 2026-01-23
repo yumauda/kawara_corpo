@@ -4,13 +4,16 @@
   position: relative;
   overflow-x: clip;
   padding-top: rem(120);
+
   @include mq(md) {
     padding-top: rem(200);
   }
+
   @include mq(lg) {
     padding-top: rem(370);
   }
 }
+
 .p-page-mv::before {
   position: absolute;
   content: "";
@@ -24,15 +27,18 @@
   left: 0;
   top: rem(40);
   width: rem(320);
+
   @include mq(md) {
     top: rem(72);
     width: rem(650);
   }
+
   @include mq(lg) {
     width: rem(1000);
     top: rem(100);
   }
 }
+
 .p-page-mv::after {
   position: absolute;
   content: "";
@@ -46,22 +52,27 @@
   right: 0;
   z-index: -1;
   width: rem(300);
+
   @include mq(md) {
     width: rem(650);
   }
+
   @include mq(lg) {
     width: rem(1150);
     top: rem(1080);
   }
 }
+
 .p-page-mv--download::after,
 .p-page-mv--professional::after,
 .p-page-mv--product::after {
   display: none;
 }
+
 .p-page-mv--company::after {
   top: rem(750);
 }
+
 .p-page-mv__content {
   position: relative;
 }
@@ -69,6 +80,7 @@
 .p-page-mv__detail {
   position: relative;
 }
+
 .p-page-mv__detail::before {
   position: absolute;
   content: attr(data-title) "";
@@ -81,11 +93,14 @@
   letter-spacing: -0.04em;
   top: rem(-64);
   left: rem(-40);
+  z-index: -1;
+
   @include mq(md) {
     font-size: rem(240);
     top: rem(-120);
     left: rem(0);
   }
+
   @include mq(lg) {
     top: rem(-240);
     left: rem(-280);
@@ -94,13 +109,15 @@
 }
 
 .p-page-mv__title {
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.06em;
   color: #222;
   font-size: rem(30);
+
   @include mq(md) {
     font-size: rem(60);
   }
+
   @include mq(lg) {
     font-size: rem(100);
   }
@@ -112,38 +129,46 @@
   font-style: italic;
   color: #222;
   font-size: rem(14);
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     font-size: rem(20);
   }
 }
+
 .p-page-mv__img {
   margin-right: calc(50% - 50vw);
   padding-right: rem(20);
   margin-top: rem(40);
+
   @include mq(md) {
     margin-top: rem(72);
     padding-left: rem(120);
     padding-right: rem(40);
   }
+
   @include mq(lg) {
     padding-left: rem(280);
   }
 }
+
 .p-page-mv__img--company {
   padding-left: initial;
   padding-right: initial;
   margin-top: initial;
-  margin-left: calc(47% - 50vw);
+  margin-left: calc(45% - 50vw);
   margin-right: calc(50% - 50vw);
-  width: 100vw;
+  width: 105vw;
   margin-top: rem(40);
+
   @include mq(md) {
     margin-top: initial;
   }
 }
+
 .p-page-mv__img img {
   width: 100%;
   height: auto;
@@ -151,11 +176,14 @@
   object-position: center center;
   border-radius: rem(10);
 }
+
 .p-page-mv__bottom {
   margin-top: rem(24);
+
   @include mq(md) {
     margin-top: rem(-50);
   }
+
   @include mq(lg) {
     margin-top: rem(-130);
   }
@@ -167,13 +195,16 @@
   color: #37af32;
   position: relative;
   padding-left: rem(16);
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     font-size: rem(20);
   }
 }
+
 .p-page-mv__bottom-kind::before {
   position: absolute;
   content: "";
@@ -194,9 +225,11 @@
   letter-spacing: 0.06em;
   line-height: calc(192 / 160);
   font-size: rem(32);
+
   @include mq(md) {
     font-size: rem(80);
   }
+
   @include mq(lg) {
     font-size: rem(160);
     white-space: nowrap;
@@ -205,9 +238,11 @@
 
 .p-page-mv__explain {
   margin-top: rem(24);
+
   @include mq(md) {
     margin-top: rem(40);
   }
+
   @include mq(lg) {
     margin-top: rem(60);
   }
@@ -218,9 +253,11 @@
   color: #222;
   letter-spacing: 0.2em;
   font-size: rem(16);
+
   @include mq(md) {
     font-size: clamp(16px, 2vw, 18px);
   }
+
   @include mq(lg) {
     font-size: rem(40);
   }
@@ -233,16 +270,20 @@
   letter-spacing: 0.06em;
   font-size: rem(14);
   margin-top: rem(12);
+
   @include mq(md) {
     margin-top: rem(20);
     font-size: clamp(14px, 2vw, 16px);
   }
+
   @include mq(lg) {
     font-size: rem(20);
   }
 }
+
 .p-page-mv__nav-lists {
   display: none;
+
   @include mq(md) {
     display: block;
     padding-left: rem(20);
@@ -252,16 +293,18 @@
     left: rem(20);
     top: rem(480);
   }
+
   @include mq(lg) {
     left: rem(40);
     top: rem(620);
   }
 }
 
-.p-page-mv__nav-list + .p-page-mv__nav-list {
+.p-page-mv__nav-list+.p-page-mv__nav-list {
   @include mq(md) {
     margin-top: rem(12);
   }
+
   @include mq(lg) {
     margin-top: 20;
   }
@@ -273,7 +316,20 @@
     font-weight: 700;
     color: #222;
   }
+
   @include mq(lg) {
     font-size: rem(20);
   }
+}
+
+.mt72 {
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+
+  @include mq(lg) {
+    margin-top: rem(72);
+
+  }
+
 }

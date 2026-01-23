@@ -64,7 +64,7 @@
 .p-intro__title {
   line-height: calc(121 / 100);
   color: #222;
-  font-weight: 400;
+  font-weight: 500;
   white-space: nowrap;
   font-size: rem(24);
   @include mq(md) {
@@ -103,7 +103,6 @@
   font-style: italic;
   font-size: rem(12);
   @include mq(md) {
-    margin-top: rem(10);
     font-size: clamp(10px, 2vw, 14px);
   }
   @include mq(lg) {

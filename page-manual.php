@@ -10,13 +10,13 @@
       </div>
     </div>
   </section>
-  <div class="p-page-mvText">
+  <div class="p-page-mvText mt156">
     <div class="l-inner">
-      <p class="p-page-mvText__content">
-      <p class="p-page-mvText__main">現在配布しています瓦製品カタログ、リーフレットをPDFファイル形式で記載しています。<br>
-        ダウンロードしてご活用ください。</p>
-      <p class="p-page-mvText__small">※PDFファイルをご覧いただくためにはアドビ社のAdobe Reader等の専用ソフトが必要になる場合があります</p>
-      </p>
+      <div class="p-page-mvText__content">
+        <p class="p-page-mvText__main">現在配布しています瓦製品カタログ、リーフレットをPDFファイル形式で記載しています。<br>
+          ダウンロードしてご活用ください。</p>
+        <p class="p-page-mvText__small">※PDFファイルをご覧いただくためにはアドビ社のAdobe Reader等の専用ソフトが必要になる場合があります</p>
+      </div>
     </div>
   </div>
 

@@ -4,7 +4,7 @@
     <div class="l-inner">
       <div class="p-product-mv__content">
         <div class="p-product-mv__top">
-          <figure class="p-product-mv__icon w453">
+          <figure class="p-product-mv__icon w453 pr152">
             <img src="<?php echo get_template_directory_uri() ?>/images/product/product_icon3.png" alt="ニューセラFタイプU 石州防災F形瓦" width="274" height="100">
           </figure>
           <h2 class="p-product-mv__title">ニューセラFタイプU 石州防災F形瓦</h2>

@@ -43,7 +43,7 @@
     gap: rem(96);
   }
   @include mq(lg) {
-    gap: rem(130);
+    gap: initial;
     padding-left: rem(200);
   }
 }
@@ -79,6 +79,7 @@
     width: 100%;
   }
   @include mq(lg) {
+    margin-left: rem(190);
     margin-top: rem(108);
   }
 }
@@ -118,6 +119,7 @@
   margin-left: auto;
   @include mq(md) {
     max-width: rem(400);
+    flex: 1;
   }
   @include mq(lg) {
     max-width: rem(560);

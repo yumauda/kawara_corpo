@@ -72,8 +72,8 @@
 }
 
 .p-features__card-label {
-  color: #222;
-  font-weight: 500;
+  color: #49A43F;
+  font-weight: 700;
   font-size: rem(12);
   letter-spacing: 0.06em;
   line-height: 1.5;
@@ -81,7 +81,7 @@
     font-size: rem(13);
   }
   @include mq(lg) {
-    font-size: rem(16);
+    font-size: rem(20);
   }
 }
 
@@ -127,5 +127,5 @@
 
 .p-features__card-text span {
   color: #37af32;
-  font-weight: 700;
+  font-weight: 900;
 }

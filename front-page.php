@@ -82,7 +82,7 @@
             <a href="<?php echo esc_url(home_url('/reason')); ?>" class="c-btn">
               <p class="c-btn__text">View more</p>
               <div class="c-btn__icon">
-                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon_white.svg" alt="" width="60" height="60">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btn_icon.svg" alt="" width="60" height="60">
               </div>
             </a>
           </div>
@@ -500,6 +500,22 @@
             </svg>
           </div>
         </a>
+      </div>
+    </div>
+  </section>
+  <section class="p-top-calender">
+    <div class="l-inner">
+      <div class="p-top-calender__content">
+        <div class="p-top-calender__title">
+          <h3 class="c-sub-title">
+            <span class="c-sub-title__en js-text">_Calendar</span>
+          </h3>
+        </div>
+        <figure class="p-top-calender__img">
+          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_calender.png" alt="カレンダー" width="431" height="38">
+        </figure>
+
+
       </div>
     </div>
   </section>

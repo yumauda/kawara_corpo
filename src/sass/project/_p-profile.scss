@@ -3,10 +3,12 @@
 .p-profile {
   padding-top: rem(60);
   padding-bottom: rem(60);
+
   @include mq(md) {
     padding-top: rem(80);
     padding-bottom: rem(80);
   }
+
   @include mq(lg) {
     padding-top: rem(134);
     padding-bottom: rem(120);
@@ -17,9 +19,11 @@
   display: flex;
   flex-direction: column;
   gap: rem(30);
+
   @include mq(md) {
     gap: rem(50);
   }
+
   @include mq(lg) {
     gap: rem(60);
   }
@@ -28,6 +32,7 @@
 .p-profile__title {
   position: relative;
 }
+
 .p-profile__title::before {
   position: absolute;
   content: "";
@@ -42,10 +47,12 @@
   z-index: -1;
   width: rem(270);
   top: rem(-40);
+
   @include mq(md) {
     width: rem(700);
     top: rem(-80);
   }
+
   @include mq(lg) {
     width: rem(1177);
     top: rem(-140);
@@ -77,12 +84,14 @@
   border-radius: rem(4);
   display: block;
   vertical-align: middle;
+
   @include mq(md) {
     display: table-cell;
     width: rem(200);
     font-size: clamp(14px, 2vw, 14px);
     padding: rem(8) rem(30);
   }
+
   @include mq(lg) {
     font-size: rem(20);
     padding: rem(11) rem(40);
@@ -101,14 +110,16 @@
   padding: rem(16) rem(20);
   vertical-align: middle;
   display: block;
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
-    padding: rem(8) rem(30);
+    padding: rem(8) rem(20);
     display: table-cell;
   }
+
   @include mq(lg) {
     font-size: rem(20);
-    padding: rem(11) rem(40);
+    padding: rem(11) rem(20);
   }
 }
 
@@ -120,16 +131,23 @@
   line-height: 1.8;
 }
 
-.p-profile__data p + p {
+.p-profile__data p+p {
   margin-top: rem(8);
+
   @include mq(lg) {
     margin-top: rem(10);
   }
 }
 
+.p-profile__data-tel+.p-profile__data-tel {
+  margin-top: initial !important;
+
+}
+
 .p-profile__data a {
   color: #222;
   text-decoration: underline;
+
   @media (any-hover: hover) {
     &:hover {
       color: #37af32;

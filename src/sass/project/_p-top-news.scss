@@ -115,7 +115,7 @@
   font-family: $second-font-family;
   letter-spacing: 0.1em;
   font-style: italic;
-  color: #222;
+  color: rgba($color: #222, $alpha: 0.6);
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }

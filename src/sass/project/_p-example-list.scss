@@ -78,7 +78,7 @@
 
 .p-example-list__card-title {
   padding-bottom: rem(4);
-  border-bottom: 1px solid #37af32;
+  border-bottom: 1px solid #222;
   font-size: rem(18);
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -130,6 +130,7 @@
   font-size: rem(14);
   font-family: $second-font-family;
   letter-spacing: 0.06em;
+  font-weight: normal;
   font-style: italic;
   text-transform: uppercase;
   @include mq(md) {

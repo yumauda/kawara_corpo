@@ -113,17 +113,17 @@
             <tr class="p-profile__row">
               <th class="p-profile__label">TEL</th>
               <td class="p-profile__data">
-                <p>（　　　　　本社　　　　　）<br class="u-mobile"><a href="tel:0854-89-0201">0854-89-0201</a></p>
-                <p>（　　出荷・営業窓口　　）<br class="u-mobile"><a href="tel:0855-66-0111">0855-66-0111</a></p>
-                <p>（　熊本サービスセンター　）<br class="u-mobile"><a href="tel:0964-27-9535">0964-27-9535</a></p>
+                <p class="p-profile__data-tel">（　　　　　本社　　　　　）<br class="u-mobile"><a href="tel:0854-89-0201">0854-89-0201</a></p>
+                <p class="p-profile__data-tel">（　　出荷・営業窓口　　　）<br class="u-mobile"><a href="tel:0855-66-0111">0855-66-0111</a></p>
+                <p class="p-profile__data-tel">（　熊本サービスセンター　）<br class="u-mobile"><a href="tel:0964-27-9535">0964-27-9535</a></p>
               </td>
             </tr>
             <tr class="p-profile__row">
               <th class="p-profile__label">FAX</th>
               <td class="p-profile__data">
-                <p>（　　　　　本社　　　　　）<br class="u-mobile">0854-89-0276</p>
-                <p>（　　出荷・営業窓口　　）<br class="u-mobile">0855-66-0825</p>
-                <p>（　熊本サービスセンター　）<br class="u-mobile">0964-27-9536</p>
+                <p class="p-profile__data-tel">（　　　　　本社　　　　　）<br class="u-mobile">0854-89-0276</p>
+                <p class="p-profile__data-tel">（　　出荷・営業窓口　　　）<br class="u-mobile">0855-66-0825</p>
+                <p class="p-profile__data-tel">（　熊本サービスセンター　）<br class="u-mobile">0964-27-9536</p>
               </td>
             </tr>
             <tr class="p-profile__row">

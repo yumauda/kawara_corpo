@@ -40,7 +40,7 @@
   }
   @include mq(lg) {
     width: rem(1580);
-    top: rem(-140);
+    top: rem(-180);
   }
 }
 .p-product-features__content--bs::before {
@@ -192,7 +192,7 @@
   font-size: rem(18);
   line-height: calc(56 / 40);
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.2em;
   color: #222;
   @include mq(md) {
     font-size: clamp(20px, 2vw, 20px);

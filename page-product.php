@@ -20,8 +20,8 @@
             <span class="c-pageTitle__title-main">大切な建物を守る、<br>風土が生み出した石州瓦。</span>
           </h3>
         </div>
-        <div class="p-product__block-wrapper">
-          <div class="p-product__block">
+        <div class="p-product__block-wrapper mt0">
+          <div class="p-product__block pt83">
             <div class="p-product__left">
               <div class="p-product__icon">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/product/product_icon1.png" alt="グラスロ" width="274" height="100">
@@ -199,7 +199,7 @@
           </h3>
         </div>
         <div class="p-product__block-wrapper">
-          <div class="p-product__block">
+          <div class="p-product__block pt0">
             <div class="p-product__left">
               <div class="p-product__icon p-product__icon--300">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/product/product_icon6.png" alt="庭の敷砂" width="274" height="100">

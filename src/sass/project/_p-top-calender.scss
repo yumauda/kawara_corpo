@@ -1,0 +1,72 @@
+@use "../global" as *;
+
+.p-top-calender {
+  padding-bottom: rem(40);
+
+  @include mq(md) {
+    padding-bottom: rem(100);
+  }
+
+  @include mq(lg) {
+
+    padding-bottom: rem(200);
+  }
+}
+
+
+.p-top-calender__content {
+  position: relative;
+}
+
+.p-top-calender__content::before {
+  position: absolute;
+  content: "";
+  background: url(../images/top/calender_wave.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  aspect-ratio: 164 / 500;
+  object-fit: cover;
+  top: rem(40);
+  left: rem(-56);
+  z-index: -1;
+
+  @include mq(md) {
+    width: rem(100);
+  }
+
+  @include mq(lg) {
+    width: rem(164);
+
+  }
+}
+
+
+.p-top-calender__title {}
+
+
+.p-top-calender__img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(24);
+
+  @include mq(md) {
+    max-width: rem(1000);
+    margin-top: rem(40);
+  }
+
+  @include mq(lg) {
+    margin-top: rem(60);
+    max-width: rem(1342);
+
+  }
+}
+
+.p-top-calender__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}

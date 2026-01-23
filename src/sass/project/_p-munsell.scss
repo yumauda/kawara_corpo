@@ -3,12 +3,14 @@
 .p-munsell {
   padding-top: rem(40);
   padding-bottom: rem(40);
+
   @include mq(md) {
     padding-top: rem(80);
     padding-bottom: rem(100);
   }
+
   @include mq(lg) {
-    padding-top: rem(194);
+    padding-top: rem(135);
     padding-bottom: rem(200);
   }
 }
@@ -19,9 +21,11 @@
 
 .p-munsell__title-wrapper {
   margin-bottom: rem(20);
+
   @include mq(md) {
     margin-bottom: rem(45);
   }
+
   @include mq(lg) {
     margin-bottom: rem(90);
   }
@@ -37,15 +41,18 @@
   margin-bottom: rem(8);
   position: relative;
   padding-left: rem(24);
+
   @include mq(md) {
     font-size: clamp(18px, 2.5vw, 24px);
     margin-bottom: rem(10);
     padding-left: rem(30);
   }
+
   @include mq(lg) {
     font-size: rem(50);
   }
 }
+
 .p-munsell__title-en::before {
   position: absolute;
   content: "";
@@ -57,16 +64,19 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
 .p-munsell__title-ja {
   font-size: rem(24);
   font-weight: 700;
   line-height: calc(32 / 24);
   letter-spacing: 0.06em;
   color: #fff;
+
   @include mq(md) {
     white-space: nowrap;
     font-size: clamp(28px, 4vw, 50px);
   }
+
   @include mq(lg) {
     font-size: rem(95);
   }
@@ -79,6 +89,7 @@
     text-align: center;
     margin-bottom: rem(30);
   }
+
   @include mq(lg) {
     margin-bottom: rem(40);
   }
@@ -90,9 +101,11 @@
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: #222;
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 16px);
   }
+
   @include mq(lg) {
     font-size: rem(16);
   }
@@ -100,9 +113,11 @@
 
 .p-munsell__table-wrapper {
   margin-bottom: rem(40);
+
   @include mq(md) {
     margin-bottom: rem(60);
   }
+
   @include mq(lg) {
     margin-bottom: rem(90);
   }
@@ -116,9 +131,11 @@
   background-color: #37af32;
   border-radius: rem(5) rem(5) 0 0;
   padding: rem(15) rem(20);
+
   @include mq(md) {
     padding: rem(20) rem(30);
   }
+
   @include mq(lg) {
     padding: rem(23) rem(40);
   }
@@ -130,9 +147,11 @@
   line-height: calc(32 / 30);
   letter-spacing: 0.06em;
   color: #fff;
+
   @include mq(md) {
     font-size: clamp(18px, 2.5vw, 24px);
   }
+
   @include mq(lg) {
     font-size: rem(30);
   }
@@ -145,9 +164,11 @@
   padding: rem(20);
   border-collapse: separate;
   border-spacing: rem(1) rem(5);
+
   @include mq(md) {
     padding: rem(30);
   }
+
   @include mq(lg) {
     padding-top: rem(20);
     padding-bottom: rem(40);
@@ -166,10 +187,12 @@
   color: #fff;
   text-align: center;
   white-space: nowrap;
+
   @include mq(md) {
     padding: rem(8) rem(12);
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     padding: rem(10) rem(15);
     font-size: rem(18);
@@ -185,20 +208,24 @@
   letter-spacing: 0.06em;
   color: #222;
   text-align: center;
+
   @include mq(md) {
     padding: rem(16) rem(12);
     font-size: clamp(14px, 2vw, 14px);
     width: 25%;
   }
+
   @include mq(lg) {
     padding: rem(20) rem(15);
     font-size: rem(20);
   }
 }
+
 .p-munsell__table-td:first-child {
   border-top-left-radius: rem(5);
   border-bottom-left-radius: rem(5);
 }
+
 .p-munsell__table-td:last-child {
   border-top-right-radius: rem(5);
   border-bottom-right-radius: rem(5);
@@ -208,10 +235,12 @@
   background-color: #f6f6f6;
   padding: rem(20);
   margin-top: rem(40);
+
   @include mq(md) {
     padding: rem(30);
     margin-top: rem(60);
   }
+
   @include mq(lg) {
     padding: rem(40);
     margin-top: rem(90);
@@ -224,13 +253,16 @@
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: #222;
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     font-size: rem(16);
   }
 }
+
 .p-munsell__table-flex {
   @include mq(md) {
     display: flex;
@@ -239,14 +271,14 @@
   }
 }
 
-.p-munsell__table-header-text {
-}
+.p-munsell__table-header-text {}
 
 .p-munsell__table-header-link {
   display: flex;
   align-items: center;
   gap: rem(15);
   margin-top: rem(8);
+
   @include mq(md) {
     margin-top: initial;
   }
@@ -258,9 +290,11 @@
   letter-spacing: 0.06em;
   font-weight: 500;
   line-height: calc(32 / 18);
+
   @include mq(md) {
     font-size: clamp(16px, 2vw, 16px);
   }
+
   @include mq(lg) {
     font-size: rem(18);
   }
@@ -269,29 +303,35 @@
 .p-munsell__table-header-link-icon {
   width: rem(24);
 }
+
 .p-munsell__table-header-link-icon svg {
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: center center;
 }
+
 .w270 {
   width: rem(270) !important;
   white-space: nowrap;
 }
+
 .w600 {
   width: rem(600) !important;
   text-align: left;
   white-space: nowrap;
 }
+
 .w247 {
   width: rem(247) !important;
   white-space: nowrap;
 }
+
 .w320 {
   width: rem(320) !important;
   white-space: nowrap;
 }
+
 .p-munsell__table-td-button {
   display: flex;
   justify-content: center;
@@ -306,6 +346,7 @@
 .p-munsell__table-td-buttonIcon {
   width: rem(20);
 }
+
 .p-munsell__table-td-buttonIcon img {
   width: 100%;
   height: auto;
@@ -319,9 +360,11 @@
   font-weight: 500;
   letter-spacing: 0.06em;
   line-height: calc(32 / 18);
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     font-size: rem(18);
   }
@@ -335,23 +378,35 @@
   font-weight: 500;
   line-height: calc(32 / 14);
   text-decoration: underline;
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     font-size: rem(14);
   }
 }
+
 .p-munsell__scroll {
   overflow-x: auto;
   width: 100%;
+
   @include mq(md) {
     overflow-x: initial;
   }
 }
+
 .p-munsell__table-head .w600 {
   text-align: center;
 }
+
 .p-munsell__table--pb {
   padding-bottom: initial;
+}
+
+.fz20 {
+  @include mq(lg) {
+    font-size: rem(20);
+  }
 }

@@ -23,7 +23,7 @@
     padding-bottom: rem(100);
   }
   @include mq(lg) {
-    padding-top: rem(60);
+    padding-top: initial;
     padding-bottom: rem(200);
   }
 }

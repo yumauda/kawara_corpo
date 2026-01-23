@@ -4,10 +4,12 @@
   padding-top: rem(40);
   overflow-x: clip;
   padding-bottom: rem(40);
+
   @include mq(md) {
     padding-top: rem(80);
     padding-bottom: rem(80);
   }
+
   @include mq(lg) {
     padding-top: rem(134);
     padding-bottom: rem(200);
@@ -17,6 +19,7 @@
 .p-question__content {
   position: relative;
 }
+
 .p-question__content::before {
   position: absolute;
   content: "";
@@ -31,15 +34,18 @@
   top: rem(-40);
   left: 0;
   z-index: -1;
+
   @include mq(md) {
     width: rem(500);
     top: rem(-80);
   }
+
   @include mq(lg) {
     width: rem(682);
     top: rem(-130);
   }
 }
+
 .p-question__content::after {
   position: absolute;
   content: "";
@@ -53,6 +59,7 @@
   top: 0;
   right: rem(-40);
   width: rem(100);
+
   @include mq(md) {
     right: rem(-80);
     width: rem(230);
@@ -62,6 +69,7 @@
 .p-question__block-wrapper {
   display: grid;
   margin-top: rem(24);
+
   @include mq(md) {
     grid-template-columns: repeat(2, 1fr);
     margin-top: rem(65);
@@ -72,28 +80,34 @@
   padding-top: rem(20);
   padding-bottom: rem(20);
   border-bottom: 1px solid #222;
+
   @include mq(md) {
     padding-top: rem(40);
     padding-bottom: rem(40);
   }
+
   @include mq(lg) {
     padding-top: rem(60);
     padding-bottom: rem(60);
   }
 }
+
 .p-question__block:nth-child(even) {
   @include mq(md) {
     padding-left: rem(40);
     position: relative;
   }
+
   @include mq(lg) {
     padding-left: rem(60);
   }
 }
+
 .p-question__block:first-child,
 .p-question__block:nth-child(2) {
   border-top: 1px solid #222;
 }
+
 .p-question__block:nth-child(even)::before {
   @include mq(md) {
     position: absolute;
@@ -106,20 +120,25 @@
     left: 0;
   }
 }
+
 .p-question__block:nth-child(odd) {
   @include mq(md) {
     padding-right: rem(40);
   }
+
   @include mq(lg) {
     padding-right: rem(60);
   }
 }
+
 .p-question__q {
   display: flex;
   gap: rem(12);
+
   @include mq(md) {
     gap: rem(20);
   }
+
   @include mq(lg) {
     gap: rem(40);
   }
@@ -134,38 +153,45 @@
   font-family: $second-font-family;
   font-style: italic;
   position: relative;
+
   @include mq(md) {
     font-size: clamp(18px, 2vw, 20px);
   }
+
   @include mq(lg) {
     font-size: rem(44);
   }
 }
+
 .p-question__q-title::before {
   @include mq(md) {
     position: absolute;
     content: "";
     background: #1a1311;
-    width: 1px;
+    width: 3px;
     right: rem(-10);
-    height: rem(20);
+    height: rem(8);
     top: rem(2);
   }
+
   @include mq(lg) {
-    top: rem(8);
+    top: rem(10);
     right: rem(-18);
-    height: rem(30);
+    height: rem(24);
   }
 }
+
 .p-question__q-text {
   color: #222;
   font-weight: 700;
   letter-spacing: 0.06em;
   font-size: rem(14);
   line-height: calc(42 / 30);
+
   @include mq(md) {
     font-size: clamp(16px, 2vw, 16px);
   }
+
   @include mq(lg) {
     font-size: rem(30);
   }
@@ -175,11 +201,13 @@
   display: flex;
   margin-top: rem(12);
   gap: rem(12);
+
   @include mq(md) {
     gap: rem(20);
     margin-top: rem(20);
     position: relative;
   }
+
   @include mq(lg) {
     gap: rem(40);
   }
@@ -194,29 +222,33 @@
   font-style: italic;
   line-height: 1;
   margin-top: rem(4);
+
   @include mq(md) {
     margin-top: initial;
     position: relative;
     font-size: clamp(18px, 2vw, 20px);
   }
+
   @include mq(lg) {
     font-size: rem(44);
   }
 }
+
 .p-question__a-title::before {
   @include mq(md) {
     position: absolute;
     content: "";
     background: #1a1311;
-    width: 1px;
-    right: rem(-10);
-    height: rem(20);
+    width: 3px;
+    right: rem(-11);
+    height: rem(8);
     top: rem(2);
   }
+
   @include mq(lg) {
-    top: rem(8);
-    right: rem(-18);
-    height: rem(30);
+    top: rem(10);
+    right: rem(-21);
+    height: rem(24);
   }
 }
 
@@ -226,9 +258,11 @@
   letter-spacing: 0.06em;
   font-size: rem(14);
   line-height: calc(36 / 20);
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     font-size: rem(20);
   }
@@ -236,5 +270,23 @@
 
 .p-question__a-text span {
   color: #37af32;
-  font-weight: 700;
+  font-weight: 900;
+}
+
+.p-question__block--last {
+  position: relative;
+}
+
+.p-question__block--last::before {
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    background: #222;
+    width: 1px;
+    height: 70%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
 }

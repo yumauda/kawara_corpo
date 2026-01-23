@@ -21,7 +21,7 @@
 
       </div>
     </div>
-    <ul class="p-page-mv__nav-lists">
+    <ul class="p-page-mv__nav-lists mt72">
       <li class="p-page-mv__nav-list">
         <a href="#anc01" class="p-page-mv__nav-link">・超高温焼成</a>
       </li>
