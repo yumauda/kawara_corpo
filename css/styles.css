@@ -10083,15 +10083,16 @@ input::placeholder {
     position: absolute;
     content: "";
     background: #1a1311;
-    width: 3px;
     right: -0.625rem;
-    height: 0.5rem;
+    height: 1rem;
     top: 0.125rem;
+    width: 2px;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-question__q-title::before {
     top: 0.625rem;
+    width: 3px;
     right: -1.125rem;
     height: 1.5rem;
   }
@@ -10161,14 +10162,15 @@ input::placeholder {
     position: absolute;
     content: "";
     background: #1a1311;
-    width: 3px;
     right: -0.6875rem;
-    height: 0.5rem;
+    height: 1rem;
     top: 0.125rem;
+    width: 2px;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-question__a-title::before {
+    width: 3px;
     top: 0.625rem;
     right: -1.3125rem;
     height: 1.5rem;

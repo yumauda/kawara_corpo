@@ -168,14 +168,15 @@
     position: absolute;
     content: "";
     background: #1a1311;
-    width: 3px;
     right: rem(-10);
-    height: rem(8);
+    height: rem(16);
     top: rem(2);
+    width: 2px;
   }
 
   @include mq(lg) {
     top: rem(10);
+    width: 3px;
     right: rem(-18);
     height: rem(24);
   }
@@ -239,13 +240,14 @@
     position: absolute;
     content: "";
     background: #1a1311;
-    width: 3px;
     right: rem(-11);
-    height: rem(8);
+    height: rem(16);
     top: rem(2);
+    width: 2px;
   }
-
+  
   @include mq(lg) {
+    width: 3px;
     top: rem(10);
     right: rem(-21);
     height: rem(24);
