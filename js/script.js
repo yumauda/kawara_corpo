@@ -89,6 +89,9 @@ const setUpAccordion = () => {
   details.forEach((element) => {
     const summary = element.querySelector(".js-summary");
     const content = element.querySelector(".js-content");
+    if (!summary || !content) {
+      return;
+    }
 
     summary.addEventListener("click", (event) => {
       // デフォルトの挙動を無効化
@@ -99,7 +102,7 @@ const setUpAccordion = () => {
         return;
       }
 
-      let icon = element.children[0];
+      let icon = element.children[0] || summary;
       // detailsのopen属性を判定
       if (element.open) {
         // アコーディオンを閉じるときの処理

@@ -86,7 +86,7 @@
             <p class="p-professional-catalog__text">瓦屋根標準設計・施工ガイドラインに沿った一般的な在来工法を記載しています。データ形式は3種類のデータがダウンロードできます。</p>
           </div>
         </a>
-        <a href="#" class="p-professional-catalog__card">
+        <a href="<?php echo esc_url(home_url('/professional/wpc')); ?>" class="p-professional-catalog__card">
           <div class="p-professional-catalog__row">
             <div class="p-professional-catalog__icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.921 51.001">
