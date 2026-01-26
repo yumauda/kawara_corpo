@@ -1,0 +1,99 @@
+@use "../global" as *;
+
+.p-example-search {
+  margin-top: rem(32);
+
+  @include mq(md) {
+    margin-top: rem(56);
+  }
+
+  @include mq(lg) {
+    margin-top: rem(76);
+  }
+}
+
+.p-example-search__row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: rem(12);
+
+  &+& {
+    margin-top: rem(10);
+  }
+
+  @include mq(md) {
+    flex-direction: row;
+  }
+}
+
+.p-example-search__label {
+  flex: 0 0 auto;
+  font-size: rem(16);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #222;
+
+  @include mq(lg) {
+    font-size: rem(20);
+    line-height: 1.6;
+  }
+}
+
+.p-example-search__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(7);
+}
+
+.p-example-search__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.p-example-search__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(160);
+  height: rem(44);
+  background: #222;
+  border: 1px solid #222;
+  border-radius: rem(4);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: rem(14);
+  cursor: pointer;
+  user-select: none;
+
+  @include mq(md) {
+    width: rem(190);
+    height: rem(44);
+    font-size: rem(16);
+  }
+
+  @include mq(lg) {
+    width: rem(230);
+    height: rem(54);
+    font-size: rem(18);
+    line-height: 1.333;
+  }
+}
+
+.p-example-search__input:checked+.p-example-search__btn {
+  background: #37af32;
+  border-color: #37af32;
+}
+
+.p-example-search__input:focus-visible+.p-example-search__btn {
+  outline: 2px solid #37af32;
+  outline-offset: 2px;
+}

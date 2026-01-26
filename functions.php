@@ -249,6 +249,140 @@ function remove_title_tag()
 }
 add_action('init', 'remove_title_tag');
 
+/**
+ * 施工事例：複合検索（ACF オプション/投稿フィールド）
+ */
+if (function_exists('acf_add_options_page')) {
+	acf_add_options_page(array(
+		'page_title' => '施工事例 検索設定',
+		'menu_title' => '施工事例検索',
+		'menu_slug'  => 'example-search-settings',
+		'capability' => 'manage_options',
+		'redirect'   => false,
+	));
+}
+
+function kawara_example_search_get_choices($repeater_name)
+{
+	$choices = array();
+	if (!function_exists('get_field')) {
+		return $choices;
+	}
+	$rows = get_field($repeater_name, 'option');
+	if (!is_array($rows)) {
+		return $choices;
+	}
+	foreach ($rows as $row) {
+		$key = isset($row['key']) ? (string) $row['key'] : '';
+		$label = isset($row['label']) ? (string) $row['label'] : '';
+		if ($key !== '' && $label !== '') {
+			$choices[$key] = $label;
+		}
+	}
+	return $choices;
+}
+
+function kawara_example_search_load_tile_types_field($field)
+{
+	$choices = kawara_example_search_get_choices('example_search_tile_types');
+	if (!empty($choices)) {
+		$field['choices'] = $choices;
+	}
+	return $field;
+}
+add_filter('acf/load_field/name=example_tile_types', 'kawara_example_search_load_tile_types_field');
+
+function kawara_example_search_load_products_field($field)
+{
+	$choices = kawara_example_search_get_choices('example_search_products');
+	if (!empty($choices)) {
+		$field['choices'] = $choices;
+	}
+	return $field;
+}
+add_filter('acf/load_field/name=example_products', 'kawara_example_search_load_products_field');
+
+function kawara_example_search_load_colors_field($field)
+{
+	$choices = kawara_example_search_get_choices('example_search_colors');
+	if (!empty($choices)) {
+		$field['choices'] = $choices;
+	}
+	return $field;
+}
+add_filter('acf/load_field/name=example_colors', 'kawara_example_search_load_colors_field');
+
+/**
+ * ACF: PHP8+ 未定義キー Warning 対策
+ * - 一部環境で field 配列にキーが無いと ACF 本体が Warning を出すため、最低限のキーを補完する
+ */
+function kawara_acf_fill_missing_field_keys($field)
+{
+	if (!is_array($field)) {
+		return $field;
+	}
+	// validation.php が参照することがある
+	if (!isset($field['_name']) && isset($field['name'])) {
+		$field['_name'] = $field['name'];
+	}
+
+	// text / number が参照することがある
+	if (($field['type'] ?? '') === 'text') {
+		if (!array_key_exists('maxlength', $field)) {
+			$field['maxlength'] = '';
+		}
+		if (!array_key_exists('placeholder', $field)) {
+			$field['placeholder'] = '';
+		}
+		if (!array_key_exists('prepend', $field)) {
+			$field['prepend'] = '';
+		}
+		if (!array_key_exists('append', $field)) {
+			$field['append'] = '';
+		}
+	}
+	if (($field['type'] ?? '') === 'number') {
+		if (!array_key_exists('min', $field)) {
+			$field['min'] = '';
+		}
+		if (!array_key_exists('max', $field)) {
+			$field['max'] = '';
+		}
+		if (!array_key_exists('step', $field)) {
+			$field['step'] = '';
+		}
+	}
+
+	return $field;
+}
+add_filter('acf/prepare_field', 'kawara_acf_fill_missing_field_keys', 1);
+
+/**
+ * ACF Repeater: sub_fields にも必ず _name を付与（repeater が先に参照して Warning になる対策）
+ */
+function kawara_acf_fix_repeater_sub_fields($field)
+{
+	if (!is_array($field)) {
+		return $field;
+	}
+	if (empty($field['sub_fields']) || !is_array($field['sub_fields'])) {
+		return $field;
+	}
+	foreach ($field['sub_fields'] as $i => $sub) {
+		if (!is_array($sub)) {
+			continue;
+		}
+		if (!isset($sub['_name']) && isset($sub['name'])) {
+			$sub['_name'] = $sub['name'];
+		}
+		// text / number のキーも念のため補完
+		$sub = kawara_acf_fill_missing_field_keys($sub);
+		$field['sub_fields'][$i] = $sub;
+	}
+	return $field;
+}
+add_filter('acf/load_field/type=repeater', 'kawara_acf_fix_repeater_sub_fields', 1);
+
 
 // 管理画面上「投稿」の名前変更
 function Change_menulabel()

@@ -1,0 +1,287 @@
+[
+  {
+    "key": "group_example_search_settings",
+    "title": "施工事例：検索設定",
+    "fields": [
+      {
+        "key": "field_example_search_default_limit",
+        "label": "表示件数のデフォルト上限",
+        "name": "example_search_default_limit",
+        "type": "number",
+        "instructions": "チェックが無い場合の表示上限。チェックがある場合は、各項目の「max_posts（上限）」が設定されていれば、その最小値が適用されます。",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": 12,
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "min": 1,
+        "max": "",
+        "step": 1
+      },
+      {
+        "key": "field_example_search_tile_types",
+        "label": "瓦種別（表示・管理）",
+        "name": "example_search_tile_types",
+        "type": "repeater",
+        "instructions": "一覧の表示項目。key は英数字（例: flat）。label は表示名（例: 平瓦）。max_posts はこの項目を選んだ時の表示上限（0=未設定）。",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "min": 0,
+        "max": 0,
+        "layout": "row",
+        "collapsed": "",
+        "button_label": "追加",
+        "sub_fields": [
+          {
+            "key": "field_example_search_tile_types_key",
+            "label": "key",
+            "name": "key",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+          },
+          {
+            "key": "field_example_search_tile_types_label",
+            "label": "label",
+            "name": "label",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+          },
+          {
+            "key": "field_example_search_tile_types_max_posts",
+            "label": "max_posts",
+            "name": "max_posts",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 0,
+            "max": "",
+            "step": 1
+          }
+        ]
+      },
+      {
+        "key": "field_example_search_products",
+        "label": "商品名（表示・管理）",
+        "name": "example_search_products",
+        "type": "repeater",
+        "instructions": "一覧の表示項目。key/label/max_posts の意味は同上。",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "min": 0,
+        "max": 0,
+        "layout": "row",
+        "collapsed": "",
+        "button_label": "追加",
+        "sub_fields": [
+          {
+            "key": "field_example_search_products_key",
+            "label": "key",
+            "name": "key",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+          },
+          {
+            "key": "field_example_search_products_label",
+            "label": "label",
+            "name": "label",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+          },
+          {
+            "key": "field_example_search_products_max_posts",
+            "label": "max_posts",
+            "name": "max_posts",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 0,
+            "max": "",
+            "step": 1
+          }
+        ]
+      },
+      {
+        "key": "field_example_search_colors",
+        "label": "色種別（表示・管理）",
+        "name": "example_search_colors",
+        "type": "repeater",
+        "instructions": "一覧の表示項目。key/label/max_posts の意味は同上。",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "min": 0,
+        "max": 0,
+        "layout": "row",
+        "collapsed": "",
+        "button_label": "追加",
+        "sub_fields": [
+          {
+            "key": "field_example_search_colors_key",
+            "label": "key",
+            "name": "key",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+          },
+          {
+            "key": "field_example_search_colors_label",
+            "label": "label",
+            "name": "label",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+          },
+          {
+            "key": "field_example_search_colors_max_posts",
+            "label": "max_posts",
+            "name": "max_posts",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 0,
+            "max": "",
+            "step": 1
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "options_page",
+          "operator": "==",
+          "value": "acf-options-example-search-settings"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": ""
+  }
+]
+

@@ -1,6 +1,14 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
 
+  // 施工事例：複合検索（チェック変更で自動検索）
+  $(document).on("change", ".js-example-search input[type='checkbox']", function () {
+    const form = $(this).closest("form");
+    if (form.length) {
+      form.trigger("submit");
+    }
+  });
+
   var topBtn = $(".p-totop");
   topBtn.hide();
 
