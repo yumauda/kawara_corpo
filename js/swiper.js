@@ -271,3 +271,15 @@ const slider4 = new Swiper(".slider-topics", {
     el: ".swiper-scrollbar",
   },
 });
+
+const singleSlider = new Swiper(".swiper-single", {
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  initialSlide: 0,
+  spaceBetween: 40,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

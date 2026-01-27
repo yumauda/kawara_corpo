@@ -22,6 +22,7 @@
     border-radius: rem(10);
     padding: rem(40);
   }
+
   @include mq(lg) {
     padding: rem(100);
     border: 10px solid #37af32;
@@ -50,6 +51,7 @@
     align-items: center;
     gap: rem(20);
   }
+
   @include mq(lg) {
     margin-top: rem(40);
     gap: rem(40);
@@ -67,6 +69,7 @@
   @include mq(md) {
     font-size: rem(32);
   }
+
   @include mq(lg) {
     font-size: rem(60);
   }
@@ -92,6 +95,7 @@
     margin-top: initial;
     font-size: clamp(14px, 2vw, 16px);
   }
+
   @include mq(lg) {
     font-size: rem(20);
   }
@@ -119,6 +123,7 @@
     display: block;
   }
 }
+
 .p-single__meta-item:first-child::after {
   display: none;
 }
@@ -134,6 +139,7 @@
     margin-top: rem(40);
     gap: rem(60);
   }
+
   @include mq(lg) {
     gap: rem(100);
     margin-top: rem(80);
@@ -183,6 +189,7 @@
   @include mq(md) {
     font-size: clamp(20px, 2vw, 24px);
   }
+
   @include mq(lg) {
     font-size: rem(48);
   }
@@ -201,6 +208,7 @@
     margin-top: rem(30);
     font-size: clamp(16px, 2vw, 18px);
   }
+
   @include mq(lg) {
     font-size: rem(24);
     margin-top: rem(40);
@@ -220,6 +228,7 @@
     font-size: clamp(14px, 2vw, 16px);
     margin-top: rem(16);
   }
+
   @include mq(lg) {
     font-size: rem(20);
     margin-top: rem(20);
@@ -396,29 +405,36 @@
   writing-mode: vertical-rl;
   letter-spacing: 0.1em;
 }
+
 .p-single__feature-img {
   margin-top: rem(32);
+
   @include mq(md) {
     margin-top: rem(60);
   }
+
   @include mq(lg) {
     margin-top: rem(80);
   }
 }
+
 .p-single__feature-img img {
   aspect-ratio: 1320 / 400;
   object-fit: cover;
   width: 100%;
   height: auto;
 }
+
 .p-single__btn-wrapper {
   margin-top: rem(32);
   display: flex;
   align-items: center;
   justify-content: center;
+
   @include mq(md) {
     margin-top: rem(60);
   }
+
   @include mq(lg) {
     margin-top: rem(80);
   }
@@ -434,10 +450,12 @@
   padding-right: rem(30);
   border-radius: 9999px;
   background: #222;
+
   @include mq(md) {
     width: rem(320);
     height: rem(72);
   }
+
   @include mq(lg) {
     width: rem(260);
     height: rem(80);
@@ -451,13 +469,16 @@
   font-style: italic;
   letter-spacing: 0.06em;
   font-size: rem(14);
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     font-size: rem(20);
   }
 }
+
 .p-single__btn-icon {
   background: transparent;
   border: 1px solid #37af32;
@@ -466,6 +487,7 @@
   height: rem(20);
   position: relative;
 }
+
 .p-single__btn-icon::before {
   position: absolute;
   content: "";
@@ -476,4 +498,94 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.p-single__slider {}
+
+.p-single__slider-img {}
+
+.p-single__slider-img img {
+  aspect-ratio: 1240 / 770;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: rem(10);
+}
+
+.p-single__grid {
+  display: grid;
+  margin-top: rem(24);
+  gap: rem(10);
+  grid-template-columns: repeat(2, 1fr);
+
+  @include mq(md) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: rem(40);
+    gap: rem(15);
+  }
+
+  @include mq(lg) {
+    margin-top: rem(80);
+  }
+}
+
+.p-single__grid-item-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 430 / 430;
+  border-radius: rem(10);
+}
+
+.p-single__btn-slider-icon {
+  width: rem(40);
+  height: rem(40);
+
+  @include mq(md) {
+    width: rem(60);
+    height: rem(60);
+  }
+
+  @include mq(lg) {
+    width: rem(80);
+    height: rem(80);
+
+  }
+}
+
+.p-single__btn-slider-icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.swiper-single {
+  padding-left: rem(20) !important;
+  padding-right: rem(20) !important;
+  position: relative;
+
+  @include mq(md) {
+    padding-left: rem(32) !important;
+    padding-right: rem(32) !important;
+  }
+
+  @include mq(lg) {
+    padding-left: rem(40) !important;
+    padding-right: rem(40) !important;
+  }
+}
+
+.p-single__btn-prev {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.p-single__btn-next {
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
