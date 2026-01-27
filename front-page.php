@@ -331,7 +331,7 @@
               <!-- Slides -->
 
               <div class="swiper-slide">
-                <a href="#" class="p-top-topics__link">
+                <a href="<?php echo esc_url(home_url('/topics')); ?>" class="p-top-topics__link">
                   <div class="p-top-topics__link-top">
                     <p class="p-top-topics__link-title">Kawara</p>
                     <p class="p-top-topics__link-small">Designs</p>
@@ -349,7 +349,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="#" class="p-top-topics__link">
+                <a href="<?php echo esc_url(home_url('/topics-2')); ?>" class="p-top-topics__link">
                   <div class="p-top-topics__link-top">
                     <p class="p-top-topics__link-title">Kawara</p>
                     <p class="p-top-topics__link-small">Designs</p>
@@ -367,7 +367,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="#" class="p-top-topics__link">
+                <a href="<?php echo esc_url(home_url('/topics-3')); ?>" class="p-top-topics__link">
                   <div class="p-top-topics__link-top">
                     <p class="p-top-topics__link-title">Kawara</p>
                     <p class="p-top-topics__link-small">Designs</p>
