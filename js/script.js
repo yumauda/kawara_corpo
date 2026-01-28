@@ -1,6 +1,132 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
 
+  // WPC：説明パネル（レイアウトを崩さずに「ニュルっと」開閉）
+  const WPC_HELP_DURATION = 260;
+  const WPC_HELP_EASING = "ease-out";
+
+  const getWpcHelpPanel = ($btn) => {
+    const panelId = $btn.attr("aria-controls");
+    if (!panelId) return null;
+    const $panel = $(`#${panelId}`);
+    if (!$panel.length) return null;
+    return $panel;
+  };
+
+  const stopWpcHelpAnim = ($panel) => {
+    const panelEl = $panel?.get?.(0);
+    if (panelEl && panelEl.__wpcHelpAnim) {
+      try {
+        panelEl.__wpcHelpAnim.cancel();
+      } catch (_) {}
+      panelEl.__wpcHelpAnim = null;
+    }
+  };
+
+  const closeWpcHelpPanel = ($btn, $panel, { immediate = false } = {}) => {
+    if (!$btn?.length || !$panel?.length) return;
+
+    stopWpcHelpAnim($panel);
+    $btn.attr("aria-expanded", "false").removeClass("is-opened");
+
+    const panelEl = $panel.get(0);
+    if (immediate) {
+      $panel.attr("hidden", true);
+      panelEl.style.height = "";
+      panelEl.style.opacity = "";
+      panelEl.style.overflow = "";
+      return;
+    }
+
+    const fromHeight = panelEl.getBoundingClientRect().height;
+    if (fromHeight <= 0) {
+      $panel.attr("hidden", true);
+      return;
+    }
+
+    panelEl.style.overflow = "hidden";
+    const anim = panelEl.animate(
+      [
+        { height: `${fromHeight}px`, opacity: 1 },
+        { height: "0px", opacity: 0 },
+      ],
+      { duration: WPC_HELP_DURATION, easing: WPC_HELP_EASING }
+    );
+    panelEl.__wpcHelpAnim = anim;
+    anim.onfinish = () => {
+      $panel.attr("hidden", true);
+      panelEl.style.height = "";
+      panelEl.style.opacity = "";
+      panelEl.style.overflow = "";
+      panelEl.__wpcHelpAnim = null;
+    };
+  };
+
+  const openWpcHelpPanel = ($btn, $panel) => {
+    if (!$btn?.length || !$panel?.length) return;
+    stopWpcHelpAnim($panel);
+
+    const panelEl = $panel.get(0);
+    $panel.removeAttr("hidden");
+
+    // 初期状態
+    panelEl.style.height = "0px";
+    panelEl.style.opacity = "0";
+    panelEl.style.overflow = "hidden";
+
+    // 実際に開く高さ（コンテンツ量に応じて）
+    const toHeight = panelEl.scrollHeight;
+    const anim = panelEl.animate(
+      [
+        { height: "0px", opacity: 0 },
+        { height: `${toHeight}px`, opacity: 1 },
+      ],
+      { duration: WPC_HELP_DURATION, easing: WPC_HELP_EASING }
+    );
+    panelEl.__wpcHelpAnim = anim;
+
+    $btn.attr("aria-expanded", "true").addClass("is-opened");
+    anim.onfinish = () => {
+      // height:auto に戻してコンテンツ変化にも追従
+      panelEl.style.height = "";
+      panelEl.style.opacity = "";
+      panelEl.style.overflow = "";
+      panelEl.__wpcHelpAnim = null;
+    };
+  };
+
+  const closeAllWpcHelpPanels = (opts) => {
+    $(".js-wpc-help").each(function () {
+      const $btn = $(this);
+      const $panel = getWpcHelpPanel($btn);
+      if ($panel) closeWpcHelpPanel($btn, $panel, opts);
+    });
+  };
+
+  $(document).on("click", ".js-wpc-help", function (e) {
+    e.preventDefault();
+    const $btn = $(this);
+    const $panel = getWpcHelpPanel($btn);
+    if (!$panel) return;
+
+    const isOpen = $btn.attr("aria-expanded") === "true";
+    closeAllWpcHelpPanels(); // 他の説明は閉じる
+    if (!isOpen) {
+      openWpcHelpPanel($btn, $panel);
+    }
+  });
+
+  // パネル外クリックで閉じる（パネル内クリックは閉じない）
+  $(document).on("click", function (e) {
+    if ($(e.target).closest(".p-wpc__helpWrap, .p-wpc__helpPanel").length) return;
+    closeAllWpcHelpPanels();
+  });
+
+  // ESCで閉じる
+  $(document).on("keydown", function (e) {
+    if (e.key === "Escape") closeAllWpcHelpPanels();
+  });
+
   // 施工事例：複合検索（チェック変更で自動検索）
   $(document).on("change", ".js-example-search input[type='checkbox']", function () {
     const form = $(this).closest("form");

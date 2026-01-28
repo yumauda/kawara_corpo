@@ -456,9 +456,8 @@
   padding-right: rem(20);
   padding-bottom: rem(20);
   @include mq(md) {
-    align-items: initial;
-    justify-content: initial;
     flex-direction: row;
+    justify-content: initial;
     padding-top: rem(24);
     padding-left: rem(32);
     padding-right: rem(32);
@@ -466,6 +465,7 @@
     width: rem(950);
   }
   @include mq(lg) {
+    align-items: initial;
     padding-top: rem(40);
     padding-left: rem(50);
     padding-right: rem(50);
@@ -479,7 +479,7 @@
   margin-top: rem(-24);
   @include mq(md) {
     min-width: rem(100);
-    width: rem(200);
+    width: rem(100);
     margin-top: rem(-36);
   }
   @include mq(lg) {

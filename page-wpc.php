@@ -17,6 +17,7 @@
           <p class="p-munsell__title-en">Wpc</p>
           <h3 class="p-munsell__title-ja">屋根面の風圧力計算</h3>
         </div>
+        <p class="p-munsell__ver">Ver.25.9.30.2</p>
         <div class="p-munsell__calc">
           <div class="p-wpc">
             <form class="p-wpc__form" action="#" method="post">
@@ -27,7 +28,7 @@
                   <span class="p-wpc__required">必須</span>
                 </div>
                 <div class="p-wpc__td">
-                  <span class="p-wpc__select">
+                  <span class="p-wpc__select ml10">
                     <select class="p-wpc__control" name="prefecture" aria-label="都道府県">
                       <option value="" selected disabled>都道府県</option>
                       <option value="shimane">島根県</option>
@@ -36,15 +37,15 @@
                       <option value="yamaguchi">山口県</option>
                     </select>
                   </span>
-                  <span class="p-wpc__select">
-                    <select class="p-wpc__control" name="area" aria-label="エリア">
+                  <span class="p-wpc__select ml10">
+                    <select class="p-wpc__control w194" name="area" aria-label="エリア">
                       <option value="" selected disabled>エリア</option>
                       <option value="a">エリアA</option>
                       <option value="b">エリアB</option>
                     </select>
                   </span>
-                  <input class="p-wpc__control" type="text" inputmode="decimal" name="v0" aria-label="基準風速" placeholder="" style="max-width: 12rem;">
-                  <span class="p-wpc__unit">m/s</span>
+                  <input class="p-wpc__control ml10 w194" type="text" inputmode="decimal" name="v0" aria-label="基準風速" placeholder="" style="max-width: 12rem;">
+                  <span class="p-wpc__unit ml10">m/s</span>
                 </div>
               </div>
 
@@ -55,46 +56,49 @@
                   <span class="p-wpc__required">必須</span>
                 </div>
                 <div class="p-wpc__td">
-                  <span class="p-wpc__select">
-                    <select class="p-wpc__control" name="roughness" aria-label="粗度地区分">
-                      <option value="" selected disabled>選択してください</option>
-                      <option value="i">Ⅰ</option>
-                      <option value="ii">Ⅱ</option>
-                      <option value="iii">Ⅲ</option>
-                      <option value="iv">Ⅳ</option>
-                    </select>
-                  </span>
+                  <div class="p-wpc__td-row">
+                    <span class="p-wpc__select">
+                      <select class="p-wpc__control w298" name="roughness" aria-label="粗度地区分">
+                        <option value="" selected disabled>選択してください</option>
+                        <option value="i">Ⅰ</option>
+                        <option value="ii">Ⅱ</option>
+                        <option value="iii">Ⅲ</option>
+                        <option value="iv">Ⅳ</option>
+                      </select>
+                    </span>
+                    <div class="p-wpc__helpWrap">
+                      <button class="p-wpc__help js-wpc-help" type="button" aria-expanded="false" aria-controls="wpcHelpRoughness">
+                        説明
+                        <span class="p-wpc__helpIcon" aria-hidden="true"></span>
+                      </button>
 
-                  <details class="p-wpc__details js-details">
-                    <summary class="p-wpc__help js-summary">
-                      説明
-                      <span class="p-wpc__helpIcon" aria-hidden="true"></span>
-                    </summary>
-                    <div class="p-wpc__detailsContent js-content">
-                      <div class="p-wpc__noteBox">
-                        <div class="p-wpc__roughList">
-                          <div class="p-wpc__roughItem">
-                            <div class="p-wpc__roughBadge">Ⅰ</div>
-                            <p class="p-wpc__roughText">極めて平坦で障害物がない<br>ものとして特定行政庁が規則で定める区域</p>
-                          </div>
+                    </div>
+                  </div>
 
-                          <div class="p-wpc__roughItem">
-                            <div class="p-wpc__roughBadge p-wpc__roughBadge--ii">Ⅱ</div>
-                            <p class="p-wpc__roughText">極めて平坦で障害物が散在している<br>ものとして特定行政庁が規則で定める区域</p>
-                          </div>
+                  <div class="p-wpc__helpPanel js-wpc-help-panel" id="wpcHelpRoughness" hidden>
+                    <div class="p-wpc__noteBox">
+                      <div class="p-wpc__roughList">
+                        <div class="p-wpc__roughItem">
+                          <div class="p-wpc__roughBadge">Ⅰ</div>
+                          <p class="p-wpc__roughText">極めて平坦で障害物がない<br>ものとして特定行政庁が規則で定める区域</p>
+                        </div>
 
-                          <figure class="p-wpc__graph">
-                            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/wpc/wpc_graph.png" alt="粗度地区分のグラフ" width="850" height="434">
-                          </figure>
+                        <div class="p-wpc__roughItem">
+                          <div class="p-wpc__roughBadge p-wpc__roughBadge--ii">Ⅱ</div>
+                          <p class="p-wpc__roughText">極めて平坦で障害物が散在している<br>ものとして特定行政庁が規則で定める区域</p>
+                        </div>
 
-                          <div class="p-wpc__roughItem">
-                            <div class="p-wpc__roughBadge p-wpc__roughBadge--iv">Ⅳ</div>
-                            <p class="p-wpc__roughText">極めて都市化が著しい<br>ものとして特定行政庁が規則で定める区域</p>
-                          </div>
+                        <figure class="p-wpc__graph">
+                          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/wpc/wpc_graph.png" alt="粗度地区分のグラフ" width="850" height="434">
+                        </figure>
+
+                        <div class="p-wpc__roughItem">
+                          <div class="p-wpc__roughBadge p-wpc__roughBadge--iv">Ⅳ</div>
+                          <p class="p-wpc__roughText">極めて都市化が著しい<br>ものとして特定行政庁が規則で定める区域</p>
                         </div>
                       </div>
                     </div>
-                  </details>
+                  </div>
                 </div>
               </div>
 
@@ -105,27 +109,33 @@
                   <span class="p-wpc__required">必須</span>
                 </div>
                 <div class="p-wpc__td">
-                  <span class="p-wpc__unit">（</span>
-                  <input class="p-wpc__control" type="text" inputmode="decimal" name="eaves_h" aria-label="軒の高さ" style="max-width: 8rem;">
-                  <span class="p-wpc__unit">m</span>
-                  <span class="p-wpc__unit">＋</span>
-                  <input class="p-wpc__control" type="text" inputmode="decimal" name="building_h" aria-label="建物の高さ" style="max-width: 8rem;">
-                  <span class="p-wpc__unit">m</span>
-                  <span class="p-wpc__unit">）÷2＝</span>
-                  <input class="p-wpc__control" type="text" inputmode="decimal" name="avg_h" aria-label="平均高さ" style="max-width: 8rem;">
-                  <span class="p-wpc__unit">m</span>
-
-                  <details class="p-wpc__details js-details">
-                    <summary class="p-wpc__help js-summary">
-                      説明
-                      <span class="p-wpc__helpIcon" aria-hidden="true"></span>
-                    </summary>
-                    <div class="p-wpc__detailsContent js-content">
-                      <figure class="p-wpc__graph">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/wpc/wpc_graph2.png" alt="平均高さ ＝ （ 軒の高さ ＋ 建物の高さ ） ÷ ２" width="950" height="588">
-                      </figure>
+                  <div class="p-wpc__td-row">
+                    <div class="p-wpc__td-unit-row">
+                      <span class="p-wpc__unit">（</span>
+                      <input class="p-wpc__control" type="text" inputmode="decimal" name="eaves_h" aria-label="軒の高さ" style="max-width: 8rem;">
+                      <span class="p-wpc__unit">m</span>
+                      <span class="p-wpc__unit">＋</span>
+                      <input class="p-wpc__control" type="text" inputmode="decimal" name="building_h" aria-label="建物の高さ" style="max-width: 8rem;">
+                      <span class="p-wpc__unit">m</span>
+                      <span class="p-wpc__unit">）÷2＝</span>
+                      <input class="p-wpc__control" type="text" inputmode="decimal" name="avg_h" aria-label="平均高さ" style="max-width: 8rem;">
+                      <span class="p-wpc__unit">m</span>
                     </div>
-                  </details>
+
+                    <div class="p-wpc__helpWrap">
+                      <button class="p-wpc__help js-wpc-help" type="button" aria-expanded="false" aria-controls="wpcHelpAvgHeight">
+                        説明
+                        <span class="p-wpc__helpIcon" aria-hidden="true"></span>
+                      </button>
+
+                    </div>
+                  </div>
+                  <div class="p-wpc__helpPanel js-wpc-help-panel" id="wpcHelpAvgHeight" hidden>
+                    <figure class="p-wpc__graph">
+                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/wpc/wpc_graph2.png" alt="平均高さ ＝ （ 軒の高さ ＋ 建物の高さ ） ÷ ２" width="950" height="588">
+                    </figure>
+                  </div>
+
                 </div>
               </div>
 
@@ -136,8 +146,8 @@
                   <span class="p-wpc__required">必須</span>
                 </div>
                 <div class="p-wpc__td">
-                  <input class="p-wpc__control" type="text" inputmode="decimal" name="slope" aria-label="屋根勾配" style="max-width: 10rem;">
-                  <span class="p-wpc__unit">寸</span>
+                  <input class="p-wpc__control w194" type="text" inputmode="decimal" name="slope" aria-label="屋根勾配" style="max-width: 10rem;">
+                  <span class="p-wpc__unit ml10">寸</span>
                 </div>
               </div>
 
@@ -146,7 +156,7 @@
                 <div class="p-wpc__th">屋根形状</div>
                 <div class="p-wpc__td">
                   <span class="p-wpc__select">
-                    <select class="p-wpc__control" name="roof_shape" aria-label="屋根形状">
+                    <select class="p-wpc__control w298" name="roof_shape" aria-label="屋根形状">
                       <option value="" selected disabled>選択してください</option>
                       <option value="gable">切妻</option>
                       <option value="hip">寄棟</option>
@@ -160,14 +170,16 @@
               <div class="p-wpc__row">
                 <div class="p-wpc__th">物件名等</div>
                 <div class="p-wpc__td">
-                  <input class="p-wpc__control" type="text" name="project_name" aria-label="物件名等" style="max-width: 32rem; width: 100%;">
+                  <input class="p-wpc__control w500" type="text" name="project_name" aria-label="物件名等">
                 </div>
               </div>
 
               <div class="p-wpc__actions">
                 <button type="button" class="p-wpc__submit">
-                  計算
-                  <span class="p-wpc__submitIcon" aria-hidden="true"><span></span><span></span><span></span></span>
+                  <p class="p-wpc__submit-text">計算</p>
+                  <span class="p-wpc__submitIcon" aria-hidden="true">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/wpc/icon.png" alt="">
+                  </span>
                 </button>
                 <a class="p-wpc__link" href="#">当社商品の耐風圧力試験結果はこちら</a>
               </div>
@@ -184,7 +196,7 @@
           <p class="p-munsell__note-text p-munsell__note-text--red border20">(免責) 当画面のご利用について生じた如何なる損害についても当方は責任を負わないものとします。</p>
         </div>
       </div>
-      <div class="p-performance-related__submit-wrapper">
+      <div class="p-performance-related__submit-wrapper mt100">
         <a href="#" class="p-performance-related__submit">
           <figure class="p-performance-related__submit-img">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/performance/submit.png" alt="風圧力計算シート エクセル版" width="140" height="205">

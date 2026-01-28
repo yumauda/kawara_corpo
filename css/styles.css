@@ -6329,6 +6329,38 @@ input::placeholder {
   border-top: 1px solid #222;
 }
 
+.p-munsell__ver {
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #222;
+  text-align: right;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-munsell__ver {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-munsell__ver {
+    font-size: 1.25rem;
+  }
+}
+
+.p-munsell__calc {
+  margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-munsell__calc {
+    margin-top: 1.875rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-munsell__calc {
+    margin-top: 2.5rem;
+  }
+}
+
 .p-mv {
   overflow-x: clip;
 }
@@ -7550,9 +7582,8 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-performance-related__submit {
-    align-items: initial;
-    justify-content: initial;
     flex-direction: row;
+    justify-content: initial;
     padding-top: 1.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -7562,6 +7593,7 @@ input::placeholder {
 }
 @media screen and (min-width: 1540px) {
   .p-performance-related__submit {
+    align-items: initial;
     padding-top: 2.5rem;
     padding-left: 3.125rem;
     padding-right: 3.125rem;
@@ -7577,7 +7609,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-performance-related__submit-img {
     min-width: 6.25rem;
-    width: 12.5rem;
+    width: 6.25rem;
     margin-top: -2.25rem;
   }
 }
@@ -16558,14 +16590,20 @@ input::placeholder {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.06em;
   color: #222;
 }
+@media screen and (min-width: 768px) {
+  .p-wpc__th {
+    font-size: clamp(16px, 2vw, 16px);
+  }
+}
 @media screen and (min-width: 1540px) {
   .p-wpc__th {
     font-size: 1.5rem;
+    margin-top: 1rem;
   }
 }
 
@@ -16583,11 +16621,28 @@ input::placeholder {
   letter-spacing: 0.06em;
 }
 
-.p-wpc__td {
+.p-wpc__td-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1.875rem;
+}
+
+.p-wpc__td-unit-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-wpc__td-unit-row {
+    gap: 0.9375rem;
+  }
+}
+
+/* 説明パネル（レイアウトを押し下げないため absolute 表示） */
+.p-wpc__helpWrap {
+  position: relative;
 }
 
 .p-wpc__control {
@@ -16604,13 +16659,25 @@ input::placeholder {
 @media screen and (min-width: 1540px) {
   .p-wpc__control {
     font-size: 1.25rem;
+    width: 13.375rem;
     min-height: 4.3125rem;
+  }
+}
+
+@media screen and (min-width: 1540px) {
+  .w194 {
+    width: 12.125rem;
+  }
+}
+
+@media screen and (min-width: 1540px) {
+  .w298 {
+    width: 18.625rem;
   }
 }
 
 .p-wpc__select {
   position: relative;
-  display: inline-flex;
 }
 
 .p-wpc__select::after {
@@ -16690,12 +16757,19 @@ input::placeholder {
 .p-wpc__noteBox {
   background: #f6f6f6;
   border-radius: 0.3125rem;
-  padding: 1.125rem;
+  padding: 1rem;
+  margin-top: 1rem;
 }
-
-.p-wpc__roughList {
-  display: grid;
-  gap: 0.75rem;
+@media screen and (min-width: 768px) {
+  .p-wpc__noteBox {
+    padding: 1.5rem;
+    margin-top: 1.25rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-wpc__noteBox {
+    padding: 3.125rem;
+  }
 }
 
 .p-wpc__roughItem {
@@ -16703,6 +16777,17 @@ input::placeholder {
   grid-template-columns: 3.75rem 1fr;
   gap: 0.875rem;
   align-items: start;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+
+.p-wpc__roughItem:first-child {
+  padding-top: 0;
+  border-bottom: 1px solid #C7C7CC;
+}
+
+.p-wpc__roughItem:last-child {
+  padding-bottom: 0;
 }
 
 .p-wpc__roughBadge {
@@ -16819,34 +16904,63 @@ input::placeholder {
 .p-wpc__actions {
   display: grid;
   place-items: center;
-  gap: 1rem;
-  padding-top: 1.75rem;
+  gap: 3.75rem;
+  padding-top: 2.5rem;
   border-top: 1px solid #222;
 }
 
 .p-wpc__submit {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 0.625rem;
-  padding: 0.875rem 1.625rem;
-  border-radius: 1.75rem;
+  border-radius: 9999px;
   background: #222;
   color: #fff;
+  width: 9.375rem;
+  height: 3rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-wpc__submit {
+    padding-left: 1.875rem;
+    gap: 1.875rem;
+    padding-right: 1.875rem;
+    width: 10rem;
+    height: 3.4375rem;
+  }
+}
+
+.p-wpc__submit-text {
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.06em;
+  white-space: nowrap;
+  color: #fff;
+  line-height: 1;
+}
+@media screen and (min-width: 768px) {
+  .p-wpc__submit-text {
+    font-size: clamp(14px, 2vw, 16px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-wpc__submit-text {
+    font-size: 1.5rem;
+  }
 }
 
 .p-wpc__submitIcon {
-  display: inline-flex;
-  gap: 0.25rem;
+  display: block;
+  width: 1.25rem;
+  height: auto;
+  margin-left: auto;
 }
 
 .p-wpc__submitIcon span {
-  width: 0.375rem;
-  height: 0.625rem;
-  border-right: 2px solid #37af32;
-  border-bottom: 2px solid #37af32;
-  transform: rotate(-45deg);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .p-wpc__link {
@@ -16856,11 +16970,47 @@ input::placeholder {
   letter-spacing: 0.06em;
 }
 
+.p-wpc__graph {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-wpc__graph {
+    margin-top: 1.25rem;
+  }
+}
+
 .p-wpc__graph img {
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: center center;
+}
+
+.mt100 {
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .mt100 {
+    margin-top: 3.125rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .mt100 {
+    margin-top: 6.25rem;
+  }
+}
+
+.ml10 {
+  margin-left: 0.625rem;
+}
+
+.w500 {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .w500 {
+    width: 31.25rem;
+  }
 }
 
 .c-btn {

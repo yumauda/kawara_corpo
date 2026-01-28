@@ -6,9 +6,11 @@
   border-radius: rem(10);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   padding: rem(24) rem(16);
+
   @include mq(md) {
     padding: rem(56) rem(40);
   }
+
   @include mq(lg) {
     padding: rem(80);
   }
@@ -19,6 +21,7 @@
   gap: rem(14);
   padding: rem(22) 0;
   border-top: 1px solid #222;
+
   @include mq(md) {
     grid-template-columns: rem(300) 1fr;
     align-items: start;
@@ -36,12 +39,18 @@
   display: flex;
   align-items: center;
   gap: rem(12);
-  font-size: rem(18);
+  font-size: rem(14);
   font-weight: 500;
   letter-spacing: 0.06em;
   color: #222;
+
+  @include mq(md) {
+    font-size: clamp(16px, 2vw, 16px);
+  }
+
   @include mq(lg) {
     font-size: rem(24);
+    margin-top: rem(16);
   }
 }
 
@@ -59,12 +68,30 @@
   letter-spacing: 0.06em;
 }
 
-.p-wpc__td {
+.p-wpc__td-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: rem(12);
+  gap: rem(30);
 }
+
+.p-wpc__td-unit-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: rem(4);
+
+  @include mq(md) {
+    gap: rem(15);
+
+  }
+}
+
+/* 説明パネル（レイアウトを押し下げないため absolute 表示） */
+.p-wpc__helpWrap {
+  position: relative;
+}
+
 
 .p-wpc__control {
   appearance: none;
@@ -76,15 +103,28 @@
   font-size: rem(16);
   padding: rem(18) rem(44) rem(18) rem(18);
   min-height: rem(48);
+
   @include mq(lg) {
     font-size: rem(20);
+    width: rem(214);
     min-height: rem(69);
+  }
+}
+
+.w194 {
+  @include mq(lg) {
+    width: rem(194);
+  }
+}
+
+.w298 {
+  @include mq(lg) {
+    width: rem(298);
   }
 }
 
 .p-wpc__select {
   position: relative;
-  display: inline-flex;
 }
 
 .p-wpc__select::after {
@@ -100,6 +140,16 @@
   pointer-events: none;
 }
 
+// .p-wpc__select+.p-wpc__select {
+//   margin-left: rem(8);
+//   @include mq(md){
+//     margin-left: rem(16);
+//   }
+//   @include mq(lg){
+//     margin-left: rem(20);
+//   }
+// }
+
 .p-wpc__select .p-wpc__control {
   padding-right: rem(54);
 }
@@ -109,6 +159,7 @@
   font-weight: 500;
   letter-spacing: 0.06em;
   color: #222;
+
   @include mq(lg) {
     font-size: rem(20);
   }
@@ -128,6 +179,7 @@
   letter-spacing: 0.06em;
   cursor: pointer;
   user-select: none;
+
   @include mq(lg) {
     height: rem(48);
     font-size: rem(18);
@@ -160,19 +212,37 @@
 .p-wpc__noteBox {
   background: #f6f6f6;
   border-radius: rem(5);
-  padding: rem(18);
+  padding: rem(16);
+  margin-top: rem(16);
+
+  @include mq(md) {
+    padding: rem(24);
+    margin-top: rem(20);
+  }
+
+  @include mq(lg) {
+    padding: rem(50);
+  }
 }
 
-.p-wpc__roughList {
-  display: grid;
-  gap: rem(12);
-}
+// .p-wpc__roughList is styled below
 
 .p-wpc__roughItem {
   display: grid;
   grid-template-columns: rem(60) 1fr;
   gap: rem(14);
   align-items: start;
+  padding-top: rem(30);
+  padding-bottom: rem(30);
+}
+
+.p-wpc__roughItem:first-child {
+  padding-top: 0;
+  border-bottom: 1px solid #C7C7CC;
+}
+
+.p-wpc__roughItem:last-child {
+  padding-bottom: 0;
 }
 
 .p-wpc__roughBadge {
@@ -185,9 +255,11 @@
   color: #fff;
   background: #222;
 }
+
 .p-wpc__roughBadge--ii {
   background: #37af32;
 }
+
 .p-wpc__roughBadge--iv {
   background: #ca4844;
 }
@@ -197,6 +269,7 @@
   line-height: 1.7;
   letter-spacing: 0.06em;
   color: #222;
+
   @include mq(lg) {
     font-size: rem(18);
   }
@@ -231,6 +304,7 @@
   text-align: center;
   font-size: rem(12);
 }
+
 .p-wpc__roughTh--row {
   background: #222;
   color: #fff;
@@ -245,9 +319,11 @@
   font-weight: 700;
   color: #fff;
 }
+
 .p-wpc__roughCell--ii {
   background: #37af32;
 }
+
 .p-wpc__roughCell--iii {
   background: #f08300;
   color: #222;
@@ -282,33 +358,60 @@
 .p-wpc__actions {
   display: grid;
   place-items: center;
-  gap: rem(16);
-  padding-top: rem(28);
+  gap: rem(60);
+  padding-top: rem(40);
   border-top: 1px solid #222;
 }
 
 .p-wpc__submit {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: rem(10);
-  padding: rem(14) rem(26);
-  border-radius: rem(28);
+  border-radius: 9999px;
   background: #222;
   color: #fff;
+  width: rem(150);
+  height: rem(48);
+  padding-left: rem(20);
+  padding-right: rem(20);
+
+  @include mq(md) {
+    padding-left: rem(30);
+    gap: rem(30);
+    padding-right: rem(30);
+    width: rem(160);
+    height: rem(55);
+  }
+}
+
+.p-wpc__submit-text {
+  font-size: rem(16);
   font-weight: 500;
   letter-spacing: 0.06em;
+  white-space: nowrap;
+  color: #fff;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 16px);
+  }
+
+  @include mq(lg) {
+    font-size: rem(24);
+  }
 }
 
 .p-wpc__submitIcon {
-  display: inline-flex;
-  gap: rem(4);
+  display: block;
+  width: rem(20);
+  height: auto;
+  margin-left: auto;
 }
+
 .p-wpc__submitIcon span {
-  width: rem(6);
-  height: rem(10);
-  border-right: 2px solid #37af32;
-  border-bottom: 2px solid #37af32;
-  transform: rotate(-45deg);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .p-wpc__link {
@@ -319,11 +422,41 @@
 }
 
 .p-wpc__graph {
+  margin-top: rem(16);
+
+  @include mq(md) {
+    margin-top: rem(20);
+  }
 
 }
+
 .p-wpc__graph img {
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: center center;
+}
+
+.mt100 {
+  margin-top: rem(24);
+
+  @include mq(md) {
+    margin-top: rem(50);
+  }
+
+  @include mq(lg) {
+    margin-top: rem(100);
+  }
+}
+
+.ml10 {
+  margin-left: rem(10);
+}
+
+.w500 {
+  width: 100%;
+
+  @include mq(md) {
+    width: rem(500);
+  }
 }
