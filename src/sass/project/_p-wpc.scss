@@ -100,9 +100,13 @@
   border-radius: rem(5);
   background: #fff;
   color: #222;
-  font-size: rem(16);
+  font-size: rem(14);
   padding: rem(18) rem(44) rem(18) rem(18);
   min-height: rem(48);
+
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
 
   @include mq(lg) {
     font-size: rem(20);
@@ -155,10 +159,14 @@
 }
 
 .p-wpc__unit {
-  font-size: rem(16);
+  font-size: rem(14);
   font-weight: 500;
   letter-spacing: 0.06em;
   color: #222;
+
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
 
   @include mq(lg) {
     font-size: rem(20);
@@ -174,11 +182,16 @@
   background: #222;
   border-radius: rem(24);
   color: #fff;
-  font-size: rem(16);
+  font-size: rem(14);
   font-weight: 500;
   letter-spacing: 0.06em;
   cursor: pointer;
   user-select: none;
+
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+
 
   @include mq(lg) {
     height: rem(48);
@@ -254,6 +267,13 @@
   font-weight: 700;
   color: #fff;
   background: #222;
+  font-size: rem(18);
+  @include mq(md){
+    font-size: clamp(18px, 2vw, 18px);
+  }
+  @include mq(lg){
+    font-size: rem(24);
+  }
 }
 
 .p-wpc__roughBadge--ii {
@@ -269,7 +289,9 @@
   line-height: 1.7;
   letter-spacing: 0.06em;
   color: #222;
-
+  @include mq(md){
+    font-size: clamp(14px, 2vw, 14px);
+  }
   @include mq(lg) {
     font-size: rem(18);
   }
@@ -419,7 +441,17 @@
   text-decoration: underline;
   font-weight: 500;
   letter-spacing: 0.06em;
+  font-size: rem(14);
+
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 16px);
+  }
+
+  @include mq(lg) {
+    font-size: rem(20);
+  }
 }
+
 
 .p-wpc__graph {
   margin-top: rem(16);
@@ -458,5 +490,17 @@
 
   @include mq(md) {
     width: rem(500);
+  }
+}
+.mt12-sp {
+  margin-top: rem(12);
+  @include mq(md){
+   margin-top: initial; 
+  }
+}
+.mt4-sp {
+  margin-top: rem(4);
+  @include mq(md){
+   margin-top: initial; 
   }
 }

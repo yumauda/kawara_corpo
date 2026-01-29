@@ -16652,9 +16652,14 @@ input::placeholder {
   border-radius: 0.3125rem;
   background: #fff;
   color: #222;
-  font-size: 1rem;
+  font-size: 0.875rem;
   padding: 1.125rem 2.75rem 1.125rem 1.125rem;
   min-height: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .p-wpc__control {
+    font-size: clamp(14px, 2vw, 14px);
+  }
 }
 @media screen and (min-width: 1540px) {
   .p-wpc__control {
@@ -16698,10 +16703,15 @@ input::placeholder {
 }
 
 .p-wpc__unit {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.06em;
   color: #222;
+}
+@media screen and (min-width: 768px) {
+  .p-wpc__unit {
+    font-size: clamp(14px, 2vw, 14px);
+  }
 }
 @media screen and (min-width: 1540px) {
   .p-wpc__unit {
@@ -16718,11 +16728,16 @@ input::placeholder {
   background: #222;
   border-radius: 1.5rem;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.06em;
   cursor: pointer;
   user-select: none;
+}
+@media screen and (min-width: 768px) {
+  .p-wpc__help {
+    font-size: clamp(14px, 2vw, 14px);
+  }
 }
 @media screen and (min-width: 1540px) {
   .p-wpc__help {
@@ -16799,6 +16814,17 @@ input::placeholder {
   font-weight: 700;
   color: #fff;
   background: #222;
+  font-size: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .p-wpc__roughBadge {
+    font-size: clamp(18px, 2vw, 18px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-wpc__roughBadge {
+    font-size: 1.5rem;
+  }
 }
 
 .p-wpc__roughBadge--ii {
@@ -16814,6 +16840,11 @@ input::placeholder {
   line-height: 1.7;
   letter-spacing: 0.06em;
   color: #222;
+}
+@media screen and (min-width: 768px) {
+  .p-wpc__roughText {
+    font-size: clamp(14px, 2vw, 14px);
+  }
 }
 @media screen and (min-width: 1540px) {
   .p-wpc__roughText {
@@ -16968,6 +16999,17 @@ input::placeholder {
   text-decoration: underline;
   font-weight: 500;
   letter-spacing: 0.06em;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-wpc__link {
+    font-size: clamp(14px, 2vw, 16px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-wpc__link {
+    font-size: 1.25rem;
+  }
 }
 
 .p-wpc__graph {
@@ -17010,6 +17052,24 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .w500 {
     width: 31.25rem;
+  }
+}
+
+.mt12-sp {
+  margin-top: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .mt12-sp {
+    margin-top: initial;
+  }
+}
+
+.mt4-sp {
+  margin-top: 0.25rem;
+}
+@media screen and (min-width: 768px) {
+  .mt4-sp {
+    margin-top: initial;
   }
 }
 

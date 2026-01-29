@@ -44,7 +44,7 @@
                       <option value="b">エリアB</option>
                     </select>
                   </span>
-                  <input class="p-wpc__control ml10 w194" type="text" inputmode="decimal" name="v0" aria-label="基準風速" placeholder="" style="max-width: 12rem;">
+                  <input class="p-wpc__control ml10 w194 mt12-sp" type="text" inputmode="decimal" name="v0" aria-label="基準風速" placeholder="" style="max-width: 12rem;">
                   <span class="p-wpc__unit ml10">m/s</span>
                 </div>
               </div>
@@ -115,10 +115,10 @@
                       <input class="p-wpc__control" type="text" inputmode="decimal" name="eaves_h" aria-label="軒の高さ" style="max-width: 8rem;">
                       <span class="p-wpc__unit">m</span>
                       <span class="p-wpc__unit">＋</span>
-                      <input class="p-wpc__control" type="text" inputmode="decimal" name="building_h" aria-label="建物の高さ" style="max-width: 8rem;">
+                      <input class="p-wpc__control mt4-sp" type="text" inputmode="decimal" name="building_h" aria-label="建物の高さ" style="max-width: 8rem;">
                       <span class="p-wpc__unit">m</span>
                       <span class="p-wpc__unit">）÷2＝</span>
-                      <input class="p-wpc__control" type="text" inputmode="decimal" name="avg_h" aria-label="平均高さ" style="max-width: 8rem;">
+                      <input class="p-wpc__control mt4-sp" type="text" inputmode="decimal" name="avg_h" aria-label="平均高さ" style="max-width: 8rem;">
                       <span class="p-wpc__unit">m</span>
                     </div>
 
