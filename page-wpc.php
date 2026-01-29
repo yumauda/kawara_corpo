@@ -28,7 +28,7 @@
                   <span class="p-wpc__required">必須</span>
                 </div>
                 <div class="p-wpc__td">
-                  <span class="p-wpc__select ml10">
+                  <span class="p-wpc__select">
                     <select class="p-wpc__control" name="prefecture" aria-label="都道府県">
                       <option value="" selected disabled>都道府県</option>
                       <option value="shimane">島根県</option>
