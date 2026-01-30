@@ -73,7 +73,7 @@
           <p class="p-land__kind">島根県産の原料</p>
           <h2 class="p-land__title">土が違う<br class="u-desktop">だから<br>瓦も違う</h2>
           <p class="p-land__subtitle">超高温焼成に耐える<br>島根県産の原料</p>
-          <p class="p-land__text">どんなに優れた技術が優れていても、土の質が劣れば、耐久性も、美しさも、長持ちしません。<br>瓦の"土台"をつくるのは、まさにそのもののみのかなめです。</p>
+          <p class="p-land__text">どんなに優れた技術が優れていても、土の質が劣れば、耐久性も、美しさも、長持ちしません。<br>瓦の“土台”をつくるのは、まさに土そのものの力なのです。</p>
         </div>
         <figure class="p-land__img">
           <img src="<?php echo get_template_directory_uri() ?>/images/about/land_1.webp" alt="島根県産の原料" width="900" height="980">

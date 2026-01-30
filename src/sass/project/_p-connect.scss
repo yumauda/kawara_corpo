@@ -41,7 +41,7 @@
   height: 100%;
   display: flex;
   width: max-content;
-  animation: p-connect-marquee 18s linear infinite;
+  animation: p-connect-marquee 24s linear infinite;
 }
 
 .p-connect__imageItem {
@@ -69,7 +69,7 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  overflow: hidden;
+  overflow-x: clip;
   z-index: 3;
   @include mq(md) {
     height: rem(146);
@@ -80,7 +80,7 @@
   display: flex;
   align-items: center;
   width: max-content;
-  animation: p-connect-marquee 14s linear infinite;
+  animation: p-connect-marquee 28s linear infinite;
 }
 
 .p-connect__text {

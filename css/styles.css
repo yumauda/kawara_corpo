@@ -1713,7 +1713,7 @@ select::-ms-expand {
   height: 100%;
   display: flex;
   width: max-content;
-  animation: p-connect-marquee 18s linear infinite;
+  animation: p-connect-marquee 24s linear infinite;
 }
 
 .p-connect__imageItem {
@@ -1745,7 +1745,7 @@ select::-ms-expand {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  overflow: hidden;
+  overflow-x: clip;
   z-index: 3;
 }
 @media screen and (min-width: 768px) {
@@ -1758,7 +1758,7 @@ select::-ms-expand {
   display: flex;
   align-items: center;
   width: max-content;
-  animation: p-connect-marquee 14s linear infinite;
+  animation: p-connect-marquee 28s linear infinite;
 }
 
 .p-connect__text {
@@ -8185,6 +8185,97 @@ input::placeholder {
 .p-performance__note a {
   color: #37af32;
   text-decoration: underline;
+}
+
+.p-privacy {
+  padding-top: 2.5rem;
+  padding-bottom: 3.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-privacy {
+    padding-top: 3.75rem;
+    padding-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-privacy {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+}
+
+.p-privacy__content {
+  max-width: 68.75rem;
+  margin-inline: auto;
+}
+
+.p-privacy__body {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: #222;
+  letter-spacing: 0.06em;
+}
+
+.p-privacy__body p {
+  font-size: 0.875rem;
+  line-height: 1.9;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 1540px) {
+  .p-privacy__body p {
+    font-size: 1.125rem;
+  }
+}
+
+.p-privacy__body p:first-child {
+  margin-top: 0;
+}
+
+.p-privacy__body h3 {
+  margin-top: 2.5rem;
+  font-family: "ZenKakuGothicNew-Bold", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #37af32;
+}
+@media screen and (min-width: 1540px) {
+  .p-privacy__body h3 {
+    font-size: 1.375rem;
+  }
+}
+
+.p-privacy__body ul,
+.p-privacy__body ol {
+  margin-top: 0.875rem;
+  padding-left: 1.4em;
+}
+
+.p-privacy__body li {
+  font-size: 0.875rem;
+  line-height: 1.9;
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 1540px) {
+  .p-privacy__body li {
+    font-size: 1.125rem;
+  }
+}
+
+.p-privacy__body a {
+  color: #37af32;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.p-privacy__date {
+  margin-top: 2.5rem;
+  font-size: 0.75rem;
+  color: #555;
+}
+@media screen and (min-width: 1540px) {
+  .p-privacy__date {
+    font-size: 0.875rem;
+  }
 }
 
 .p-product-features {
@@ -14820,7 +14911,7 @@ input::placeholder {
 
 .p-top-company__text {
   line-height: 1.8;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.1em;
   font-weight: 700;
   color: #222;
   font-size: 0.875rem;

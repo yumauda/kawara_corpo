@@ -1,0 +1,87 @@
+@use "../global" as *;
+
+.p-privacy {
+  padding-top: rem(40);
+  padding-bottom: rem(60);
+
+  @include mq(md) {
+    padding-top: rem(60);
+    padding-bottom: rem(80);
+  }
+
+  @include mq(lg) {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+}
+
+.p-privacy__content {
+  max-width: rem(1100);
+  margin-inline: auto;
+}
+
+.p-privacy__body {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: #222;
+  letter-spacing: 0.06em;
+}
+
+.p-privacy__body p {
+  font-size: rem(14);
+  line-height: 1.9;
+  margin-top: rem(16);
+
+  @include mq(lg) {
+    font-size: rem(18);
+  }
+}
+
+.p-privacy__body p:first-child {
+  margin-top: 0;
+}
+
+.p-privacy__body h3 {
+  margin-top: rem(40);
+  font-family: "ZenKakuGothicNew-Bold", sans-serif;
+  font-size: rem(18);
+  font-weight: 700;
+  line-height: 1.6;
+  color: #37af32;
+
+  @include mq(lg) {
+    font-size: rem(22);
+  }
+}
+
+.p-privacy__body ul,
+.p-privacy__body ol {
+  margin-top: rem(14);
+  padding-left: 1.4em;
+}
+
+.p-privacy__body li {
+  font-size: rem(14);
+  line-height: 1.9;
+  margin-top: rem(8);
+
+  @include mq(lg) {
+    font-size: rem(18);
+  }
+}
+
+.p-privacy__body a {
+  color: #37af32;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.p-privacy__date {
+  margin-top: rem(40);
+  font-size: rem(12);
+  color: #555;
+
+  @include mq(lg) {
+    font-size: rem(14);
+  }
+}
+

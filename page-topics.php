@@ -5,7 +5,7 @@
       <div class="p-page-mv__content">
         <div class="p-page-mv__detail" data-title="Topics">
           <h2 class="p-page-mv__title">特集</h2>
-          <p class="p-page-mv__text">Catalog Download</p>
+          <p class="p-page-mv__text">Topics</p>
         </div>
       </div>
     </div>

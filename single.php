@@ -120,7 +120,7 @@
         <?php endif; ?> -->
         <div class="p-single__btn-wrapper">
           <a href="<?php echo esc_url(home_url('/example')); ?>" class="p-single__btn">
-            <p class="p-single__btn-text">施工一覧へ戻る</p>
+            <p class="p-single__btn-text">BACK</p>
             <div class="p-single__btn-icon"></div>
           </a>
         </div>
