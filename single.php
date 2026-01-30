@@ -32,11 +32,14 @@
               <!-- Slides -->
               <?php if (have_rows('example_slider')) : ?>
                 <?php while (have_rows('example_slider')) : the_row(); ?>
-                  <div class="swiper-slide">
-                    <figure class="p-single__slider-img">
-                      <img decoding="async" loading="lazy" src="<?php the_sub_field('example_slider_img'); ?>" alt="<?php the_title(); ?>" width="1240" height="770">
-                    </figure>
-                  </div>
+                  <?php $slider_img = (string) get_sub_field('example_slider_img'); ?>
+                  <?php if (!empty($slider_img)) : ?>
+                    <div class="swiper-slide">
+                      <figure class="p-single__slider-img">
+                        <img decoding="async" loading="lazy" src="<?php echo esc_url($slider_img); ?>" alt="<?php the_title(); ?>" width="1240" height="770">
+                      </figure>
+                    </div>
+                  <?php endif; ?>
 
                 <?php endwhile; ?>
               <?php endif; ?>
@@ -66,11 +69,14 @@
         <ul class="p-single__grid">
           <?php if (have_rows('example_slider')) : ?>
             <?php while (have_rows('example_slider')) : the_row(); ?>
-              <li class="p-single__grid-item">
-                <figure class="p-single__grid-item-image">
-                  <img src="<?php the_sub_field('example_product_img'); ?>" alt="<?php the_title(); ?>" width="430" height="430">
-                </figure>
-              </li>
+              <?php $product_img = (string) get_sub_field('example_product_img'); ?>
+              <?php if (!empty($product_img)) : ?>
+                <li class="p-single__grid-item">
+                  <figure class="p-single__grid-item-image">
+                    <img src="<?php echo esc_url($product_img); ?>" alt="<?php the_title(); ?>" width="430" height="430">
+                  </figure>
+                </li>
+              <?php endif; ?>
             <?php endwhile; ?>
           <?php endif; ?>
         

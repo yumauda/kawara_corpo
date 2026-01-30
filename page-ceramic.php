@@ -49,7 +49,7 @@
           <div class="p-product-features__title">
             <h3 class="c-pageTitle">
               <span class="c-pageTitle__title-text c-pageTitle__title-text--black">屋根材比較</span>
-              <span class="c-pageTitle__title-main">自然な色合いの<br class="u-desktop">瓦素地が<br>景観にマッチ。</span>
+              <span class="c-pageTitle__title-main c-pageTitle__title-main--ceramic">自然な色合いの<br class="u-desktop">瓦素地が<br>景観にマッチ。</span>
             </h3>
           </div>
           <div class="p-product-features__detail">
