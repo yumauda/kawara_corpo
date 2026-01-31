@@ -393,7 +393,7 @@
                                     </a>
                                 </li>
                                 <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/recruit/contact')); ?>" class="p-drawer-content__link">
+                                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__link">
                                         <span class="p-drawer-content__link-en">CONTACT</span>
                                         <span class="p-drawer-content__link-ja">お問い合わせ</span>
                                     </a>
@@ -438,7 +438,7 @@
                 <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-header__nav-link">・採用情報</a>
             </li>
             <li class="p-header__nav-list">
-                <a href="<?php echo esc_url(home_url('/recruit/contact')); ?>" class="p-header__nav-link">・お問い合わせ</a>
+                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-header__nav-link">・お問い合わせ</a>
             </li>
         </ul>
     <?php else : ?>
@@ -529,7 +529,7 @@
                                     </a>
                                 </li>
                                 <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/recruit/contact')); ?>" class="p-drawer-content__link">
+                                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__link">
                                         <span class="p-drawer-content__link-en">CONTACT</span>
                                         <span class="p-drawer-content__link-ja">お問い合わせ</span>
                                     </a>

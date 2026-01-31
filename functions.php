@@ -447,22 +447,6 @@ function exclude_multiple_categories_from_homepage($query)
 }
 add_action('pre_get_posts', 'exclude_multiple_categories_from_homepage');
 
-add_filter('wpcf7_validate_text', 'custom_hiragana_validation_filter', 20, 2);
-add_filter('wpcf7_validate_text*', 'custom_hiragana_validation_filter', 20, 2);
-
-function custom_hiragana_validation_filter($result, $tag)
-{
-	if ('your-hiragana-field' == $tag->name) {
-		$value = isset($_POST[$tag->name]) ? trim(wp_unslash(strtr((string)$_POST[$tag->name], "\n", " "))) : '';
-
-		if (!preg_match("/^[ぁ-ん]+$/u", $value)) {
-			$result->invalidate($tag, "ひらがなで入力してください。");
-		}
-	}
-
-	return $result;
-}
-
 //投稿タイプの作成(カスタム投稿)
 register_post_type(
 	'news',
@@ -537,3 +521,25 @@ function webp_is_displayable($result, $path)
 	return $result;
 }
 add_filter('file_is_displayable_image', 'webp_is_displayable', 10, 2);
+
+add_filter('wpcf7_validate_text', 'custom_hiragana_validation_filter', 20, 2);
+add_filter('wpcf7_validate_text*', 'custom_hiragana_validation_filter', 20, 2);
+
+function custom_hiragana_validation_filter($result, $tag)
+{
+	if ('your-kana' == $tag->name) {
+		$value = isset($_POST[$tag->name]) ? trim(wp_unslash(strtr((string)$_POST[$tag->name], "\n", " "))) : '';
+
+		// 未入力（任意項目）の場合はOK
+		if ($value === '') {
+			return $result;
+		}
+
+		// カタカナ（長音・中点・スペース含む）のみ許可
+		if (!preg_match('/^[ァ-ヶー・\s　]+$/u', $value)) {
+			$result->invalidate($tag, 'カタカナで入力してください。');
+		}
+	}
+
+	return $result;
+}

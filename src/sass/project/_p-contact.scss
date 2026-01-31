@@ -1,0 +1,223 @@
+@use "../global" as *;
+
+.p-contact {
+  padding-bottom: rem(60);
+
+  @include mq(md) {
+    padding-bottom: rem(100);
+  }
+
+  @include mq(lg) {
+    padding-bottom: rem(200);
+  }
+}
+
+.p-contact__privacy-lead {
+  margin-top: rem(30);
+
+  @include mq(md) {
+    margin-top: rem(50);
+  }
+
+  @include mq(lg) {
+    margin-top: rem(100);
+  }
+}
+
+.p-contact__privacy-lead-text {
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: calc(32 / 20);
+  font-size: rem(14);
+
+  @include mq(md) {
+    text-align: center;
+    font-size: clamp(14px, 2vw, 14px);
+  }
+
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+
+.p-contact__privacy-box {
+  background: #fff;
+  margin-top: rem(24);
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+
+  @include mq(md) {
+    padding-bottom: initial;
+    margin-top: rem(32);
+    padding-top: initial;
+  }
+
+  @include mq(lg) {
+    margin-top: rem(50);
+  }
+}
+
+.p-contact__privacy-box-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mq(md) {
+    flex-direction: row;
+  }
+}
+
+.p-contact__privacy-box-left {
+  padding-left: rem(20);
+  padding-right: rem(20);
+
+  @include mq(md) {
+    padding-left: rem(40);
+    padding-right: rem(40);
+    position: relative;
+    flex: 1;
+    padding-top: rem(32);
+    padding-bottom: rem(32);
+  }
+
+  @include mq(md) {
+    padding-top: rem(49);
+    padding-bottom: rem(49);
+
+  }
+}
+.p-contact__privacy-box-left::before {
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    background: #d6d4d5;
+    width: 1px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.p-contact__privacy-box-text {
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: calc(32 / 20);
+  font-size: rem(14);
+
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+
+.p-contact__privacy-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.p-contact__privacy-box-right {
+  position: relative;
+  padding-left: rem(20);
+  padding-right: rem(20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: rem(16);
+
+  @include mq(md) {
+    margin-top: initial;
+    border-top: 0;
+    padding-left: initial;
+    padding-right: rem(20);
+    flex: 0 0 rem(400);
+  }
+}
+
+
+.p-contact__privacy-agree {
+  display: flex;
+  align-items: center;
+  gap: rem(14);
+}
+
+.p-contact__privacy-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: rem(14);
+  cursor: pointer;
+  user-select: none;
+}
+
+.p-contact__privacy-checkbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.p-contact__privacy-checkbox-box {
+  width: rem(30);
+  height: rem(30);
+  border: 1px solid #707070;
+  border-radius: rem(5);
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.p-contact__privacy-checkbox-input:checked+.p-contact__privacy-checkbox-box {
+  background: #37af32;
+  border-color: #37af32;
+}
+
+.p-contact__privacy-checkbox-input:checked+.p-contact__privacy-checkbox-box::after {
+  content: "✓";
+  color: #fff;
+  font-size: rem(18);
+  line-height: 1;
+  font-weight: 700;
+}
+
+.p-contact__privacy-checkbox-input:focus-visible+.p-contact__privacy-checkbox-box {
+  outline: 2px solid rgba(55, 175, 50, 0.7);
+  outline-offset: 2px;
+}
+
+.p-contact__privacy-checkbox-label {
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  font-size: rem(16);
+
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.p-contact__privacy-required {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(72);
+  height: rem(30);
+  border-radius: rem(17);
+  background: #37af32;
+  color: #fff !important;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: rem(14);
+}

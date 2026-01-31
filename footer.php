@@ -40,7 +40,7 @@
                         <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-footer__link">採用情報</a>
                     </li>
                     <li class="p-footer__list">
-                        <a href="<?php echo esc_url(home_url('/recruit/contact')); ?>" class="p-footer__link">お問い合わせ</a>
+                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-footer__link">お問い合わせ</a>
                     </li>
                     <li class="p-footer__list">
                         <a href="<?php echo esc_url(home_url('/professional')); ?>" class="p-footer__link">プロの皆様へ</a>
