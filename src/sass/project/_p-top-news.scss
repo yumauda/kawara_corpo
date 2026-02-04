@@ -117,7 +117,7 @@
   font-style: italic;
   color: rgba($color: #222, $alpha: 0.6);
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     font-size: rem(16);
@@ -136,7 +136,7 @@
   border-radius: 9999px;
   font-size: rem(14);
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding-left: rem(13);
     padding-right: rem(13);
   }

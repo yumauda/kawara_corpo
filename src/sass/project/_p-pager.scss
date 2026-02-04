@@ -55,7 +55,7 @@
   font-style: italic;
   color: #222;
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     font-size: rem(16);
@@ -72,7 +72,7 @@
   color: #222;
   text-decoration: none;
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     font-size: rem(16);

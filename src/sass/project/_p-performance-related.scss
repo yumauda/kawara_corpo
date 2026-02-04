@@ -417,7 +417,7 @@
   color: #222222;
   font-weight: 500;
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     font-size: rem(20);
@@ -518,7 +518,7 @@
   font-weight: 500;
   @include mq(md) {
     margin-top: rem(16);
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     margin-top: rem(20);
@@ -608,7 +608,7 @@
   color: #222222;
   margin-bottom: rem(16);
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-bottom: rem(16);
   }
   @include mq(lg) {
@@ -676,7 +676,7 @@
   text-align: left;
   @include mq(md) {
     white-space: nowrap;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     min-width: rem(70);
   }
   @include mq(lg) {
@@ -694,7 +694,7 @@
   letter-spacing: 0.06em;
   color: #222222;
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     font-size: rem(20);

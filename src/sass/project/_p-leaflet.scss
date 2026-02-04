@@ -372,7 +372,7 @@
   letter-spacing: 0.06em;
   color: #222;
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     font-size: rem(16);
@@ -386,7 +386,7 @@
   letter-spacing: 0.06em;
   color: #222;
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     font-size: rem(16);
@@ -420,7 +420,7 @@
   color: #222;
   margin-top: rem(20);
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-top: rem(40);
   }
   @include mq(lg) {

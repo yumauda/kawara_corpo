@@ -194,7 +194,7 @@
 
   @include mq(md) {
     margin-top: rem(10);
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {
@@ -592,7 +592,7 @@
 
   @include mq(md) {
     white-space: nowrap;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {

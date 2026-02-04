@@ -45,7 +45,7 @@
   line-height: 1.5;
   position: relative;
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding-left: rem(15);
   }
   @include mq(lg) {
@@ -106,7 +106,7 @@
   line-height: calc(32 / 20);
   margin-top: rem(15);
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-top: rem(12);
   }
   @include mq(lg) {

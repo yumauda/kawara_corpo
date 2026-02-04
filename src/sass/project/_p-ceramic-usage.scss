@@ -55,7 +55,7 @@
     letter-spacing: 0.06em;
     color: #222;
     @include mq(md) {
-      font-size: clamp(14px, 2vw, 14px);
+      font-size: clamp(16px, 2vw, 16px);
     }
     @include mq(lg) {
       font-size: rem(20);
@@ -137,7 +137,7 @@
   color: #222;
   margin-bottom: rem(10);
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-bottom: rem(20);
   }
   @include mq(lg) {

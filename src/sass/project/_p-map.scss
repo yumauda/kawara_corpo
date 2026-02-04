@@ -210,7 +210,7 @@
   @include mq(md) {
     width: rem(140);
     height: rem(48);
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     width: rem(150);
@@ -272,7 +272,7 @@
   padding: rem(8) rem(20);
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     grid-template-columns: rem(180) 1fr;
     column-gap: rem(30);
     padding: rem(8) rem(20);

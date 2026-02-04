@@ -105,7 +105,7 @@
   min-height: rem(48);
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {
@@ -165,7 +165,7 @@
   color: #222;
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {
@@ -189,7 +189,7 @@
   user-select: none;
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
 
@@ -268,10 +268,12 @@
   color: #fff;
   background: #222;
   font-size: rem(18);
-  @include mq(md){
+
+  @include mq(md) {
     font-size: clamp(18px, 2vw, 18px);
   }
-  @include mq(lg){
+
+  @include mq(lg) {
     font-size: rem(24);
   }
 }
@@ -289,9 +291,11 @@
   line-height: 1.7;
   letter-spacing: 0.06em;
   color: #222;
-  @include mq(md){
-    font-size: clamp(14px, 2vw, 14px);
+
+  @include mq(md) {
+    font-size: clamp(16px, 2vw, 16px);
   }
+
   @include mq(lg) {
     font-size: rem(18);
   }
@@ -453,15 +457,6 @@
 }
 
 
-.p-wpc__graph {
-  margin-top: rem(16);
-
-  @include mq(md) {
-    margin-top: rem(20);
-  }
-
-}
-
 .p-wpc__graph img {
   width: 100%;
   height: auto;
@@ -492,15 +487,82 @@
     width: rem(500);
   }
 }
+
 .mt12-sp {
   margin-top: rem(12);
-  @include mq(md){
-   margin-top: initial; 
+
+  @include mq(md) {
+    margin-top: initial;
   }
 }
+
 .mt4-sp {
   margin-top: rem(4);
+
+  @include mq(md) {
+    margin-top: initial;
+  }
+}
+
+.p-wpc__gray {
+  background: #F6F6F6;
+  border-radius: rem(5);
+  padding: rem(20);
+  margin-top: rem(16);
+
+  @include mq(md) {
+    margin-top: rem(20);
+    padding: rem(40);
+  }
+
+  @include mq(lg) {
+    padding-top: rem(50);
+
+  }
+}
+
+
+.p-wpc__graph {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: rem(300);
+
+  @include mq(md) {
+    max-width: rem(500);
+  }
+}
+
+.p-wpc__graph-title {
+  text-align: center;
+  margin-top: rem(10);
+  color: #222;
+  font-size: rem(14);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+
+  @include mq(md) {
+    font-size: clamp(18px, 2vw, 18px);
+    margin-top: rem(20);
+  }
+
+  @include mq(lg) {
+    font-size: rem(20);
+    margin-top: rem(30);
+  }
+}
+
+.p-wpc__graph-text {
+  margin-top: rem(10);
+  line-height: calc(30 / 16);
+  font-size: rem(14);
+  color: #222;
+  letter-spacing: 0.06em;
   @include mq(md){
-   margin-top: initial; 
+    margin-top: rem(20);
+    font-size: clamp(16px, 2vw, 16px);
+  }
+  @include mq(lg){
+    margin-top: rem(30);
+    font-size: rem(16);
   }
 }

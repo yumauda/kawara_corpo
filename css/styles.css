@@ -647,7 +647,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-beautiful__text {
     margin-top: initial;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -927,7 +927,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-ceramic-features__card-text {
     margin-top: 1.25rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     max-width: 24.6875rem;
   }
 }
@@ -1067,7 +1067,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-ceramic-usage__problems-list li {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -1154,7 +1154,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-ceramic-usage__table-title {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-bottom: 1.25rem;
   }
 }
@@ -1426,7 +1426,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-company__label {
     display: table-cell;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     width: 11.25rem;
     padding: 0.6875rem;
   }
@@ -1451,7 +1451,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-company__data {
     display: table-cell;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding: 0.6875rem;
   }
 }
@@ -1576,7 +1576,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-compare__title-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -1628,7 +1628,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-compare__text {
     margin-top: initial;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -1904,7 +1904,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-contact__privacy-lead-text {
     text-align: center;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -1985,7 +1985,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-contact__privacy-box-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -2094,12 +2094,36 @@ select::-ms-expand {
   justify-content: center;
   width: 4.5rem;
   height: 1.875rem;
-  border-radius: 1.0625rem;
+  border-radius: 9999px;
   background: #37af32;
   color: #fff !important;
   font-weight: 700;
   letter-spacing: 0.06em;
   font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-contact__privacy-required {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-contact__privacy-required {
+    font-size: 0.875rem;
+  }
+}
+
+::placeholder {
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  ::placeholder {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  ::placeholder {
+    font-size: 0.875rem;
+  }
 }
 
 .p-drawer-icon {
@@ -2510,7 +2534,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-eco-features__card-text {
     margin-top: 1.25rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -2705,7 +2729,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-example-list__row-dt {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -2721,7 +2745,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-example-list__row-dd {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -2927,7 +2951,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-example-tabs__text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -3078,7 +3102,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-features__card-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-top: 1.25rem;
     padding-top: 1.25rem;
     padding-left: 1rem;
@@ -3200,7 +3224,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-footer__link {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -3479,7 +3503,7 @@ select::-ms-expand {
   .p-form input[type=text],
   .p-form input[type=tel],
   .p-form input[type=email] {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding-top: 0.8125rem;
     padding-bottom: 0.8125rem;
     padding-left: 1.5rem;
@@ -3504,7 +3528,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-form textarea {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -3656,13 +3680,18 @@ input::placeholder {
     vertical-align: middle;
     width: 24%;
     display: table-cell;
-    font-size: 1.0625rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-top: initial;
     padding-bottom: initial;
     border-top: initial;
     border-bottom: initial;
+    font-size: clamp(16px, 2vw, 16px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-form__label {
+    font-size: 1.0625rem;
   }
 }
 .p-form__label label {
@@ -3745,7 +3774,7 @@ input::placeholder {
   .p-form__field input[type=tel],
   .p-form__field input[type=email],
   .p-form__field input[type=date] {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -3919,7 +3948,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-price__btn-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -4059,7 +4088,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-header__breadcrumb-link {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -4098,7 +4127,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-header__breadcrumb-icon {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -4139,7 +4168,7 @@ input::placeholder {
 
 @media screen and (min-width: 768px) {
   .p-header__nav-link {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     font-weight: 700;
     color: #222;
   }
@@ -4394,7 +4423,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-history__text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -4488,7 +4517,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-history__bottom-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -4911,7 +4940,7 @@ input::placeholder {
   .p-intro__row-text {
     margin-left: 1.25rem;
     padding-left: 0.625rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -5070,7 +5099,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-land__kind {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding-left: 0.9375rem;
   }
 }
@@ -5144,7 +5173,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-land__text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-top: 0.75rem;
   }
 }
@@ -5666,7 +5695,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-leaflet__note-title {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -5684,7 +5713,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-leaflet__note-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -5726,7 +5755,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-leaflet__attention {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-top: 2.5rem;
   }
 }
@@ -5856,7 +5885,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-live__text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -6032,7 +6061,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-maker__text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-top: 1.25rem;
   }
 }
@@ -6290,7 +6319,7 @@ input::placeholder {
   .p-map-modal__tab {
     width: 8.75rem;
     height: 3rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -6357,7 +6386,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-map-modal__row {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     grid-template-columns: 11.25rem 1fr;
     column-gap: 1.875rem;
     padding: 0.5rem 1.25rem;
@@ -6619,7 +6648,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-munsell__table-th {
     padding: 0.5rem 0.75rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -6642,7 +6671,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-munsell__table-td {
     padding: 1rem 0.75rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     width: 25%;
   }
 }
@@ -6690,7 +6719,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-munsell__note-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -6800,7 +6829,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-munsell__table-td-buttonText {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -6820,7 +6849,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-munsell__table-td-netlink {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -6872,7 +6901,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-munsell__ver {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -7186,7 +7215,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-page-mv__text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -7259,7 +7288,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-page-mv__bottom-kind {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -7386,7 +7415,7 @@ input::placeholder {
 
 @media screen and (min-width: 768px) {
   .p-page-mv__nav-link {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     font-weight: 700;
     color: #222;
   }
@@ -7442,7 +7471,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-page-mvText__main {
     text-align: center;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -7462,7 +7491,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-page-mvText__small {
     text-align: center;
-    font-size: clamp(10px, 2vw, 10px);
+    font-size: clamp(12px, 2vw, 12px);
     margin-top: 1rem;
   }
 }
@@ -7540,7 +7569,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-pager__link-num {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -7560,7 +7589,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-pager__number .page-numbers {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -8064,7 +8093,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-performance-related__text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -8192,7 +8221,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-performance-related__submit-link {
     margin-top: 1rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -8303,7 +8332,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-performance-related__construction-subtitle {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-bottom: 1rem;
   }
 }
@@ -8381,7 +8410,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-performance-related__construction-label {
     white-space: nowrap;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     min-width: 4.375rem;
   }
 }
@@ -8403,7 +8432,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-performance-related__construction-value {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -8683,7 +8712,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-performance__card-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -8755,6 +8784,11 @@ input::placeholder {
   line-height: 1.9;
   margin-top: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .p-privacy__body p {
+    font-size: clamp(16px, 2vw, 16px);
+  }
+}
 @media screen and (min-width: 1540px) {
   .p-privacy__body p {
     font-size: 1.125rem;
@@ -8773,6 +8807,11 @@ input::placeholder {
   line-height: 1.6;
   color: #37af32;
 }
+@media screen and (min-width: 768px) {
+  .p-privacy__body h3 {
+    font-size: clamp(18px, 2vw, 18px);
+  }
+}
 @media screen and (min-width: 1540px) {
   .p-privacy__body h3 {
     font-size: 1.375rem;
@@ -8790,6 +8829,11 @@ input::placeholder {
   line-height: 1.9;
   margin-top: 0.5rem;
 }
+@media screen and (min-width: 768px) {
+  .p-privacy__body li {
+    font-size: clamp(16px, 2vw, 16px);
+  }
+}
 @media screen and (min-width: 1540px) {
   .p-privacy__body li {
     font-size: 1.125rem;
@@ -8806,6 +8850,11 @@ input::placeholder {
   margin-top: 2.5rem;
   font-size: 0.75rem;
   color: #555;
+}
+@media screen and (min-width: 768px) {
+  .p-privacy__date {
+    font-size: clamp(14px, 2vw, 14px);
+  }
 }
 @media screen and (min-width: 1540px) {
   .p-privacy__date {
@@ -9078,7 +9127,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-product-features__detail-small {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-top: 1.25rem;
   }
 }
@@ -9174,7 +9223,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-product-features__card-number {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -9230,7 +9279,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-product-features__card-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -9455,7 +9504,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-product-features__merit-list li {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -9953,7 +10002,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-product-mv__detail-small {
     margin-top: 0.625rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -10484,7 +10533,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-professional-catalog__text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding-top: 0.9375rem;
     margin-top: 0.9375rem;
   }
@@ -10603,7 +10652,7 @@ input::placeholder {
   .p-profile__label {
     display: table-cell;
     width: 12.5rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding: 0.5rem 1.875rem;
   }
 }
@@ -10629,7 +10678,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-profile__data {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding: 0.5rem 1.25rem;
     display: table-cell;
   }
@@ -10957,7 +11006,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-question__a-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -11222,7 +11271,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-secret__text span {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-left: 0.625rem;
   }
 }
@@ -11313,7 +11362,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-secret__small {
     margin-top: 1.25rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -11350,7 +11399,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-single-news__time {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -12547,7 +12596,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-single__btn-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -12870,7 +12919,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-specific__table {
     margin-top: 0.625rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -13303,7 +13352,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-specific__stylish-text {
     white-space: nowrap;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -13606,7 +13655,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-strong__topText {
     margin-top: 2rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -13709,7 +13758,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-strong__box-detail-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-top: 0.375rem;
   }
 }
@@ -13788,7 +13837,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-strong__box-bottom-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -13885,7 +13934,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-strong__box-column-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -14027,7 +14076,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-strong__guide-detail-text {
     margin-top: 1.25rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -14249,6 +14298,10 @@ input::placeholder {
   }
 }
 
+.p-strong__box-detail--graph {
+  display: block;
+}
+
 .p-strong__box-detail-textgraph {
   font-size: 0.875rem;
   letter-spacing: 0.1em;
@@ -14331,6 +14384,10 @@ input::placeholder {
   }
 }
 
+.p-strong__box-detail-title {
+  display: block;
+}
+
 .p-strong__box-img img {
   width: 100%;
   height: auto;
@@ -14388,7 +14445,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-strong__compare-list {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -14418,7 +14475,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-strong__compare-list-color {
-    font-size: clamp(14px, 2vw, 14px) !important;
+    font-size: clamp(16px, 2vw, 16px) !important;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -14531,7 +14588,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-strong__kind-box-left-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding-top: 1.25rem;
     margin-top: 1.25rem;
   }
@@ -14921,7 +14978,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-about__en-title {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -15222,7 +15279,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-choose__title-num {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -15258,7 +15315,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-choose__text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-top: 1rem;
   }
 }
@@ -15293,7 +15350,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-choose__bottom-number {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -15863,7 +15920,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-example-card__product {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-top: 1rem;
   }
 }
@@ -16024,7 +16081,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-info__detail-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -16200,7 +16257,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-news__time {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -16223,7 +16280,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-news__category {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding-left: 0.8125rem;
     padding-right: 0.8125rem;
   }
@@ -16593,7 +16650,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-topics-top__detail-text {
     margin-top: 1rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -16987,7 +17044,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-voice-slider__item-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -17168,7 +17225,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-water-text__text {
     margin-top: 1.25rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -17288,7 +17345,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-wpc__control {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -17340,7 +17397,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-wpc__unit {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -17366,7 +17423,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-wpc__help {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -17473,7 +17530,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-wpc__roughText {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -17642,15 +17699,6 @@ input::placeholder {
   }
 }
 
-.p-wpc__graph {
-  margin-top: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .p-wpc__graph {
-    margin-top: 1.25rem;
-  }
-}
-
 .p-wpc__graph img {
   width: 100%;
   height: auto;
@@ -17700,6 +17748,76 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .mt4-sp {
     margin-top: initial;
+  }
+}
+
+.p-wpc__gray {
+  background: #F6F6F6;
+  border-radius: 0.3125rem;
+  padding: 1.25rem;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-wpc__gray {
+    margin-top: 1.25rem;
+    padding: 2.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-wpc__gray {
+    padding-top: 3.125rem;
+  }
+}
+
+.p-wpc__graph {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 18.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-wpc__graph {
+    max-width: 31.25rem;
+  }
+}
+
+.p-wpc__graph-title {
+  text-align: center;
+  margin-top: 0.625rem;
+  color: #222;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+@media screen and (min-width: 768px) {
+  .p-wpc__graph-title {
+    font-size: clamp(18px, 2vw, 18px);
+    margin-top: 1.25rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-wpc__graph-title {
+    font-size: 1.25rem;
+    margin-top: 1.875rem;
+  }
+}
+
+.p-wpc__graph-text {
+  margin-top: 0.625rem;
+  line-height: 1.875;
+  font-size: 0.875rem;
+  color: #222;
+  letter-spacing: 0.06em;
+}
+@media screen and (min-width: 768px) {
+  .p-wpc__graph-text {
+    margin-top: 1.25rem;
+    font-size: clamp(16px, 2vw, 16px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-wpc__graph-text {
+    margin-top: 1.875rem;
+    font-size: 1rem;
   }
 }
 
@@ -17781,7 +17899,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .c-pageTitle__title-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -17980,7 +18098,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .c-section-title__small {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {

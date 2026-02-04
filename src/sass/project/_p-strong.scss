@@ -245,7 +245,7 @@
 
   @include mq(md) {
     margin-top: rem(32);
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {
@@ -340,7 +340,7 @@
   margin-top: rem(4);
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-top: rem(6);
   }
 
@@ -412,7 +412,7 @@
   color: #222;
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {
@@ -498,7 +498,7 @@
   margin-top: rem(8);
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {
@@ -629,7 +629,7 @@
 
   @include mq(md) {
     margin-top: rem(20);
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {
@@ -829,9 +829,9 @@
   }
 }
 
-.p-strong__box-list {}
-
-.p-strong__box-detail--graph {}
+.p-strong__box-detail--graph {
+  display: block;
+}
 
 .p-strong__box-detail-textgraph {
   font-size: rem(14);
@@ -897,8 +897,6 @@
   }
 }
 
-.p-strong__box-row {}
-
 .p-strong__box-detail {
   @include mq(md) {
     white-space: nowrap;
@@ -909,9 +907,9 @@
   }
 }
 
-.p-strong__box-detail-title {}
-
-.p-strong__box-img {}
+.p-strong__box-detail-title {
+  display: block;
+}
 
 .p-strong__box-img img {
   width: 100%;
@@ -965,7 +963,7 @@
   color: #222;
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {
@@ -991,7 +989,7 @@
   font-size: rem(14) !important;
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px) !important;
+    font-size: clamp(16px, 2vw, 16px) !important;
   }
 
   @include mq(lg) {
@@ -1094,7 +1092,7 @@
   padding-top: rem(16);
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding-top: rem(20);
     margin-top: rem(20);
   }
@@ -1127,8 +1125,6 @@
     gap: rem(20);
   }
 }
-
-.p-strong__kind-box-right-img {}
 
 .p-strong__kind-box-right-img img {
   width: 100%;

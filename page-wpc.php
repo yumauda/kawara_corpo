@@ -131,9 +131,15 @@
                     </div>
                   </div>
                   <div class="p-wpc__helpPanel js-wpc-help-panel" id="wpcHelpAvgHeight" hidden>
-                    <figure class="p-wpc__graph">
-                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/wpc/wpc_graph2.png" alt="平均高さ ＝ （ 軒の高さ ＋ 建物の高さ ） ÷ ２" width="950" height="588">
-                    </figure>
+                    <div class="p-wpc__gray">
+                      <figure class="p-wpc__graph">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/wpc/wpc_graph2.png" alt="平均高さ ＝ （ 軒の高さ ＋ 建物の高さ ） ÷ ２" width="950" height="588">
+                      </figure>
+                      <p class="p-wpc__graph-title">平均高さ ＝ （ 軒の高さ ＋ 建物の高さ ） ÷ ２</p>
+                      <p class="p-wpc__graph-text">※軒の高さ　 ： 小屋組み等を支持する壁、軒げた、又は柱等の上端の高さ。<br>
+                      ※建物の高さ ： 建築物の頂部高さ(棟飾り等の屋上突出物は含めない)。</p>
+
+                    </div>
                   </div>
 
                 </div>

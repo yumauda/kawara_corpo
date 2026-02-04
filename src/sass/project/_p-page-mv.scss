@@ -132,7 +132,7 @@
   font-size: rem(14);
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {
@@ -198,7 +198,7 @@
   padding-left: rem(16);
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {
@@ -313,7 +313,7 @@
 
 .p-page-mv__nav-link {
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     font-weight: 700;
     color: #222;
   }

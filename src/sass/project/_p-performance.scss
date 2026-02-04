@@ -133,7 +133,7 @@
   color: #222222;
   font-size: rem(14);
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding-left: rem(16);
     padding-right: rem(16);
   }

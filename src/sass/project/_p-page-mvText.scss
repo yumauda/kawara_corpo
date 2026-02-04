@@ -26,7 +26,7 @@
   font-size: rem(14);
   @include mq(md) {
     text-align: center;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     font-size: rem(20);
@@ -43,7 +43,7 @@
   margin-top: rem(8);
   @include mq(md) {
     text-align: center;
-    font-size: clamp(10px, 2vw, 10px);
+    font-size: clamp(12px, 2vw, 12px);
     margin-top: rem(16);
   }
 

@@ -137,7 +137,7 @@
   padding: rem(10) rem(12);
   background: #fff;
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding-top: rem(13);
     padding-bottom: rem(13);
     padding-left: rem(24);
@@ -155,7 +155,7 @@
   background: #fff;
   font-size: rem(14);
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     font-size: rem(20);
@@ -297,13 +297,17 @@ input::placeholder {
     vertical-align: middle;
     width: 24%;
     display: table-cell;
-    font-size: rem(17);
     padding-left: rem(20);
     padding-right: rem(20);
     padding-top: initial;
     padding-bottom: initial;
     border-top: initial;
     border-bottom: initial;
+    font-size: clamp(16px, 2vw, 16px);
+  }
+  @include mq(lg){
+    font-size: rem(17);
+    
   }
 
   label {
@@ -378,7 +382,7 @@ input::placeholder {
     font-size: rem(14);
     padding: rem(12) rem(15);
     @include mq(md) {
-      font-size: clamp(14px, 2vw, 14px);
+      font-size: clamp(16px, 2vw, 16px);
     }
     @include mq(lg) {
       font-size: rem(20);
@@ -530,7 +534,7 @@ input::placeholder {
   font-style: italic;
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     font-size: rem(20);

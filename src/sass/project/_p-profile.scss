@@ -88,7 +88,7 @@
   @include mq(md) {
     display: table-cell;
     width: rem(200);
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding: rem(8) rem(30);
   }
 
@@ -112,7 +112,7 @@
   display: block;
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding: rem(8) rem(20);
     display: table-cell;
   }

@@ -42,7 +42,7 @@
   letter-spacing: 0.06em;
   font-weight: 700;
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     font-size: rem(20);

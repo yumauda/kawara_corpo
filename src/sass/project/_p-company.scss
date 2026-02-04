@@ -154,7 +154,7 @@
   display: block;
   @include mq(md) {
     display: table-cell;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     width: rem(180);
     padding: rem(11);
   }
@@ -175,7 +175,7 @@
   padding: rem(10);
   @include mq(md) {
     display: table-cell;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding: rem(11);
   }
   @include mq(lg) {

@@ -640,6 +640,107 @@
         <div class="p-munsell__table-wrapper p-performance-related__table-wrapper">
           <div class="p-munsell__table-header">
             <div class="p-munsell__table-flex">
+              <p class="p-munsell__table-header-text">ニューセラECO</p>
+              <a href="<?php echo esc_url(home_url('/product/eco')); ?>" class="p-munsell__table-header-link">
+                <p class="p-munsell__table-header-link-text">製品情報を見る</p>
+                <div class="p-munsell__table-header-link-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.177 15.505">
+                    <g id="グループ_23475" data-name="グループ 23475" transform="translate(-537.43 -2454.133)">
+                      <path id="パス_42625" data-name="パス 42625" d="M189.089-2035.115l8,7-8,7" transform="translate(365 4490)" fill="none" stroke="#fff" stroke-width="2" />
+                      <path id="パス_42624" data-name="パス 42624" d="M189.089-2035.115l8,7-8,7" transform="translate(357 4490)" fill="none" stroke="#fff" stroke-width="2" />
+                      <path id="パス_42623" data-name="パス 42623" d="M189.089-2035.115l8,7-8,7" transform="translate(349 4490)" fill="none" stroke="#fff" stroke-width="2" />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="p-munsell__scroll">
+            <table class="p-munsell__table">
+              <thead class="p-munsell__table-head">
+                <tr>
+                  <th class="p-munsell__table-th w270">種類</th>
+                  <th class="p-munsell__table-th w600">試験条件</th>
+                  <th class="p-munsell__table-th w247">耐荷重</th>
+                  <th class="p-munsell__table-th w320">成績書</th>
+                </tr>
+              </thead>
+              <tbody class="p-munsell__table-body">
+                <tr class="p-munsell__table-row">
+                  <td class="p-munsell__table-td w270">桟瓦</td>
+                  <td class="p-munsell__table-td w600">野地板 : 構造用合版 12mm<br>
+                    桟木 : 杉 15×30mm<br>
+                    瓦緊結 : ステンレスeスクリング釘 #13×65mm</td>
+                  <td class="p-munsell__table-td w247">2,845 N/㎡</td>
+                  <td class="p-munsell__table-td w320">
+                    <a href="#" class="p-munsell__table-td-button">
+                      <div class="p-munsell__table-td-buttonIcon">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
+                      </div>
+                      <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
+                    </a>
+                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                  </td>
+                </tr>
+                <tr class="p-munsell__table-row">
+                  <td class="p-munsell__table-td w270">桟瓦<br>軒仕様</td>
+                  <td class="p-munsell__table-td w600">野地板 : 構造用合版 12mm<br>
+                    桟木 : 杉 15×30mm<br>
+                    瓦緊結 : ステンレスeスクリング釘 #13×65mm<br>
+                    瓦補強 : ステンレスセーフティ連結釘リング #12×75mm</td>
+                  <td class="p-munsell__table-td w247">4,003 N/㎡</td>
+                  <td class="p-munsell__table-td w320">
+                    <a href="#" class="p-munsell__table-td-button">
+                      <div class="p-munsell__table-td-buttonIcon">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
+                      </div>
+                      <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
+                    </a>
+                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                  </td>
+                </tr>
+                <tr class="p-munsell__table-row">
+                  <td class="p-munsell__table-td w270">右袖瓦</td>
+                  <td class="p-munsell__table-td w600">野地板 : 構造用合版 12mm<br>
+                    桟木 : 杉 15×30mm<br>
+                    瓦緊結 : ステンレスeスクリング釘 #13×65mm<br>
+                    瓦補強 : パッキン付ステンレス瓦ビス Φ4.0×75mm</td>
+                  <td class="p-munsell__table-td w247">4,448 N/㎡</td>
+                  <td class="p-munsell__table-td w320">
+                    <a href="#" class="p-munsell__table-td-button">
+                      <div class="p-munsell__table-td-buttonIcon">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
+                      </div>
+                      <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
+                    </a>
+                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                  </td>
+                </tr>
+                <tr class="p-munsell__table-row">
+                  <td class="p-munsell__table-td w270">左袖瓦</td>
+                  <td class="p-munsell__table-td w600">野地板 : 構造用合版 12mm<br>
+                    桟木 : 杉 15×30mm<br>
+                    瓦緊結 : ステンレスeスクリング釘 #13×65mm<br>
+                    瓦補強 : パッキン付ステンレス瓦ビス Φ4.0×75mm</td>
+                  <td class="p-munsell__table-td w247">4,448 N/㎡</td>
+                  <td class="p-munsell__table-td w320">
+                    <a href="#" class="p-munsell__table-td-button">
+                      <div class="p-munsell__table-td-buttonIcon">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
+                      </div>
+                      <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
+                    </a>
+                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="p-munsell__table-wrapper p-performance-related__table-wrapper">
+          <div class="p-munsell__table-header">
+            <div class="p-munsell__table-flex">
               <p class="p-munsell__table-header-text">棟瓦</p>
               <a href="#" class="p-munsell__table-header-link">
                 <p class="p-munsell__table-header-link-text">製品情報を見る</p>
