@@ -1,6 +1,6 @@
 <section class="p-submit js-blur-content">
     <div class="p-submit__inner">
-        <a href="<?php echo esc_url(home_url('/recruit/contact')); ?>" class="p-submit__btn">
+        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-submit__btn">
             <div class="p-submit__row">
                 <div class="p-submit__btn-top">
                     <h3 class="p-submit__title">Consultation<br>&emsp;_contact</h3>
