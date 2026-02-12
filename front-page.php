@@ -511,11 +511,15 @@
             <span class="c-sub-title__en js-text">_Calendar</span>
           </h3>
         </div>
+        <?php /*
         <figure class="p-top-calender__img">
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_calender.png" alt="カレンダー" width="431" height="38">
         </figure>
-
-
+        */ ?>
+        <div class="calendar-content-wrap">
+          <?php echo do_shortcode('[business_calendar postid="223" title="営業日カレンダー"]'); ?>
+          <p class="att">※<span>■</span>定休日</p>
+        </div>
       </div>
     </div>
   </section>

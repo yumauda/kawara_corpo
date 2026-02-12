@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+/* カレンダー */
+.calendar-content-wrap {
+  max-width: 70rem;
+  background: #fff;
+  padding: 30px;
+  border-radius: 0.625rem;
+  margin-top: 3.75rem;
+  margin-inline: auto;
+}
+.calendar-content .calendar-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.calendar-content .calendar-head .calendar-nav {
+  color: #37af32;
+  cursor: pointer;
+}
+.calendar-content .calendar-head .text {
+  font-size: 20px;
+}
+.calendar-content table th {
+  background-color: #37af32;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+.calendar-content table th + th {
+  border-left: 1px solid #fff;
+}
+.calendar-content table td {
+  border: 1px solid #ccc;
+  height: 100px;
+  padding: 20px;
+  line-height: 1;
+  width: calc(100% / 7);
+}
+.calendar-content table td.disabled {
+  color: #ddd;
+}
+.store-tab-content .calendar-content table td.holiday,
+.store-tab-content:nth-of-type(5) .calendar-content table td.yonago-holiday {
+  background-color: #bfbfbf;
+}
+.calendar-content .att {
+  text-align: right;
+  margin-top: 10px;
+}
+.calendar-content .att span {
+  color: #b8b8b8;
+}
+.store-tab-content:nth-of-type(1) .calendar-content table td:nth-of-type(3),
+.store-tab-content:nth-of-type(2) .calendar-content table td:nth-of-type(4),
+.store-tab-content:nth-of-type(3) .calendar-content table td:nth-of-type(4),
+.store-tab-content:nth-of-type(4) .calendar-content table td:nth-of-type(4),
+.store-tab-content:nth-of-type(5) .calendar-content table td:nth-of-type(4):not(.yonago-workday) {
+  background-color: #bfbfbf;
+}
+.store-tab-content:nth-of-type(2) .calendar-content table:not(.adjust) tr:last-child td:nth-of-type(3):not(.disabled),
+.store-tab-content:nth-of-type(2) .calendar-content table:not(.adjust) tr:nth-of-type(6) td:nth-of-type(3):not(.disabled),
+.store-tab-content:nth-of-type(4) .calendar-content table:not(.adjust) tr:last-child td:nth-of-type(3):not(.disabled),
+.store-tab-content:nth-of-type(4) .calendar-content table:not(.adjust) tr:nth-of-type(6) td:nth-of-type(3):not(.disabled) {
+  background-color: #bfbfbf;
+}
+.store-tab-content:nth-of-type(3) .calendar-content table tr:nth-of-type(2) td:nth-of-type(3):not(.disabled) {
+  background-color: #bfbfbf;
+}
+.calendar-content table td.today {
+  background-color: #37af32;
+  color: #fff;
+}
+.store-tab-content:nth-of-type(1) .calendar-content table td.carstation-workday,
+.store-tab-content:nth-of-type(5) .calendar-content table td.yonago-workday {
+  background-color: transparent;
+}
+.store-tab-content .calendar-content table td.jitan {
+  background: #ecc;
+}
+.store-tab-content .calendar-content table td.jitan p.jitan-text {
+  font-size: 12px;
+  line-height: 1.2;
+  margin-top: 0.6em;
+  color: #d32;
+}
+
+.three-year-plan-content {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.three-year-plan-content .content img {
+  width: 100%;
+}
+
+.calendar-table thead .dayWeek th {
+  background-color: #37af32;
+  color: #fff;
+}
+.calendar-table thead .month th {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.calendar-table thead .month th[colspan] {
+  font-size: 20px;
+}
+.calendar-table thead .month th:not([colspan]) {
+  font-size: 16px;
+  color: #37af32;
+}
+.calendar-table thead .month th:first-child {
+  text-align: left;
+}
+.calendar-table thead .month th:last-child {
+  text-align: right;
+}
+.calendar-table td.holiday {
+  background-color: #bfbfbf;
+}
+.calendar-content-wrap .att {
+  text-align: right;
+  margin-top: 10px;
+}
+.calendar-content-wrap .att span {
+  color: #b8b8b8;
+}
+.calendar-table td.today {
+  background-color: #37af32;
+  color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .calendar-table thead .month th[colspan] {
+    font-size: 14px;
+  }
+  .calendar-table thead .month th:not([colspan]) {
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+  .calendar-table thead .dayWeek th {
+    font-size: 12px;
+    padding: 2px 0;
+  }
+  .calendar-table td {
+    padding: 7px;
+    height: 43px;
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+}
+.calendar-table td {
+  text-align: center;
+}
+.calendar-table td small {
+  display: block;
+  margin-left: 0;
+  margin-top: 5px;
+}

@@ -1,4 +1,8 @@
 <?php get_header(); ?>
+
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/wpc/dialogs.css">
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/wpc/WindPressureCalc.css">
+
 <main>
   <section class="p-page-mv p-page-mv--download js-blur-content">
     <div class="l-inner">
@@ -17,10 +21,10 @@
           <p class="p-munsell__title-en">Wpc</p>
           <h3 class="p-munsell__title-ja">屋根面の風圧力計算</h3>
         </div>
-        <p class="p-munsell__ver">Ver.25.9.30.2</p>
+        <p class="p-munsell__ver">Ver.<span id="Ver"></span></p>
         <div class="p-munsell__calc">
           <div class="p-wpc">
-            <form class="p-wpc__form" action="#" method="post">
+            <form class="p-wpc__form" name="ParamFm" action="#" method="post">
               <!-- 基準風速 -->
               <div class="p-wpc__row">
                 <div class="p-wpc__th">
@@ -29,22 +33,12 @@
                 </div>
                 <div class="p-wpc__td">
                   <span class="p-wpc__select">
-                    <select class="p-wpc__control" name="prefecture" aria-label="都道府県">
-                      <option value="" selected disabled>都道府県</option>
-                      <option value="shimane">島根県</option>
-                      <option value="tottori">鳥取県</option>
-                      <option value="hiroshima">広島県</option>
-                      <option value="yamaguchi">山口県</option>
-                    </select>
+                    <select class="p-wpc__control" name="KenList" aria-label="都道府県" onchange="SelectShiSet();"></select>
                   </span>
                   <span class="p-wpc__select ml10">
-                    <select class="p-wpc__control w194" name="area" aria-label="エリア">
-                      <option value="" selected disabled>エリア</option>
-                      <option value="a">エリアA</option>
-                      <option value="b">エリアB</option>
-                    </select>
+                    <select class="p-wpc__control w194" name="ShiList" aria-label="エリア" onchange="document.ParamFm.VO.value = document.ParamFm.ShiList.value;"></select>
                   </span>
-                  <input class="p-wpc__control ml10 w194 mt12-sp" type="text" inputmode="decimal" name="v0" aria-label="基準風速" placeholder="" style="max-width: 12rem;">
+                  <input class="p-wpc__control ml10 w194 mt12-sp" type="text" inputmode="decimal" name="VO" aria-label="基準風速" placeholder="" style="max-width: 12rem;">
                   <span class="p-wpc__unit ml10">m/s</span>
                 </div>
               </div>
@@ -58,12 +52,12 @@
                 <div class="p-wpc__td">
                   <div class="p-wpc__td-row">
                     <span class="p-wpc__select">
-                      <select class="p-wpc__control w298" name="roughness" aria-label="粗度地区分">
+                      <select class="p-wpc__control w298" name="SK" aria-label="粗度地区分">
                         <option value="" selected disabled>選択してください</option>
-                        <option value="i">Ⅰ</option>
-                        <option value="ii">Ⅱ</option>
-                        <option value="iii">Ⅲ</option>
-                        <option value="iv">Ⅳ</option>
+                        <option value="1">Ⅰ</option>
+                        <option value="2">Ⅱ</option>
+                        <option value="3" selected="selected">Ⅲ</option>
+                        <option value="4">Ⅳ</option>
                       </select>
                     </span>
                     <div class="p-wpc__helpWrap">
@@ -71,7 +65,6 @@
                         説明
                         <span class="p-wpc__helpIcon" aria-hidden="true"></span>
                       </button>
-
                     </div>
                   </div>
 
@@ -112,13 +105,13 @@
                   <div class="p-wpc__td-row">
                     <div class="p-wpc__td-unit-row">
                       <span class="p-wpc__unit">（</span>
-                      <input class="p-wpc__control" type="text" inputmode="decimal" name="eaves_h" aria-label="軒の高さ" style="max-width: 8rem;">
+                      <input class="p-wpc__control" name="HH" type="text" onchange="HAcalc()" inputmode="decimal" name="eaves_h" aria-label="軒の高さ" style="max-width: 8rem;">
                       <span class="p-wpc__unit">m</span>
                       <span class="p-wpc__unit">＋</span>
-                      <input class="p-wpc__control mt4-sp" type="text" inputmode="decimal" name="building_h" aria-label="建物の高さ" style="max-width: 8rem;">
+                      <input class="p-wpc__control mt4-sp" name="HL" type="text" onchange="HAcalc()" inputmode="decimal" name="building_h" aria-label="建物の高さ" style="max-width: 8rem;">
                       <span class="p-wpc__unit">m</span>
                       <span class="p-wpc__unit">）÷2＝</span>
-                      <input class="p-wpc__control mt4-sp" type="text" inputmode="decimal" name="avg_h" aria-label="平均高さ" style="max-width: 8rem;">
+                      <input class="p-wpc__control mt4-sp" name="HA" type="text" inputmode="decimal" name="avg_h" aria-label="平均高さ" style="max-width: 8rem;">
                       <span class="p-wpc__unit">m</span>
                     </div>
 
@@ -127,7 +120,6 @@
                         説明
                         <span class="p-wpc__helpIcon" aria-hidden="true"></span>
                       </button>
-
                     </div>
                   </div>
                   <div class="p-wpc__helpPanel js-wpc-help-panel" id="wpcHelpAvgHeight" hidden>
@@ -136,9 +128,10 @@
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/wpc/wpc_graph2.png" alt="平均高さ ＝ （ 軒の高さ ＋ 建物の高さ ） ÷ ２" width="950" height="588">
                       </figure>
                       <p class="p-wpc__graph-title">平均高さ ＝ （ 軒の高さ ＋ 建物の高さ ） ÷ ２</p>
-                      <p class="p-wpc__graph-text">※軒の高さ　 ： 小屋組み等を支持する壁、軒げた、又は柱等の上端の高さ。<br>
-                      ※建物の高さ ： 建築物の頂部高さ(棟飾り等の屋上突出物は含めない)。</p>
-
+                      <p class="p-wpc__graph-text">
+                        ※軒の高さ　 ： 小屋組み等を支持する壁、軒げた、又は柱等の上端の高さ。<br>
+                        ※建物の高さ ： 建築物の頂部高さ(棟飾り等の屋上突出物は含めない)。
+                      </p>
                     </div>
                   </div>
 
@@ -152,7 +145,7 @@
                   <span class="p-wpc__required">必須</span>
                 </div>
                 <div class="p-wpc__td">
-                  <input class="p-wpc__control w194" type="text" inputmode="decimal" name="slope" aria-label="屋根勾配" style="max-width: 10rem;">
+                  <input id="KB" class="p-wpc__control w194" type="text" inputmode="decimal" aria-label="屋根勾配" style="max-width: 10rem;">
                   <span class="p-wpc__unit ml10">寸</span>
                 </div>
               </div>
@@ -162,11 +155,14 @@
                 <div class="p-wpc__th">屋根形状</div>
                 <div class="p-wpc__td">
                   <span class="p-wpc__select">
-                    <select class="p-wpc__control w298" name="roof_shape" aria-label="屋根形状">
+                    <select class="p-wpc__control w298" name="YK" onchange="jQuery('#KB').toggleClass('Necessary', document.ParamFm.YK.value!='6');" aria-label="屋根形状">
                       <option value="" selected disabled>選択してください</option>
-                      <option value="gable">切妻</option>
-                      <option value="hip">寄棟</option>
-                      <option value="flat">陸屋根</option>
+                      <option value="1">切妻</option>
+                      <option value="2">寄棟</option>
+                      <option value="3">片流れ</option>
+                      <option value="4">のこぎり</option>
+                      <option value="5">連続切妻</option>
+                      <option value="6">円弧</option>
                     </select>
                   </span>
                 </div>
@@ -176,19 +172,21 @@
               <div class="p-wpc__row">
                 <div class="p-wpc__th">物件名等</div>
                 <div class="p-wpc__td">
-                  <input class="p-wpc__control w500" type="text" name="project_name" aria-label="物件名等">
+                  <input class="p-wpc__control w500" type="text" name="HD" aria-label="物件名等">
                 </div>
               </div>
 
               <div class="p-wpc__actions">
-                <button type="button" class="p-wpc__submit">
+                <button type="button" class="p-wpc__submit" onclick="ParmCheck();">
                   <p class="p-wpc__submit-text">計算</p>
                   <span class="p-wpc__submitIcon" aria-hidden="true">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/wpc/icon.png" alt="">
                   </span>
                 </button>
-                <a class="p-wpc__link" href="#">当社商品の耐風圧力試験結果はこちら</a>
+                <a class="p-wpc__link" href="<?php echo esc_url(home_url('/professional/performance/'));?>">当社商品の耐風圧力試験結果はこちら</a>
               </div>
+
+              <div class="p-wpc__result" aria-live="polite"></div>
             </form>
           </div>
         </div>
@@ -203,7 +201,7 @@
         </div>
       </div>
       <div class="p-performance-related__submit-wrapper mt100">
-        <a href="#" class="p-performance-related__submit">
+        <a href="<?php echo get_stylesheet_directory_uri();?>/images/wpc/wpc.xls" class="p-performance-related__submit">
           <figure class="p-performance-related__submit-img">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/performance/submit.png" alt="風圧力計算シート エクセル版" width="140" height="205">
           </figure>
@@ -230,10 +228,12 @@
     </div>
   </section>
 
-
-
   <?php get_template_part("includes/submit"); ?>
 
 </main>
+
+<script src="<?php echo get_stylesheet_directory_uri();?>/wpc/VoList-mini.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri();?>/wpc/dialogs.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri();?>/wpc/WindPressureCalc.js"></script>
 
 <?php get_footer() ?>

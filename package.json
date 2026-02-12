@@ -12,7 +12,7 @@
     "dev:sass": "sass src/sass:css --watch --no-source-map",
     "dev:sass-files": "chokidar \"src/sass/**/*.scss\" --ignore \"src/sass/styles.scss\" -c \"npm run generate:styles\"",
     "dev:images": "chokidar \"src/images/**/*\" -c \"npm run copy:images && npm run compress:images\"",
-    "copy:images": "cpx \"src/images/**/*\" images",
+    "copy:images": "cpx \"src/images/**/*\" images --update",
     "compress:images": "node scripts/compress-images.js",
     "generate:styles": "node scripts/generate-styles.js",
     "build": "vite build",

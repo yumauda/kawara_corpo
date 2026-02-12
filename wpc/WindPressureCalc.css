@@ -1,0 +1,55 @@
+/*
+
+	Name	CSS for WindPressureCalc.js
+	Date	2025.09.19
+	Author	F.I (Kawara Designs Ltd.)
+
+*/
+	.wpc-form {
+		margin-left: 5%;
+		text-align: left;
+	}
+	/* 見出し */
+	.wpc-Title {
+		font-size: x-large;
+   			color: #613528;
+   			text-align: center;
+	}
+	/* 必須入力 */
+	.wpc-Necessary {
+		color: #f00;
+		font-size: xx-small;
+		vertical-align: super;
+	}
+	/* 説明ボタン */
+	.wpc-HelpButton {
+		background: #555555;
+		color: #fff;
+		cursor: pointer;
+     	padding: 5px;
+		font-size: small;
+	}
+	/* 説明文 (スライドボックス)*/
+	.wpc-SlideBox {
+    	padding: 10px;
+    	border: double #ccc;
+    	width: 90%;
+    	display:none;
+    }
+	/* 計算ボタン */
+	.wpc-Calc {
+		padding-left: 20em;
+	}
+	/* 注意事項 */
+	.wpc-Warning {
+		font-size: small;
+		color: #ff7777;
+		margin-left: 3%;
+		text-align: left;
+	}
+	/* バージョン表示 */
+	.wpc-VerNo {
+		font-size: small;
+		color: #aaaaaa;
+		padding-left: 22em;
+	}
