@@ -2268,11 +2268,14 @@ select::-ms-expand {
 
 .p-drawer-content__lists {
   padding-bottom: 4rem;
+  display: grid;
+  column-gap: 1rem;
+  row-gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 @media screen and (min-width: 768px) {
   .p-drawer-content__lists {
     padding-bottom: initial;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
   }
@@ -2282,9 +2285,6 @@ select::-ms-expand {
   text-align: center;
 }
 
-.p-drawer-content__list + .p-drawer-content__list {
-  margin-top: 1.875rem;
-}
 @media screen and (min-width: 768px) {
   .p-drawer-content__list + .p-drawer-content__list {
     margin-top: initial;
@@ -2320,6 +2320,11 @@ select::-ms-expand {
   line-height: 1.4;
 }
 @media screen and (min-width: 768px) {
+  .p-drawer-content__link-ja {
+    font-size: clamp(16px, 2vw, 16px);
+  }
+}
+@media screen and (min-width: 1540px) {
   .p-drawer-content__link-ja {
     font-size: 1.25rem;
   }
@@ -4798,6 +4803,12 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-intro__detail-row {
     display: flex;
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-intro__detail-row {
+    padding-top: 1rem;
   }
 }
 
@@ -9774,7 +9785,7 @@ input::placeholder {
   .p-product-mv::before {
     font-size: 8.125rem;
     top: -3.5rem;
-    left: 62.5rem;
+    left: 68.75rem;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -10165,7 +10176,7 @@ input::placeholder {
   .p-product__block {
     display: flex;
     gap: 10rem;
-    padding-bottom: 3.75rem;
+    padding-bottom: 5rem;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -10192,7 +10203,7 @@ input::placeholder {
 
 @media screen and (min-width: 768px) {
   .p-product__block:nth-child(n+1) {
-    padding-top: 3.75rem;
+    padding-top: 5rem;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -11290,7 +11301,8 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-secret__lists {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
     margin-top: 1.875rem;
   }
@@ -11307,16 +11319,6 @@ input::placeholder {
 
 .p-secret__list:last-child {
   width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .p-secret__list:last-child {
-    max-width: 12.5rem;
-  }
-}
-@media screen and (min-width: 1540px) {
-  .p-secret__list:last-child {
-    max-width: 18.75rem;
-  }
 }
 
 .p-secret__list-img img {

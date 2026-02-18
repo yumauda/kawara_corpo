@@ -129,18 +129,21 @@
 }
 .p-drawer-content__lists {
   padding-bottom: rem(64);
+  display: grid;
+  column-gap: rem(16);
+  row-gap: rem(24);
+  grid-template-columns: repeat(2, 1fr);
   @include mq(md){
     padding-bottom: initial;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-   gap: rem(40); 
+    gap: rem(40); 
   }
 }
 .p-drawer-content__list {
   text-align: center;
 }
 .p-drawer-content__list + .p-drawer-content__list {
-  margin-top: rem(30);
+  // margin-top: rem(30);
   @include mq(md){
     margin-top: initial;
   }
@@ -172,8 +175,11 @@
   color: #222;
   font-size: rem(18);
   line-height: 1.4;
-
   @include mq(md) {
+    font-size: clamp(16px, 2vw, 16px);
+  }
+
+  @include mq(lg) {
     font-size: rem(20);
   }
 }
