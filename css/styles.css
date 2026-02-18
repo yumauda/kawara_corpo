@@ -16311,6 +16311,21 @@ input::placeholder {
   }
 }
 
+.p-top-news__pager {
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-top-news__pager {
+    margin-top: 3.75rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-top-news__pager {
+    margin-top: 5rem;
+  }
+}
+
 .p-top-topics__content {
   position: relative;
 }
