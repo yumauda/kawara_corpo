@@ -304,7 +304,7 @@
       </div>
     </div>
   </section>
-  <section class="p-top-topics js-blur-content">
+  <section class="p-top-topics js-blur-content" id="topics">
     <div class="l-inner">
       <div class="p-top-topics__content">
         <div class="p-top-topics__top">

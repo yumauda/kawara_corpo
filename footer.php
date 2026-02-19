@@ -26,7 +26,7 @@
                         <a href="<?php echo esc_url(home_url('/company')); ?>" class="p-footer__link">会社概要</a>
                     </li>
                     <li class="p-footer__list">
-                        <a href="<?php echo esc_url(home_url('/topics')); ?>" class="p-footer__link">特集</a>
+                        <a href="<?php echo esc_url(home_url('/#topics')); ?>" class="p-footer__link">特集</a>
                     </li>
                     <li class="p-footer__list">
                         <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-footer__link">お知らせ</a>

@@ -363,9 +363,15 @@
                                     </a>
                                 </li>
                                 <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/topics/')); ?>" class="p-drawer-content__link">
+                                    <a href="<?php echo esc_url(home_url('/#topics')); ?>" class="p-drawer-content__link">
                                         <span class="p-drawer-content__link-en">TOPICS</span>
                                         <span class="p-drawer-content__link-ja">特集</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/example')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">EXAMPLE</span>
+                                        <span class="p-drawer-content__link-ja">施工事例</span>
                                     </a>
                                 </li>
                                 <li class="p-drawer-content__list">
@@ -423,7 +429,7 @@
                 <a href="<?php echo esc_url(home_url('/company')); ?>" class="p-header__nav-link">・会社概要</a>
             </li>
             <li class="p-header__nav-list">
-                <a href="<?php echo esc_url(home_url('/topics')); ?>" class="p-header__nav-link">・特集</a>
+                <a href="<?php echo esc_url(home_url('/#topics')); ?>" class="p-header__nav-link">・特集</a>
             </li>
             <li class="p-header__nav-list">
                 <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-header__nav-link">・お知らせ</a>
@@ -499,9 +505,15 @@
                                     </a>
                                 </li>
                                 <li class="p-drawer-content__list">
-                                    <a href="<?php echo esc_url(home_url('/topics/')); ?>" class="p-drawer-content__link">
+                                    <a href="<?php echo esc_url(home_url('/#topics')); ?>" class="p-drawer-content__link">
                                         <span class="p-drawer-content__link-en">TOPICS</span>
                                         <span class="p-drawer-content__link-ja">特集</span>
+                                    </a>
+                                </li>
+                                <li class="p-drawer-content__list">
+                                    <a href="<?php echo esc_url(home_url('/example')); ?>" class="p-drawer-content__link">
+                                        <span class="p-drawer-content__link-en">EXAMPLE</span>
+                                        <span class="p-drawer-content__link-ja">施工事例</span>
                                     </a>
                                 </li>
                                 <li class="p-drawer-content__list">

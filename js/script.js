@@ -198,8 +198,19 @@ jQuery(function ($) {
     tab_panel.attr("aria-hidden", true);
     $(tabID).attr("aria-hidden", false);
   }
-  $("#drawer a[href]").on("click", function (event) {
-    $(".p-drawer-icon").trigger("click");
+
+  // Drawer：メニュークリックで自動的に閉じる
+  const closeDrawerMenu = () => {
+    $(".p-drawer-icon").removeClass("is-active");
+    $(".p-drawer-content").removeClass("is-active");
+    $(".p-drawer-background").removeClass("is-active");
+    $("body").removeClass("drawer-open");
+  };
+
+  $(document).on("click", ".p-drawer-content a[href]", function () {
+    // ドロワーが開いているときだけ閉じる（PCの通常リンクには影響させない）
+    if (!$(".p-drawer-content").hasClass("is-active")) return;
+    closeDrawerMenu();
   });
 });
 
