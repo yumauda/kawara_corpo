@@ -75,9 +75,9 @@
   user-select: none;
 
   @include mq(md) {
-    width: rem(190);
+    width: rem(240);
     height: rem(44);
-    font-size: rem(16);
+    font-size: clamp(12px, 2vw, 12px);
   }
 
   @include mq(lg) {

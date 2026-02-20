@@ -908,7 +908,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-ceramic-features__card-border {
     margin-top: 1.25rem;
-    max-width: 24.6875rem;
+    max-width: 31.25rem;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -928,7 +928,7 @@ select::-ms-expand {
   .p-ceramic-features__card-text {
     margin-top: 1.25rem;
     font-size: clamp(16px, 2vw, 16px);
-    max-width: 24.6875rem;
+    max-width: 31.25rem;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -950,7 +950,7 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .p-ceramic-features__card--brown .p-ceramic-features__card-img {
-    max-width: 6.25rem;
+    max-width: 10rem;
     margin-left: auto;
   }
 }
@@ -1046,6 +1046,11 @@ select::-ms-expand {
   letter-spacing: 0.06em;
   color: #222;
   margin-bottom: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-ceramic-usage__problems-title {
+    font-size: clamp(16px, 2vw, 16px);
+  }
 }
 @media screen and (min-width: 1540px) {
   .p-ceramic-usage__problems-title {
@@ -2252,7 +2257,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-drawer-content__items {
-    max-width: 62rem;
+    max-width: 65.625rem;
     width: 100%;
     padding-top: 4rem;
     margin-left: auto;
@@ -2276,7 +2281,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-drawer-content__lists {
     padding-bottom: initial;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
   }
 }
@@ -2311,6 +2316,16 @@ select::-ms-expand {
   line-height: 1;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .p-drawer-content__link-en {
+    font-size: clamp(12px, 2vw, 12px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-drawer-content__link-en {
+    font-size: 0.75rem;
+  }
+}
 
 .p-drawer-content__link-ja {
   font-weight: 700;
@@ -2321,7 +2336,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-drawer-content__link-ja {
-    font-size: clamp(16px, 2vw, 16px);
+    font-size: clamp(18px, 2vw, 18px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -2879,9 +2894,9 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-example-search__btn {
-    width: 11.875rem;
+    width: 15rem;
     height: 2.75rem;
-    font-size: 1rem;
+    font-size: clamp(12px, 2vw, 12px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -9978,6 +9993,11 @@ input::placeholder {
   margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
+  .p-product-mv__detail {
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
   .p-product-mv__detail {
     margin-top: -3.75rem;
   }
