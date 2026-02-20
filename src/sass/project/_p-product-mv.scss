@@ -17,6 +17,8 @@
 .p-product-mv::before {
   position: absolute;
   content: "KAWARA\A DESIGNS";
+  white-space: pre;
+  display: block;
   color: #fff;
   font-family: $second-font-family;
   font-style: italic;
@@ -26,9 +28,10 @@
   z-index: -1;
   font-size: rem(64);
   top: rem(-24);
-  left: rem(130);
+  right: rem(-120);
 
   @include mq(md) {
+    right: initial;
     font-size: rem(130);
     top: rem(-56);
     left: rem(1100);
@@ -61,8 +64,6 @@
     top: rem(850);
   }
 }
-
-.p-product-mv__content {}
 
 .p-product-mv__top {
   display: flex;

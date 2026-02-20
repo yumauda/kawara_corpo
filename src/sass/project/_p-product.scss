@@ -117,9 +117,11 @@
 
 .p-product__block {
   position: relative;
-  padding-bottom: rem(24);
+  padding-top: rem(40);
+  padding-bottom: rem(40);
 
   @include mq(md) {
+    padding-top: initial;
     display: flex;
     gap: rem(160);
     padding-bottom: rem(80);

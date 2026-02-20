@@ -4839,6 +4839,7 @@ input::placeholder {
 .p-intro__detail-row {
   display: block;
   position: relative;
+  padding-top: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-intro__detail-row {
@@ -9810,6 +9811,8 @@ input::placeholder {
 .p-product-mv::before {
   position: absolute;
   content: "KAWARA\a DESIGNS";
+  white-space: pre;
+  display: block;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
@@ -9819,10 +9822,11 @@ input::placeholder {
   z-index: -1;
   font-size: 4rem;
   top: -1.5rem;
-  left: 8.125rem;
+  right: -7.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-product-mv::before {
+    right: initial;
     font-size: 8.125rem;
     top: -3.5rem;
     left: 68.75rem;
@@ -10215,10 +10219,12 @@ input::placeholder {
 
 .p-product__block {
   position: relative;
-  padding-bottom: 1.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-product__block {
+    padding-top: initial;
     display: flex;
     gap: 10rem;
     padding-bottom: 5rem;
@@ -11347,9 +11353,15 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-secret__lists {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.25rem;
     margin-top: 1.875rem;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .p-secret__lists {
+    gap: 1.25rem;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media screen and (min-width: 1540px) {
