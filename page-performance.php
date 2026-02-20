@@ -209,7 +209,7 @@
           <div class="p-munsell__table-header">
             <div class="p-munsell__table-flex">
               <p class="p-munsell__table-header-text">TSルーフ</p>
-              <a href="#" class="p-munsell__table-header-link">
+              <a href="<?php echo esc_url(home_url('/product/ts')); ?>" class="p-munsell__table-header-link">
                 <p class="p-munsell__table-header-link-text">製品情報を見る</p>
                 <div class="p-munsell__table-header-link-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.177 15.505">
@@ -240,13 +240,13 @@
                   <td class="p-munsell__table-td w600">野地板 : 構造用合版 12mm<br>桟木 : 杉 15×30mm<br>瓦緊結 : ステンレスeスクリング釘 #13×65mm</td>
                   <td class="p-munsell__table-td w247">2,845 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance1.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance1.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -254,13 +254,13 @@
                   <td class="p-munsell__table-td w600">野地板 : 構造用合版 12mm<br>桟木 : 杉 15×30mm<br>瓦緊結 : ステンレスeスクリング釘 #13×65mm<br>瓦補強 : ステンレスセーフティ連結釘リング #12×75mm</td>
                   <td class="p-munsell__table-td w247">4,003 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance2.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance2.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -268,13 +268,13 @@
                   <td class="p-munsell__table-td w600">野地板 : 構造用合版 12mm<br>桟木 : 杉 15×30mm<br>瓦緊結 : ステンレスeスクリング釘 #13×65mm</td>
                   <td class="p-munsell__table-td w247">1,701 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance3.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance3.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -282,13 +282,13 @@
                   <td class="p-munsell__table-td w600">野地板 : 構造用合版 12mm<br>桟木 : 杉 15×30mm<br>瓦緊結 : ステンレスeスクリング釘 #13×65mm<br>瓦補強 : パッキン付ステンレス瓦ビス Φ4.0×75mm</td>
                   <td class="p-munsell__table-td w247">4,448 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance7.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance7.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -296,13 +296,13 @@
                   <td class="p-munsell__table-td w600">野地板 : 構造用合版 12mm<br>桟木 : 杉 15×30mm<br>瓦緊結 : ステンレスeスクリング釘 #13×65mm</td>
                   <td class="p-munsell__table-td w247">1,891 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance4.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance4.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -313,13 +313,13 @@
                     瓦補強 : パッキン付ステンレス瓦ビス Φ4.0×75mm</td>
                   <td class="p-munsell__table-td w247">4,448 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance5.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance5.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -329,13 +329,13 @@
                     瓦緊結 : ステンレスeスクリング釘 #13×65mm</td>
                   <td class="p-munsell__table-td w247">1,891 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance6.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance6.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
 
@@ -382,13 +382,13 @@
                     瓦緊結 : ステンレスリング釘 #13×65mm</td>
                   <td class="p-munsell__table-td w247">3,367 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance8.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance8.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
               </tbody>
@@ -400,7 +400,7 @@
           <div class="p-munsell__table-header">
             <div class="p-munsell__table-flex">
               <p class="p-munsell__table-header-text">BSルーフ53A</p>
-              <a href="#" class="p-munsell__table-header-link">
+              <a href="<?php echo esc_url(home_url('/product/bs')); ?>" class="p-munsell__table-header-link">
                 <p class="p-munsell__table-header-link-text">製品情報を見る</p>
                 <div class="p-munsell__table-header-link-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.177 15.505">
@@ -433,13 +433,13 @@
                     瓦緊結 : ステンレスeスクリング釘 #13×65mm</td>
                   <td class="p-munsell__table-td w247">2,845 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance9.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance9.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -450,13 +450,13 @@
                     瓦補強 : ステンレスセーフティ連結釘リング #12×75mm</td>
                   <td class="p-munsell__table-td w247">4,003 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance10.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance10.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -467,13 +467,13 @@
                     瓦補強 : パッキン付ステンレス瓦ビス Φ4.0×75mm</td>
                   <td class="p-munsell__table-td w247">4,448 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance11.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance11.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -484,13 +484,13 @@
                     瓦補強 : パッキン付ステンレス瓦ビス Φ4.0×75mm</td>
                   <td class="p-munsell__table-td w247">4,448 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance12.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance12.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
               </tbody>
@@ -535,13 +535,13 @@
                     瓦緊結 : ステンレスeスクリング釘 #13×65mm</td>
                   <td class="p-munsell__table-td w247">2,845 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance13.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance13.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -552,13 +552,13 @@
                     瓦補強 : パッキン付ステンレス瓦ビス Φ4.0×75mm</td>
                   <td class="p-munsell__table-td w247">4,448 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance14.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance14.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -569,13 +569,13 @@
                     瓦補強 : パッキン付ステンレス瓦ビス Φ4.0×75mm</td>
                   <td class="p-munsell__table-td w247">4,448 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance15.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance15.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
 
@@ -588,7 +588,7 @@
           <div class="p-munsell__table-header">
             <div class="p-munsell__table-flex">
               <p class="p-munsell__table-header-text">グラスロ</p>
-              <a href="#" class="p-munsell__table-header-link">
+              <a href="<?php echo esc_url(home_url('/product/graslo')); ?>" class="p-munsell__table-header-link">
                 <p class="p-munsell__table-header-link-text">製品情報を見る</p>
                 <div class="p-munsell__table-header-link-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.177 15.505">
@@ -621,13 +621,13 @@
                     瓦緊結 : ステンレスeスクリング釘 #13×65mm</td>
                   <td class="p-munsell__table-td w247">3,367 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance16.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance16.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
 
@@ -674,13 +674,13 @@
                     瓦緊結 : ステンレスeスクリング釘 #13×65mm</td>
                   <td class="p-munsell__table-td w247">2,845 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance17.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance17.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -691,13 +691,13 @@
                     瓦補強 : ステンレスセーフティ連結釘リング #12×75mm</td>
                   <td class="p-munsell__table-td w247">4,003 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance18.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance18.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -708,13 +708,13 @@
                     瓦補強 : パッキン付ステンレス瓦ビス Φ4.0×75mm</td>
                   <td class="p-munsell__table-td w247">4,448 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance19.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance19.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -725,13 +725,13 @@
                     瓦補強 : パッキン付ステンレス瓦ビス Φ4.0×75mm</td>
                   <td class="p-munsell__table-td w247">4,448 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance20.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance20.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
               </tbody>
@@ -775,13 +775,13 @@
                     施工方法 : 補強金物による防災のし積乾式工法(MBK工法)</td>
                   <td class="p-munsell__table-td w247">合格</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance21.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance21.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -791,13 +791,13 @@
                     施工方法 : 補強金物による防災のし積乾式工法(MBK工法)</td>
                   <td class="p-munsell__table-td w247">合格</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance22.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance22.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
                 <tr class="p-munsell__table-row">
@@ -807,13 +807,13 @@
                     施工方法 : 防災のし積工法</td>
                   <td class="p-munsell__table-td w247">合格</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance23.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance23.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
 
@@ -837,13 +837,13 @@
                     棟補強金物 : TS樹脂棟</td>
                   <td class="p-munsell__table-td w247">3,367 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance24.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance24.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
 
@@ -858,7 +858,7 @@
           <div class="p-munsell__table-header">
             <div class="p-munsell__table-flex">
               <p class="p-munsell__table-header-text">ニューセラF Uタイプ</p>
-              <a href="#" class="p-munsell__table-header-link">
+              <a href="<?php echo esc_url(home_url('/product/ftype')); ?>" class="p-munsell__table-header-link">
                 <p class="p-munsell__table-header-link-text">製品情報を見る</p>
                 <div class="p-munsell__table-header-link-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.177 15.505">
@@ -891,13 +891,13 @@
                     瓦緊結 : ステンレスeスクリング釘 #12×65mm</td>
                   <td class="p-munsell__table-td w247">2,000 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance25.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance25.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
 
@@ -945,13 +945,13 @@
                     瓦補強 : ステンレスeスクリング釘 Φ4.0×50mm</td>
                   <td class="p-munsell__table-td w247">4,448 N/㎡</td>
                   <td class="p-munsell__table-td w320">
-                    <a href="#" class="p-munsell__table-td-button">
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance26.pdf" class="p-munsell__table-td-button" download>
                       <div class="p-munsell__table-td-buttonIcon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/noasbestos/pdf.png" alt="" width="20" height="28">
                       </div>
                       <p class="p-munsell__table-td-buttonText">PDFダウンロード</p>
                     </a>
-                    <a href="#" class="p-munsell__table-td-netlink">PDFをブラウザで開く</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/images/performance/performance26.pdf" class="p-munsell__table-td-netlink" target="_blank">PDFをブラウザで開く</a>
                   </td>
                 </tr>
 
@@ -962,7 +962,7 @@
 
         </div>
         <div class="p-performance-related__submit-wrapper">
-          <a href="#" class="p-performance-related__submit">
+          <a href="<?php echo esc_url(home_url('/professional/wpc/')); ?>" class="p-performance-related__submit">
             <figure class="p-performance-related__submit-img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/performance/submit.png" alt="風圧力計算シート エクセル版" width="140" height="205">
             </figure>
