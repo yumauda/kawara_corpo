@@ -28,7 +28,7 @@
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/noasbestos/noasbestos-img.png" alt="石綿(アスベスト)不使用" width="750" height="900">
           </figure>
           <div class="p-asbestos__btn-wrapper">
-            <a href="#" class="p-asbestos__btn">
+            <a href="<?php echo get_template_directory_uri() ?>/images/noasbestos/no_asbestos.pdf" class="p-asbestos__btn" target="_blank" rel="noopener noreferrer">
               <div class="p-asbestos__btn-icon">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/noasbestos/pdf.png" alt="PDFダウンロード" width="20" height="27">
               </div>
@@ -45,11 +45,11 @@
               <h3 class="p-related-links__title">関連リンク</h3>
             </div>
             <div class="p-related-links__list">
-              <a href="#" class="p-related-links__item" target="_blank" rel="noopener noreferrer">
+              <a href="https://asbestos-database.jp/" class="p-related-links__item" target="_blank" rel="noopener noreferrer">
                 <p class="p-related-links__item-title">石綿(アスベスト)含有建材データベース</p>
                 <p class="p-related-links__item-subtitle">/ 経済産業省及び国土交通省</p>
               </a>
-              <a href="#" class="p-related-links__item" target="_blank" rel="noopener noreferrer">
+              <a href="https://asbestos-database.jp/kenzai/non-containing/" class="p-related-links__item" target="_blank" rel="noopener noreferrer">
                 <p class="p-related-links__item-title">アスベスト非含有建材</p>
                 <p class="p-related-links__item-subtitle">/ 経済産業省及び国土交通省</p>
               </a>

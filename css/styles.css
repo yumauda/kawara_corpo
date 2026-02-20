@@ -3337,6 +3337,31 @@ select::-ms-expand {
   object-position: center center;
 }
 
+.u-mld {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .u-mld {
+    display: block;
+  }
+}
+
+.u-small-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-small-desktop {
+    display: block;
+    text-align: center;
+    margin-top: 3.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .u-small-desktop {
+    display: none;
+  }
+}
+
 .p-form {
   margin-top: 2.5rem;
 }
@@ -7279,9 +7304,9 @@ input::placeholder {
 .p-page-mv__bottom {
   margin-top: 1.5rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .p-page-mv__bottom {
-    margin-top: -3.125rem;
+    margin-top: -6.25rem;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -15213,6 +15238,13 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-choose__link {
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .p-top-choose__link {
     display: flex;
     padding-top: initial;
     padding-left: initial;
@@ -15232,7 +15264,7 @@ input::placeholder {
   flex-direction: column;
   justify-content: flex-start;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .p-top-choose__left {
     max-width: 27.5rem;
     padding-right: 2rem;
@@ -15252,7 +15284,7 @@ input::placeholder {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .p-top-choose__left::before {
     position: absolute;
     content: "";
@@ -15384,7 +15416,7 @@ input::placeholder {
 .p-top-choose__img {
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .p-top-choose__img {
     max-width: 33.75rem;
     margin-left: auto;

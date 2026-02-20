@@ -75,14 +75,16 @@
   display: block;
 
   @include mq(md) {
+    
+    padding-top: rem(40);
+    padding-left: rem(40);
+    padding-right: rem(40);
+  }
+  @include mq(mld){
     display: flex;
     padding-top: initial;
     padding-left: initial;
     padding-right: initial;
-    // align-items: flex-end;
-    // padding-top: rem(30);
-    // padding-left: rem(50);
-    // height: rem(440);
   }
 
   @include mq(lg) {
@@ -99,7 +101,7 @@
   flex-direction: column;
   justify-content: flex-start;
 
-  @include mq(md) {
+  @include mq(mld) {
     max-width: rem(440);
     padding-right: rem(32);
     padding-top: rem(36);
@@ -118,7 +120,7 @@
 }
 
 .p-top-choose__left::before {
-  @include mq(md) {
+  @include mq(mld) {
     position: absolute;
     content: "";
     background: #222;
@@ -238,7 +240,7 @@
 .p-top-choose__img {
   width: 100%;
 
-  @include mq(md) {
+  @include mq(mld) {
     max-width: rem(540);
     margin-left: auto;
     display: flex;

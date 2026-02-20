@@ -171,3 +171,20 @@
   object-fit: cover;
   object-position: center center;
 }
+.u-mld {
+  display: none;
+  @include mq(mld) {
+    display: block;
+  }
+}
+.u-small-desktop {
+  display: none;
+  @include mq(md) {
+    display: block;
+    text-align: center;
+    margin-top: rem(56);
+  }
+  @include mq(mld){
+    display: none;
+  }
+}

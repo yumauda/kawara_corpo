@@ -7,6 +7,7 @@ const chooseSlider = new Swiper(".choose-slider", {
   initialSlide: 0,
   spaceBetween: 16,
   breakpoints: {
+   
     768: {
       slidesPerView: 1.5,
       centeredSlides: true,

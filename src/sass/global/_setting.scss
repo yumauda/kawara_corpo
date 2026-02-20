@@ -51,6 +51,7 @@ $yellow: #ffd02b;
 $breakpoints: (
   sm: 600,
   md: 768,
+  mld: 992,
   lg: 1540,
 );
 
@@ -58,6 +59,7 @@ $breakpoints: (
 $mediaquerys: (
   sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
   md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
+  mld: "screen and (min-width: #{map-get($breakpoints,'mld')}px)",
   lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
   xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
 );

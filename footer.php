@@ -54,10 +54,13 @@
                 <a href="#" class="p-footer__recruit">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/footer_recruit.png" alt="採用情報" width="330" height="100">
                 </a>
-                <div class="p-footer__small">
+                <div class="p-footer__small u-mld">
                     <small>Copyright (C) 2024 Kawara Designs Ltd. All Rights Reserved.</small>
                 </div>
             </div>
+        </div>
+        <div class="p-footer__small u-small-desktop">
+            <small>Copyright (C) 2024 Kawara Designs Ltd. All Rights Reserved.</small>
         </div>
 
     </div>
